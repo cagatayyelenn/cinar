@@ -43,7 +43,7 @@ export default function Home() {
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
                   <div className="max-w-4xl">
                     <div className="flex items-center gap-4 mb-8">
-                      <span className="font-mono text-[#ffc107] text-sm tracking-widest uppercase border border-[#ffc107] px-3 py-1">
+                      <span className="font-mono text-[#fa9700] text-sm tracking-widest uppercase border border-[#fa9700] px-3 py-1">
                         // YETKİLİ SERVİS
                       </span>
                       <span className="font-mono text-white/50 text-sm tracking-widest">
@@ -53,13 +53,13 @@ export default function Home() {
                     <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter uppercase mb-6">
                       {brand.name}
                     </h2>
-                    <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light border-l-2 border-[#ffc107] pl-6">
+                    <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light border-l-2 border-[#fa9700] pl-6">
                       Ticari araç klimaları ve ısıtıcı sistemlerinde %100 orijinal yedek parça ve mühendislik çözümleri.
                     </p>
                   </div>
                   
                   <div className="flex flex-col gap-4 shrink-0">
-                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#ffc107] text-black px-8 py-5 font-heading font-bold text-lg uppercase tracking-wide hover:bg-white transition-colors">
+                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#fa9700] text-black px-8 py-5 font-heading font-bold text-lg uppercase tracking-wide hover:bg-white transition-colors">
                       <span>Hizmetleri İncele</span>
                       <ArrowUpRight className="ml-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={24} />
                     </Link>
@@ -77,7 +77,7 @@ export default function Home() {
         {/* Progress Bar */}
         <div className="absolute bottom-0 left-0 w-full h-1 bg-white/10 z-30">
           <div 
-            className="h-full bg-[#ffc107] transition-all duration-[6000ms] ease-linear"
+            className="h-full bg-[#fa9700] transition-all duration-[6000ms] ease-linear"
             style={{ width: `${((currentSlide + 1) / brands.length) * 100}%` }}
           ></div>
         </div>
@@ -86,14 +86,14 @@ export default function Home() {
       {/* TICKER / TRUST BAR - Stark & Minimal */}
       <div className="border-b border-slate-300 bg-white overflow-hidden py-4">
         <div className="flex whitespace-nowrap animate-marquee font-mono text-xs md:text-sm font-bold tracking-widest uppercase text-black">
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> 20+ YILLIK TECRÜBE</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> %100 ORİJİNAL PARÇA</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> SERTİFİKALI TEKNİSYENLER</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> 7/24 KESİNTİSİZ DESTEK</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> GLOBAL MARKALAR</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 20+ YILLIK TECRÜBE</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> %100 ORİJİNAL PARÇA</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> SERTİFİKALI TEKNİSYENLER</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 7/24 KESİNTİSİZ DESTEK</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> GLOBAL MARKALAR</span>
           {/* Duplicate for seamless loop */}
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> 20+ YILLIK TECRÜBE</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> %100 ORİJİNAL PARÇA</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 20+ YILLIK TECRÜBE</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> %100 ORİJİNAL PARÇA</span>
         </div>
       </div>
 
@@ -170,7 +170,7 @@ export default function Home() {
             <Link 
               key={brand.id} 
               to={`/servis/${brand.id}`} 
-              className="w-full md:w-auto bg-white p-6 md:p-10 flex flex-col items-center justify-center group hover:bg-[#ffc107] transition-colors duration-500 relative overflow-hidden h-48 md:h-64"
+              className="w-full md:w-auto bg-white p-6 md:p-10 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-colors duration-500 relative overflow-hidden h-48 md:h-64"
             >
               <div className="absolute top-4 left-4 md:top-6 md:left-6 font-mono text-sm md:text-base font-bold text-black group-hover:text-black transition-colors tracking-widest z-20">
                 0{idx + 1} // {brand.name.toUpperCase()}
@@ -236,7 +236,7 @@ export default function Home() {
               </h2>
             </div>
             <Link to="/hizmetlerimiz" className="group flex items-center gap-4 font-heading font-bold text-lg uppercase tracking-wide text-black hover:text-black transition-colors">
-              <span className="border-b-2 border-[#0f2851] group-hover:border-[#ffc107] pb-1">Tümünü Gör</span>
+              <span className="border-b-2 border-[#0f2851] group-hover:border-[#fa9700] pb-1">Tümünü Gör</span>
               <ArrowRight className="group-hover:translate-x-2 transition-transform" />
             </Link>
           </div>
@@ -261,7 +261,7 @@ export default function Home() {
                   <p className="text-black group-hover:text-slate-300 transition-colors text-base md:text-lg font-light line-clamp-2 md:line-clamp-1 max-w-md">
                     {service.description}
                   </p>
-                  <div className="hidden md:flex w-16 h-16 rounded-full border border-slate-300 group-hover:border-[#ffc107] items-center justify-center shrink-0 group-hover:bg-[#ffc107] transition-colors relative overflow-hidden">
+                  <div className="hidden md:flex w-16 h-16 rounded-full border border-slate-300 group-hover:border-[#fa9700] items-center justify-center shrink-0 group-hover:bg-[#fa9700] transition-colors relative overflow-hidden">
                     <ArrowUpRight className="text-black absolute transform translate-y-12 group-hover:translate-y-0 transition-transform duration-300" size={24} />
                     <ArrowRight className="text-slate-400 absolute transform group-hover:translate-x-12 transition-transform duration-300" size={24} />
                   </div>
@@ -290,7 +290,7 @@ export default function Home() {
             <div className="flex flex-col items-start md:items-end">
               <div className="flex items-center gap-2 mb-2">
                 <span className="font-heading font-black text-4xl text-black">4.9</span>
-                <div className="flex text-[#ffc107]">
+                <div className="flex text-[#fa9700]">
                   <Star size={24} fill="currentColor" />
                   <Star size={24} fill="currentColor" />
                   <Star size={24} fill="currentColor" />
@@ -311,7 +311,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-bold text-black">Ahmet Yılmaz</h4>
-                  <div className="flex text-[#ffc107] mt-1">
+                  <div className="flex text-[#fa9700] mt-1">
                     <Star size={14} fill="currentColor" />
                     <Star size={14} fill="currentColor" />
                     <Star size={14} fill="currentColor" />
@@ -333,7 +333,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-bold text-black">Mehmet Kaya</h4>
-                  <div className="flex text-[#ffc107] mt-1">
+                  <div className="flex text-[#fa9700] mt-1">
                     <Star size={14} fill="currentColor" />
                     <Star size={14} fill="currentColor" />
                     <Star size={14} fill="currentColor" />
@@ -355,7 +355,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-bold text-black">Caner Demir</h4>
-                  <div className="flex text-[#ffc107] mt-1">
+                  <div className="flex text-[#fa9700] mt-1">
                     <Star size={14} fill="currentColor" />
                     <Star size={14} fill="currentColor" />
                     <Star size={14} fill="currentColor" />
@@ -380,15 +380,15 @@ export default function Home() {
       </section>
 
       {/* CTA - Brutalist Block */}
-      <section className="bg-[#0f2851] border-t-8 border-[#ffc107]">
+      <section className="bg-[#0f2851] border-t-8 border-[#fa9700]">
         <div className="container mx-auto px-4 md:px-8 py-24 md:py-32">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="font-heading text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-12">
               SİSTEMLERİNİZ İÇİN <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffc107] to-orange-400">MAKSİMUM VERİMLİLİK.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fa9700] to-orange-400">MAKSİMUM VERİMLİLİK.</span>
             </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:+905070485034" className="bg-[#ffc107] text-black px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white transition-colors flex items-center justify-center">
+              <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white transition-colors flex items-center justify-center">
                 Hemen Arayın
               </a>
               <Link to="/iletisim" className="bg-transparent border-2 border-white text-white px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white hover:text-black transition-colors flex items-center justify-center">

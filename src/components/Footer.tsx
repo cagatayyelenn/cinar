@@ -13,12 +13,12 @@ export default function Footer() {
           {/* Col 1: Brand & About */}
           <div className="lg:pr-12 lg:border-r border-white/10">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#ffc107] rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#fa9700] rounded-lg flex items-center justify-center">
                 <span className="text-[#0f2851] font-black text-xl">Ç</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-black text-xl leading-none tracking-tight">ÇINAR</span>
-                <span className="text-[#ffc107] font-semibold text-xs tracking-widest">OTO KLİMA</span>
+                <span className="text-[#fa9700] font-semibold text-xs tracking-widest">OTO KLİMA</span>
               </div>
             </div>
             <p className="text-sm text-slate-400 mb-8 leading-relaxed">
