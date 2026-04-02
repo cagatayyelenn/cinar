@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 export default function TopBar() {
   return (
-    <div className="bg-black text-gray-400 text-[10px] py-2 hidden md:block border-b border-white/10 uppercase tracking-[0.2em] font-black">
+    <div className="bg-black text-gray-400 text-xs py-3 hidden md:block border-b border-white/10 uppercase tracking-[0.15em] font-black">
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-2">
-            <MapPin size={12} className="text-white" />
+            <MapPin size={14} className="text-white" />
             <span>Pendik / İSTANBUL</span>
           </div>
           <div className="flex items-center space-x-2">
-            <Clock size={12} className="text-white" />
+            <Clock size={14} className="text-white" />
             <span>Pzt - Cmt: 08:30 - 19:00</span>
           </div>
         </div>
