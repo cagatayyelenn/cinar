@@ -38,8 +38,9 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none">
                 {brand.name} <br/><span className="text-gray-500 font-light">Yetkili Servisi</span>
               </h1>
-              <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
-                {brand.name} ürünleriniz için garantili bakım, onarım, montaj ve orijinal yedek parça hizmetleri.
+              <p className="text-gray-300 text-lg leading-relaxed max-w-xl drop-shadow-md">
+                {/* @ts-ignore */}
+                {brand.heroDescription || `${brand.name} ürünleriniz için garantili bakım, onarım, montaj ve orijinal yedek parça hizmetleri.`}
               </p>
             </div>
             <div className="bg-white p-8 shrink-0 border border-gray-800">

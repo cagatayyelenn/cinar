@@ -5,6 +5,7 @@ export const brands = [
     id: 'climart', 
     name: 'Climart', 
     logo: '/logolar/climart-logo1.png',
+    heroDescription: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
     menuProducts: [
       { label: 'Ticari Araç Klimaları', path: 'ticari-arac-klimalari' },
       { label: 'Ticari Araç Soğutucuları', path: 'ticari-arac-sogutuculari' },
