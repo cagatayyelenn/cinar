@@ -151,10 +151,9 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                       <div className="mt-auto border-t border-white/10 pt-6">
                         <p className="text-white font-bold text-sm mb-4">Bunlar için uygundur:</p>
                         <div className="flex flex-wrap gap-4 text-white/70 mb-8">
-                          <Car size={32} strokeWidth={1} />
-                          <Truck size={32} strokeWidth={1} />
-                          <Bus size={32} strokeWidth={1} />
-                          <Tractor size={32} strokeWidth={1} />
+                          <img src="/araba.svg" alt="Araba" className="w-8 h-8" title="Otomobil" />
+                          <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Hafif Ticari" />
+                          <img src="/otobus.svg" alt="Otobüs" className="w-8 h-8" title="Minibüs / Otobüs" />
                         </div>
                         <div className="flex items-center justify-end">
                           <span className="font-bold text-sm text-[#dbe825] flex items-center group-hover:text-yellow-200 transition-colors">
