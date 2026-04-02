@@ -1,0 +1,403 @@
+import { Helmet } from 'react-helmet-async';
+import { ArrowRight, ArrowUpRight, Wrench, ShieldCheck, Clock, ThumbsUp, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { brands, services } from '../data/mockData';
+import { useState, useEffect } from 'react';
+
+export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % brands.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="bg-[#F8F9FA]">
+      <Helmet>
+        <title>Çınar Oto Klima | Endüstriyel İklimlendirme</title>
+        <meta name="description" content="Climart, Yılkar, Webasto, Coolman, Delphi yetkili servisi. Ticari araç klimaları, ısıtıcılar, montaj, bakım ve orijinal yedek parça hizmetleri." />
+      </Helmet>
+
+      {/* HERO SECTION - Editorial & Brutalist */}
+      <section className="relative min-h-[85vh] bg-[#0f2851] pt-32 pb-12 flex flex-col justify-end overflow-hidden">
+        {/* Technical Grid Background */}
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+        
+        {brands.map((brand, index) => (
+          <div 
+            key={brand.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+          >
+            <div className="absolute inset-0 bg-[#0f2851]/80 mix-blend-multiply z-10"></div>
+            <img 
+              src={`https://picsum.photos/seed/${brand.id}hero/1920/1080?grayscale`} 
+              alt={brand.name} 
+              className="w-full h-full object-cover grayscale opacity-60"
+            />
+            
+            <div className="absolute inset-0 z-20 flex flex-col justify-end pb-20">
+              <div className="container mx-auto px-4 md:px-8">
+                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
+                  <div className="max-w-4xl">
+                    <div className="flex items-center gap-4 mb-8">
+                      <span className="font-mono text-[#ffc107] text-sm tracking-widest uppercase border border-[#ffc107] px-3 py-1">
+                        // YETKİLİ SERVİS
+                      </span>
+                      <span className="font-mono text-white/50 text-sm tracking-widest">
+                        [ {String(index + 1).padStart(2, '0')} / {String(brands.length).padStart(2, '0')} ]
+                      </span>
+                    </div>
+                    <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter uppercase mb-6">
+                      {brand.name}
+                    </h2>
+                    <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light border-l-2 border-[#ffc107] pl-6">
+                      Ticari araç klimaları ve ısıtıcı sistemlerinde %100 orijinal yedek parça ve mühendislik çözümleri.
+                    </p>
+                  </div>
+                  
+                  <div className="flex flex-col gap-4 shrink-0">
+                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#ffc107] text-black px-8 py-5 font-heading font-bold text-lg uppercase tracking-wide hover:bg-white transition-colors">
+                      <span>Hizmetleri İncele</span>
+                      <ArrowUpRight className="ml-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={24} />
+                    </Link>
+                    <Link to="/iletisim" className="group flex items-center justify-between bg-transparent border border-white/30 text-white px-8 py-5 font-heading font-bold text-lg uppercase tracking-wide hover:bg-white/10 transition-colors">
+                      <span>İletişime Geç</span>
+                      <ArrowRight className="ml-4 group-hover:translate-x-1 transition-transform" size={24} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {/* Progress Bar */}
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-white/10 z-30">
+          <div 
+            className="h-full bg-[#ffc107] transition-all duration-[6000ms] ease-linear"
+            style={{ width: `${((currentSlide + 1) / brands.length) * 100}%` }}
+          ></div>
+        </div>
+      </section>
+
+      {/* TICKER / TRUST BAR - Stark & Minimal */}
+      <div className="border-b border-slate-300 bg-white overflow-hidden py-4">
+        <div className="flex whitespace-nowrap animate-marquee font-mono text-xs md:text-sm font-bold tracking-widest uppercase text-black">
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> 20+ YILLIK TECRÜBE</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> %100 ORİJİNAL PARÇA</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> SERTİFİKALI TEKNİSYENLER</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> 7/24 KESİNTİSİZ DESTEK</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> GLOBAL MARKALAR</span>
+          {/* Duplicate for seamless loop */}
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> 20+ YILLIK TECRÜBE</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#ffc107] mr-3"></span> %100 ORİJİNAL PARÇA</span>
+        </div>
+      </div>
+
+      {/* ABOUT - Clean & Elegant Editorial */}
+      <section className="py-20 md:py-24 bg-white text-black relative overflow-hidden border-b border-slate-200">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+            
+            {/* Left: Typography */}
+            <div className="lg:col-span-5">
+              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> KURUMSAL PROFİL
+              </div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
+                TİCARİ ARAÇ İKLİMLENDİRME SİSTEMLERİNDE <span className="text-black">REFERANS NOKTASI.</span>
+              </h2>
+              <p className="text-lg text-black leading-relaxed font-light mb-8 max-w-xl">
+                Sektördeki köklü geçmişimiz ve uzman kadromuzla, dünyanın önde gelen markalarının yetkili servisi olarak kalite ve güveni standart haline getiriyoruz.
+              </p>
+              
+              <Link to="/hakkimizda" className="inline-flex items-center gap-3 font-heading font-bold text-base uppercase tracking-wide text-black hover:text-black transition-colors group">
+                <span className="border-b-2 border-[#0f2851] group-hover:border-orange-500 pb-1">Tüm Detayları İncele</span>
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+              </Link>
+            </div>
+
+            {/* Right: Stats Grid */}
+            <div className="lg:col-span-7">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                  <div className="font-heading text-4xl md:text-5xl font-black text-black mb-2">20<span className="text-black">+</span></div>
+                  <div className="font-mono text-xs md:text-sm text-black uppercase tracking-widest">Yıllık Deneyim</div>
+                </div>
+                <div className="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                  <div className="font-heading text-4xl md:text-5xl font-black text-black mb-2">05</div>
+                  <div className="font-mono text-xs md:text-sm text-black uppercase tracking-widest">Global Marka</div>
+                </div>
+                <div className="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                  <div className="font-heading text-4xl md:text-5xl font-black text-black mb-2">10<span className="text-black">k</span></div>
+                  <div className="font-mono text-xs md:text-sm text-black uppercase tracking-widest">Mutlu Müşteri</div>
+                </div>
+                <div className="bg-[#0f2851] p-8 md:p-10 rounded-2xl shadow-xl text-white transform md:-translate-y-4">
+                  <div className="font-heading text-4xl md:text-5xl font-black mb-2">%100</div>
+                  <div className="font-mono text-xs md:text-sm text-slate-300 uppercase tracking-widest">Orijinal Parça</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* BRANDS - Industrial Partner Grid */}
+      <section className="pt-20 bg-[#f8f9fa]">
+        <div className="container mx-auto px-4 md:px-8 mb-12">
+          <div className="flex flex-col md:flex-row justify-between items-end gap-6">
+            <div>
+              <div className="font-mono text-black text-sm tracking-widest uppercase mb-4 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> GLOBAL PARTNERS
+              </div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-black uppercase tracking-tight">
+                YETKİLİ SERVİS AĞI
+              </h2>
+            </div>
+            <div className="font-mono text-xs text-black max-w-xs md:text-right uppercase tracking-widest leading-relaxed">
+              Dünyanın önde gelen iklimlendirme markalarının resmi çözüm ortağı.
+            </div>
+          </div>
+        </div>
+
+        {/* Full width brutalist grid */}
+        <div className="w-full border-y-2 border-[#0f2851] bg-[#0f2851] flex flex-wrap md:grid md:grid-cols-5 gap-[2px]">
+          {brands.map((brand, idx) => (
+            <Link 
+              key={brand.id} 
+              to={`/servis/${brand.id}`} 
+              className="w-full md:w-auto bg-white p-6 md:p-10 flex flex-col items-center justify-center group hover:bg-[#ffc107] transition-colors duration-500 relative overflow-hidden h-48 md:h-64"
+            >
+              <div className="absolute top-4 left-4 md:top-6 md:left-6 font-mono text-sm md:text-base font-bold text-black group-hover:text-black transition-colors tracking-widest z-20">
+                0{idx + 1} // {brand.name.toUpperCase()}
+              </div>
+              <img 
+                src={brand.logo} 
+                alt={brand.name} 
+                className="max-h-24 md:max-h-32 lg:max-h-40 max-w-[85%] object-contain grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 mix-blend-multiply relative z-10" 
+              />
+              <ArrowUpRight className="absolute bottom-4 right-4 text-black opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0" size={24} />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FEATURES - Sticky Sidebar List */}
+      <section className="py-24 md:py-32 bg-[#F8F9FA]">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col lg:flex-row gap-16">
+            <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">
+              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> AVANTAJLAR
+              </div>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-black leading-[1.1] tracking-tight">
+                NEDEN BİZİ TERCİH ETMELİSİNİZ?
+              </h2>
+            </div>
+            
+            <div className="lg:w-2/3">
+              <div className="flex flex-col border-t border-slate-300">
+                {[
+                  { icon: ShieldCheck, title: 'Yetkili Servis Güvencesi', desc: 'Dünya markalarının resmi yetkili servisi olarak garantili ve standartlara uygun hizmet.' },
+                  { icon: Wrench, title: 'Orijinal Yedek Parça', desc: '%100 orijinal yedek parça kullanımı ile sistemlerinizde uzun ömürlü çözümler.' },
+                  { icon: Clock, title: 'Hızlı ve Etkili Çözüm', desc: 'Ticari araçlarınızın zaman kaybını önlemek için en hızlı ve kesin onarım süreçleri.' },
+                  { icon: ThumbsUp, title: 'Uzman Kadro', desc: 'Sürekli güncel eğitimler alan, alanında uzman ve sertifikalı teknisyen kadrosu.' }
+                ].map((feature, idx) => (
+                  <div key={idx} className="group flex flex-col md:flex-row gap-6 md:gap-12 py-12 border-b border-slate-300 hover:bg-white transition-colors px-6 -mx-6">
+                    <div className="font-mono text-4xl text-black group-hover:text-black transition-colors">
+                      {String(idx + 1).padStart(2, '0')}
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase tracking-wide">{feature.title}</h3>
+                      <p className="text-black text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES - Interactive Editorial List */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div className="max-w-2xl">
+              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> FAALİYET ALANLARI
+              </div>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-black leading-[1.1] tracking-tight">
+                PROFESYONEL HİZMETLER
+              </h2>
+            </div>
+            <Link to="/hizmetlerimiz" className="group flex items-center gap-4 font-heading font-bold text-lg uppercase tracking-wide text-black hover:text-black transition-colors">
+              <span className="border-b-2 border-[#0f2851] group-hover:border-[#ffc107] pb-1">Tümünü Gör</span>
+              <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+            </Link>
+          </div>
+
+          <div className="border-t-2 border-[#0f2851]">
+            {services.slice(0, 4).map((service, idx) => (
+              <Link 
+                key={service.id} 
+                to={`/${service.brandId}-ticari-arac-klimalari`}
+                className="group flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-slate-300 hover:bg-[#0f2851] transition-all duration-500 px-4 md:px-8 -mx-4 md:-mx-8"
+              >
+                <div className="flex items-center gap-6 md:gap-12 w-full md:w-1/2 mb-6 md:mb-0">
+                  <span className="font-mono text-2xl md:text-3xl text-black group-hover:text-black transition-colors">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
+                  <h3 className="font-heading text-2xl md:text-4xl font-bold text-black group-hover:text-white transition-colors uppercase tracking-tight">
+                    {service.name}
+                  </h3>
+                </div>
+                
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 w-full md:w-1/2 justify-between">
+                  <p className="text-black group-hover:text-slate-300 transition-colors text-base md:text-lg font-light line-clamp-2 md:line-clamp-1 max-w-md">
+                    {service.description}
+                  </p>
+                  <div className="hidden md:flex w-16 h-16 rounded-full border border-slate-300 group-hover:border-[#ffc107] items-center justify-center shrink-0 group-hover:bg-[#ffc107] transition-colors relative overflow-hidden">
+                    <ArrowUpRight className="text-black absolute transform translate-y-12 group-hover:translate-y-0 transition-transform duration-300" size={24} />
+                    <ArrowRight className="text-slate-400 absolute transform group-hover:translate-x-12 transition-transform duration-300" size={24} />
+                  </div>
+                  <div className="md:hidden flex items-center text-black font-mono text-sm uppercase tracking-widest mt-4">
+                    İncele <ArrowRight size={16} className="ml-2" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REVIEWS - Google Maps Testimonials */}
+      <section className="py-24 md:py-32 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div className="max-w-2xl">
+              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> MÜŞTERİ YORUMLARI
+              </div>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-black leading-[1.1] tracking-tight">
+                GOOGLE HARİTALAR'DA <span className="text-black">BİZ.</span>
+              </h2>
+            </div>
+            <div className="flex flex-col items-start md:items-end">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="font-heading font-black text-4xl text-black">4.9</span>
+                <div className="flex text-[#ffc107]">
+                  <Star size={24} fill="currentColor" />
+                  <Star size={24} fill="currentColor" />
+                  <Star size={24} fill="currentColor" />
+                  <Star size={24} fill="currentColor" />
+                  <Star size={24} fill="currentColor" />
+                </div>
+              </div>
+              <p className="text-black font-mono text-sm">120+ Değerlendirme</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Review 1 */}
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-blue-100 text-black rounded-full flex items-center justify-center font-bold text-lg">
+                  A
+                </div>
+                <div>
+                  <h4 className="font-bold text-black">Ahmet Yılmaz</h4>
+                  <div className="flex text-[#ffc107] mt-1">
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-black leading-relaxed">
+                "Ticari aracımızın kliması bozulmuştu, Çınar Oto Klima'ya getirdik. Çok hızlı ve profesyonel bir şekilde hallettiler. İşçilikleri gerçekten çok temiz."
+              </p>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-green-100 text-black rounded-full flex items-center justify-center font-bold text-lg">
+                  M
+                </div>
+                <div>
+                  <h4 className="font-bold text-black">Mehmet Kaya</h4>
+                  <div className="flex text-[#ffc107] mt-1">
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-black leading-relaxed">
+                "Yılkar marka klimamızın montajını yaptırdık. Çalışanlar güler yüzlü ve işlerinin ehli. Orijinal parça kullanmaları en büyük tercih sebebimiz."
+              </p>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-orange-100 text-black rounded-full flex items-center justify-center font-bold text-lg">
+                  C
+                </div>
+                <div>
+                  <h4 className="font-bold text-black">Caner Demir</h4>
+                  <div className="flex text-[#ffc107] mt-1">
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                    <Star size={14} fill="currentColor" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-black leading-relaxed">
+                "Webasto ısıtıcımız için kış bakımı yaptırdık. Şeffaf fiyatlandırma ve kaliteli hizmet. Bundan sonra tek adresimiz Çınar Oto Klima."
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 font-heading font-bold text-base uppercase tracking-wide text-black hover:text-black transition-colors group">
+              <span className="border-b-2 border-[#0f2851] group-hover:border-orange-500 pb-1">Google'da Tüm Yorumları Gör</span>
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA - Brutalist Block */}
+      <section className="bg-[#0f2851] border-t-8 border-[#ffc107]">
+        <div className="container mx-auto px-4 md:px-8 py-24 md:py-32">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="font-heading text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-12">
+              SİSTEMLERİNİZ İÇİN <br className="hidden md:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffc107] to-orange-400">MAKSİMUM VERİMLİLİK.</span>
+            </h2>
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
+              <a href="tel:+905070485034" className="bg-[#ffc107] text-black px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white transition-colors flex items-center justify-center">
+                Hemen Arayın
+              </a>
+              <Link to="/iletisim" className="bg-transparent border-2 border-white text-white px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white hover:text-black transition-colors flex items-center justify-center">
+                Teklif İsteyin
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
