@@ -1,11 +1,11 @@
 const makeLogo = (text: string) => `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="900" fill="#0f2851" letter-spacing="-1">${text}</text></svg>`)}`;
 
 export const brands = [
-  { id: 'climart', name: 'Climart', logo: '/logolar/climart-logo.png' },
+  { id: 'climart', name: 'Climart', logo: '/logolar/climart-logo1.png' },
   { id: 'yilkar', name: 'Yılkar', logo: '/logolar/yilkar-logo.png' },
-  { id: 'webasto', name: 'Webasto', logo: '/logolar/webasto-logo.png' },
-  { id: 'coolman', name: 'Coolman', logo: '/logolar/coolman-logo.png' },
-  { id: 'delphi', name: 'Delphi', logo: '/logolar/delphi-logo.png' },
+  { id: 'webasto', name: 'Webasto', logo: '/logolar/webasto-logo1.png' },
+  { id: 'coolman', name: 'Coolman', logo: '/logolar/coolman-logo1.png' },
+  { id: 'delphi', name: 'Delphi', logo: '/logolar/delphi-logo1.png' },
 ];
 
 export const products = [
