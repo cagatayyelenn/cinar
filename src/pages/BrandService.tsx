@@ -57,10 +57,12 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
           <div className="lg:w-2/3">
             <section className="mb-24">
               <h2 className="text-3xl font-black text-black mb-8 uppercase tracking-tight leading-tight border-b border-gray-200 pb-6">
-                Neden <span className="text-gray-400">{brand.name}</span> Servisi?
+                {/* @ts-ignore */}
+                {brand.whyTitle ? brand.whyTitle : <>Neden <span className="text-gray-400">{brand.name}</span> Servisi?</>}
               </h2>
               <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-                Çınar Oto Klima olarak, {brand.name} markasının resmi yetkili servisi olmaktan gurur duyuyoruz. Aracınızdaki {brand.name} marka klima ve ısıtıcı sistemlerinin en yüksek performansta çalışması için gerekli tüm teknik donanıma ve sertifikalı uzman kadroya sahibiz.
+                {/* @ts-ignore */}
+                {brand.whyDescription || `Çınar Oto Klima olarak, ${brand.name} markasının resmi yetkili servisi olmaktan gurur duyuyoruz. Aracınızdaki ${brand.name} marka klima ve ısıtıcı sistemlerinin en yüksek performansta çalışması için gerekli tüm teknik donanıma ve sertifikalı uzman kadroya sahibiz.`}
               </p>
               <div className="grid sm:grid-cols-2 gap-8">
                 <div className="bg-gray-50 p-8 border border-gray-100">
