@@ -30,7 +30,7 @@ export default function Header() {
                   onMouseLeave={() => setActiveBrand(null)}
                 >
                   <Link
-                    to={`/servis/${brand.id}`}
+                    to={`/${brand.id}-yetkili-servisi`}
                     className={cn(
                       "px-6 py-3 transition-all duration-200 flex items-center h-16 border-x border-transparent",
                       isActive
@@ -52,7 +52,7 @@ export default function Header() {
                     {/* Left side: Brand Info */}
                     <div className="w-1/3 bg-gray-50 p-8 border-r border-gray-100 flex flex-col items-center justify-center">
                       <img src={brand.logo} alt={brand.name} className="w-32 h-auto mb-6 grayscale group-hover:grayscale-0 transition-all duration-500" />
-                      <Link to={`/servis/${brand.id}`} className="text-[10px] text-white font-black bg-black px-4 py-2 uppercase tracking-widest hover:bg-gray-800 transition-colors">Yetkili Servis &rarr;</Link>
+                      <Link to={`/${brand.id}-yetkili-servisi`} className="text-[10px] text-white font-black bg-black px-4 py-2 uppercase tracking-widest hover:bg-gray-800 transition-colors">Yetkili Servis &rarr;</Link>
                     </div>
 
                     {/* Right side: Links */}
@@ -104,7 +104,7 @@ export default function Header() {
           <div className="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
             {brands.map((brand) => (
               <div key={brand.id} className="border-b border-gray-100 last:border-0 pb-4">
-                <Link to={`/servis/${brand.id}`} className="font-black text-black flex items-center py-3 px-2 hover:bg-gray-50 uppercase tracking-tight">
+                <Link to={`/${brand.id}-yetkili-servisi`} className="font-black text-black flex items-center py-3 px-2 hover:bg-gray-50 uppercase tracking-tight">
                   <img src={brand.logo} alt={brand.name} className="h-6 w-auto object-contain mr-4" />
                   {brand.name}
                 </Link>

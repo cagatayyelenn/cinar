@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import { brands } from './data/mockData';
 import BrandService from './pages/BrandService';
 import BrandProducts from './pages/BrandProducts';
 import ItemDetail from './pages/ItemDetail';
@@ -27,6 +28,10 @@ export default function App() {
             <Route path="iletisim" element={<Contact />} />
             <Route path="yedek-parca" element={<SpareParts />} />
             
+            {/* Dynamic brand service routes */}
+            {brands.map(brand => (
+              <Route key={brand.id} path={`${brand.id}-yetkili-servisi`} element={<BrandService brandId={brand.id} />} />
+            ))}
             <Route path="servis/:brandId" element={<BrandService />} />
             <Route path="urunler/:brandId" element={<BrandProducts />} />
             

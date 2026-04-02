@@ -3,16 +3,17 @@ import { Helmet } from 'react-helmet-async';
 import { brands, products, services, faqs } from '../data/mockData';
 import { CheckCircle2, ArrowRight, PhoneCall, ShieldCheck, Wrench, ChevronRight } from 'lucide-react';
 
-export default function BrandService() {
-  const { brandId } = useParams<{ brandId: string }>();
-  const brand = brands.find(b => b.id === brandId);
+export default function BrandService({ brandId: propBrandId }: { brandId?: string }) {
+  const { brandId: paramBrandId } = useParams<{ brandId: string }>();
+  const activeBrandId = propBrandId || paramBrandId;
+  const brand = brands.find(b => b.id === activeBrandId);
 
   if (!brand) {
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
 
-  const brandProducts = products.filter(p => p.brandId === brandId).slice(0, 3);
-  const brandServices = services.filter(s => s.brandId === brandId);
+  const brandProducts = products.filter(p => p.brandId === activeBrandId).slice(0, 3);
+  const brandServices = services.filter(s => s.brandId === activeBrandId);
 
   return (
     <div className="bg-white min-h-screen pb-20">
