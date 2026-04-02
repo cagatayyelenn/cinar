@@ -33,6 +33,7 @@ export default function App() {
               <Route key={brand.id} path={`${brand.id}-yetkili-servisi`} element={<BrandService brandId={brand.id} />} />
             ))}
             <Route path="servis/:brandId" element={<BrandService />} />
+            <Route path=":brandId/:categoryId" element={<BrandProducts />} />
             <Route path="urunler/:brandId" element={<BrandProducts />} />
             
             {/* Combined Route for Product and Service Details */}

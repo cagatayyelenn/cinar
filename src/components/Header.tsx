@@ -62,12 +62,12 @@ export default function Header() {
                         <ul className="space-y-4">
                           {/* @ts-ignore */}
                           {brand.menuProducts ? brand.menuProducts.map((p, i) => (
-                            <li key={i}><Link to={`/urunler/${brand.id}?kategori=${p.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {p.label}</Link></li>
+                            <li key={i}><Link to={`/${brand.id}/${p.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {p.label}</Link></li>
                           )) : (
                             <>
-                              <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Tüm Ürünler</Link></li>
-                              <li><Link to={`/urunler/${brand.id}?kategori=klimalar`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Klimalar</Link></li>
-                              <li><Link to={`/urunler/${brand.id}?kategori=isiticilar`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Isıtıcılar</Link></li>
+                              <li><Link to={`/${brand.id}/tum-urunler`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Tüm Ürünler</Link></li>
+                              <li><Link to={`/${brand.id}/klimalar`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Klimalar</Link></li>
+                              <li><Link to={`/${brand.id}/isiticilar`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Isıtıcılar</Link></li>
                             </>
                           )}
                         </ul>

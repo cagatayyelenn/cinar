@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
 import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck } from 'lucide-react';
 
-export default function BrandProducts() {
-  const { brandId } = useParams<{ brandId: string }>();
+export default function BrandProducts({ brandId: propBrandId }: { brandId?: string }) {
+  const { brandId: paramBrandId, categoryId } = useParams<{ brandId: string; categoryId: string }>();
+  const brandId = propBrandId || paramBrandId;
   const brand = brands.find(b => b.id === brandId);
 
   if (!brand) {
