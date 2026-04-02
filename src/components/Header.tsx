@@ -10,8 +10,8 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      <div className="bg-white border-b-2 border-black px-6 py-4 flex justify-between items-center relative">
+    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white border-b-2 border-black">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-4">
           <div className="w-12 h-12 bg-black flex items-center justify-center text-white font-black text-2xl">
