@@ -26,12 +26,12 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center h-full">
           <ul className="flex items-center space-x-0 h-full">
-            {brands.map((brand) => {
+            {brands.map((brand, index) => {
               const isActive = location.pathname.includes(brand.id);
               return (
                 <li
                   key={brand.id}
-                  className="group relative flex items-center h-full"
+                  className="group static flex items-center h-full"
                   onMouseEnter={() => setActiveBrand(brand.id)}
                   onMouseLeave={() => setActiveBrand(null)}
                 >
