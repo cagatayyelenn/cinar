@@ -22,8 +22,8 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
         <meta name="description" content={`${brand.name} markalı ticari araç klimaları ve ısıtıcı sistemleri için yetkili servis, montaj, bakım ve orijinal yedek parça hizmetleri.`} />
       </Helmet>
 
-      {/* Hero Section - Sharp & Black */}
-      <div className="bg-black pt-32 pb-20 relative">
+      {/* Hero Section */}
+      <div className="bg-[#0f2851]/80 bg-[url('/arkaplan.jpg')] bg-cover bg-center bg-no-repeat bg-blend-overlay pt-32 pb-20 relative">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="flex flex-col md:flex-row items-end justify-between gap-12">
             <div className="text-white max-w-3xl">
