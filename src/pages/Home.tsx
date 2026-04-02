@@ -17,8 +17,19 @@ export default function Home() {
   return (
     <div className="bg-[#F8F9FA]">
       <Helmet>
-        <title>Çınar Oto Klima | Endüstriyel İklimlendirme</title>
-        <meta name="description" content="Climart, Yılkar, Webasto, Coolman, Delphi yetkili servisi. Ticari araç klimaları, ısıtıcılar, montaj, bakım ve orijinal yedek parça hizmetleri." />
+        <title>Çınar Oto Klima | Isıtma, Soğutma ve Yetkili Servis Hizmetleri</title>
+        <meta name="description" content="Çınar Oto Klima; Webasto, Yılkar, Climart, Coolman ve Delphi yetkili servisidir. Oto klima tamiri, kalorifer onarımı ve araç iklimlendirme çözümleri sunuyoruz." />
+        <meta name="keywords" content="oto klima tamiri, oto kalorifer tamiri, araç ısıtma ve soğutma hizmeti, Climart yetkili servisi, Yılkar yetkili servisi, Webasto yetkili servisi, Coolman yetkili servisi, Delphi yetkili servisi, klima gaz dolumu" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cinarotoklima.com/" />
+        <meta property="og:title" content="Çınar Oto Klima | Isıtma ve Soğutma Sistemleri Uzmanı" />
+        <meta property="og:description" content="Webasto, Yılkar ve Delphi yetkili servisi güvencesiyle araç klima ve kalorifer tamirinde profesyonel hizmet." />
+        <meta property="og:image" content="https://cinarotoklima.com/logo-veya-gorsel.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Çınar Oto Klima | Yetkili Servis Hizmetleri" />
+        <meta name="twitter:description" content="Oto klima ve kalorifer sistemlerinde yetkili servis güvencesi. Profesyonel tamir ve bakım." />
+        <meta name="robots" content="index, follow" />
+        <link rel="alternate" href="https://cinarotoklima.com/" hreflang="tr-tr" />
       </Helmet>
 
       {/* HERO SECTION - Editorial & Brutalist */}
