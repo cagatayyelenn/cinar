@@ -13,14 +13,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white border-b-2 border-black">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-black flex items-center justify-center text-white font-black text-2xl">
-            Ç
-          </div>
-          <div className="flex flex-col justify-center">
-            <h1 className="text-2xl font-black text-black leading-none tracking-tighter uppercase">Çınar</h1>
-            <span className="text-black font-black text-[10px] tracking-[0.3em] leading-none uppercase">OTO KLİMA</span>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src="/logolar/cinarotologo.png" alt="Çınar Oto Klima" className="h-16 w-auto object-contain py-1" />
         </Link>
 
         {/* Desktop Navigation */}
