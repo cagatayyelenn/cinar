@@ -52,7 +52,6 @@ export default function Header() {
                     {/* Left side: Brand Info */}
                     <div className="w-1/3 bg-gray-50 p-8 border-r border-gray-100 flex flex-col items-center justify-center">
                       <img src={brand.logo} alt={brand.name} className="w-32 h-auto mb-6 grayscale group-hover:grayscale-0 transition-all duration-500" />
-                      <h3 className="font-black text-black text-xl mb-4 uppercase tracking-tight">{brand.name}</h3>
                       <Link to={`/servis/${brand.id}`} className="text-[10px] text-white font-black bg-black px-4 py-2 uppercase tracking-widest hover:bg-gray-800 transition-colors">Yetkili Servis &rarr;</Link>
                     </div>
 
