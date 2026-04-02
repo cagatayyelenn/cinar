@@ -57,8 +57,8 @@ export default function Header() {
                   
                   {/* Mega Menu - Sharp Edges */}
                   <div className={cn(
-                    "absolute top-full left-0 w-[640px] bg-white border-2 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
-                    "transform origin-top"
+                    "absolute top-full left-1/2 -translate-x-1/2 w-[640px] bg-white border-2 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
+                    "origin-top"
                   )}>
                     {/* Left side: Brand Info */}
                     <div className="w-1/3 bg-gray-50 p-8 border-r border-gray-100 flex flex-col items-center justify-center">
