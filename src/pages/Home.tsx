@@ -180,7 +180,7 @@ export default function Home() {
           {brands.map((brand, idx) => (
             <Link 
               key={brand.id} 
-              to={`/servis/${brand.id}`} 
+              to={`/${brand.id}-yetkili-servisi`} 
               className="w-full md:w-auto bg-white p-6 md:p-10 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-colors duration-500 relative overflow-hidden h-48 md:h-64"
             >
               <div className="absolute top-4 left-4 md:top-6 md:left-6 font-mono text-sm md:text-base font-bold text-black group-hover:text-black transition-colors tracking-widest z-20">

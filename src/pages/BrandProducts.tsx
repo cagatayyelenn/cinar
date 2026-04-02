@@ -28,7 +28,7 @@ export default function BrandProducts() {
               <div className="flex items-center text-xs text-gray-400 mb-8 font-bold uppercase tracking-widest">
                 <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
                 <ChevronRight size={14} className="mx-2" />
-                <Link to={`/servis/${brand.id}`} className="hover:text-white transition-colors">{brand.name} Servisi</Link>
+                <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-white transition-colors">{brand.name} Servisi</Link>
                 <ChevronRight size={14} className="mx-2" />
                 <span className="text-white">Ürünler</span>
               </div>

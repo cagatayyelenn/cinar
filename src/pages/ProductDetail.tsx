@@ -29,7 +29,7 @@ export default function ProductDetail() {
         <div className="container mx-auto px-4 max-w-7xl flex items-center text-[10px] font-black uppercase tracking-widest text-gray-400 overflow-x-auto">
           <Link to="/" className="hover:text-black transition-colors">Anasayfa</Link>
           <ChevronRight size={12} className="mx-3 shrink-0" />
-          <Link to={`/servis/${brand.id}`} className="hover:text-black transition-colors">{brand.name} Servisi</Link>
+          <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black transition-colors">{brand.name} Servisi</Link>
           <ChevronRight size={12} className="mx-3 shrink-0" />
           <Link to={`/urunler/${brand.id}`} className="hover:text-black transition-colors">Ürünler</Link>
           <ChevronRight size={12} className="mx-3 shrink-0" />

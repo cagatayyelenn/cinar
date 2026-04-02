@@ -24,7 +24,7 @@ export default function ServiceDetail() {
         <div className="container mx-auto px-4 flex items-center text-sm text-black overflow-x-auto">
           <Link to="/" className="hover:text-black">Anasayfa</Link>
           <ChevronRight size={14} className="mx-2 shrink-0" />
-          <Link to={`/servis/${brand.id}`} className="hover:text-black">{brand.name} Servisi</Link>
+          <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black">{brand.name} Servisi</Link>
           <ChevronRight size={14} className="mx-2 shrink-0" />
           <span className="text-black font-medium truncate">{service.name}</span>
         </div>

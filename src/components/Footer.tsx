@@ -51,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-3.5">
               {brands.map(brand => (
                 <li key={brand.id}>
-                  <Link to={`/servis/${brand.id}`} className="text-sm text-slate-400 hover:text-white transition-colors flex items-center">
+                  <Link to={`/${brand.id}-yetkili-servisi`} className="text-sm text-slate-400 hover:text-white transition-colors flex items-center">
                     <span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>
                     {brand.name} Servisi
                   </Link>
