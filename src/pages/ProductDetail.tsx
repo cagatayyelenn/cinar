@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
@@ -5,6 +6,7 @@ import { ChevronRight, ArrowRight, ShieldCheck, FileText, Settings, Zap } from '
 
 export default function ProductDetail() {
   const { brandId, itemId } = useParams<{ brandId: string, itemId: string }>();
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   
   const product = products.find(p => p.id === itemId || p.id === `${brandId}-${itemId}`);
   const brand = brands.find(b => b.id === brandId);
@@ -41,11 +43,35 @@ export default function ProductDetail() {
         
         {/* Top Section: Image & Specs */}
         <div className="flex flex-col lg:flex-row gap-20 mb-32">
-          <div className="lg:w-1/2 flex justify-center items-center p-12 bg-gray-50 border border-gray-100 relative group overflow-hidden">
-            <div className="absolute top-8 left-8 text-[10px] font-black text-gray-300 uppercase tracking-[0.3em] z-10">
-              {brand.name} // {product.category.toUpperCase()}
+          <div className="lg:w-1/2 flex flex-col gap-4">
+            <div className="flex justify-center items-center p-12 bg-gray-50 border border-gray-100 relative group overflow-hidden min-h-[400px]">
+              <div className="absolute top-8 left-8 text-[10px] font-black text-gray-300 uppercase tracking-[0.3em] z-10">
+                {brand.name} // {product.category.toUpperCase()}
+              </div>
+              <img 
+                // @ts-ignore
+                src={product.images?.[activeImageIndex] || 'https://picsum.photos/seed/klima1/400/300'} 
+                alt={product.name} 
+                className="max-w-full max-h-[400px] w-auto h-auto object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-1000" 
+              />
             </div>
-            <img src={product.image} alt={product.name} className="max-w-full h-auto object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-1000" />
+            
+            {/* Thumbnails */}
+            {/* @ts-ignore */}
+            {product.images && product.images.length > 1 && (
+              <div className="flex gap-4 overflow-x-auto pb-4">
+                {/* @ts-ignore */}
+                {product.images.map((img: string, idx: number) => (
+                  <button 
+                    key={idx} 
+                    onClick={() => setActiveImageIndex(idx)}
+                    className={`w-24 h-24 shrink-0 border-2 overflow-hidden bg-gray-50 flex items-center justify-center transition-all ${activeImageIndex === idx ? 'border-black' : 'border-gray-100 hover:border-gray-300'}`}
+                  >
+                    <img src={img} alt={`${product.name} - Görsel ${idx + 1}`} className="max-w-full max-h-full p-2 object-contain mix-blend-multiply" />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
           
           <div className="lg:w-1/2">

@@ -135,7 +135,8 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                       {product.category}
                     </div>
                     <img 
-                      src={product.image} 
+                      // @ts-ignore
+                      src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
                       className="max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" 
                     />
@@ -147,10 +148,9 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     <p className="text-gray-500 text-sm mb-8 line-clamp-2 leading-relaxed">
                       {product.description}
                     </p>
-                    <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-100">
-                      <span className="text-2xl font-black text-black tracking-tight">{product.price}</span>
-                      <span className="w-12 h-12 bg-gray-50 text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors border border-gray-100 group-hover:border-black">
-                        <ChevronRight size={20} />
+                    <div className="mt-auto flex items-center justify-end pt-6 border-t border-gray-100">
+                      <span className="px-6 py-3 font-bold text-[10px] text-gray-500 uppercase tracking-widest bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors border border-gray-100 group-hover:border-black">
+                        Detayları İncele <ChevronRight size={14} className="ml-2" />
                       </span>
                     </div>
                   </div>

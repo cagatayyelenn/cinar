@@ -112,11 +112,16 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 {brandProducts.length > 0 ? brandProducts.map(product => (
                   <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col">
                     <div className="bg-gray-50 aspect-square flex items-center justify-center p-6 mb-6 border border-gray-100 group-hover:border-black transition-colors overflow-hidden">
-                      <img src={product.image} alt={product.name} className="max-w-full h-auto object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" />
+                      {/* @ts-ignore */}
+                      <img src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} alt={product.name} className="max-w-full h-auto object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" />
                     </div>
                     <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 block">{product.category}</span>
                     <h3 className="font-bold text-black mb-3 line-clamp-2 uppercase tracking-tight leading-tight group-hover:text-gray-600 transition-colors">{product.name}</h3>
-                    <p className="text-lg font-black text-black mt-auto">{product.price}</p>
+                    <div className="mt-auto flex items-center pt-4">
+                      <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest flex items-center group-hover:text-black transition-colors">
+                        Detaylı İncele <ChevronRight size={14} className="ml-1" />
+                      </span>
+                    </div>
                   </Link>
                 )) : (
                   <p className="text-gray-500 col-span-3 italic">Bu markaya ait ürünler yakında eklenecektir.</p>

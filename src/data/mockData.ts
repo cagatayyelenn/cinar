@@ -23,16 +23,16 @@ export const brands = [
 ];
 
 export const products = [
-  { id: 'climart-tavan-tipi-klima', brandId: 'climart', name: 'Climart Tavan Tipi Klima 12V', image: 'https://picsum.photos/seed/klima1/400/300', description: 'Yüksek soğutma kapasiteli ticari araç kliması.', category: 'Klima', price: '₺15.000' },
-  { id: 'climart-panelvan-klima', brandId: 'climart', name: 'Climart Panelvan Klima 24V', image: 'https://picsum.photos/seed/klima11/400/300', description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima', price: '₺16.500' },
-  { id: 'climart-tepe-klimasi', brandId: 'climart', name: 'Climart Tepe Kliması', image: 'https://picsum.photos/seed/klima12/400/300', description: 'Kamyon ve tırlar için aerodinamik tepe kliması.', category: 'Klima', price: '₺18.000' },
-  { id: 'climart-yedek-parca-seti', brandId: 'climart', name: 'Climart Orijinal Filtre Seti', image: 'https://picsum.photos/seed/klima13/400/300', description: 'Climart klimaları için orijinal polen ve hava filtre seti.', category: 'Yedek Parça', price: '₺1.200' },
-  { id: 'yilkar-panelvan-klima', brandId: 'yilkar', name: 'Yılkar Panelvan Klima YK-12', image: 'https://picsum.photos/seed/klima2/400/300', description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima', price: '₺12.500' },
-  { id: 'yilkar-tavan-klimasi', brandId: 'yilkar', name: 'Yılkar Tavan Tipi Klima YK-24', image: 'https://picsum.photos/seed/klima4/400/300', description: 'Minibüs ve midibüsler için ideal tavan tipi klima sistemi.', category: 'Klima', price: '₺16.000' },
-  { id: 'yilkar-kuru-isitici', brandId: 'yilkar', name: 'Yılkar Kuru Tip Isıtıcı (Webasto)', image: 'https://picsum.photos/seed/isitici2/400/300', description: 'Düşük yakıt tüketimi ile kabin içi hızlı ısıtma çözümü.', category: 'Isıtıcı', price: '₺9.500' },
-  { id: 'webasto-sulu-isitici', brandId: 'webasto', name: 'Webasto Sulu Isıtıcı', image: 'https://picsum.photos/seed/isitici1/400/300', description: 'Motor bağımsız sulu ısıtıcı sistemi.', category: 'Isıtıcı', price: '₺18.000' },
-  { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', image: 'https://picsum.photos/seed/klima3/400/300', description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima', price: '₺14.000' },
-  { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', image: 'https://picsum.photos/seed/kompresor1/400/300', description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça', price: '₺8.500' },
+  { id: 'climart-tavan-tipi-klima', brandId: 'climart', name: 'Climart Tavan Tipi Klima 12V', images: ['https://picsum.photos/seed/klima1/400/300'], description: 'Yüksek soğutma kapasiteli ticari araç kliması.', category: 'Klima' },
+  { id: 'climart-panelvan-klima', brandId: 'climart', name: 'Climart Panelvan Klima 24V', images: ['https://picsum.photos/seed/klima11/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
+  { id: 'climart-tepe-klimasi', brandId: 'climart', name: 'Climart Tepe Kliması', images: ['https://picsum.photos/seed/klima12/400/300'], description: 'Kamyon ve tırlar için aerodinamik tepe kliması.', category: 'Klima' },
+  { id: 'climart-yedek-parca-seti', brandId: 'climart', name: 'Climart Orijinal Filtre Seti', images: ['https://picsum.photos/seed/klima13/400/300'], description: 'Climart klimaları için orijinal polen ve hava filtre seti.', category: 'Yedek Parça' },
+  { id: 'yilkar-panelvan-klima', brandId: 'yilkar', name: 'Yılkar Panelvan Klima YK-12', images: ['https://picsum.photos/seed/klima2/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
+  { id: 'yilkar-tavan-klimasi', brandId: 'yilkar', name: 'Yılkar Tavan Tipi Klima YK-24', images: ['https://picsum.photos/seed/klima4/400/300'], description: 'Minibüs ve midibüsler için ideal tavan tipi klima sistemi.', category: 'Klima' },
+  { id: 'yilkar-kuru-isitici', brandId: 'yilkar', name: 'Yılkar Kuru Tip Isıtıcı (Webasto)', images: ['https://picsum.photos/seed/isitici2/400/300'], description: 'Düşük yakıt tüketimi ile kabin içi hızlı ısıtma çözümü.', category: 'Isıtıcı' },
+  { id: 'webasto-sulu-isitici', brandId: 'webasto', name: 'Webasto Sulu Isıtıcı', images: ['https://picsum.photos/seed/isitici1/400/300'], description: 'Motor bağımsız sulu ısıtıcı sistemi.', category: 'Isıtıcı' },
+  { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
+  { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
 ];
 
 export const services = [
