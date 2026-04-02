@@ -38,14 +38,9 @@ export default function Header() {
                         : "text-black hover:bg-gray-50 hover:border-gray-100"
                     )}
                   >
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className={cn(
-                        "h-6 w-auto object-contain transition-all duration-300",
-                        isActive ? "brightness-0 invert" : "grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100"
-                      )}
-                    />
+                    <span className="font-black text-sm uppercase tracking-wide">
+                      {brand.name}
+                    </span>
                     <ChevronDown size={14} className={cn("ml-2 transition-transform group-hover:rotate-180", isActive ? "text-white" : "text-gray-400")} />
                   </Link>
 
