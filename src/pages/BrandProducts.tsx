@@ -129,17 +129,17 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
               {brandProducts.length > 0 ? brandProducts.map(product => (
-                <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col h-full bg-[#132235] transition-all duration-300 relative border border-white/5 hover:border-white/20">
+                <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
                   {/* Top Image Section */}
-                  <div className="relative h-64 bg-[#f0f3f6] flex items-center justify-center p-8 overflow-hidden">
-                    <div className="absolute bottom-0 left-0 bg-[#dbe825] px-6 py-2 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left group-hover:scale-110">
+                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
+                    <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left">
                       YENİ
                     </div>
                     {/* @ts-ignore */}
                     <img 
                       src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
-                      className="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-700" 
+                      className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-90" 
                     />
                   </div>
                   {/* Card Content Section */}
@@ -147,24 +147,21 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block opacity-80">
                       {product.category} | {brand.name}
                     </span>
-                    <h3 className="font-bold text-white text-2xl mb-4 leading-snug">
+                    <h3 className="font-bold text-black text-2xl mb-8 leading-snug group-hover:text-gray-600 transition-colors">
                       {product.name}
                     </h3>
-                    <p className="text-gray-400 text-sm mb-8 line-clamp-3 leading-relaxed">
-                      {product.description}
-                    </p>
                     
                     {/* Suitable for Section */}
-                    <div className="mt-auto border-t border-white/10 pt-6">
-                      <p className="text-white font-bold text-sm mb-4">Bunlar için uygundur:</p>
-                      <div className="flex flex-wrap gap-4 text-white/70 mb-8">
+                    <div className="mt-auto border-t border-gray-100 pt-6">
+                      <p className="text-black font-bold text-sm mb-4">Bunlar için uygundur:</p>
+                      <div className="flex flex-wrap gap-4 text-black mb-8 grayscale group-hover:grayscale-0 transition-all duration-500">
                         <img src="/araba.svg" alt="Araba" className="w-8 h-8" title="Otomobil" />
                         <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Hafif Ticari" />
                         <img src="/otobus.svg" alt="Otobüs" className="w-8 h-8" title="Minibüs / Otobüs" />
                       </div>
                       <div className="flex items-center justify-end">
-                        <span className="font-bold text-sm text-[#dbe825] flex items-center group-hover:text-yellow-200 transition-colors">
-                          Ürün Detayları <ArrowRight size={18} className="ml-2 transition-transform group-hover:translate-x-2" />
+                        <span className="font-bold text-sm text-black flex items-center transition-colors">
+                          Ürün Detayları <ArrowRight size={18} className="ml-2" />
                         </span>
                       </div>
                     </div>
