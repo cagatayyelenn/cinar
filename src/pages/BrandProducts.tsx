@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
-import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck } from 'lucide-react';
+import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, Car, Truck, Bus, Tractor, ArrowRight } from 'lucide-react';
 
 export default function BrandProducts({ brandId: propBrandId }: { brandId?: string }) {
   const { brandId: paramBrandId, categoryId } = useParams<{ brandId: string; categoryId: string }>();
@@ -129,29 +129,45 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
               {brandProducts.length > 0 ? brandProducts.map(product => (
-                <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col h-full bg-white border border-gray-200 hover:border-black transition-all duration-300">
-                  <div className="relative h-64 bg-gray-50 flex items-center justify-center p-8 overflow-hidden border-b border-gray-100">
-                    <div className="absolute top-4 left-4 bg-black px-3 py-1 text-xs font-bold text-white uppercase tracking-widest z-10">
-                      {product.category}
+                <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col h-full bg-[#132235] transition-all duration-300 relative border border-white/5 hover:border-white/20">
+                  {/* Top Image Section */}
+                  <div className="relative h-64 bg-[#f0f3f6] flex items-center justify-center p-8 overflow-hidden">
+                    <div className="absolute bottom-0 left-0 bg-[#dbe825] px-6 py-2 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left group-hover:scale-110">
+                      YENİ
                     </div>
+                    {/* @ts-ignore */}
                     <img 
-                      // @ts-ignore
                       src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
-                      className="max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" 
+                      className="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-700" 
                     />
                   </div>
+                  {/* Card Content Section */}
                   <div className="p-8 flex flex-col flex-grow">
-                    <h3 className="font-bold text-black text-lg mb-3 line-clamp-2 uppercase tracking-tight leading-snug group-hover:text-gray-600 transition-colors">
+                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block opacity-80">
+                      {product.category} | {brand.name}
+                    </span>
+                    <h3 className="font-bold text-white text-2xl mb-4 leading-snug">
                       {product.name}
                     </h3>
-                    <p className="text-gray-500 text-sm mb-8 line-clamp-2 leading-relaxed">
+                    <p className="text-gray-400 text-sm mb-8 line-clamp-3 leading-relaxed">
                       {product.description}
                     </p>
-                    <div className="mt-auto flex items-center justify-end pt-6 border-t border-gray-100">
-                      <span className="px-6 py-3 font-bold text-[10px] text-gray-500 uppercase tracking-widest bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors border border-gray-100 group-hover:border-black">
-                        Detayları İncele <ChevronRight size={14} className="ml-2" />
-                      </span>
+                    
+                    {/* Suitable for Section */}
+                    <div className="mt-auto border-t border-white/10 pt-6">
+                      <p className="text-white font-bold text-sm mb-4">Bunlar için uygundur:</p>
+                      <div className="flex flex-wrap gap-4 text-white/70 mb-8">
+                        <Car size={32} strokeWidth={1} />
+                        <Truck size={32} strokeWidth={1} />
+                        <Bus size={32} strokeWidth={1} />
+                        <Tractor size={32} strokeWidth={1} />
+                      </div>
+                      <div className="flex items-center justify-end">
+                        <span className="font-bold text-sm text-[#dbe825] flex items-center group-hover:text-yellow-200 transition-colors">
+                          Ürün Detayları <ArrowRight size={18} className="ml-2 transition-transform group-hover:translate-x-2" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </Link>
