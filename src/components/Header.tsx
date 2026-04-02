@@ -60,17 +60,31 @@ export default function Header() {
                       <div className="flex-1">
                         <h4 className="font-black text-black text-xs uppercase tracking-[0.2em] mb-6 border-b-2 border-black pb-2">Ürünler</h4>
                         <ul className="space-y-4">
-                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Tüm Ürünler</Link></li>
-                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Klimalar</Link></li>
-                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Isıtıcılar</Link></li>
+                          {/* @ts-ignore */}
+                          {brand.menuProducts ? brand.menuProducts.map((p, i) => (
+                            <li key={i}><Link to={`/urunler/${brand.id}?kategori=${p.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {p.label}</Link></li>
+                          )) : (
+                            <>
+                              <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Tüm Ürünler</Link></li>
+                              <li><Link to={`/urunler/${brand.id}?kategori=klimalar`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Klimalar</Link></li>
+                              <li><Link to={`/urunler/${brand.id}?kategori=isiticilar`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Isıtıcılar</Link></li>
+                            </>
+                          )}
                         </ul>
                       </div>
                       <div className="flex-1">
                         <h4 className="font-black text-black text-xs uppercase tracking-[0.2em] mb-6 border-b-2 border-black pb-2">Hizmetler</h4>
                         <ul className="space-y-4">
-                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
-                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Bakım & Onarım</Link></li>
-                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Gaz Dolumu</Link></li>
+                          {/* @ts-ignore */}
+                          {brand.menuServices ? brand.menuServices.map((s, i) => (
+                            <li key={i}><Link to={`/${brand.id}-yetkili-servisi#${s.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {s.label}</Link></li>
+                          )) : (
+                            <>
+                              <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
+                              <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Bakım & Onarım</Link></li>
+                              <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Gaz Dolumu</Link></li>
+                            </>
+                          )}
                         </ul>
                       </div>
                     </div>

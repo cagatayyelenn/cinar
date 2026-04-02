@@ -1,7 +1,21 @@
 const makeLogo = (text: string) => `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="900" fill="#0f2851" letter-spacing="-1">${text}</text></svg>`)}`;
 
 export const brands = [
-  { id: 'climart', name: 'Climart', logo: '/logolar/climart-logo1.png' },
+  { 
+    id: 'climart', 
+    name: 'Climart', 
+    logo: '/logolar/climart-logo1.png',
+    menuProducts: [
+      { label: 'Ticari Araç Klimaları', path: 'ticari-arac-klimalari' },
+      { label: 'Ticari Araç Soğutucuları', path: 'ticari-arac-sogutuculari' },
+      { label: 'Özel Uygulamalar', path: 'ozel-uygulamalar' }
+    ],
+    menuServices: [
+      { label: 'Climart Bakım', path: 'bakim' },
+      { label: 'Climart Onarım', path: 'onarim' },
+      { label: 'Climart Yedek Parça', path: 'yedek-parca' }
+    ]
+  },
   { id: 'yilkar', name: 'Yılkar', logo: '/logolar/yilkar-logo.png' },
   { id: 'webasto', name: 'Webasto', logo: '/logolar/webasto-logo1.png' },
   { id: 'coolman', name: 'Coolman', logo: '/logolar/coolman-logo1.png' },
