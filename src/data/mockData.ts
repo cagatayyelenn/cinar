@@ -8,6 +8,15 @@ export const brands = [
     heroDescription: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
     whyTitle: 'Ticari Araç Klimaları ve Özel Soğutma Çözümleri',
     whyDescription: 'Çınar Oto Klima, Climart yetkili servisi olarak ticari araçlarınızın iklimlendirme ihtiyaçlarına profesyonel çözümler sunar. Minibüs, otobüs ve panelvan tipi ticari araç klimaları, frigofirik soğutucular ve projeye özel iklimlendirme uygulamaları ile işinizin sürekliliğini sağlıyoruz. Yüksek performanslı soğutma sistemleri ve orijinal yedek parça desteğiyle her zaman yanınızdayız.',
+    seo: {
+      title: 'Climart Yetkili Servisi | Ticari Araç Klima ve Soğutma Çözümleri',
+      description: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
+      keywords: 'Climart yetkili servisi, ticari araç klimaları, ticari araç soğutucuları, özel soğutma uygulamaları, Climart servis, araç soğutma sistemleri',
+      ogTitle: 'Climart Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Ticari araçlar için Climart soğutma ve klima sistemlerinde yetkili servis desteği.',
+      ogUrl: 'https://cinarotoklima.com/climart-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/climart-yetkili-servisi'
+    },
     menuProducts: [
       { label: 'Ticari Araç Klimaları', path: 'ticari-arac-klimalari' },
       { label: 'Ticari Araç Soğutucuları', path: 'ticari-arac-sogutuculari' },

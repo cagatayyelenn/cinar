@@ -18,8 +18,21 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
   return (
     <div className="bg-white min-h-screen pb-20">
       <Helmet>
-        <title>{brand.name} Yetkili Servisi | Çınar Oto Klima</title>
-        <meta name="description" content={`${brand.name} markalı ticari araç klimaları ve ısıtıcı sistemleri için yetkili servis, montaj, bakım ve orijinal yedek parça hizmetleri.`} />
+        {/* @ts-ignore */}
+        <title>{brand.seo?.title || `${brand.name} Yetkili Servisi | Çınar Oto Klima`}</title>
+        {/* @ts-ignore */}
+        <meta name="description" content={brand.seo?.description || `${brand.name} markalı ticari araç klimaları ve ısıtıcı sistemleri için yetkili servis, montaj, bakım ve orijinal yedek parça hizmetleri.`} />
+        {/* @ts-ignore */}
+        {brand.seo?.keywords && <meta name="keywords" content={brand.seo.keywords} />}
+        {/* @ts-ignore */}
+        {brand.seo?.ogTitle && <meta property="og:title" content={brand.seo.ogTitle} />}
+        {/* @ts-ignore */}
+        {brand.seo?.ogDescription && <meta property="og:description" content={brand.seo.ogDescription} />}
+        {/* @ts-ignore */}
+        {brand.seo?.ogUrl && <meta property="og:url" content={brand.seo.ogUrl} />}
+        <meta property="og:type" content="website" />
+        {/* @ts-ignore */}
+        {brand.seo?.canonical && <link rel="canonical" href={brand.seo.canonical} />}
       </Helmet>
 
       {/* Hero Section */}
