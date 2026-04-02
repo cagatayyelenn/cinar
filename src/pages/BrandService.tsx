@@ -43,10 +43,10 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               <div className="flex items-center text-xs text-gray-400 mb-8 font-bold uppercase tracking-widest">
                 <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
                 <ChevronRight size={14} className="mx-2" />
-                <span className="text-white uppercase tracking-widest">{brand.name} Servisi</span>
+                <span className="text-white uppercase tracking-widest">{brand.name} Yetkili Servisi</span>
               </div>
               <div className="inline-block border border-white px-4 py-1 text-xs font-bold mb-6 uppercase tracking-widest">
-                Resmi Yetkili Servis
+                Çınar Oto Klima
               </div>
               <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none">
                 {brand.name} <br/><span className="text-gray-500 font-light">Yetkili Servisi</span>
@@ -57,7 +57,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </p>
             </div>
             <div className="bg-white p-8 shrink-0 border border-gray-800">
-              <img src={brand.logo} alt={brand.name} className="h-12 w-auto object-contain grayscale opacity-80" />
+              <img src={brand.logo} alt={brand.name} className="h-20 md:h-24 w-auto object-contain" />
             </div>
           </div>
         </div>
