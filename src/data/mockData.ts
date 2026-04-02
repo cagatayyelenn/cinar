@@ -36,7 +36,9 @@ export const products = [
 ];
 
 export const services = [
-  { id: 'climart-ticari-arac-klimalari', brandId: 'climart', name: 'Ticari Araç Klimaları Bakım ve Montajı', image: 'https://picsum.photos/seed/servis1/600/400', description: 'Climart ticari araç klimalarının profesyonel montajı ve periyodik bakımı.' },
+  { id: 'climart-bakim', brandId: 'climart', name: 'Climart Bakım', image: 'https://picsum.photos/seed/servis1/600/400', description: 'Climart ticari araç soğutucu ve klimalarının uzun ömürlü olması için periyodik, detaylı bakım hizmeti.' },
+  { id: 'climart-onarim', brandId: 'climart', name: 'Climart Onarım', image: 'https://picsum.photos/seed/serviscoolman/600/400', description: 'Klimalarınızda meydana gelen tüm arızaların uzman teknisyenlerimiz tarafından kalıcı ve hızlı onarımı.' },
+  { id: 'climart-yedek-parca', brandId: 'climart', name: 'Climart Yedek Parça', image: 'https://picsum.photos/seed/servisdelphi/600/400', description: 'Cihazlarınızın tam performansını koruması için garantili, %100 orijinal ve onaylı Climart yedek parçaları.' },
   { id: 'yilkar-ticari-arac-klimalari', brandId: 'yilkar', name: 'Yılkar Ticari Araç Klimaları Bakım ve Montajı', image: 'https://picsum.photos/seed/servisyilkar/600/400', description: 'Yılkar marka ticari araç klimalarının profesyonel montajı, onarımı ve periyodik bakımı.' },
   { id: 'webasto-ticari-arac-klimalari', brandId: 'webasto', name: 'Webasto Isıtıcı ve Klima Bakımı', image: 'https://picsum.photos/seed/serviswebasto/600/400', description: 'Webasto sistemlerinizin kışa hazırlığı, arıza onarımı ve periyodik bakımı.' },
   { id: 'coolman-ticari-arac-klimalari', brandId: 'coolman', name: 'Coolman Tepe Kliması Montajı', image: 'https://picsum.photos/seed/serviscoolman/600/400', description: 'Coolman tepe klimalarının profesyonel montajı ve garantili bakım hizmetleri.' },

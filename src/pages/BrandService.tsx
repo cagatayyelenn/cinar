@@ -12,7 +12,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
 
-  const brandProducts = products.filter(p => p.brandId === activeBrandId).slice(0, 3);
+  const brandProducts = products.filter(p => p.brandId === activeBrandId).slice(0, 9);
   const brandServices = services.filter(s => s.brandId === activeBrandId);
 
   return (
@@ -106,7 +106,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 <h2 className="text-3xl font-black text-black uppercase tracking-tight leading-tight">
                   {brand.name} <span className="text-gray-400">Ürünleri</span>
                 </h2>
-                <Link to={`/urunler/${brand.id}`} className="text-xs font-black text-black uppercase tracking-widest hover:text-gray-600 transition-colors">Tümünü Gör</Link>
+                <Link to={`/${brand.id}/urunler`} className="text-xs font-black text-black uppercase tracking-widest hover:text-gray-600 transition-colors">Tümünü Gör</Link>
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {brandProducts.length > 0 ? brandProducts.map(product => (
