@@ -35,29 +35,29 @@ export default function Header() {
                   onMouseEnter={() => setActiveBrand(brand.id)}
                   onMouseLeave={() => setActiveBrand(null)}
                 >
-                  <Link 
-                    to={`/servis/${brand.id}`} 
+                  <Link
+                    to={`/servis/${brand.id}`}
                     className={cn(
                       "px-6 py-3 transition-all duration-200 flex items-center h-16 border-x border-transparent",
-                      isActive 
-                        ? "bg-black text-white border-black" 
+                      isActive
+                        ? "bg-black text-white border-black"
                         : "text-black hover:bg-gray-50 hover:border-gray-100"
                     )}
                   >
-                    <img 
-                      src={brand.logo} 
-                      alt={brand.name} 
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
                       className={cn(
                         "h-6 w-auto object-contain transition-all duration-300",
                         isActive ? "brightness-0 invert" : "grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100"
-                      )} 
+                      )}
                     />
                     <ChevronDown size={14} className={cn("ml-2 transition-transform group-hover:rotate-180", isActive ? "text-white" : "text-gray-400")} />
                   </Link>
-                  
+
                   {/* Mega Menu - Sharp Edges */}
                   <div className={cn(
-                    "absolute top-full left-1/2 -translate-x-1/2 w-[640px] bg-white border-2 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
+                    "absolute top-full left-[44%] -translate-x-1/2 w-[700px] bg-white border-2 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
                     "origin-top"
                   )}>
                     {/* Left side: Brand Info */}
@@ -66,23 +66,23 @@ export default function Header() {
                       <h3 className="font-black text-black text-xl mb-4 uppercase tracking-tight">{brand.name}</h3>
                       <Link to={`/servis/${brand.id}`} className="text-[10px] text-white font-black bg-black px-4 py-2 uppercase tracking-widest hover:bg-gray-800 transition-colors">Yetkili Servis &rarr;</Link>
                     </div>
-                    
+
                     {/* Right side: Links */}
                     <div className="w-2/3 p-8 flex space-x-12">
                       <div className="flex-1">
                         <h4 className="font-black text-black text-xs uppercase tracking-[0.2em] mb-6 border-b-2 border-black pb-2">Ürünler</h4>
                         <ul className="space-y-4">
-                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black"/> Tüm Ürünler</Link></li>
-                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black"/> Klimalar</Link></li>
-                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black"/> Isıtıcılar</Link></li>
+                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Tüm Ürünler</Link></li>
+                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Klimalar</Link></li>
+                          <li><Link to={`/urunler/${brand.id}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Isıtıcılar</Link></li>
                         </ul>
                       </div>
                       <div className="flex-1">
                         <h4 className="font-black text-black text-xs uppercase tracking-[0.2em] mb-6 border-b-2 border-black pb-2">Hizmetler</h4>
                         <ul className="space-y-4">
-                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black"/> Montaj</Link></li>
-                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black"/> Bakım & Onarım</Link></li>
-                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black"/> Gaz Dolumu</Link></li>
+                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
+                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Bakım & Onarım</Link></li>
+                          <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Gaz Dolumu</Link></li>
                         </ul>
                       </div>
                     </div>
