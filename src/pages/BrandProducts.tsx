@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
-import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, ArrowRight } from 'lucide-react';
+import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, ArrowRight, XCircle } from 'lucide-react';
 
 export default function BrandProducts({ brandId: propBrandId }: { brandId?: string }) {
   const { brandId: paramBrandId, categoryId } = useParams<{ brandId: string; categoryId: string }>();
   const navigate = useNavigate();
   const brandId = propBrandId || paramBrandId;
-  const brand = brands.find(b => b.id === brandId);
+  const brand = brands.find(b => b.id.toLowerCase() === brandId?.toLowerCase());
   
   // Initialize from URL param if exists
   const initialCategory = brand?.menuProducts?.find(m => m.path === categoryId)?.label || null;
@@ -22,11 +22,9 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
       if (cat) {
         setSelectedCategory(cat.label);
       } else {
-        // Fallback for unknown categoryId
         setSelectedCategory(null);
       }
     } else {
-      // If it's the general /brand/urunler route, reset filter
       setSelectedCategory(null);
     }
   }, [categoryId, brand]);
@@ -35,14 +33,16 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
 
-  const brandProducts = products.filter(p => p.brandId === brandId);
+  const brandProducts = products.filter(p => p.brandId.toLowerCase() === brandId?.toLowerCase());
   
   // Dynamic categories based on brand menu or defaults
   const categories = brand.menuProducts || [];
 
   const filteredProducts = brandProducts.filter(p => {
-    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                         p.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const searchLower = searchQuery.toLocaleLowerCase('tr-TR').trim();
+    const matchesSearch = 
+      (p.name || '').toLocaleLowerCase('tr-TR').includes(searchLower) || 
+      (p.description || '').toLocaleLowerCase('tr-TR').includes(searchLower);
     
     if (!selectedCategory) return matchesSearch;
     return p.category === selectedCategory && matchesSearch;
@@ -82,7 +82,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 {brand.name} <br/><span className="text-gray-500 font-light">{selectedCategory || 'Ürünleri'}</span>
               </h1>
               <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
-                Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLowerCase() : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
+                Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLocaleLowerCase('tr-TR') : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
               </p>
             </div>
             <div className="bg-white p-8 shrink-0 border border-gray-800">
@@ -149,29 +149,37 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
           <div className="lg:w-3/4">
             
             {/* Top Bar */}
-            <div className="bg-white border border-gray-200 p-4 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="relative w-full sm:w-96">
+            <div className="bg-white border-2 border-black p-6 mb-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+              <div className="relative w-full sm:w-[400px]">
                 <input 
                   type="text" 
-                  placeholder="Ürün veya parça kodu ara..." 
+                  placeholder="Ürün adı veya kodu ile ara..." 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-black focus:bg-white transition-all rounded-none"
+                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border-2 border-black text-base font-bold focus:outline-none focus:bg-white transition-all rounded-none placeholder:text-gray-400"
                 />
-                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                <Search size={22} className="absolute left-4 top-1/2 -translate-y-1/2 text-black" />
+                {searchQuery && (
+                  <button 
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black transition-colors"
+                  >
+                    <XCircle size={18} />
+                  </button>
+                )}
               </div>
-              <div className="text-xs text-gray-500 font-bold uppercase tracking-widest">
-                Toplam <strong className="text-black text-sm">{filteredProducts.length}</strong> ürün listeleniyor
+              <div className="text-[10px] text-black font-black uppercase tracking-[0.2em] bg-gray-100 px-4 py-2 border border-black/10">
+                Bulunan: <span className="text-lg ml-1 font-black">{filteredProducts.length}</span>
               </div>
             </div>
 
             {/* Product Grid */}
-            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
               {filteredProducts.length > 0 ? filteredProducts.map(product => (
-                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
+                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-200 hover:border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden rounded-none">
                   {/* Top Image Section */}
-                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
-                    <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left">
+                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-100">
+                    <div className="absolute top-4 left-4 bg-[#dbe825] border border-black px-4 py-1 text-[10px] font-black text-black tracking-widest z-10">
                       YENİ
                     </div>
                     <img 
@@ -185,35 +193,41 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block opacity-80">
                       {product.category} | {brand.name}
                     </span>
-                    <h3 className="font-bold text-black text-2xl mb-8 leading-snug group-hover:text-gray-600 transition-colors">
+                    <h3 className="font-bold text-black text-xl mb-8 leading-tight group-hover:underline decoration-2 underline-offset-4">
                       {product.name}
                     </h3>
                     
                     {/* Suitable for Section */}
                     <div className="mt-auto border-t border-gray-100 pt-6">
-                      <p className="text-black font-bold text-sm mb-4">Bunlar için uygundur:</p>
+                      <p className="text-black font-black text-[10px] uppercase tracking-widest mb-4 opacity-60">Kullanım Alanı:</p>
                       <div className="flex flex-wrap gap-4 text-black mb-8 grayscale group-hover:grayscale-0 transition-all duration-500">
                         <img src="/araba.svg" alt="Araba" className="w-8 h-8" title="Otomobil" />
                         <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Hafif Ticari" />
                         <img src="/otobus.svg" alt="Otobüs" className="w-8 h-8" title="Minibüs / Otobüs" />
                       </div>
                       <div className="flex items-center justify-end">
-                        <span className="font-bold text-sm text-black flex items-center transition-colors">
-                          Ürün Detayları <ArrowRight size={18} className="ml-2" />
+                        <span className="font-black text-xs uppercase tracking-widest text-black flex items-center group-hover:translate-x-1 transition-transform">
+                          İncele <ArrowRight size={16} className="ml-2" />
                         </span>
                       </div>
                     </div>
                   </div>
                 </Link>
               )) : (
-                <div className="col-span-full py-32 flex flex-col items-center justify-center bg-gray-50 border border-gray-200">
-                  <div className="w-16 h-16 bg-white border border-gray-200 flex items-center justify-center mb-6">
-                    <Search size={24} className="text-gray-400" />
+                <div className="col-span-full py-32 flex flex-col items-center justify-center bg-gray-50 border-2 border-dashed border-gray-200">
+                  <div className="w-20 h-20 bg-white border-2 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <Search size={32} className="text-black" />
                   </div>
-                  <h3 className="text-xl font-black text-black mb-3 uppercase tracking-tight">Ürün Bulunamadı</h3>
-                  <p className="text-gray-500 text-center max-w-md text-sm leading-relaxed">
-                    Aramanızla veya seçili kategoriyle eşleşen ürün bulunamadı. Lütfen filtreleri sıfırlayıp tekrar deneyin.
+                  <h3 className="text-2xl font-black text-black mb-4 uppercase tracking-tighter">Sonuç Bulunamadı</h3>
+                  <p className="text-gray-500 text-center max-w-sm text-sm leading-relaxed mb-8">
+                    "<strong>{searchQuery}</strong>" aramasıyla eşleşen ürün bulunamadı. Lütfen farklı anahtar kelimeler deneyin.
                   </p>
+                  <button 
+                    onClick={() => setSearchQuery('')}
+                    className="bg-black text-white px-8 py-4 font-black text-xs uppercase tracking-[0.2em] hover:bg-gray-800 transition-colors"
+                  >
+                    Aramayı Temizle
+                  </button>
                 </div>
               )}
             </div>
