@@ -25,14 +25,11 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
         {/* @ts-ignore */}
         {brand.seo?.keywords && <meta name="keywords" content={brand.seo.keywords} />}
         {/* @ts-ignore */}
-        {brand.seo?.ogTitle && <meta property="og:title" content={brand.seo.ogTitle} />}
+        <meta property="og:title" content={brand.seo?.ogTitle || `${brand.name} Yetkili Servisi`} />
         {/* @ts-ignore */}
-        {brand.seo?.ogDescription && <meta property="og:description" content={brand.seo.ogDescription} />}
-        {/* @ts-ignore */}
-        {brand.seo?.ogUrl && <meta property="og:url" content={brand.seo.ogUrl} />}
+        <meta property="og:description" content={brand.seo?.ogDescription || `${brand.name} markalı araç klimaları için uzman servis desteği.`} />
         <meta property="og:type" content="website" />
-        {/* @ts-ignore */}
-        {brand.seo?.canonical && <link rel="canonical" href={brand.seo.canonical} />}
+        <link rel="canonical" href={brand.seo?.canonical || `https://cinarotoklima.com/${brand.id}-yetkili-servisi`} />
       </Helmet>
 
       {/* Hero Section */}

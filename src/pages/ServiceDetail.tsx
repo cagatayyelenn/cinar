@@ -19,7 +19,13 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
   return (
     <>
       <Helmet>
-        <title>{service.name} | {brand.name} Yetkili Servisi</title>
+        <title>{service.name} | {brand.name} Yetkili Servisi - Çınar Oto Klima</title>
+        <meta name="description" content={service.description || `${brand.name} yetkili servisi olarak sunduğumuz ${service.name} hizmeti hakkında detaylı bilgi, randevu ve uzman desteği.`} />
+        <meta name="keywords" content={`${service.name}, ${brand.name} servisi, oto klima bakımı, ticari araç klima onarımı, çınar oto klima`} />
+        <meta property="og:title" content={`${service.name} | ${brand.name} Yetkili Servisi`} />
+        <meta property="og:description" content={service.description} />
+        <meta property="og:image" content={service.image || ''} />
+        <link rel="canonical" href={`https://cinarotoklima.com/${brand.id}-yetkili-servisi`} />
       </Helmet>
 
       {/* Breadcrumb */}

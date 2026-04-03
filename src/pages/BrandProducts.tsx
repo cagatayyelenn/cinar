@@ -59,11 +59,22 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
     }
   };
 
+  const pageTitle = selectedCategory 
+    ? `${selectedCategory} | ${brand.name} Ürünleri - Çınar Oto Klima`
+    : `${brand.name} Tüm Ürünleri ve Yedek Parçaları | Çınar Oto Klima`;
+
+  const pageDescription = selectedCategory
+    ? `${brand.name} markalı orijinal ${selectedCategory.toLocaleLowerCase('tr-TR')} modellerini keşfedin. En uygun fiyatlar ve yetkili servis güvencesiyle.`
+    : `${brand.name} markalı orijinal klimalar, ısıtıcılar ve %100 orijinal yedek parçalar. Çınar Oto Klima yetkili servis güvencesiyle tüm ürünler.`;
+
   return (
     <div className="bg-white min-h-screen pb-20">
       <Helmet>
-        <title>{brand.name} Ürünleri ve Yedek Parçaları | Çınar Oto Klima</title>
-        <meta name="description" content={`${brand.name} markalı orijinal klimalar, ısıtıcılar ve yedek parçalar. En uygun fiyatlar ve yetkili servis güvencesiyle.`} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <link rel="canonical" href={selectedCategory ? `https://cinarotoklima.com/${brand.id}/${categoryId}` : `https://cinarotoklima.com/${brand.id}/urunler`} />
       </Helmet>
 
       {/* Hero Section */}

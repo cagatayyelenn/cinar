@@ -24,10 +24,21 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
   const boldPart = nameParts.slice(0, Math.min(3, nameParts.length)).join(' ');
   const lightPart = nameParts.slice(Math.min(3, nameParts.length)).join(' ');
 
+  const pageDescription = product.description || `${brand.name} markalı ${product.name} ürünü hakkında detaylı teknik bilgiler ve orijinal yedek parça seçenekleri. Yetkili servis güvencesiyle.`;
+  const canonicalUrl = `https://cinarotoklima.com/${brand.id}-${product.id}`;
+
   return (
     <div className="bg-white min-h-screen">
       <Helmet>
-        <title>{product.name} | {brand.name} Yetkili Servisi</title>
+        <title>{product.name} | {brand.name} Ürünleri - Çınar Oto Klima</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="keywords" content={`${product.name}, ${brand.name}, oto klima, ticari araç klima, yedek parça, çınar oto klima, ${product.category}`} />
+        <meta property="og:title" content={`${product.name} | ${brand.name} Ürünleri`} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={product.images?.[0] || ''} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
       {/* Breadcrumb - Sharp & Minimal */}
