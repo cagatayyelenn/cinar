@@ -23,24 +23,15 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
 
   const brandProducts = products.filter(p => p.brandId === brandId);
   
-  const counts = {
-    total: brandProducts.length,
-    klima: brandProducts.filter(p => matchesKlima(p.category)).length,
-    isitici: brandProducts.filter(p => matchesIsitici(p.category)).length,
-    yedekParca: brandProducts.filter(p => matchesYedekParca(p.category)).length,
-  };
+  // Dynamic categories based on brand menu or defaults
+  const categories = brand.menuProducts ? brand.menuProducts.map(m => m.label) : ['Klima', 'Isıtıcı', 'Yedek Parça'];
 
   const filteredProducts = brandProducts.filter(p => {
     const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
                          p.description.toLowerCase().includes(searchQuery.toLowerCase());
     
     if (!selectedCategory) return matchesSearch;
-    
-    if (selectedCategory === 'klima') return matchesKlima(p.category) && matchesSearch;
-    if (selectedCategory === 'isitici') return matchesIsitici(p.category) && matchesSearch;
-    if (selectedCategory === 'yedek-parca') return matchesYedekParca(p.category) && matchesSearch;
-    
-    return matchesSearch;
+    return p.category === selectedCategory && matchesSearch;
   });
 
   return (
@@ -93,36 +84,22 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === null ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
                   >
                     <span className="group-hover:translate-x-1 transition-transform">Tüm Ürünler</span>
-                    <span className={`${selectedCategory === null ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.total}</span>
+                    <span className={`${selectedCategory === null ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{brandProducts.length}</span>
                   </button>
                 </li>
-                <li>
-                  <button 
-                    onClick={() => setSelectedCategory('klima')}
-                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === 'klima' ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
-                  >
-                    <span className="group-hover:translate-x-1 transition-transform">Klimalar</span>
-                    <span className={`${selectedCategory === 'klima' ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.klima}</span>
-                  </button>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => setSelectedCategory('isitici')}
-                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === 'isitici' ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
-                  >
-                    <span className="group-hover:translate-x-1 transition-transform">Isıtıcılar</span>
-                    <span className={`${selectedCategory === 'isitici' ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.isitici}</span>
-                  </button>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => setSelectedCategory('yedek-parca')}
-                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === 'yedek-parca' ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
-                  >
-                    <span className="group-hover:translate-x-1 transition-transform">Yedek Parçalar</span>
-                    <span className={`${selectedCategory === 'yedek-parca' ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.yedekParca}</span>
-                  </button>
-                </li>
+                {categories.map(cat => (
+                  <li key={cat}>
+                    <button 
+                      onClick={() => setSelectedCategory(cat)}
+                      className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === cat ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                    >
+                      <span className="group-hover:translate-x-1 transition-transform">{cat}</span>
+                      <span className={`${selectedCategory === cat ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>
+                        {brandProducts.filter(p => p.category === cat).length}
+                      </span>
+                    </button>
+                  </li>
+                ))}
               </ul>
             </div>
 
