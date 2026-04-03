@@ -39,7 +39,7 @@ export const products = [
     id: 'art1000', 
     brandId: 'climart', 
     name: 'ART1000', 
-    images: ['/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'], 
+    images: ['/climart/art1000-art1000d-kapak.jpg', '/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'],
     description: 'Ticari araçlar için 6m³ - 11m³ kasa hacmine uygun yüksek performanslı soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -63,7 +63,7 @@ export const products = [
     id: 'art1000d', 
     brandId: 'climart', 
     name: 'ART1000D', 
-    images: ['/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'], 
+    images: ['/climart/art1000-art1000d-kapak.jpg', '/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'],
     description: 'Ticari araçlar için 6m³ - 11m³ kasa hacmine uygun standart defrost sistemli yüksek performanslı soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -88,7 +88,7 @@ export const products = [
     id: 'art2000', 
     brandId: 'climart', 
     name: 'ART2000', 
-    images: ['/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'], 
+    images: ['/climart/art2000-art2000d-kapak.jpg', '/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'],
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için güçlü soğutma sunan ART Series.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -112,7 +112,7 @@ export const products = [
     id: 'art2000d', 
     brandId: 'climart', 
     name: 'ART2000D', 
-    images: ['/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'], 
+    images: ['/climart/art2000-art2000d-kapak.jpg', '/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'],
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için standart defrost donanımlı ticari soğutucu.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
