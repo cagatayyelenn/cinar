@@ -741,10 +741,7 @@ export const products = [
       'Güç İhtiyacı: 13A@24V DC'
     ]
   },
-  { id: 'climart-tavan-tipi-klima', brandId: 'climart', name: 'Climart Tavan Tipi Klima 12V', images: ['https://picsum.photos/seed/klima1/400/300'], description: 'Yüksek soğutma kapasiteli ticari araç kliması.', category: 'Klima' },
-  { id: 'climart-panelvan-klima', brandId: 'climart', name: 'Climart Panelvan Klima 24V', images: ['https://picsum.photos/seed/klima11/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
-  { id: 'climart-tepe-klimasi', brandId: 'climart', name: 'Climart Tepe Kliması', images: ['https://picsum.photos/seed/klima12/400/300'], description: 'Kamyon ve tırlar için aerodinamik tepe kliması.', category: 'Klima' },
-  { id: 'climart-yedek-parca-seti', brandId: 'climart', name: 'Climart Orijinal Filtre Seti', images: ['https://picsum.photos/seed/klima13/400/300'], description: 'Climart klimaları için orijinal polen ve hava filtre seti.', category: 'Yedek Parça' },
+
   { id: 'yilkar-panelvan-klima', brandId: 'yilkar', name: 'Yılkar Panelvan Klima YK-12', images: ['https://picsum.photos/seed/klima2/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
   { id: 'yilkar-tavan-klimasi', brandId: 'yilkar', name: 'Yılkar Tavan Tipi Klima YK-24', images: ['https://picsum.photos/seed/klima4/400/300'], description: 'Minibüs ve midibüsler için ideal tavan tipi klima sistemi.', category: 'Klima' },
   { id: 'yilkar-kuru-isitici', brandId: 'yilkar', name: 'Yılkar Kuru Tip Isıtıcı (Webasto)', images: ['https://picsum.photos/seed/isitici2/400/300'], description: 'Düşük yakıt tüketimi ile kabin içi hızlı ısıtma çözümü.', category: 'Isıtıcı' },
