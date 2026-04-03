@@ -123,7 +123,7 @@ export default function Header() {
                   {brand.name}
                 </Link>
                 <div className="pl-10 space-y-2 mt-2">
-                  <Link to={`/urunler/${brand.id}`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black uppercase tracking-widest">Ürünler</Link>
+                  <Link to={`/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black uppercase tracking-widest">Ürünler</Link>
                   <Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black uppercase tracking-widest">Hizmetler</Link>
                 </div>
               </div>

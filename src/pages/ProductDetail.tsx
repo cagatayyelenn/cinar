@@ -33,7 +33,7 @@ export default function ProductDetail() {
           <ChevronRight size={12} className="mx-3 shrink-0" />
           <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black transition-colors">{brand.name} Servisi</Link>
           <ChevronRight size={12} className="mx-3 shrink-0" />
-          <Link to={`/urunler/${brand.id}`} className="hover:text-black transition-colors">Ürünler</Link>
+          <Link to={`/${brand.id}/urunler`} className="hover:text-black transition-colors">Ürünler</Link>
           <ChevronRight size={12} className="mx-3 shrink-0" />
           <span className="text-black truncate">{product.name}</span>
         </div>

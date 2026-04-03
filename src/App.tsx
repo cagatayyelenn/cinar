@@ -34,7 +34,7 @@ export default function App() {
             ))}
             <Route path="servis/:brandId" element={<BrandService />} />
             <Route path=":brandId/:categoryId" element={<BrandProducts />} />
-            <Route path="urunler/:brandId" element={<BrandProducts />} />
+            <Route path=":brandId/urunler" element={<BrandProducts />} />
             
             {/* Combined Route for Product and Service Details */}
             <Route path="detay/:brandId/:itemId" element={<ItemDetail />} />
