@@ -82,15 +82,15 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="flex flex-col md:flex-row items-end justify-between gap-12">
             <div className="text-white max-w-3xl">
-              <div className="flex items-center text-xs text-gray-400 mb-8 font-bold uppercase tracking-widest">
+              <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight">
                 <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
                 <ChevronRight size={14} className="mx-2" />
-                <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-white transition-colors">{brand.name} Servisi</Link>
+                <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-white transition-colors">{brand.name} servisi</Link>
                 <ChevronRight size={14} className="mx-2" />
                 <span className="text-white">Ürünler {selectedCategory && ` - ${selectedCategory}`}</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none">
-                {brand.name} <br/><span className="text-gray-500 font-light">{selectedCategory || 'Ürünleri'}</span>
+              <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">
+                {brand.name} <br/><span className="text-gray-500 font-light">{selectedCategory || 'ürünleri'}</span>
               </h1>
               <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
                 Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLocaleLowerCase('tr-TR') : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
@@ -118,16 +118,16 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
           <div className="lg:w-1/4 space-y-8">
             {/* Categories */}
             <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm">
-              <h3 className="text-sm font-black text-black mb-6 uppercase tracking-widest border-b border-slate-100 pb-4 flex items-center">
+              <h3 className="text-sm font-black text-black mb-6 tracking-tight border-b border-slate-100 pb-4 flex items-center">
                 <Filter size={16} className="mr-3" /> Kategoriler
               </h3>
               <ul className="space-y-4">
                 <li>
                   <button 
                     onClick={() => handleCategoryClick(null)}
-                    className={`w-full flex items-center justify-between text-left transition-all p-3 rounded-xl uppercase text-[11px] tracking-widest group ${selectedCategory === null ? 'bg-black text-white font-black' : 'text-gray-500 hover:bg-gray-50 hover:text-black font-medium'}`}
+                    className={`w-full flex items-center justify-between text-left transition-all p-3 rounded-xl text-[11px] tracking-tight group ${selectedCategory === null ? 'bg-black text-white font-black' : 'text-gray-500 hover:bg-gray-50 hover:text-black font-medium'}`}
                   >
-                    <span className="group-hover:translate-x-1 transition-transform">Tüm Ürünler</span>
+                    <span className="group-hover:translate-x-1 transition-transform">Tüm ürünler</span>
                     <span className={`${selectedCategory === null ? 'bg-white/20 text-white' : 'bg-gray-100 text-black'} text-[10px] py-1 px-2 font-mono rounded-md`}>{brandProducts.length}</span>
                   </button>
                 </li>
@@ -135,7 +135,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                   <li key={cat.path}>
                     <button 
                       onClick={() => handleCategoryClick(cat.label)}
-                      className={`w-full flex items-center justify-between text-left transition-all p-3 rounded-xl uppercase text-[11px] tracking-widest group ${selectedCategory === cat.label ? 'bg-black text-white font-black' : 'text-gray-500 hover:bg-gray-50 hover:text-black font-medium'}`}
+                      className={`w-full flex items-center justify-between text-left transition-all p-3 rounded-xl text-[11px] tracking-tight group ${selectedCategory === cat.label ? 'bg-black text-white font-black' : 'text-gray-500 hover:bg-gray-50 hover:text-black font-medium'}`}
                     >
                       <span className="group-hover:translate-x-1 transition-transform">{cat.label}</span>
                       <span className={`${selectedCategory === cat.label ? 'bg-white/20 text-white' : 'bg-gray-100 text-black'} text-[10px] py-1 px-2 font-mono rounded-md`}>
@@ -150,16 +150,16 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             {/* CTA Widget */}
             <div className="bg-[#0f2851] p-10 text-white rounded-[2rem] shadow-2xl">
               <ShieldCheck size={32} className="text-amber-500 mb-6" />
-              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter leading-none">Doğru Ürünü Bulamadınız mı?</h3>
+              <h3 className="text-xl font-black mb-4 tracking-tighter leading-none">Doğru ürünü bulamadınız mı?</h3>
               <p className="text-slate-400 text-sm mb-8 leading-relaxed font-light">
                 Aradığınız {brand.name} yedek parçası veya ürünü listede yoksa, bize ulaşın. Stoklarımızı sizin için kontrol edelim.
               </p>
               
-              <a href="tel:+905070485034" className="w-full bg-[#fa9700] hover:bg-white text-black py-4 rounded-full font-bold flex items-center justify-center transition-all mb-4 uppercase tracking-widest text-[10px] shadow-lg">
-                <PhoneCall className="mr-2" size={16} /> Bizi Arayın
+              <a href="tel:+905070485034" className="w-full bg-[#fa9700] hover:bg-white text-black py-4 rounded-full font-bold flex items-center justify-center transition-all mb-4 tracking-tight text-[10px] shadow-lg">
+                <PhoneCall className="mr-2" size={16} /> Bizi arayın
               </a>
-              <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="w-full border border-white/20 hover:border-white text-white py-4 rounded-full font-bold flex items-center justify-center transition-all uppercase tracking-widest text-[10px]">
-                WhatsApp Destek
+              <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="w-full border border-white/20 hover:border-white text-white py-4 rounded-full font-bold flex items-center justify-center transition-all tracking-tight text-[10px]">
+                WhatsApp destek
               </a>
             </div>
           </div>
@@ -187,8 +187,8 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                   </button>
                 )}
               </div>
-              <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest px-4 py-2 border border-gray-100 bg-gray-50/50">
-                <span className="text-black font-black mr-1">{filteredProducts.length}</span> Ürün Listeleniyor
+              <div className="text-[10px] text-gray-400 font-bold tracking-tight px-4 py-2 border border-gray-100 bg-gray-50/50">
+                <span className="text-black font-black mr-1">{filteredProducts.length}</span> ürün listeleniyor
               </div>
             </div>
 
@@ -198,7 +198,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-[2rem] overflow-hidden">
                   {/* Top Image Section */}
                   <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-slate-50 p-6">
-                    <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 rounded-full">
+                    <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-tight z-10 rounded-full">
                       YENİ
                     </div>
                     <img 
@@ -209,7 +209,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                   </div>
                   {/* Card Content Section */}
                   <div className="p-8 flex flex-col flex-grow">
-                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block">
+                    <span className="text-[10px] font-bold text-gray-400 tracking-tight mb-4 block">
                       {product.category} | {brand.name}
                     </span>
                     <h3 className="font-black text-black text-xl mb-8 leading-tight group-hover:text-amber-600 transition-colors">
@@ -221,7 +221,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                       <div className="flex items-center justify-between">
                         <div className="flex items-center text-black grayscale group-hover:grayscale-0 transition-all duration-500">
                            <img src="/ticari.svg" alt="Ticari Araç" className="w-6 h-6 mr-2" />
-                           <span className="text-[10px] font-black uppercase tracking-widest">Ticari Araç</span>
+                           <span className="text-[10px] font-black tracking-tight">Ticari araç</span>
                         </div>
                         <ArrowRight size={18} className="text-slate-200 group-hover:text-black transition-all group-hover:translate-x-1" />
                       </div>
@@ -233,15 +233,15 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                   <div className="w-20 h-20 bg-white border-2 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                     <Search size={32} className="text-black" />
                   </div>
-                  <h3 className="text-2xl font-black text-black mb-4 uppercase tracking-tighter">Sonuç Bulunamadı</h3>
+                  <h3 className="text-2xl font-black text-black mb-4 tracking-tighter">Sonuç bulunamadı</h3>
                   <p className="text-gray-500 text-center max-w-sm text-sm leading-relaxed mb-8">
                     "<strong>{searchQuery}</strong>" aramasıyla eşleşen ürün bulunamadı. Lütfen farklı anahtar kelimeler deneyin.
                   </p>
                   <button 
                     onClick={() => setSearchQuery('')}
-                    className="bg-black text-white px-8 py-4 font-black text-xs uppercase tracking-[0.2em] hover:bg-gray-800 transition-colors"
+                    className="bg-black text-white px-8 py-4 font-black text-xs tracking-tight hover:bg-gray-800 transition-colors"
                   >
-                    Aramayı Temizle
+                    Aramayı temizle
                   </button>
                 </div>
               )}

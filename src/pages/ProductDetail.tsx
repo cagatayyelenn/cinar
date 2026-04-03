@@ -51,18 +51,18 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
 
       {!product || !brand ? (
         <div className="container mx-auto py-32 text-center">
-          <h2 className="text-2xl font-black mb-4 uppercase tracking-tighter">Ürün Bulunamadı</h2>
+          <h2 className="text-2xl font-black mb-4 tracking-tighter">Ürün bulunamadı</h2>
           <p className="text-gray-500 mb-8">Aradığınız ürün stoklarımızda bulunmuyor veya link hatalı.</p>
-          <Link to="/" className="bg-black text-white px-8 py-4 text-xs font-black uppercase tracking-widest hover:bg-gray-800 transition-colors">Anasayfaya Dön</Link>
+          <Link to="/" className="bg-black text-white px-8 py-4 text-xs font-black tracking-tight hover:bg-gray-800 transition-colors">Anasayfaya dön</Link>
         </div>
       ) : (
         <>
           {/* Breadcrumb - Sharp & Minimal */}
           <div className="bg-gray-50 border-b border-gray-200 pt-32 pb-4">
-            <div className="container mx-auto px-4 max-w-7xl flex items-center text-[10px] font-black uppercase tracking-widest text-gray-400 overflow-x-auto">
+            <div className="container mx-auto px-4 max-w-7xl flex items-center text-[10px] font-bold tracking-widest text-gray-400 overflow-x-auto">
               <Link to="/" className="hover:text-black transition-colors shrink-0">Anasayfa</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
-              <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black transition-colors shrink-0">{brand.name} Servisi</Link>
+              <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black transition-colors shrink-0">{brand.name} servisi</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
               <Link to={`/${brand.id}/urunler`} className="hover:text-black transition-colors shrink-0">Ürünler</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
@@ -103,15 +103,15 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
               </div>
               
               <div className="lg:w-1/2">
-                <div className="text-xs font-black text-gray-400 tracking-[0.3em] uppercase mb-6 flex items-center gap-6">
-                  <span className="w-12 h-px bg-black"></span> ÜRÜN DETAYI
+                <div className="text-xs font-black text-gray-400 tracking-tight mb-6 flex items-center gap-6">
+                  <span className="w-12 h-px bg-black"></span> Ürün detayı
                 </div>
-                <h1 className="text-4xl md:text-6xl font-black text-black mb-10 leading-[0.95] tracking-tighter uppercase">
+                <h1 className="text-4xl md:text-6xl font-black text-black mb-10 leading-[0.95] tracking-tighter">
                   {boldPart} <br/><span className="text-gray-400 font-light">{lightPart}</span>
                 </h1>
                 
                 <div className="mb-12">
-                  <h3 className="text-xs font-black text-black mb-6 uppercase tracking-widest border-b border-slate-100 pb-4">Teknik Özellikler</h3>
+                  <h3 className="text-xs font-black text-black mb-6 tracking-tight border-b border-slate-100 pb-4">Teknik özellikler</h3>
                   <div className="grid grid-cols-1 gap-px bg-slate-100 border border-slate-100 rounded-[2rem] overflow-hidden shadow-sm">
                     {[
                       { label: 'Soğutma Kapasitesi', value: '6 - 14 kW' },
@@ -122,7 +122,7 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                       { label: 'Ağırlık', value: '55 kg' },
                       { label: 'Soğutucu Akışkan', value: 'R134a' }
                     ].map((spec, i) => (
-                      <div key={i} className="flex bg-white py-4 px-6 text-[10px] uppercase tracking-widest">
+                      <div key={i} className="flex bg-white py-4 px-6 text-[10px] tracking-tight">
                         <span className="w-1/2 font-black text-black">{spec.label}</span>
                         <span className="w-1/2 text-gray-400 font-medium">{spec.value}</span>
                       </div>
@@ -131,7 +131,7 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-12 py-6 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all shadow-2xl hover:shadow-orange-500/20">
+                  <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-12 py-6 rounded-full text-[11px] font-black tracking-tight hover:bg-black hover:text-white transition-all shadow-2xl hover:shadow-orange-500/20">
                     BU ÜRÜN İÇİN İLETİŞİME GEÇİN
                   </a>
                 </div>
@@ -142,21 +142,21 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
               <div className="bg-slate-50 p-12 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all">
                 <Settings className="text-black mb-8" size={32} strokeWidth={1} />
-                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tighter">OPSİYONEL SİSTEMLER</h3>
+                <h3 className="text-lg font-black text-black mb-4 tracking-tighter">Opsiyonel sistemler</h3>
                 <p className="text-gray-500 text-sm leading-relaxed font-light">
                   Polen partikül filtresi entegre edilebilir yapısı ile iç mekan hava kalitesini maksimum seviyeye çıkarır.
                 </p>
               </div>
               <div className="bg-slate-50 p-12 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all">
                 <Zap className="text-black mb-8" size={32} strokeWidth={1} />
-                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tighter">YÜKSEK VERİMLİLİK</h3>
+                <h3 className="text-lg font-black text-black mb-4 tracking-tighter">Yüksek verimlilik</h3>
                 <p className="text-gray-500 text-sm leading-relaxed font-light">
                   Değişken ortam parametrelerine uyum sağlayan akışkan kontrolü ile kompresör ömrünü uzatır.
                 </p>
               </div>
               <div className="bg-[#0f2851] p-12 rounded-[2.5rem] shadow-2xl text-white">
                 <ShieldCheck className="text-amber-500 mb-8" size={32} strokeWidth={1} />
-                <h3 className="text-lg font-black mb-4 uppercase tracking-tighter">ECE R10 SERTİFİKASI</h3>
+                <h3 className="text-lg font-black mb-4 tracking-tighter">ECE R10 sertifikası</h3>
                 <p className="text-slate-400 text-sm leading-relaxed font-light">
                   Uluslararası elektromanyetik uyumluluk standartlarına tam uygunluk ve güvenli çalışma onayı.
                 </p>
@@ -169,10 +169,10 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                 <img src="https://picsum.photos/seed/panel/800/500?grayscale" alt="Kontrol Paneli" className="w-[80%] brightness-90 contrast-125 mix-blend-multiply" />
               </div>
               <div className="lg:w-1/2">
-                <div className="text-xs font-black text-gray-400 tracking-[0.3em] uppercase mb-6 flex items-center gap-6">
-                  <span className="w-12 h-px bg-black"></span> KONTROL ÜNİTESİ
+                <div className="text-xs font-black text-gray-400 tracking-tight mb-6 flex items-center gap-6">
+                  <span className="w-12 h-px bg-black"></span> Kontrol ünitesi
                 </div>
-                <h3 className="text-3xl font-black text-black mb-8 uppercase tracking-tighter leading-none">KLİMATRONİK <br/><span className="text-gray-400 font-light">YÖNETİM SİSTEMİ</span></h3>
+                <h3 className="text-3xl font-black text-black mb-8 tracking-tighter leading-none">Klimatronik <br/><span className="text-gray-400 font-light">yönetim sistemi</span></h3>
                 <p className="text-gray-600 mb-10 leading-relaxed font-light text-lg">
                   Etkin sıcaklık ve hava hızı kontrolü imkanı ile ısıl konforunuzu dilediğiniz gibi kontrol edin.
                 </p>
@@ -184,7 +184,7 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                     'Termostat ayarlı hassas sıcaklık kontrolü',
                     '3 kademeli hava hızı yönetimi'
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-black">
+                    <li key={i} className="flex items-center gap-4 text-xs font-bold tracking-tight text-black">
                       <ArrowRight size={14} className="text-gray-300" />
                       {item}
                     </li>
@@ -197,10 +197,15 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
             <div className="bg-[#0f2851] p-16 rounded-[4rem] text-white shadow-2xl">
               <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-16">
                 <div>
-                  <div className="text-xs font-black text-slate-500 tracking-[0.3em] uppercase mb-6 flex items-center gap-6">
-                    <span className="w-12 h-px bg-white/20"></span> KAYNAKLAR
-                  </div>
-                  <h2 className="text-4xl font-black uppercase tracking-tighter leading-[0.9]">TEKNİK <span className="text-slate-500 font-light">KÜTÜPHANE</span></h2>
+                  <div className="text-xs font-black text-gray-400 tracking-tight mb-6 flex items-center gap-6">
+                  <span className="flex items-center gap-2 group">
+                    <span className="w-8 h-[1px] bg-slate-200 group-hover:w-12 transition-all"></span> 0% Emisyon
+                  </span>
+                  <span className="flex items-center gap-2 group">
+                    <span className="w-8 h-[1px] bg-slate-200 group-hover:w-12 transition-all"></span> Sürdürülebilir
+                  </span>
+                </div>
+                  <h2 className="text-4xl font-black tracking-tighter leading-[0.9]">Teknik <span className="text-slate-500 font-light">kütüphane</span></h2>
                 </div>
                 <FileText size={48} className="text-amber-500/20" />
               </div>
@@ -212,9 +217,9 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                   { title: 'Elektrik Şeması', desc: 'Kablolama ve kontrol ünitesi bağlantı planı.' }
                 ].map((doc, i) => (
                   <a key={i} href="#" className="group bg-white/5 border border-white/10 p-10 rounded-[2.5rem] hover:bg-white hover:text-black transition-all duration-500">
-                    <h4 className="text-[11px] font-black uppercase tracking-[0.2em] mb-6">{doc.title}</h4>
+                    <h4 className="text-[11px] font-black tracking-tight mb-6">{doc.title}</h4>
                     <p className="text-slate-400 group-hover:text-slate-600 text-xs leading-relaxed mb-10 font-light">{doc.desc}</p>
-                    <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest">
+                    <div className="flex items-center gap-3 text-[10px] font-black tracking-tight">
                       <span className="border-b border-white/20 group-hover:border-black/20 pb-1">İNDİR (PDF)</span>
                       <ArrowRight size={14} className="group-hover:translate-x-3 transition-transform" />
                     </div>
