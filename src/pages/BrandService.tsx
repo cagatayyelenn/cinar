@@ -57,7 +57,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </p>
             </div>
             <div className="bg-white p-8 shrink-0 border border-gray-800">
-              <img src={brand.logo} alt={brand.name} className="h-20 md:h-24 w-auto object-contain" />
+              <img src={brand.logo} alt={brand.name} className="h-[200px] w-auto object-contain" />
             </div>
           </div>
         </div>
