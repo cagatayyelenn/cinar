@@ -96,11 +96,11 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLocaleLowerCase('tr-TR') : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md p-10 shrink-0 border border-white/20 rounded-[2.5rem] shadow-2xl">
+            <div className="bg-white p-10 shrink-0 border border-white/20 rounded-[2.5rem] shadow-2xl">
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
-                className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain brightness-0 invert`} 
+                className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain`} 
               />
             </div>
           </div>
