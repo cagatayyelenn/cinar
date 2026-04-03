@@ -534,6 +534,56 @@ export const products = [
       'Güç İhtiyacı: 43A@12V DC'
     ]
   },
+  { 
+    id: 'art12', 
+    brandId: 'climart', 
+    name: 'ART12', 
+    images: ['/urunler/climart/ticari-arac-klimalari/art12/art12.png', '/urunler/climart/ticari-arac-klimalari/art12/art12-1.png'], 
+    description: '12000Watt yüksek soğutma kapasitesine sahip ART12 ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
+    features: [
+      'Ünite Adı: ART12',
+      'Soğutma Kapasitesi: @35ᵒC',
+      'Isıtma Kapasitesi: @Q80ᵒC',
+      'Araç Motorundan Tahrikli: 10320Kcal (12000Watt)',
+      'Soğutucu Akışkan: R134a',
+      'Çalışma Çevre Sıcaklığı Min: 15 ᵒC(±2)',
+      'Çalışma Çevre Sıcaklığı Max: 43 ᵒC(±2)',
+      'Evaporatör Ünite Ölçüleri: 1370 x 1850 x 152 mm',
+      'Kondenser Ağırlığı: 51 Kg.',
+      'Montaj Kit Ağırlığı: 25 Kg.',
+      'Kompresör Tipi: Pistonlu Tip',
+      'Kondenser Hava Debisi: 5600m3/h @0 mmH2O',
+      'Evaporatör Hava Debisi: 2400m3/h @0 mmH2O',
+      'Ön Klima: Opsiyonel',
+      'Güç İhtiyacı: 58A@12V DC'
+    ]
+  },
+  { 
+    id: 'art15', 
+    brandId: 'climart', 
+    name: 'ART15', 
+    images: ['/urunler/climart/ticari-arac-klimalari/art15/art15.png', '/urunler/climart/ticari-arac-klimalari/art15/art15-1.png'], 
+    description: '15000Watt dev soğutma kapasitesiyle ART15 yüksek performanslı ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
+    features: [
+      'Ünite Adı: ART15',
+      'Soğutma Kapasitesi: @35ᵒC',
+      'Isıtma Kapasitesi: @Q80ᵒC',
+      'Araç Motorundan Tahrikli: 12900Kcal (15000Watt)',
+      'Soğutucu Akışkan: R134a',
+      'Çalışma Çevre Sıcaklığı Min: 15 ᵒC(±2)',
+      'Çalışma Çevre Sıcaklığı Max: 43 ᵒC(±2)',
+      'Evaporatör Ünite Ölçüleri: 1370 x 2000 x 215 mm',
+      'Kondenser Ağırlığı: 62 Kg.',
+      'Montaj Kit Ağırlığı: 22 Kg.',
+      'Kompresör Tipi: Pistonlu Tip',
+      'Kondenser Hava Debisi: 6700m3/h @0 mmH2O',
+      'Evaporatör Hava Debisi: 4000m3/h @0 mmH2O',
+      'Ön Klima: Opsiyonel',
+      'Güç İhtiyacı: 75A@12V DC'
+    ]
+  },
   { id: 'climart-tavan-tipi-klima', brandId: 'climart', name: 'Climart Tavan Tipi Klima 12V', images: ['https://picsum.photos/seed/klima1/400/300'], description: 'Yüksek soğutma kapasiteli ticari araç kliması.', category: 'Klima' },
   { id: 'climart-panelvan-klima', brandId: 'climart', name: 'Climart Panelvan Klima 24V', images: ['https://picsum.photos/seed/klima11/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
   { id: 'climart-tepe-klimasi', brandId: 'climart', name: 'Climart Tepe Kliması', images: ['https://picsum.photos/seed/klima12/400/300'], description: 'Kamyon ve tırlar için aerodinamik tepe kliması.', category: 'Klima' },
