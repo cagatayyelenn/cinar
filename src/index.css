@@ -11,7 +11,7 @@
   
   --dark-blue-100: #0a1529;
   --light-blue-100: #0f2851;
-  --gradient-6: linear-gradient(104.6deg, var(--dark-blue-100), var(--light-blue-100));
+  --gradient-6: linear-gradient(104.6deg, #0a1529, #0f2851);
 
   @keyframes marquee {
     0% { transform: translateX(0%); }

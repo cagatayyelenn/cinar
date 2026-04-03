@@ -4,7 +4,10 @@ import { brands } from '../data/mockData';
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--gradient-6)] text-slate-400 pt-24 pb-12 font-sans overflow-hidden relative">
+    <footer 
+      className="text-slate-400 pt-24 pb-12 font-sans overflow-hidden relative"
+      style={{ background: 'var(--gradient-6)' }}
+    >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#fa9700]/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
       
