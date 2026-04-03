@@ -148,38 +148,38 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
           {/* Main Content */}
           <div className="lg:w-3/4">
             
-            {/* Top Bar */}
-            <div className="bg-white border-2 border-black p-6 mb-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-              <div className="relative w-full sm:w-[400px]">
+            {/* Top Bar - Softer & Simpler */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-12">
+              <div className="relative w-full sm:w-[450px] group">
                 <input 
                   type="text" 
                   placeholder="Ürün adı veya kodu ile ara..." 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border-2 border-black text-base font-bold focus:outline-none focus:bg-white transition-all rounded-none placeholder:text-gray-400"
+                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border border-gray-200 text-sm font-medium focus:outline-none focus:border-black focus:bg-white transition-all rounded-none placeholder:text-gray-400"
                 />
-                <Search size={22} className="absolute left-4 top-1/2 -translate-y-1/2 text-black" />
+                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-black transition-colors" />
                 {searchQuery && (
                   <button 
                     onClick={() => setSearchQuery('')}
                     className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black transition-colors"
                   >
-                    <XCircle size={18} />
+                    <XCircle size={16} />
                   </button>
                 )}
               </div>
-              <div className="text-[10px] text-black font-black uppercase tracking-[0.2em] bg-gray-100 px-4 py-2 border border-black/10">
-                Bulunan: <span className="text-lg ml-1 font-black">{filteredProducts.length}</span>
+              <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest px-4 py-2 border border-gray-100 bg-gray-50/50">
+                <span className="text-black font-black mr-1">{filteredProducts.length}</span> Ürün Listeleniyor
               </div>
             </div>
 
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
               {filteredProducts.length > 0 ? filteredProducts.map(product => (
-                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-200 hover:border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden rounded-none">
+                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:border-gray-200 hover:shadow-xl overflow-hidden rounded-none">
                   {/* Top Image Section */}
-                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-100">
-                    <div className="absolute top-4 left-4 bg-[#dbe825] border border-black px-4 py-1 text-[10px] font-black text-black tracking-widest z-10">
+                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
+                    <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10">
                       YENİ
                     </div>
                     <img 
