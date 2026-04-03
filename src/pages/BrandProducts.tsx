@@ -200,7 +200,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     <img 
                       src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" 
+                      className="w-full h-full object-contain transition-transform duration-500" 
                     />
                   </div>
                   {/* Card Content Section */}

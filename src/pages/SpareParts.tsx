@@ -49,7 +49,7 @@ export default function SpareParts() {
               {spareParts.map(product => (
                 <Link key={product.id} to={`/${product.brandId}-${product.id}`} className="group flex flex-col h-full bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-blue-500 hover:shadow-lg transition-all">
                   <div className="relative h-48 bg-slate-100 overflow-hidden">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} alt={product.name} className="w-full h-full object-cover transition-transform duration-500" />
                     <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-black shadow-sm">
                       {brands.find(b => b.id === product.brandId)?.name}
                     </div>
@@ -57,7 +57,7 @@ export default function SpareParts() {
                   <div className="p-5 flex flex-col flex-grow">
                     <h3 className="font-bold text-black text-lg mb-2 line-clamp-2 group-hover:text-black transition-colors">{product.name}</h3>
                     <div className="mt-auto flex items-center justify-between">
-                      <span className="text-xl font-bold text-black">{product.price}</span>
+                      <span className="text-xl font-bold text-black">İncele</span>
                       <span className="w-8 h-8 rounded-full bg-blue-50 text-black flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
                         <ChevronRight size={18} />
                       </span>

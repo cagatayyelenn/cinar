@@ -80,7 +80,7 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                     // @ts-ignore
                     src={product.images?.[activeImageIndex] || 'https://picsum.photos/seed/klima1/400/300'} 
                     alt={product.name} 
-                    className="max-w-full max-h-[400px] w-auto h-auto object-contain transition-transform duration-1000 group-hover:scale-105" 
+                    className="max-w-full max-h-[400px] w-auto h-auto object-contain transition-transform duration-1000" 
                   />
                 </div>
                 
