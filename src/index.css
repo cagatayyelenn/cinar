@@ -7,6 +7,7 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
   --animate-marquee: marquee 25s linear infinite;
+  --animate-bounce-slow: bounce-slow 2s ease-in-out infinite;
   
   --dark-blue-100: #0a1529;
   --light-blue-100: #0f2851;
@@ -15,5 +16,10 @@
   @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
+  }
+
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
   }
 }

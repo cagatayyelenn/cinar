@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { ChevronRight, Wind, Thermometer, Settings, Zap, Search, ShieldCheck, Wrench, Clock, ThumbsUp } from 'lucide-react';
+import { ChevronRight, Wind, Thermometer, Settings, Zap, Search, ShieldCheck, Wrench, Clock, ThumbsUp, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const services = [
@@ -69,6 +69,10 @@ export default function Services() {
           <p className="text-gray-500 text-xl max-w-2xl leading-relaxed font-light">
             Ticari araç iklimlendirme dünyasında, teknik mükemmellik ve müşteri memnuniyetini bir araya getiren profesyonel çözümler sunuyoruz.
           </p>
+          {/* Scroll Down Arrow */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-200 animate-bounce-slow">
+            <ChevronDown size={32} strokeWidth={1} />
+          </div>
         </div>
       </div>
 

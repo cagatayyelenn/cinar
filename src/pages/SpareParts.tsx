@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { products, brands } from '../data/mockData';
-import { ChevronRight, Filter } from 'lucide-react';
+import { ChevronRight, Filter, ChevronDown } from 'lucide-react';
 
 export default function SpareParts() {
   const spareParts = products.filter(p => p.category === 'Yedek Parça');
@@ -19,6 +19,10 @@ export default function SpareParts() {
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Tüm yetkili servis markalarımızın %100 orijinal yedek parçaları stoklarımızda.
           </p>
+          {/* Scroll Down Arrow */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-blue-100/40 animate-bounce-slow">
+            <ChevronDown size={32} strokeWidth={1} />
+          </div>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle2, Award, Users, Target, ChevronRight } from 'lucide-react';
+import { CheckCircle2, Award, Users, Target, ChevronRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function About() {
@@ -25,6 +25,10 @@ export default function About() {
             <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
               20 yılı aşkın süredir ticari araç iklimlendirme sistemlerinde Türkiye'nin öncü servis noktalarından biri olarak hizmet veriyoruz.
             </p>
+          </div>
+          {/* Scroll Down Arrow */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 text-white/40 animate-bounce-slow">
+            <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>
       </div>

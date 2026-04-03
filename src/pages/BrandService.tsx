@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products, services, faqs } from '../data/mockData';
-import { CheckCircle2, ArrowRight, PhoneCall, ShieldCheck, Wrench, ChevronRight, Car, Truck, Bus, Tractor } from 'lucide-react';
+import { CheckCircle2, ArrowRight, PhoneCall, ShieldCheck, Wrench, ChevronRight, Car, Truck, Bus, Tractor, ChevronDown } from 'lucide-react';
 
 export default function BrandService({ brandId: propBrandId }: { brandId?: string }) {
   const { brandId: paramBrandId } = useParams<{ brandId: string }>();
@@ -60,6 +60,10 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain`} 
               />
             </div>
+          </div>
+          {/* Scroll Down Arrow */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 text-white/40 animate-bounce-slow">
+            <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>
       </div>

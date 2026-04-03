@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, ArrowUpRight, Wrench, ShieldCheck, Clock, ThumbsUp, Star } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Wrench, ShieldCheck, Clock, ThumbsUp, Star, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { brands, services } from '../data/mockData';
 import { useState, useEffect } from 'react';
@@ -91,6 +91,11 @@ export default function Home() {
             className="h-full bg-[#fa9700] transition-all duration-[6000ms] ease-linear"
             style={{ width: `${((currentSlide + 1) / brands.length) * 100}%` }}
           ></div>
+        </div>
+
+        {/* Scroll Down Arrow */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 text-white opacity-40 animate-bounce-slow">
+          <ChevronDown size={32} strokeWidth={1} />
         </div>
       </section>
 
