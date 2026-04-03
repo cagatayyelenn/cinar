@@ -105,7 +105,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                     <div className="md:w-3/5 p-8 flex flex-col justify-center">
                       <h3 className="text-2xl font-black text-black mb-4 uppercase tracking-tight leading-tight">{service.name}</h3>
                       <p className="text-gray-500 mb-8 leading-relaxed">{service.description}</p>
-                      <Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-xs font-black text-black uppercase tracking-widest flex items-center mt-auto group-hover:text-gray-600 transition-colors">
+                      <Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-xs font-black text-black uppercase tracking-widest flex items-center mt-auto group-hover:text-gray-600 transition-colors">
                         Hizmet Detayları <ArrowRight size={14} className="ml-2 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>
@@ -126,7 +126,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {brandProducts.length > 0 ? brandProducts.map(product => (
-                  <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
+                  <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
                     {/* Top Image Section */}
                     <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
                       <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left">

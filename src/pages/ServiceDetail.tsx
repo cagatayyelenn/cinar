@@ -3,8 +3,11 @@ import { Helmet } from 'react-helmet-async';
 import { brands, services, faqs } from '../data/mockData';
 import { ChevronRight, PhoneCall, CheckCircle2 } from 'lucide-react';
 
-export default function ServiceDetail() {
-  const { brandId, itemId } = useParams<{ brandId: string, itemId: string }>();
+export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId }: { brandId?: string, itemId?: string }) {
+  const { brandId: paramBrandId, itemId: paramItemId } = useParams<{ brandId: string, itemId: string }>();
+  
+  const brandId = propBrandId || paramBrandId;
+  const itemId = propItemId || paramItemId;
   
   const service = services.find(s => s.id === itemId || s.id === `${brandId}-${itemId}`);
   const brand = brands.find(b => b.id === brandId);

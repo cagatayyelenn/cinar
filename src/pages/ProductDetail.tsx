@@ -4,8 +4,12 @@ import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
 import { ChevronRight, ArrowRight, ShieldCheck, FileText, Settings, Zap } from 'lucide-react';
 
-export default function ProductDetail() {
-  const { brandId, itemId } = useParams<{ brandId: string, itemId: string }>();
+export default function ProductDetail({ brandId: propBrandId, itemId: propItemId }: { brandId?: string, itemId?: string }) {
+  const { brandId: paramBrandId, itemId: paramItemId } = useParams<{ brandId: string, itemId: string }>();
+  
+  const brandId = propBrandId || paramBrandId;
+  const itemId = propItemId || paramItemId;
+  
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   
   const product = products.find(p => p.id === itemId || p.id === `${brandId}-${itemId}`);

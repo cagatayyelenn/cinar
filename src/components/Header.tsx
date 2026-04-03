@@ -80,9 +80,9 @@ export default function Header() {
                             <li key={i}><Link to={`/${brand.id}-yetkili-servisi#${s.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {s.label}</Link></li>
                           )) : (
                             <>
-                              <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
-                              <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Bakım & Onarım</Link></li>
-                              <li><Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Gaz Dolumu</Link></li>
+                              <li><Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
+                              <li><Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Bakım & Onarım</Link></li>
+                              <li><Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Gaz Dolumu</Link></li>
                             </>
                           )}
                         </ul>
@@ -124,7 +124,7 @@ export default function Header() {
                 </Link>
                 <div className="pl-10 space-y-2 mt-2">
                   <Link to={`/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black uppercase tracking-widest">Ürünler</Link>
-                  <Link to={`/detay/${brand.id}/ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black uppercase tracking-widest">Hizmetler</Link>
+                  <Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black uppercase tracking-widest">Hizmetler</Link>
                 </div>
               </div>
             ))}

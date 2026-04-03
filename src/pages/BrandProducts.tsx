@@ -129,7 +129,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
               {brandProducts.length > 0 ? brandProducts.map(product => (
-                <Link key={product.id} to={`/detay/${brand.id}/${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
+                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
                   {/* Top Image Section */}
                   <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
                     <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left">

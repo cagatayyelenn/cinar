@@ -32,12 +32,13 @@ export default function App() {
             {brands.map(brand => (
               <Route key={brand.id} path={`${brand.id}-yetkili-servisi`} element={<BrandService brandId={brand.id} />} />
             ))}
+            
             <Route path="servis/:brandId" element={<BrandService />} />
             <Route path=":brandId/:categoryId" element={<BrandProducts />} />
             <Route path=":brandId/urunler" element={<BrandProducts />} />
             
-            {/* Combined Route for Product and Service Details */}
-            <Route path="detay/:brandId/:itemId" element={<ItemDetail />} />
+            {/* SEO Friendly Product and Service Details - Catch-all for branding slugs */}
+            <Route path=":slug" element={<ItemDetail />} />
             
             <Route path="*" element={<div className="container mx-auto py-20 text-center text-2xl font-bold">Sayfa Yapım Aşamasında</div>} />
           </Route>

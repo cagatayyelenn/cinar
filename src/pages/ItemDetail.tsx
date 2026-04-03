@@ -1,18 +1,22 @@
 import { useParams } from 'react-router-dom';
 import ProductDetail from './ProductDetail';
 import ServiceDetail from './ServiceDetail';
-import { services } from '../data/mockData';
+import { services, brands } from '../data/mockData';
 
 export default function ItemDetail() {
-  const { brandId, itemId } = useParams<{ brandId: string, itemId: string }>();
+  const { slug } = useParams<{ slug: string }>();
   
+  // Find which brand the slug starts with
+  const brand = brands.find(b => slug?.startsWith(b.id + '-'));
+  const brandId = brand?.id || '';
+  const itemId = brandId ? slug?.substring(brandId.length + 1) : slug || '';
+
   // Check if itemId matches any service ID
-  const isService = services.some(s => s.id === itemId || s.id === `${brandId}-${itemId}`);
+  const isService = services.some(s => s.id === itemId || s.id === `${brandId}-${itemId}` || s.id === slug);
   
   if (isService) {
-    // Pass the params down or let the component use useParams
-    return <ServiceDetail />;
+    return <ServiceDetail brandId={brandId} itemId={itemId} />;
   }
   
-  return <ProductDetail />;
+  return <ProductDetail brandId={brandId} itemId={itemId} />;
 }
