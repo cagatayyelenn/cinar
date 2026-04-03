@@ -18,14 +18,14 @@ export const brands = [
       canonical: 'https://cinarotoklima.com/climart-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Ticari araç klimaları', path: 'ticari-arac-klimalari' },
-      { label: 'Ticari araç soğutucuları', path: 'ticari-arac-sogutuculari' },
-      { label: 'Özel uygulamalar', path: 'ozel-uygulamalar' }
+      { label: 'Ticari Araç Klimaları', path: 'ticari-arac-klimalari' },
+      { label: 'Ticari Araç Soğutucuları', path: 'ticari-arac-sogutuculari' },
+      { label: 'Özel Uygulamalar', path: 'ozel-uygulamalar' }
     ],
     menuServices: [
-      { label: 'Climart klima bakımı', path: 'bakim' },
-      { label: 'Climart klima onarımı ve tamiri', path: 'onarim' },
-      { label: 'Climart yedek parça', path: 'yedek-parca' }
+      { label: 'Climart Klima Bakımı', path: 'bakim' },
+      { label: 'Climart Klima Onarımı ve Tamiri', path: 'onarim' },
+      { label: 'Climart Yedek Parça', path: 'yedek-parca' }
     ]
   },
   { 
@@ -45,19 +45,19 @@ export const brands = [
       canonical: 'https://cinarotoklima.com/yilkar-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Kuru tip ısıtma', path: 'kuru-tip-isitma' },
-      { label: 'Split klimalar', path: 'split-klimalar' },
-      { label: 'Monoblok klimalar', path: 'monoblok-klimalar' },
-      { label: 'Otobüs klimaları', path: 'otobus-klimalari' },
-      { label: 'İlave split klimalar', path: 'ilave-split-klimalar' },
-      { label: 'İlave tavan kliması', path: 'ilave-tavan-klimasi' },
-      { label: 'Kabin kliması', path: 'kabin-klimasi' },
-      { label: 'Frigorifik soğutucu', path: 'frigorifik-sogutucu' }
+      { label: 'Kuru Tip Isıtma', path: 'kuru-tip-isitma' },
+      { label: 'Split Klimalar', path: 'split-klimalar' },
+      { label: 'Monoblok Klimalar', path: 'monoblok-klimalar' },
+      { label: 'Otobüs Klimaları', path: 'otobus-klimalari' },
+      { label: 'İlave Split Klimalar', path: 'ilave-split-klimalar' },
+      { label: 'İlave Tavan Kliması', path: 'ilave-tavan-klimasi' },
+      { label: 'Kabin Kliması', path: 'kabin-klimasi' },
+      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' }
     ],
     menuServices: [
-      { label: 'Yılkar bakım', path: 'bakim' },
-      { label: 'Yılkar onarım', path: 'onarim' },
-      { label: 'Yılkar yedek parça', path: 'yedek-parca' }
+      { label: 'Yılkar Bakım', path: 'bakim' },
+      { label: 'Yılkar Onarım', path: 'onarim' },
+      { label: 'Yılkar Yedek Parça', path: 'yedek-parca' }
     ]
   },
   { id: 'webasto', name: 'Webasto', logo: '/logolar/webasto-logo1.png' },
@@ -69,12 +69,12 @@ export const products = [
   { 
     id: 'art1000', 
     brandId: 'climart', 
-    name: 'Art1000', 
+    name: 'ART1000', 
     images: ['/climart/art1000-art1000d-kapak.jpg', '/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'],
     description: 'Ticari araçlar için 6m³ - 11m³ kasa hacmine uygun yüksek performanslı soğutucu ünite.', 
-    category: 'Ticari araç soğutucuları',
+    category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art1000',
+      'Ünite Adı: ART1000',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 6m³ / 9m³ / 11m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -93,12 +93,12 @@ export const products = [
   { 
     id: 'art1000d', 
     brandId: 'climart', 
-    name: 'Art1000d', 
+    name: 'ART1000D', 
     images: ['/climart/art1000-art1000d-kapak.jpg', '/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'],
     description: 'Ticari araçlar için 6m³ - 11m³ kasa hacmine uygun standart defrost sistemli yüksek performanslı soğutucu ünite.', 
-    category: 'Ticari araç soğutucuları',
+    category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art1000d',
+      'Ünite Adı: ART1000D',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 6m³ / 9m³ / 11m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -118,12 +118,12 @@ export const products = [
   { 
     id: 'art2000', 
     brandId: 'climart', 
-    name: 'Art2000', 
+    name: 'ART2000', 
     images: ['/climart/art2000-art2000d-kapak.jpg', '/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'],
-    description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için güçlü soğutma sunan Art serisi (Art series).', 
-    category: 'Ticari araç soğutucuları',
+    description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için güçlü soğutma sunan ART Series.', 
+    category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art2000',
+      'Ünite Adı: ART2000',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 12m³ / 16m³ / 19m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -142,12 +142,12 @@ export const products = [
   { 
     id: 'art2000d', 
     brandId: 'climart', 
-    name: 'Art2000d', 
+    name: 'ART2000D', 
     images: ['/climart/art2000-art2000d-kapak.jpg', '/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'],
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için standart defrost donanımlı ticari soğutucu.', 
-    category: 'Ticari araç soğutucuları',
+    category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art2000d',
+      'Ünite Adı: ART2000D',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 12m³ / 16m³ / 19m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -167,12 +167,12 @@ export const products = [
   { 
     id: 'art2200', 
     brandId: 'climart', 
-    name: 'Art2200', 
+    name: 'ART2200', 
     images: ['/climart/art2200-art2200d-kapak.jpg', '/climart/art2200-art2200d.jpg','/climart/art2200-art2200d-1.jpg'], 
-    description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için Art2200 soğutucu ünite.', 
-    category: 'Ticari araç soğutucuları',
+    description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için ART2200 soğutucu ünite.', 
+    category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art2200',
+      'Ünite Adı: ART2200',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 12m³ / 16m³ / 19m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -199,12 +199,12 @@ export const products = [
   { 
     id: 'art2200d', 
     brandId: 'climart', 
-    name: 'Art2200d', 
+    name: 'ART2200D', 
     images: ['/climart/art2200-art2200d-kapak.jpg', '/climart/art2200-art2200d.jpg','/climart/art2200-art2200d-1.jpg'], 
-    description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için defrost destekli Art2200d ticari soğutucu.', 
-    category: 'Ticari araç soğutucuları',
+    description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için defrost destekli ART2200D ticari soğutucu.', 
+    category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art2200d',
+      'Ünite Adı: ART2200D',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 12m³ / 16m³ / 19m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -232,12 +232,12 @@ export const products = [
   { 
     id: 'art2500', 
     brandId: 'climart', 
-    name: 'Art2500', 
+    name: 'ART2500', 
     images: ['/climart/art2500-art2550-kapak.jpg', '/climart/art2500-art2550.jpg','/climart/art2500-art2550-1.jpg'], 
-    description: '12m³ - 22m³ orta-büyük ölçekli ticari taşıtlar için Art2500 soğutucu ünite.', 
-    category: 'Ticari araç klimaları',
+    description: '12m³ - 22m³ orta-büyük ölçekli ticari taşıtlar için ART2500 soğutucu ünite.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art2500',
+      'Ünite Adı: ART2500',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 12m³ / 19m³ / 22m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -257,12 +257,12 @@ export const products = [
   { 
     id: 'art2550d', 
     brandId: 'climart', 
-    name: 'Art2550d', 
+    name: 'ART2550D', 
     images: ['/climart/art2500-art2550-kapak.jpg', '/climart/art2500-art2550.jpg','/climart/art2500-art2550-1.jpg'], 
-    description: '12m³ - 22m³ ticari taşıtlar için defrost destekli Art2550d ticari soğutucu.', 
-    category: 'Ticari araç klimaları',
+    description: '12m³ - 22m³ ticari taşıtlar için defrost destekli ART2550D ticari soğutucu.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art2550d',
+      'Ünite Adı: ART2550D',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 12m³ / 19m³ / 22m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -283,12 +283,12 @@ export const products = [
   { 
     id: 'art3000', 
     brandId: 'climart', 
-    name: 'Art3000', 
+    name: 'ART3000', 
     images: ['/climart/art3000-art3300-kapak.jpg', '/climart/art3000-art3300.jpg','/climart/art3000-art3300-1.jpg'], 
-    description: '19m³ - 26m³ büyük ölçekli ticari taşıtlar için yüksek kapasiteli Art3000 soğutucu ünite.', 
-    category: 'Ticari araç klimaları',
+    description: '19m³ - 26m³ büyük ölçekli ticari taşıtlar için yüksek kapasiteli ART3000 soğutucu ünite.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art3000',
+      'Ünite Adı: ART3000',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 19m³ / 22m³ / 26m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -308,12 +308,12 @@ export const products = [
   { 
     id: 'art3300', 
     brandId: 'climart', 
-    name: 'Art3300', 
+    name: 'ART3300', 
     images: ['/climart/art3000-art3300-kapak.jpg', '/climart/art3000-art3300.jpg','/climart/art3000-art3300-1.jpg'], 
-    description: '19m³ - 26m³ büyük kapasiteli ticari taşıtlar için güçlü ve defrost destekli Art3300 ticari soğutucu.', 
-    category: 'Ticari araç klimaları',
+    description: '19m³ - 26m³ büyük kapasiteli ticari taşıtlar için güçlü ve defrost destekli ART3300 ticari soğutucu.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art3300',
+      'Ünite Adı: ART3300',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 19m³ / 22m³ / 26m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -334,12 +334,12 @@ export const products = [
   { 
     id: 'art4000', 
     brandId: 'climart', 
-    name: 'Art4000', 
+    name: 'ART4000', 
     images: ['/climart/art4000-art4400-kapak.jpg', '/climart/art4000-art4400.jpg','/climart/art4000-art4400-1.jpg'], 
-    description: '24m³ - 36m³ geniş hacimli ticari taşıtlar için dev soğutma kapasiteli Art4000 soğutucu ünite.', 
-    category: 'Ticari araç klimaları',
+    description: '24m³ - 36m³ geniş hacimli ticari taşıtlar için dev soğutma kapasiteli ART4000 soğutucu ünite.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art4000',
+      'Ünite Adı: ART4000',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 24m³ / 32m³ / 36m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -359,12 +359,12 @@ export const products = [
   { 
     id: 'art4400', 
     brandId: 'climart', 
-    name: 'Art4400', 
+    name: 'ART4400', 
     images: ['/climart/art4000-art4400-kapak.jpg', '/climart/art4000-art4400.jpg','/climart/art4000-art4400-1.jpg'], 
-    description: '24m³ - 36m³ ekstra büyük hacimli ticari soğutma gereksinimleri için Art4400 soğutucu donanımı.', 
-    category: 'Ticari araç klimaları',
+    description: '24m³ - 36m³ ekstra büyük hacimli ticari soğutma gereksinimleri için ART4400 soğutucu donanımı.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art4400',
+      'Ünite Adı: ART4400',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 24m³ / 32m³ / 36m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -385,12 +385,12 @@ export const products = [
   { 
     id: 'art5000', 
     brandId: 'climart', 
-    name: 'Art5000', 
+    name: 'ART5000', 
     images: ['/climart/art5000-art5500-kapak.jpg', '/climart/art5000-art5500.jpg','/climart/art5000-art5500-1.jpg'], 
-    description: '32m³ - 50m³ ekstra dev hacimli ticari taşıtlar için Art5000 maksimum soğutma donanımı.', 
+    description: '32m³ - 50m³ ekstra dev hacimli ticari taşıtlar için ART5000 maksimum soğutma donanımı.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art5000',
+      'Ünite Adı: ART5000',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 32m³ / 42m³ / 50m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -410,12 +410,12 @@ export const products = [
   { 
     id: 'art5500', 
     brandId: 'climart', 
-    name: 'Art5500', 
+    name: 'ART5500', 
     images: ['/climart/art5000-art5500-kapak.jpg', '/climart/art5000-art5500.jpg','/climart/art5000-art5500-1.jpg'], 
-    description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans Art5500 ünitesi.', 
+    description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans ART5500 ünitesi.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art5500',
+      'Ünite Adı: ART5500',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 32m³ / 42m³ / 50m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -436,12 +436,12 @@ export const products = [
   { 
     id: 'art5000t', 
     brandId: 'climart', 
-    name: 'Art5000t', 
+    name: 'ART5000T', 
     images: ['/climart/art5000t-art5500t-kapak.jpg', '/climart/art5000t-art5500t.jpg'], 
-    description: '32m³ - 50m³ ekstra dev hacimli ticari taşıtlar için Art5000T maksimum soğutma donanımı.', 
+    description: '32m³ - 50m³ ekstra dev hacimli ticari taşıtlar için ART5000T maksimum soğutma donanımı.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
-      'Ünite adı: Art5000t',
+      'Ünite Adı: ART5000T',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 32m³ / 42m³ / 50m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -461,12 +461,12 @@ export const products = [
   { 
     id: 'art5500t', 
     brandId: 'climart', 
-    name: 'Art5500t', 
+    name: 'ART5500T', 
     images: ['/climart/art5000t-art5500t-kapak.jpg', '/climart/art5000t-art5500t.jpg'], 
-    description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans Art5500T Elektrik donanımlı ünitesi.', 
-    category: 'Ticari araç klimaları',
+    description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans ART5500T Elektrik donanımlı ünitesi.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art5500t',
+      'Ünite Adı: ART5500T',
       'Soğutma Kapasitesi: @30ᵒC',
       'Kasa Hacmi: 32m³ / 42m³ / 50m³',
       'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
@@ -486,12 +486,12 @@ export const products = [
   { 
     id: 'art8-eco', 
     brandId: 'climart', 
-    name: 'Art8 eco', 
+    name: 'ART8 ECO', 
     images: ['/climart/climart-art8-eco-kapak.jpg', '/climart/climart-art8-eco.jpg','/climart/climart-art8-eco-1.jpg'], 
-    description: 'Yüksek kapasiteli soğutma ve ısıtma sunan Art8 eco ticari araç kliması.', 
-    category: 'Ticari araç klimaları',
+    description: 'Yüksek kapasiteli soğutma ve ısıtma sunan ART8 ECO ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art8 eco',
+      'Ünite Adı: ART8 ECO',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 6000Kcal (7000Watt)',
@@ -513,12 +513,12 @@ export const products = [
   { 
     id: 'art10', 
     brandId: 'climart', 
-    name: 'Art10', 
+    name: 'ART10', 
     images: ['/climart/climart-art10-kapak.jpg', '/climart/climart-art10.jpg','/climart/climart-art10-1.jpg'], 
-    description: 'Büyük araçlar için tasarlanmış 10000Watt güçlü soğutma kapasiteli Art10 ticari araç kliması.', 
-    category: 'Ticari araç klimaları',
+    description: 'Büyük araçlar için tasarlanmış 10000Watt güçlü soğutma kapasiteli ART10 ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art10',
+      'Ünite Adı: ART10',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 8600Kcal (10000Watt)',
@@ -540,12 +540,12 @@ export const products = [
   { 
     id: 'art11', 
     brandId: 'climart', 
-    name: 'Art11', 
+    name: 'ART11', 
     images: ['/climart/climart-art11-kapak.jpg', '/climart/climart-art11.jpg','/climart/climart-art11-1.jpg'], 
-    description: '11000Watt olağanüstü soğutma kapasitesiyle Art11 tepe/tavan tipi ticari split araç kliması.', 
-    category: 'Ticari araç klimaları',
+    description: '11000Watt olağanüstü soğutma kapasitesiyle ART11 tepe/tavan tipi ticari split araç kliması.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art11',
+      'Ünite Adı: ART11',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 9500Kcal (11000Watt)',
@@ -567,12 +567,12 @@ export const products = [
   { 
     id: 'art12', 
     brandId: 'climart', 
-    name: 'Art12', 
+    name: 'ART12', 
     images: ['/climart/climart-art12-kapak.jpg', '/climart/climart-art12.jpg'], 
-    description: '12000Watt yüksek soğutma kapasitesine sahip Art12 ticari araç kliması.', 
-    category: 'Ticari araç klimaları',
+    description: '12000Watt yüksek soğutma kapasitesine sahip ART12 ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art12',
+      'Ünite Adı: ART12',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 10320Kcal (12000Watt)',
@@ -592,12 +592,12 @@ export const products = [
   { 
     id: 'art15', 
     brandId: 'climart', 
-    name: 'Art15', 
+    name: 'ART15', 
     images: ['/climart/climart-art15-kapak.jpg', '/climart/climart-art15.jpg'], 
-    description: '15000Watt dev soğutma kapasitesiyle Art15 yüksek performanslı ticari araç kliması.', 
-    category: 'Ticari araç klimaları',
+    description: '15000Watt dev soğutma kapasitesiyle ART15 yüksek performanslı ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art15',
+      'Ünite Adı: ART15',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 12900Kcal (15000Watt)',
@@ -617,12 +617,12 @@ export const products = [
   { 
     id: 'art18-eco', 
     brandId: 'climart', 
-    name: 'Art18 eco', 
+    name: 'ART18 ECO', 
     images: ['/climart/climart-art18-eco.jpg'], 
-    description: '18000Watt yüksek performanslı ve ekonomik Art18 eco ticari araç kliması.', 
-    category: 'Ticari araç klimaları',
+    description: '18000Watt yüksek performanslı ve ekonomik ART18 ECO ticari araç kliması.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art18 eco',
+      'Ünite Adı: ART18 ECO',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 15500Kcal (18000Watt)',
@@ -643,12 +643,12 @@ export const products = [
   { 
     id: 'art22', 
     brandId: 'climart', 
-    name: 'Art22', 
+    name: 'ART22', 
     images: ['/climart/climart-art22-kapak.jpg', '/climart/climart-art22.jpg'], 
-    description: 'Büyük yolcu araçları ve otobüsler için 22000Watt dev kapasiteli Art22 ticari klima.', 
-    category: 'Ticari araç klimaları',
+    description: 'Büyük yolcu araçları ve otobüsler için 22000Watt dev kapasiteli ART22 ticari klima.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art22',
+      'Ünite Adı: ART22',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 18930Kcal (22000Watt)',
@@ -669,12 +669,12 @@ export const products = [
   { 
     id: 'art24', 
     brandId: 'climart', 
-    name: 'Art24', 
+    name: 'ART24', 
     images: ['/climart/climart-art24-kapak.jpg', '/climart/climart-art24.jpg'], 
-    description: 'Üst düzey soğutma gereksinimi olan büyük ticari araçlar için 24000Watt gücünde Art24.', 
-    category: 'Ticari araç klimaları',
+    description: 'Üst düzey soğutma gereksinimi olan büyük ticari araçlar için 24000Watt gücünde ART24.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art24',
+      'Ünite Adı: ART24',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 20700Kcal (24000Watt)',
@@ -695,12 +695,12 @@ export const products = [
   { 
     id: 'art40', 
     brandId: 'climart', 
-    name: 'Art40', 
+    name: 'ART40', 
     images: ['/climart/climart-art40-kapak.jpg', '/climart/climart-art40.jpg'], 
-    description: 'Devasa yolcu otobüsleri ve özel projeler için 40000Watt mega kapasiteli Art40 ticari klima.', 
-    category: 'Ticari araç klimaları',
+    description: 'Devasa yolcu otobüsleri ve özel projeler için 40000Watt mega kapasiteli ART40 ticari klima.', 
+    category: 'Ticari Araç Klimaları',
     features: [
-      'Ünite adı: Art40',
+      'Ünite Adı: ART40',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 34400Kcal (40000Watt)',
@@ -721,12 +721,12 @@ export const products = [
   { 
     id: 'art3', 
     brandId: 'climart', 
-    name: 'Art3', 
+    name: 'ART3', 
     images: ['/climart/climart-art3-kapak.jpg', '/climart/climart-art3.jpg'], 
-    description: 'Kompakt boyutlarıyla araç orijinal fanına entegre çalışan 4000Watt kapasiteli Art3 ticari klima.', 
-    category: 'Özel uygulamalar',
+    description: 'Kompakt boyutlarıyla araç orijinal fanına entegre çalışan 4000Watt kapasiteli ART3 ticari klima.', 
+    category: 'Özel Uygulamalar',
     features: [
-      'Ünite adı: Art3',
+      'Ünite Adı: ART3',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 3440Kcal (4000Watt)',
@@ -747,12 +747,12 @@ export const products = [
   { 
     id: 'art5', 
     brandId: 'climart', 
-    name: 'Art5', 
+    name: 'ART5', 
     images: ['/climart/climart-art5-kapak.jpg', '/climart/climart-art5.jpg'], 
-    description: '5000Watt soğutma kapasitesiyle standart ticari araç iklimlendirme ünitelerinin favorisi Art5.', 
-    category: 'Özel uygulamalar',
+    description: '5000Watt soğutma kapasitesiyle standart ticari araç iklimlendirme ünitelerinin favorisi ART5.', 
+    category: 'Özel Uygulamalar',
     features: [
-      'Ünite adı: Art5',
+      'Ünite Adı: ART5',
       'Soğutma Kapasitesi: @35ᵒC',
       'Isıtma Kapasitesi: @Q80ᵒC',
       'Araç Motorundan Tahrikli: 4300Kcal (5000Watt)',
@@ -778,7 +778,7 @@ export const products = [
     name: 'YH-2 Kuru Tip Isıtıcı', 
     images: ['/yilkar/kuru-tipi-isitici-yh-2.jpg'], 
     description: 'Ticari araçlar için motor bağımsız, düşük yakıt tüketimli ve yüksek verimlilikli kabin ısıtma çözümü.', 
-    category: 'Kuru tip ısıtma',
+    category: 'Kuru Tip Isıtma',
     features: [
       'Isıtma Kapasitesi: 2.2 kW',
       'Yakıt Tipi: Dizel',
@@ -794,7 +794,7 @@ export const products = [
     name: 'YH-4 Kuru Tip Isıtıcı', 
     images: ['https://picsum.photos/seed/yh4/400/300'], 
     description: 'Büyük kabinli ticari araçlar ve tekneler için 4 kW kapasiteli motor bağımsız ısıtıcı.', 
-    category: 'Kuru tip ısıtma',
+    category: 'Kuru Tip Isıtma',
     features: [
       'Isıtma Kapasitesi: 4.0 kW',
       'Yakıt Tipi: Dizel',
@@ -810,7 +810,7 @@ export const products = [
     name: 'YK-12 Monoblok Klima', 
     images: ['https://picsum.photos/seed/yk12/400/300'], 
     description: 'Panelvan tipi ticari araçlar için kompakt tasarım monoblok iklimlendirme sistemi.', 
-    category: 'Monoblok klimalar',
+    category: 'Monoblok Klimalar',
     features: [
       'Soğutma Kapasitesi: 4.5 kW',
       'Soğutucu Akışkan: R134a',
@@ -825,7 +825,7 @@ export const products = [
     name: 'YK-90 S Split Klima', 
     images: ['https://picsum.photos/seed/yk90/400/300'], 
     description: 'Minibüs ve midibüsler için tasarlanmış yüksek performanslı split klima sistemi.', 
-    category: 'Split klimalar',
+    category: 'Split Klimalar',
     features: [
       'Soğutma Kapasitesi: 9.0 kW',
       'Soğutucu Akışkan: R134a',
@@ -840,7 +840,7 @@ export const products = [
     name: 'YK-155 Otobüs Kliması', 
     images: ['https://picsum.photos/seed/yk155/400/300'], 
     description: 'Şehir içi ve şehirler arası otobüsler için maksimum kapasiteli tavan tipi klima.', 
-    category: 'Otobüs klimaları',
+    category: 'Otobüs Klimaları',
     features: [
       'Soğutma Kapasitesi: 24 - 32 kW',
       'Soğutucu Akışkan: R134a',
@@ -855,7 +855,7 @@ export const products = [
     name: 'YK-100 İlave Tavan Kliması', 
     images: ['https://picsum.photos/seed/yk100/400/300'], 
     description: 'Araç orijinal klimasına destek olarak takılan ilave tavan tipi soğutma ünitesi.', 
-    category: 'İlave tavan kliması',
+    category: 'İlave Tavan Kliması',
     features: [
       'Soğutma Kapasitesi: 3.5 kW',
       'Soğutucu Akışkan: R134a',
@@ -869,7 +869,7 @@ export const products = [
     name: 'YK-40 Kabin Kliması', 
     images: ['https://picsum.photos/seed/yk40/400/300'], 
     description: 'Traktör, vinç ve iş makinesi kabinleri için özel tasarım dayanıklı klima ünitesi.', 
-    category: 'Kabin kliması',
+    category: 'Kabin Kliması',
     features: [
       'Soğutma Kapasitesi: 4.0 kW',
       'Besleme: 12V / 24V DC',
@@ -883,7 +883,7 @@ export const products = [
     name: 'Y-10 Frigorifik Soğutucu', 
     images: ['https://picsum.photos/seed/y10/400/300'], 
     description: 'Gıda taşımacılığı yapan ticari araçlar için 0/+5 derece frigorifik soğutma sistemi.', 
-    category: 'Frigorifik soğutucu',
+    category: 'Frigorifik Soğutucu',
     features: [
       'Soğutma Aralığı: 0°C / +5°C',
       'Kasa Hacmi: 10 m³',

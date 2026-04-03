@@ -13,13 +13,13 @@ export default function Contact() {
       {/* Hero Section - Minimalist & Airy */}
       <div className="bg-white pt-40 pb-24 border-b border-gray-100">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex items-center text-[10px] text-gray-400 mb-12 font-black tracking-tight">
+          <div className="flex items-center text-[10px] text-gray-400 mb-12 font-black uppercase tracking-[0.3em]">
             <Link to="/" className="hover:text-black transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
             <span className="text-black">İletişim</span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-black text-black tracking-tighter leading-[0.9] mb-8">
-            Bize <br/><span className="text-gray-200">ulaşın</span>
+          <h1 className="text-6xl md:text-8xl font-black text-black uppercase tracking-tighter leading-[0.9] mb-8">
+            BİZE <br/><span className="text-gray-200">ULAŞIN</span>
           </h1>
           <p className="text-gray-500 text-xl max-w-2xl leading-relaxed font-light">
             Sorularınız, servis talepleriniz veya yedek parça siparişleriniz için profesyonel ekibimizle doğrudan iletişime geçin.
@@ -41,7 +41,7 @@ export default function Contact() {
                     <div className="w-10 h-10 bg-black text-white flex items-center justify-center">
                       <Phone size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="text-xs font-black tracking-tight text-gray-400">Telefon Hattı</h3>
+                    <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">Telefon Hattı</h3>
                   </div>
                   <a href="tel:+905070485034" className="text-3xl font-black text-black hover:text-gray-600 transition-colors block mb-2">
                     0507 048 50 34
@@ -54,7 +54,7 @@ export default function Contact() {
                     <div className="w-10 h-10 bg-[#25D366] text-white flex items-center justify-center">
                       <MessageCircle size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="text-xs font-black tracking-tight text-gray-400">WhatsApp Destek</h3>
+                    <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">WhatsApp Destek</h3>
                   </div>
                   <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="text-3xl font-black text-black hover:text-[#25D366] transition-colors block mb-2">
                     Mesaj Gönderin
@@ -72,18 +72,18 @@ export default function Contact() {
                     <div className="w-10 h-10 bg-gray-100 text-black flex items-center justify-center">
                       <MapPin size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="text-xs font-black tracking-tight text-gray-400">Merkez Servis</h3>
+                    <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">Merkez Servis</h3>
                   </div>
-                  <p className="text-xl font-bold text-black leading-snug mb-6 tracking-tight">
-                    Ramazanoğlu, Sanayi Cd. <br/>No:44 B Blok No:65, <br/>34906 Pendik/İstanbul
+                  <p className="text-xl font-bold text-black leading-snug mb-6 uppercase tracking-tight">
+                    Ramazanoğlu, Sanayi Cd. <br/>NO:44 B BLOK NO:65, <br/>34906 Pendik/İstanbul
                   </p>
                   <a 
                     href="https://maps.google.com" 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center text-[10px] font-black text-black tracking-tight group"
+                    className="inline-flex items-center text-[10px] font-black text-black uppercase tracking-[0.2em] group"
                   >
-                    Haritada görüntüle <ExternalLink size={12} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    HARİTADA GÖRÜNTÜLE <ExternalLink size={12} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </a>
                 </div>
 
@@ -92,7 +92,7 @@ export default function Contact() {
                     <div className="w-10 h-10 bg-gray-100 text-black flex items-center justify-center">
                       <Mail size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="text-xs font-black tracking-tight text-gray-400">E-Posta Adresi</h3>
+                    <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">E-Posta Adresi</h3>
                   </div>
                   <a href="mailto:info@cinarotoklima.com" className="text-xl font-black text-black hover:text-gray-600 transition-colors block mb-2">
                     info@cinarotoklima.com
@@ -108,26 +108,26 @@ export default function Contact() {
             <div className="bg-gray-50 p-12 lg:p-16">
               <div className="flex items-center gap-4 mb-12">
                 <Clock className="text-black" size={24} strokeWidth={1.5} />
-                <h2 className="text-xs font-black tracking-tight text-black">Çalışma saatleri</h2>
+                <h2 className="text-xs font-black uppercase tracking-[0.3em] text-black">Çalışma Saatleri</h2>
               </div>
               
               <div className="space-y-8">
                 <div className="flex justify-between items-end border-b border-gray-200 pb-4">
-                  <span className="text-sm font-bold text-gray-400 tracking-tight">Pazartesi — Cuma</span>
+                  <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Pazartesi — Cuma</span>
                   <span className="text-xl font-black text-black">08:30 – 19:00</span>
                 </div>
                 <div className="flex justify-between items-end border-b border-gray-200 pb-4">
-                  <span className="text-sm font-bold text-gray-400 tracking-tight">Cumartesi</span>
+                  <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Cumartesi</span>
                   <span className="text-xl font-black text-black">08:30 – 17:00</span>
                 </div>
                 <div className="flex justify-between items-end pb-4">
-                  <span className="text-sm font-bold text-gray-400 tracking-tight">Pazar</span>
-                  <span className="text-xl font-black text-gray-300">Kapalı</span>
+                  <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Pazar</span>
+                  <span className="text-xl font-black text-gray-300 uppercase">Kapalı</span>
                 </div>
               </div>
 
               <div className="mt-16 pt-16 border-t border-gray-200">
-                <p className="text-xs font-bold text-gray-400 tracking-tight leading-relaxed">
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] leading-relaxed">
                   Servis yoğunluğu nedeniyle gelmeden önce randevu almanız rica olunur.
                 </p>
               </div>
@@ -138,8 +138,8 @@ export default function Contact() {
         {/* Map Section - Full Width & Minimal */}
         <div className="mt-32">
           <div className="flex justify-between items-end mb-12">
-            <h2 className="text-xs font-black text-black tracking-tight">Lokasyon</h2>
-            <span className="text-[10px] text-gray-400 font-bold tracking-tight">İstanbul, Türkiye</span>
+            <h2 className="text-xs font-black text-black uppercase tracking-[0.4em]">LOKASYON</h2>
+            <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">İstanbul, Türkiye</span>
           </div>
           <div className="aspect-[21/7] bg-gray-50 relative overflow-hidden grayscale contrast-125 brightness-105">
             <iframe 

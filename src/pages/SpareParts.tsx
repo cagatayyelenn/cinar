@@ -4,7 +4,7 @@ import { products, brands } from '../data/mockData';
 import { ChevronRight, Filter, ChevronDown } from 'lucide-react';
 
 export default function SpareParts() {
-  const spareParts = products.filter(p => p.category?.toLowerCase() === 'yedek parça');
+  const spareParts = products.filter(p => p.category === 'Yedek Parça');
 
   return (
     <>
@@ -19,8 +19,9 @@ export default function SpareParts() {
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Tüm yetkili servis markalarımızın %100 orijinal yedek parçaları stoklarımızda.
           </p>
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-blue-100/50 animate-bounce-slow">
-            <ChevronDown size={20} strokeWidth={1} />
+          {/* Scroll Down Arrow */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-blue-100/80 animate-bounce-slow">
+            <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>
       </div>
