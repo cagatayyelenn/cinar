@@ -201,9 +201,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     <div className="mt-auto border-t border-gray-100 pt-6">
                       <p className="text-black font-black text-[10px] uppercase tracking-widest mb-4 opacity-60">Kullanım Alanı:</p>
                       <div className="flex flex-wrap gap-4 text-black mb-8 grayscale group-hover:grayscale-0 transition-all duration-500">
-                        <img src="/araba.svg" alt="Araba" className="w-8 h-8" title="Otomobil" />
-                        <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Hafif Ticari" />
-                        <img src="/otobus.svg" alt="Otobüs" className="w-8 h-8" title="Minibüs / Otobüs" />
+                        <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Ticari Araçlar" />
                       </div>
                       <div className="flex items-center justify-end">
                         <span className="font-black text-xs uppercase tracking-widest text-black flex items-center group-hover:translate-x-1 transition-transform">
