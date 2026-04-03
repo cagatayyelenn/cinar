@@ -28,7 +28,38 @@ export const brands = [
       { label: 'Climart Yedek Parça', path: 'yedek-parca' }
     ]
   },
-  { id: 'yilkar', name: 'Yılkar', logo: '/logolar/yilkar-logo.png' },
+  { 
+    id: 'yilkar', 
+    name: 'Yılkar', 
+    logo: '/logolar/yilkar-logo.png',
+    heroDescription: 'Çınar Oto Klima; Yılkar yetkili servisi olarak kuru tip ısıtma, split ve monoblok klima sistemlerinde profesyonel çözümler sunar. Hemen keşfedin.',
+    whyTitle: 'Yılkar Isıtma ve Soğutma Sistemleri Yetkili Servisi',
+    whyDescription: 'Yılkar markasının Türkiye genelindeki güçlü servis ağının bir parçası olarak, ticari araçlarınızın konforunu ve verimliliğini koruyoruz. Kuru tip ısıtıcılar (Webasto tipi), monoblok ve split klimalar ile frigorifik soğutma sistemlerinde montaj ve bakım hizmeti veriyoruz. Orijinal yedek parça ve garanti güvencesiyle Yılkar teknolojisini aracınıza taşıyoruz.',
+    seo: {
+      title: 'Yılkar Yetkili Servisi | Kuru Tip Isıtma ve Araç Klimaları',
+      description: 'Yılkar yetkili servisi Çınar Oto Klima; minibüs, otobüs ve panelvan tipi araçlar için klima ve ısıtıcı çözümleri sunar.',
+      keywords: 'Yılkar yetkili servisi, kuru tip ısıtıcı, araç kliması, Yılkar klima servis, monoblok klima, split klima, araç ısıtma sistemleri',
+      ogTitle: 'Yılkar Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Yılkar ısıtma ve soğutma sistemlerinde yetkili servis güvencesi.',
+      ogUrl: 'https://cinarotoklima.com/yilkar-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/yilkar-yetkili-servisi'
+    },
+    menuProducts: [
+      { label: 'Kuru Tip Isıtma', path: 'kuru-tip-isitma' },
+      { label: 'Split Klimalar', path: 'split-klimalar' },
+      { label: 'Monoblok Klimalar', path: 'monoblok-klimalar' },
+      { label: 'Otobüs Klimaları', path: 'otobus-klimalari' },
+      { label: 'İlave Split Klimalar', path: 'ilave-split-klimalar' },
+      { label: 'İlave Tavan Kliması', path: 'ilave-tavan-klimasi' },
+      { label: 'Kabin Kliması', path: 'kabin-klimasi' },
+      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' }
+    ],
+    menuServices: [
+      { label: 'Yılkar Bakım', path: 'bakim' },
+      { label: 'Yılkar Onarım', path: 'onarim' },
+      { label: 'Yılkar Yedek Parça', path: 'yedek-parca' }
+    ]
+  },
   { id: 'webasto', name: 'Webasto', logo: '/logolar/webasto-logo1.png' },
   { id: 'coolman', name: 'Coolman', logo: '/logolar/coolman-logo1.png' },
   { id: 'delphi', name: 'Delphi', logo: '/logolar/delphi-logo1.png' },
@@ -741,9 +772,125 @@ export const products = [
     ]
   },
 
-  { id: 'yilkar-panelvan-klima', brandId: 'yilkar', name: 'Yılkar Panelvan Klima YK-12', images: ['https://picsum.photos/seed/klima2/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
-  { id: 'yilkar-tavan-klimasi', brandId: 'yilkar', name: 'Yılkar Tavan Tipi Klima YK-24', images: ['https://picsum.photos/seed/klima4/400/300'], description: 'Minibüs ve midibüsler için ideal tavan tipi klima sistemi.', category: 'Klima' },
-  { id: 'yilkar-kuru-isitici', brandId: 'yilkar', name: 'Yılkar Kuru Tip Isıtıcı (Webasto)', images: ['https://picsum.photos/seed/isitici2/400/300'], description: 'Düşük yakıt tüketimi ile kabin içi hızlı ısıtma çözümü.', category: 'Isıtıcı' },
+  { 
+    id: 'yh-2', 
+    brandId: 'yilkar', 
+    name: 'YH-2 Kuru Tip Isıtıcı', 
+    images: ['/yilkar/kuru-tipi-isitici-yh-2.jpg'], 
+    description: 'Ticari araçlar için motor bağımsız, düşük yakıt tüketimli ve yüksek verimlilikli kabin ısıtma çözümü.', 
+    category: 'Kuru Tip Isıtma',
+    features: [
+      'Isıtma Kapasitesi: 2.2 kW',
+      'Yakıt Tipi: Dizel',
+      'Yakıt Tüketimi (max): 0.28 L/sa',
+      'Anma Gerilimi: 12V / 24V DC',
+      'Hava Debisi: 105 m³/sa',
+      'Ağırlık: 2.6 Kg'
+    ]
+  },
+  { 
+    id: 'yh-4', 
+    brandId: 'yilkar', 
+    name: 'YH-4 Kuru Tip Isıtıcı', 
+    images: ['https://picsum.photos/seed/yh4/400/300'], 
+    description: 'Büyük kabinli ticari araçlar ve tekneler için 4 kW kapasiteli motor bağımsız ısıtıcı.', 
+    category: 'Kuru Tip Isıtma',
+    features: [
+      'Isıtma Kapasitesi: 4.0 kW',
+      'Yakıt Tipi: Dizel',
+      'Yakıt Tüketimi (max): 0.51 L/sa',
+      'Anma Gerilimi: 12V / 24V DC',
+      'Hava Debisi: 185 m³/sa',
+      'Ağırlık: 4.5 Kg'
+    ]
+  },
+  { 
+    id: 'yk-12', 
+    brandId: 'yilkar', 
+    name: 'YK-12 Monoblok Klima', 
+    images: ['https://picsum.photos/seed/yk12/400/300'], 
+    description: 'Panelvan tipi ticari araçlar için kompakt tasarım monoblok iklimlendirme sistemi.', 
+    category: 'Monoblok Klimalar',
+    features: [
+      'Soğutma Kapasitesi: 4.5 kW',
+      'Soğutucu Akışkan: R134a',
+      'Hava Debisi: 1200 m³/sa',
+      'Ağırlık: 32 Kg',
+      'Tip: Tepe Tipi Monoblok'
+    ]
+  },
+  { 
+    id: 'yk-90-s', 
+    brandId: 'yilkar', 
+    name: 'YK-90 S Split Klima', 
+    images: ['https://picsum.photos/seed/yk90/400/300'], 
+    description: 'Minibüs ve midibüsler için tasarlanmış yüksek performanslı split klima sistemi.', 
+    category: 'Split Klimalar',
+    features: [
+      'Soğutma Kapasitesi: 9.0 kW',
+      'Soğutucu Akışkan: R134a',
+      'Hava Debisi: 2400 m³/sa',
+      'Kompresör: Tahrikli',
+      'Besleme: 12V / 24V DC'
+    ]
+  },
+  { 
+    id: 'yk-155', 
+    brandId: 'yilkar', 
+    name: 'YK-155 Otobüs Kliması', 
+    images: ['https://picsum.photos/seed/yk155/400/300'], 
+    description: 'Şehir içi ve şehirler arası otobüsler için maksimum kapasiteli tavan tipi klima.', 
+    category: 'Otobüs Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 24 - 32 kW',
+      'Soğutucu Akışkan: R134a',
+      'Hava Debisi: 4800 m³/sa',
+      'Uzunluk: 3200 mm',
+      'Besleme: 24V DC'
+    ]
+  },
+  { 
+    id: 'yk-100', 
+    brandId: 'yilkar', 
+    name: 'YK-100 İlave Tavan Kliması', 
+    images: ['https://picsum.photos/seed/yk100/400/300'], 
+    description: 'Araç orijinal klimasına destek olarak takılan ilave tavan tipi soğutma ünitesi.', 
+    category: 'İlave Tavan Kliması',
+    features: [
+      'Soğutma Kapasitesi: 3.5 kW',
+      'Soğutucu Akışkan: R134a',
+      'Montaj Tipi: Tepe Tipi',
+      'Besleme: 12V / 24V DC'
+    ]
+  },
+  { 
+    id: 'yk-40', 
+    brandId: 'yilkar', 
+    name: 'YK-40 Kabin Kliması', 
+    images: ['https://picsum.photos/seed/yk40/400/300'], 
+    description: 'Traktör, vinç ve iş makinesi kabinleri için özel tasarım dayanıklı klima ünitesi.', 
+    category: 'Kabin Kliması',
+    features: [
+      'Soğutma Kapasitesi: 4.0 kW',
+      'Besleme: 12V / 24V DC',
+      'Filtre: Toz ve Polen Korumalı',
+      'Dayanıklılık: Titreşime Karşı Özel Panel'
+    ]
+  },
+  { 
+    id: 'y-10', 
+    brandId: 'yilkar', 
+    name: 'Y-10 Frigorifik Soğutucu', 
+    images: ['https://picsum.photos/seed/y10/400/300'], 
+    description: 'Gıda taşımacılığı yapan ticari araçlar için 0/+5 derece frigorifik soğutma sistemi.', 
+    category: 'Frigorifik Soğutucu',
+    features: [
+      'Soğutma Aralığı: 0°C / +5°C',
+      'Kasa Hacmi: 10 m³',
+      'Defrost Sistemi: Otomatik',
+      'Besleme: 12V / 24V DC'
+    ]
+  },
   { id: 'webasto-sulu-isitici', brandId: 'webasto', name: 'Webasto Sulu Isıtıcı', images: ['https://picsum.photos/seed/isitici1/400/300'], description: 'Motor bağımsız sulu ısıtıcı sistemi.', category: 'Isıtıcı' },
   { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
   { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
@@ -753,11 +900,12 @@ export const services = [
   { id: 'climart-bakim', brandId: 'climart', name: 'Climart Bakım', image: '/climart/climart-arac-bakimi.png', description: 'Climart ticari araç soğutucu ve klimalarının uzun ömürlü olması için periyodik, detaylı bakım hizmeti.' },
   { id: 'climart-onarim', brandId: 'climart', name: 'Climart Onarım', image: '/climart/climart-arac-onarimi.png', description: 'Klimalarınızda meydana gelen tüm arızaların uzman teknisyenlerimiz tarafından kalıcı ve hızlı onarımı.' },
   { id: 'climart-yedek-parca', brandId: 'climart', name: 'Climart Yedek Parça', image: '/climart/climart-arac-yedek-parca.png', description: 'Cihazlarınızın tam performansını koruması için garantili, %100 orijinal ve onaylı Climart yedek parçaları.' },
-  { id: 'yilkar-ticari-arac-klimalari', brandId: 'yilkar', name: 'Yılkar Ticari Araç Klimaları Bakım ve Montajı', image: 'https://picsum.photos/seed/servisyilkar/600/400', description: 'Yılkar marka ticari araç klimalarının profesyonel montajı, onarımı ve periyodik bakımı.' },
+  { id: 'yilkar-bakim', brandId: 'yilkar', name: 'Yılkar Klima ve Isıtıcı Periyodik Bakımı', image: 'https://picsum.photos/seed/servisyilkar/600/400', description: 'Yılkar marka sistemlerinizin verimliliğini korumak için sezonluk ve yıllık periyodik bakım hizmetleri.' },
   { id: 'webasto-ticari-arac-klimalari', brandId: 'webasto', name: 'Webasto Isıtıcı ve Klima Bakımı', image: 'https://picsum.photos/seed/serviswebasto/600/400', description: 'Webasto sistemlerinizin kışa hazırlığı, arıza onarımı ve periyodik bakımı.' },
   { id: 'coolman-ticari-arac-klimalari', brandId: 'coolman', name: 'Coolman Tepe Kliması Montajı', image: 'https://picsum.photos/seed/serviscoolman/600/400', description: 'Coolman tepe klimalarının profesyonel montajı ve garantili bakım hizmetleri.' },
   { id: 'delphi-ticari-arac-klimalari', brandId: 'delphi', name: 'Delphi Klima Sistemleri Onarımı', image: 'https://picsum.photos/seed/servisdelphi/600/400', description: 'Delphi kompresör ve klima sistemlerinin arıza tespiti, onarımı ve bakımı.' },
-  { id: 'yilkar-klima-gazi-dolumu', brandId: 'yilkar', name: 'Klima Gazı Dolumu', image: 'https://picsum.photos/seed/servis2/600/400', description: 'Orijinal gaz ile Yılkar klimalarınızın gaz dolumu.' },
+  { id: 'yilkar-onarim', brandId: 'yilkar', name: 'Yılkar Arıza Tespit ve Onarım', image: 'https://picsum.photos/seed/servis2/600/400', description: 'Yılkar klimalarında ve ısıtıcılarında meydana gelen her türlü donanımsal ve yazılımsal arızanın onarımı.' },
+  { id: 'yilkar-yedek-parca', brandId: 'yilkar', name: 'Yılkar Orijinal Yedek Parça Desteği', image: 'https://picsum.photos/seed/servis3/600/400', description: 'Yılkar sistemleri için %100 orijinal kompresör, fan ve kontrol ünitesi gibi yedek parça temini.' },
   { id: 'webasto-isitici-tamiri', brandId: 'webasto', name: 'Isıtıcı Tamiri ve Bakımı', image: 'https://picsum.photos/seed/servis3/600/400', description: 'Webasto ısıtıcılarınızın kışa hazırlığı ve arıza onarımı.' },
 ];
 
