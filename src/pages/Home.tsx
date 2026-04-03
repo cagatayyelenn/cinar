@@ -189,7 +189,7 @@ export default function Home() {
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
-                className="max-h-24 md:max-h-32 lg:max-h-40 max-w-[85%] object-contain grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 mix-blend-multiply relative z-10" 
+                className="max-h-24 md:max-h-32 lg:max-h-40 max-w-[85%] object-contain transition-all duration-500 group-hover:scale-110 mix-blend-multiply relative z-10" 
               />
               <ArrowUpRight className="absolute bottom-4 right-4 text-black opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0" size={24} />
             </Link>
