@@ -20,8 +20,8 @@ export default function Footer() {
                 <span className="text-[#0f2851] font-black text-2xl">Ç</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-black text-2xl leading-none tracking-tighter">ÇINAR</span>
-                <span className="text-amber-500 font-bold text-[10px] tracking-[0.3em] uppercase">OTO KLİMA</span>
+                <span className="text-white font-black text-2xl leading-none tracking-tighter">Çınar</span>
+                <span className="text-amber-500 font-bold text-[10px] tracking-tight">Oto Klima</span>
               </div>
             </Link>
             <p className="text-sm text-slate-400 mb-10 leading-relaxed font-light">
@@ -38,7 +38,7 @@ export default function Footer() {
  
           {/* Col 2: Quick Links */}
           <div>
-            <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10">Hızlı Bağlantılar</h3>
+            <h3 className="text-white font-black text-xs tracking-tight mb-10">Hızlı bağlantılar</h3>
             <ul className="space-y-4">
               {[
                 { label: 'Anasayfa', path: '/' },
@@ -60,7 +60,7 @@ export default function Footer() {
  
           {/* Col 3: Services / Brands */}
           <div>
-            <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10">Yetkili Servisler</h3>
+            <h3 className="text-white font-black text-xs tracking-tight mb-10">Yetkili servisler</h3>
             <ul className="space-y-4">
               {brands.map(brand => (
                 <li key={brand.id}>
@@ -75,7 +75,7 @@ export default function Footer() {
  
           {/* Col 4: Services */}
           <div>
-            <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10">Hizmetlerimiz</h3>
+            <h3 className="text-white font-black text-xs tracking-tight mb-10">Hizmetlerimiz</h3>
             <ul className="space-y-4">
               {[
                 'Klima Montajı',
@@ -104,7 +104,7 @@ export default function Footer() {
               <PhoneCall size={32} />
             </div>
             <div>
-              <span className="text-white font-black text-lg block uppercase tracking-tight">Servis ve Randevu Talepleriniz İçin</span>
+              <span className="text-white font-black text-lg block tracking-tight">Servis ve randevu talepleriniz için</span>
               <span className="text-slate-400 text-sm font-light">7/24 Kesintisiz Teknik Destek ve Randevu Hattı</span>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
  
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/5 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/5 text-[11px] font-bold tracking-tight text-slate-500">
           <p>© {new Date().getFullYear()} Çınar Oto Klima. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-8 mt-6 md:mt-0">
             <Link to="/gizlilik" className="hover:text-amber-500 transition-colors">Gizlilik Politikası</Link>

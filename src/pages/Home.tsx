@@ -54,14 +54,14 @@ export default function Home() {
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
                   <div className="max-w-4xl">
                     <div className="flex items-center gap-4 mb-8">
-                      <span className="font-mono text-[#fa9700] text-sm tracking-widest uppercase border border-[#fa9700] px-4 py-1 rounded-full">
-                        // YETKİLİ SERVİS
+                      <span className="font-mono text-[#fa9700] text-sm tracking-tight border border-[#fa9700] px-4 py-1 rounded-full">
+                        [ Güncel ] Yetkili Servis
                       </span>
-                      <span className="font-mono text-white/50 text-sm tracking-widest">
+                      <span className="font-mono text-white/50 text-sm tracking-tight">
                         [ {String(index + 1).padStart(2, '0')} / {String(brands.length).padStart(2, '0')} ]
                       </span>
                     </div>
-                    <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter uppercase mb-6">
+                    <h2 className="font-heading text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[0.95] tracking-tighter mb-6">
                       {brand.name}
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light border-l-2 border-[#fa9700] pl-6">
@@ -70,11 +70,11 @@ export default function Home() {
                   </div>
                   
                   <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#fa9700] text-black px-10 py-5 rounded-full font-heading font-bold text-lg uppercase tracking-wide hover:bg-white transition-all shadow-xl hover:shadow-orange-500/20">
+                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#fa9700] text-black px-10 py-5 rounded-full font-heading font-bold text-lg tracking-wide hover:bg-white transition-all shadow-xl hover:shadow-orange-500/20">
                       <span>Hizmetleri İncele</span>
                       <ArrowUpRight className="ml-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={24} />
                     </Link>
-                    <Link to="/iletisim" className="group flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-full font-heading font-bold text-lg uppercase tracking-wide hover:bg-white/20 transition-all shadow-xl">
+                    <Link to="/iletisim" className="group flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-full font-heading font-bold text-lg tracking-wide hover:bg-white/20 transition-all shadow-xl">
                       <span>İletişime Geç</span>
                       <ArrowRight className="ml-4 group-hover:translate-x-1 transition-transform" size={24} />
                     </Link>
@@ -94,22 +94,22 @@ export default function Home() {
         </div>
 
         {/* Scroll Down Arrow */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 text-white opacity-80 animate-bounce-slow">
-          <ChevronDown size={32} strokeWidth={1} />
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 text-white/50 animate-bounce-slow">
+          <ChevronDown size={20} strokeWidth={1} />
         </div>
       </section>
 
       {/* TICKER / TRUST BAR - Stark & Minimal */}
       <div className="border-b border-slate-300 bg-white overflow-hidden py-4">
-        <div className="flex whitespace-nowrap animate-marquee font-mono text-xs md:text-sm font-bold tracking-widest uppercase text-black">
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 20+ YILLIK TECRÜBE</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> %100 ORİJİNAL PARÇA</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> SERTİFİKALI TEKNİSYENLER</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 7/24 KESİNTİSİZ DESTEK</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> GLOBAL MARKALAR</span>
+        <div className="flex whitespace-nowrap animate-marquee font-mono text-xs md:text-sm font-bold tracking-tight text-black">
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 20+ Yıllık Tecrübe</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> %100 Orijinal Parça</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> Sertifikalı Teknisyenler</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 7/24 Kesintisiz Destek</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> Global Markalar</span>
           {/* Duplicate for seamless loop */}
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 20+ YILLIK TECRÜBE</span>
-          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> %100 ORİJİNAL PARÇA</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> 20+ Yıllık Tecrübe</span>
+          <span className="mx-8 flex items-center"><span className="w-2 h-2 bg-[#fa9700] mr-3"></span> %100 Orijinal Parça</span>
         </div>
       </div>
 
@@ -120,17 +120,17 @@ export default function Home() {
             
             {/* Left: Typography */}
             <div className="lg:col-span-5">
-              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
-                <span className="w-8 h-[1px] bg-[#0f2851]"></span> KURUMSAL PROFİL
+              <div className="font-mono text-black text-sm tracking-tight mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> Kurumsal Profil
               </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-6">
-                TİCARİ ARAÇ İKLİMLENDİRME SİSTEMLERİNDE <span className="text-black">REFERANS NOKTASI.</span>
+                Ticari araç iklimlendirme sistemlerinde <span className="text-black">referans noktası.</span>
               </h2>
               <p className="text-lg text-black leading-relaxed font-light mb-8 max-w-xl">
                 Sektördeki köklü geçmişimiz ve uzman kadromuzla, dünyanın önde gelen markalarının yetkili servisi olarak kalite ve güveni standart haline getiriyoruz.
               </p>
               
-              <Link to="/hakkimizda" className="inline-flex items-center gap-3 font-heading font-bold text-base uppercase tracking-wide text-black hover:text-black transition-colors group">
+              <Link to="/hakkimizda" className="inline-flex items-center gap-3 font-heading font-bold text-base tracking-wide text-black hover:text-black transition-colors group">
                 <span className="border-b-2 border-[#0f2851] group-hover:border-orange-500 pb-1">Tüm Detayları İncele</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </Link>
@@ -141,19 +141,19 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <div className="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
                   <div className="font-heading text-4xl md:text-5xl font-black text-black mb-2">20<span className="text-black">+</span></div>
-                  <div className="font-mono text-xs md:text-sm text-black uppercase tracking-widest">Yıllık Deneyim</div>
+                  <div className="font-mono text-xs md:text-sm text-black">Yıllık Deneyim</div>
                 </div>
                 <div className="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
                   <div className="font-heading text-4xl md:text-5xl font-black text-black mb-2">05</div>
-                  <div className="font-mono text-xs md:text-sm text-black uppercase tracking-widest">Global Marka</div>
+                  <div className="font-mono text-xs md:text-sm text-black">Global Marka</div>
                 </div>
                 <div className="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
                   <div className="font-heading text-4xl md:text-5xl font-black text-black mb-2">10<span className="text-black">k</span></div>
-                  <div className="font-mono text-xs md:text-sm text-black uppercase tracking-widest">Mutlu Müşteri</div>
+                  <div className="font-mono text-xs md:text-sm text-black">Mutlu Müşteri</div>
                 </div>
                 <div className="bg-[#0f2851] p-8 md:p-10 rounded-2xl shadow-xl text-white transform md:-translate-y-4">
                   <div className="font-heading text-4xl md:text-5xl font-black mb-2">%100</div>
-                  <div className="font-mono text-xs md:text-sm text-slate-300 uppercase tracking-widest">Orijinal Parça</div>
+                  <div className="font-mono text-xs md:text-sm text-slate-300">Orijinal Parça</div>
                 </div>
               </div>
             </div>
@@ -167,14 +167,14 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 mb-12">
           <div className="flex flex-col md:flex-row justify-between items-end gap-6">
             <div>
-              <div className="font-mono text-black text-sm tracking-widest uppercase mb-4 flex items-center gap-4">
-                <span className="w-8 h-[1px] bg-[#0f2851]"></span> GLOBAL PARTNERS
+              <div className="font-mono text-black text-sm tracking-tight mb-4 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> Global Partners
               </div>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-black uppercase tracking-tight">
-                YETKİLİ SERVİS AĞI
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-black tracking-tight">
+                Yetkili Servis Ağı
               </h2>
             </div>
-            <div className="font-mono text-xs text-black max-w-xs md:text-right uppercase tracking-widest leading-relaxed">
+            <div className="font-mono text-xs text-black max-w-xs md:text-right tracking-tight leading-relaxed">
               Dünyanın önde gelen iklimlendirme markalarının resmi çözüm ortağı.
             </div>
           </div>
@@ -189,8 +189,8 @@ export default function Home() {
                 to={`/${brand.id}-yetkili-servisi`} 
                 className="bg-white p-8 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-all duration-500 relative overflow-hidden h-48 md:h-64 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 border border-slate-100"
               >
-                <div className="absolute top-6 left-8 font-mono text-[10px] font-bold text-gray-400 group-hover:text-black transition-colors tracking-widest z-20">
-                  0{idx + 1} // {brand.name.toUpperCase()}
+                <div className="absolute top-6 left-8 font-mono text-[10px] font-bold text-gray-400 group-hover:text-black transition-colors tracking-tight z-20">
+                  0{idx + 1} // {brand.name}
                 </div>
                 <img 
                   src={brand.logo} 
@@ -211,11 +211,11 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row gap-16">
             <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">
-              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
-                <span className="w-8 h-[1px] bg-[#0f2851]"></span> AVANTAJLAR
+              <div className="font-mono text-black text-sm tracking-tight mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> Avantajlar
               </div>
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-black leading-[1.1] tracking-tight">
-                NEDEN BİZİ TERCİH ETMELİSİNİZ?
+                Neden bizi tercih etmelisiniz?
               </h2>
             </div>
             
@@ -232,7 +232,7 @@ export default function Home() {
                       {String(idx + 1).padStart(2, '0')}
                     </div>
                     <div>
-                      <h3 className="font-heading text-2xl font-bold text-black mb-3 uppercase tracking-wide">{feature.title}</h3>
+                      <h3 className="font-heading text-2xl font-bold text-black mb-3 tracking-wide">{feature.title}</h3>
                       <p className="text-gray-500 text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
                     </div>
                   </div>
@@ -248,14 +248,14 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
-              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
-                <span className="w-8 h-[1px] bg-[#0f2851]"></span> FAALİYET ALANLARI
+              <div className="font-mono text-black text-sm tracking-tight mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> Faaliyet Alanları
               </div>
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-black leading-[1.1] tracking-tight">
-                PROFESYONEL HİZMETLER
+                Profesyonel Hizmetler
               </h2>
             </div>
-            <Link to="/hizmetlerimiz" className="group flex items-center gap-4 font-heading font-bold text-lg uppercase tracking-wide text-black hover:text-black transition-colors">
+            <Link to="/hizmetlerimiz" className="group flex items-center gap-4 font-heading font-bold text-lg tracking-wide text-black hover:text-black transition-colors">
               <span className="border-b-2 border-[#0f2851] group-hover:border-[#fa9700] pb-1">Tümünü Gör</span>
               <ArrowRight className="group-hover:translate-x-2 transition-transform" />
             </Link>
@@ -272,7 +272,7 @@ export default function Home() {
                   <span className="font-mono text-2xl md:text-3xl text-slate-200 group-hover:text-white/20 transition-colors">
                     {String(idx + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="font-heading text-2xl md:text-4xl font-bold text-black group-hover:text-white transition-colors uppercase tracking-tight">
+                  <h3 className="font-heading text-2xl md:text-4xl font-bold text-black group-hover:text-white transition-colors tracking-tight">
                     {service.name}
                   </h3>
                 </div>
@@ -297,11 +297,11 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
-              <div className="font-mono text-black text-sm tracking-widest uppercase mb-6 flex items-center gap-4">
-                <span className="w-8 h-[1px] bg-[#0f2851]"></span> MÜŞTERİ YORUMLARI
+              <div className="font-mono text-black text-sm tracking-tight mb-6 flex items-center gap-4">
+                <span className="w-8 h-[1px] bg-[#0f2851]"></span> Müşteri Yorumları
               </div>
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-black leading-[1.1] tracking-tight">
-                GOOGLE HARİTALAR'DA <span className="text-black">BİZ.</span>
+                Google Haritalar'da <span className="text-black">biz.</span>
               </h2>
             </div>
             <div className="flex flex-col items-start md:items-end">
@@ -388,7 +388,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 font-heading font-bold text-base uppercase tracking-wide text-black hover:text-black transition-colors group">
+            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 font-heading font-bold text-base tracking-wide text-black hover:text-black transition-colors group">
               <span className="border-b-2 border-[#0f2851] group-hover:border-orange-500 pb-1">Google'da Tüm Yorumları Gör</span>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </a>
@@ -400,15 +400,15 @@ export default function Home() {
       <section className="bg-[#0f2851] border-t-8 border-[#fa9700]">
         <div className="container mx-auto px-4 md:px-8 py-24 md:py-32">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="font-heading text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-12">
-              SİSTEMLERİNİZ İÇİN <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fa9700] to-orange-400">MAKSİMUM VERİMLİLİK.</span>
+            <h2 className="font-heading text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.9] mb-12">
+              Sistemleriniz için <br className="hidden md:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fa9700] to-orange-400">maksimum verimlilik.</span>
             </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-12 py-6 rounded-full font-heading font-bold text-xl uppercase tracking-wide hover:bg-white transition-all shadow-2xl hover:shadow-orange-500/40">
+              <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-12 py-6 rounded-full font-heading font-bold text-xl tracking-wide hover:bg-white transition-all shadow-2xl hover:shadow-orange-500/40">
                 Hemen Arayın
               </a>
-              <Link to="/iletisim" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-12 py-6 rounded-full font-heading font-bold text-xl uppercase tracking-wide hover:bg-white hover:text-black transition-all shadow-2xl">
+              <Link to="/iletisim" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-12 py-6 rounded-full font-heading font-bold text-xl tracking-wide hover:bg-white hover:text-black transition-all shadow-2xl">
                 Teklif İsteyin
               </Link>
             </div>
