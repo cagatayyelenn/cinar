@@ -27,7 +27,7 @@ export default function About() {
             </p>
           </div>
           {/* Scroll Down Arrow */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 text-white/40 animate-bounce-slow">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 text-white/80 animate-bounce-slow">
             <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>

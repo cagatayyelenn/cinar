@@ -70,7 +70,7 @@ export default function Services() {
             Ticari araç iklimlendirme dünyasında, teknik mükemmellik ve müşteri memnuniyetini bir araya getiren profesyonel çözümler sunuyoruz.
           </p>
           {/* Scroll Down Arrow */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-200 animate-bounce-slow">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-gray-300 animate-bounce-slow">
             <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>

@@ -94,7 +94,7 @@ export default function Home() {
         </div>
 
         {/* Scroll Down Arrow */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 text-white opacity-40 animate-bounce-slow">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 text-white opacity-80 animate-bounce-slow">
           <ChevronDown size={32} strokeWidth={1} />
         </div>
       </section>

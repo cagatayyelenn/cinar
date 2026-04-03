@@ -20,7 +20,7 @@ export default function SpareParts() {
             Tüm yetkili servis markalarımızın %100 orijinal yedek parçaları stoklarımızda.
           </p>
           {/* Scroll Down Arrow */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-blue-100/40 animate-bounce-slow">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-blue-100/80 animate-bounce-slow">
             <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>
