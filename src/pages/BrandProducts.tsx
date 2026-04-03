@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
 import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export default function BrandProducts({ brandId: propBrandId }: { brandId?: string }) {
   const { brandId: paramBrandId, categoryId } = useParams<{ brandId: string; categoryId: string }>();
+  const navigate = useNavigate();
   const brandId = propBrandId || paramBrandId;
   const brand = brands.find(b => b.id === brandId);
   
@@ -18,12 +19,17 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
   useEffect(() => {
     if (categoryId) {
       const cat = brand?.menuProducts?.find(m => m.path === categoryId);
-      if (cat) setSelectedCategory(cat.label);
-    } else if (!propBrandId) {
+      if (cat) {
+        setSelectedCategory(cat.label);
+      } else {
+        // Fallback for unknown categoryId
+        setSelectedCategory(null);
+      }
+    } else {
       // If it's the general /brand/urunler route, reset filter
       setSelectedCategory(null);
     }
-  }, [categoryId, brand, propBrandId]);
+  }, [categoryId, brand]);
 
   if (!brand) {
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
@@ -32,7 +38,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
   const brandProducts = products.filter(p => p.brandId === brandId);
   
   // Dynamic categories based on brand menu or defaults
-  const categories = brand.menuProducts ? brand.menuProducts.map(m => m.label) : ['Klima', 'Isıtıcı', 'Yedek Parça'];
+  const categories = brand.menuProducts || [];
 
   const filteredProducts = brandProducts.filter(p => {
     const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
@@ -41,6 +47,17 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
     if (!selectedCategory) return matchesSearch;
     return p.category === selectedCategory && matchesSearch;
   });
+
+  const handleCategoryClick = (catLabel: string | null) => {
+    if (catLabel === null) {
+      navigate(`/${brand.id}/urunler`);
+    } else {
+      const catPath = brand.menuProducts?.find(m => m.label === catLabel)?.path;
+      if (catPath) {
+        navigate(`/${brand.id}/${catPath}`);
+      }
+    }
+  };
 
   return (
     <div className="bg-white min-h-screen pb-20">
@@ -88,7 +105,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
               <ul className="space-y-4">
                 <li>
                   <button 
-                    onClick={() => setSelectedCategory(null)}
+                    onClick={() => handleCategoryClick(null)}
                     className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === null ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
                   >
                     <span className="group-hover:translate-x-1 transition-transform">Tüm Ürünler</span>
@@ -96,14 +113,14 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                   </button>
                 </li>
                 {categories.map(cat => (
-                  <li key={cat}>
+                  <li key={cat.path}>
                     <button 
-                      onClick={() => setSelectedCategory(cat)}
-                      className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === cat ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                      onClick={() => handleCategoryClick(cat.label)}
+                      className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === cat.label ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
                     >
-                      <span className="group-hover:translate-x-1 transition-transform">{cat}</span>
-                      <span className={`${selectedCategory === cat ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>
-                        {brandProducts.filter(p => p.category === cat).length}
+                      <span className="group-hover:translate-x-1 transition-transform">{cat.label}</span>
+                      <span className={`${selectedCategory === cat.label ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>
+                        {brandProducts.filter(p => p.category === cat.label).length}
                       </span>
                     </button>
                   </li>
