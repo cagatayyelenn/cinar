@@ -103,7 +103,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
 
               <div className="lg:w-1/3">
                 <div className="sticky top-32 space-y-8">
-                  <img src={service.image} alt={service.name} className="w-full h-80 object-cover border border-gray-100 grayscale hover:grayscale-0 transition-all duration-700" />
+                  <img src={service.image} alt={service.name} className="w-full h-80 object-cover border border-gray-100 transition-all duration-700" />
                   
                   <div className="bg-black p-10 text-white">
                     <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">RANDEVU ALIN</h3>
