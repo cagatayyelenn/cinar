@@ -433,7 +433,7 @@ export const products = [
     name: 'ART5500T', 
     images: ['/climart/art5000t-art5500t-kapak.jpg', '/climart/art5000t-art5500t.jpg'], 
     description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans ART5500T Elektrik donanımlı ünitesi.', 
-    category: 'Özel Uygulamalar',
+    category: 'Ticari Araç Klimaları',
     features: [
       'Ünite Adı: ART5500T',
       'Soğutma Kapasitesi: @30ᵒC',
@@ -448,21 +448,8 @@ export const products = [
       'Montaj Kit Ağırlığı: 25 Kg.',
       'Kondenser Hava Debisi: 5400m3/h @0 mmH2O',
       'Evaporatör Hava Debisi: 4200m3/h @0 mmH2O',
-      'Sıcak Gaz ile Manuel veya Otomatik Defrost: Standart',
       'Elektrik Motor Özellikleri: 4kW 380V 50Hz',
-      'Güç İhtiyacı: 66A@12V DC'
-    ]
-  },
-  { 
-    id: 'split', 
-    brandId: 'climart', 
-    name: 'Climart Split Özel Uygulama', 
-    images: ['/climart/split-kapak.jpg'], 
-    description: 'Özel projeler için tasarlanmış split iklimlendirme çözümü.', 
-    category: 'Özel Uygulamalar',
-    features: [
-      'Proje Bazlı Tasarım',
-      'Yüksek Verimlilik'
+      'Güç İhtiyanı: 66A@12V DC'
     ]
   },
   { 
@@ -706,7 +693,7 @@ export const products = [
     name: 'ART3', 
     images: ['/climart/climart-art3-kapak.jpg', '/climart/climart-art3.jpg'], 
     description: 'Kompakt boyutlarıyla araç orijinal fanına entegre çalışan 4000Watt kapasiteli ART3 ticari klima.', 
-    category: 'Ticari Araç Klimaları',
+    category: 'Özel Uygulamalar',
     features: [
       'Ünite Adı: ART3',
       'Soğutma Kapasitesi: @35ᵒC',
@@ -732,7 +719,7 @@ export const products = [
     name: 'ART5', 
     images: ['/climart/climart-art5-kapak.jpg', '/climart/climart-art5.jpg'], 
     description: '5000Watt soğutma kapasitesiyle standart ticari araç iklimlendirme ünitelerinin favorisi ART5.', 
-    category: 'Ticari Araç Klimaları',
+    category: 'Özel Uygulamalar',
     features: [
       'Ünite Adı: ART5',
       'Soğutma Kapasitesi: @35ᵒC',
