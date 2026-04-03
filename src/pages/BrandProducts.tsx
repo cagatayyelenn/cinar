@@ -1,18 +1,47 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
-import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, Car, Truck, Bus, Tractor, ArrowRight } from 'lucide-react';
+import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export default function BrandProducts({ brandId: propBrandId }: { brandId?: string }) {
-  const { brandId: paramBrandId, categoryId } = useParams<{ brandId: string; categoryId: string }>();
+  const { brandId: paramBrandId } = useParams<{ brandId: string; categoryId: string }>();
   const brandId = propBrandId || paramBrandId;
   const brand = brands.find(b => b.id === brandId);
+  
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   if (!brand) {
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
 
+  // Categorization helpers - more inclusive
+  const matchesKlima = (cat: string) => cat.toLowerCase().includes('klima') || cat.toLowerCase().includes('soğutucu');
+  const matchesIsitici = (cat: string) => cat.toLowerCase().includes('ısıtıcı');
+  const matchesYedekParca = (cat: string) => cat.toLowerCase().includes('yedek parça');
+
   const brandProducts = products.filter(p => p.brandId === brandId);
+  
+  const counts = {
+    total: brandProducts.length,
+    klima: brandProducts.filter(p => matchesKlima(p.category)).length,
+    isitici: brandProducts.filter(p => matchesIsitici(p.category)).length,
+    yedekParca: brandProducts.filter(p => matchesYedekParca(p.category)).length,
+  };
+
+  const filteredProducts = brandProducts.filter(p => {
+    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                         p.description.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    if (!selectedCategory) return matchesSearch;
+    
+    if (selectedCategory === 'klima') return matchesKlima(p.category) && matchesSearch;
+    if (selectedCategory === 'isitici') return matchesIsitici(p.category) && matchesSearch;
+    if (selectedCategory === 'yedek-parca') return matchesYedekParca(p.category) && matchesSearch;
+    
+    return matchesSearch;
+  });
 
   return (
     <div className="bg-white min-h-screen pb-20">
@@ -59,33 +88,39 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
               </h3>
               <ul className="space-y-4">
                 <li>
-                  <button className="w-full flex items-center justify-between text-left text-black font-bold group">
-                    <span className="group-hover:translate-x-1 transition-transform uppercase text-sm tracking-wide">Tüm Ürünler</span>
-                    <span className="bg-black text-white text-xs py-1 px-2 font-mono">{brandProducts.length}</span>
+                  <button 
+                    onClick={() => setSelectedCategory(null)}
+                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === null ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                  >
+                    <span className="group-hover:translate-x-1 transition-transform">Tüm Ürünler</span>
+                    <span className={`${selectedCategory === null ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.total}</span>
                   </button>
                 </li>
                 <li>
-                  <button className="w-full flex items-center justify-between text-left text-gray-500 hover:text-black transition-colors group">
-                    <span className="group-hover:translate-x-1 transition-transform uppercase text-sm tracking-wide font-medium">Klimalar</span>
-                    <span className="bg-gray-100 text-black text-xs py-1 px-2 font-mono">
-                      {brandProducts.filter(p => p.category === 'Klima').length}
-                    </span>
+                  <button 
+                    onClick={() => setSelectedCategory('klima')}
+                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === 'klima' ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                  >
+                    <span className="group-hover:translate-x-1 transition-transform">Klimalar</span>
+                    <span className={`${selectedCategory === 'klima' ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.klima}</span>
                   </button>
                 </li>
                 <li>
-                  <button className="w-full flex items-center justify-between text-left text-gray-500 hover:text-black transition-colors group">
-                    <span className="group-hover:translate-x-1 transition-transform uppercase text-sm tracking-wide font-medium">Isıtıcılar</span>
-                    <span className="bg-gray-100 text-black text-xs py-1 px-2 font-mono">
-                      {brandProducts.filter(p => p.category === 'Isıtıcı').length}
-                    </span>
+                  <button 
+                    onClick={() => setSelectedCategory('isitici')}
+                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === 'isitici' ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                  >
+                    <span className="group-hover:translate-x-1 transition-transform">Isıtıcılar</span>
+                    <span className={`${selectedCategory === 'isitici' ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.isitici}</span>
                   </button>
                 </li>
                 <li>
-                  <button className="w-full flex items-center justify-between text-left text-gray-500 hover:text-black transition-colors group">
-                    <span className="group-hover:translate-x-1 transition-transform uppercase text-sm tracking-wide font-medium">Yedek Parçalar</span>
-                    <span className="bg-gray-100 text-black text-xs py-1 px-2 font-mono">
-                      {brandProducts.filter(p => p.category === 'Yedek Parça').length}
-                    </span>
+                  <button 
+                    onClick={() => setSelectedCategory('yedek-parca')}
+                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === 'yedek-parca' ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                  >
+                    <span className="group-hover:translate-x-1 transition-transform">Yedek Parçalar</span>
+                    <span className={`${selectedCategory === 'yedek-parca' ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{counts.yedekParca}</span>
                   </button>
                 </li>
               </ul>
@@ -117,25 +152,26 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 <input 
                   type="text" 
                   placeholder="Ürün veya parça kodu ara..." 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-black focus:bg-white transition-all rounded-none"
                 />
                 <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
               </div>
               <div className="text-xs text-gray-500 font-bold uppercase tracking-widest">
-                Toplam <strong className="text-black text-sm">{brandProducts.length}</strong> ürün
+                Toplam <strong className="text-black text-sm">{filteredProducts.length}</strong> ürün listeleniyor
               </div>
             </div>
 
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
-              {brandProducts.length > 0 ? brandProducts.map(product => (
+              {filteredProducts.length > 0 ? filteredProducts.map(product => (
                 <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
                   {/* Top Image Section */}
                   <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
                     <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left">
                       YENİ
                     </div>
-                    {/* @ts-ignore */}
                     <img 
                       src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
@@ -174,7 +210,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                   </div>
                   <h3 className="text-xl font-black text-black mb-3 uppercase tracking-tight">Ürün Bulunamadı</h3>
                   <p className="text-gray-500 text-center max-w-md text-sm leading-relaxed">
-                    Bu kategoriye ait ürün stoklarımızda kalmamış olabilir. Lütfen bizimle iletişime geçin.
+                    Aramanızla veya seçili kategoriyle eşleşen ürün bulunamadı. Lütfen filtreleri sıfırlayıp tekrar deneyin.
                   </p>
                 </div>
               )}
