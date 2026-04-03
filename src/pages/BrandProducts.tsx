@@ -1,25 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products } from '../data/mockData';
 import { PhoneCall, ChevronRight, Filter, Search, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export default function BrandProducts({ brandId: propBrandId }: { brandId?: string }) {
-  const { brandId: paramBrandId } = useParams<{ brandId: string; categoryId: string }>();
+  const { brandId: paramBrandId, categoryId } = useParams<{ brandId: string; categoryId: string }>();
   const brandId = propBrandId || paramBrandId;
   const brand = brands.find(b => b.id === brandId);
   
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  // Initialize from URL param if exists
+  const initialCategory = brand?.menuProducts?.find(m => m.path === categoryId)?.label || null;
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(initialCategory);
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Update selection if URL changes
+  useEffect(() => {
+    if (categoryId) {
+      const cat = brand?.menuProducts?.find(m => m.path === categoryId);
+      if (cat) setSelectedCategory(cat.label);
+    } else if (!propBrandId) {
+      // If it's the general /brand/urunler route, reset filter
+      setSelectedCategory(null);
+    }
+  }, [categoryId, brand, propBrandId]);
 
   if (!brand) {
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
-
-  // Categorization helpers - more inclusive
-  const matchesKlima = (cat: string) => cat.toLowerCase().includes('klima') || cat.toLowerCase().includes('soğutucu');
-  const matchesIsitici = (cat: string) => cat.toLowerCase().includes('ısıtıcı');
-  const matchesYedekParca = (cat: string) => cat.toLowerCase().includes('yedek parça');
 
   const brandProducts = products.filter(p => p.brandId === brandId);
   
@@ -51,13 +59,13 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 <ChevronRight size={14} className="mx-2" />
                 <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-white transition-colors">{brand.name} Servisi</Link>
                 <ChevronRight size={14} className="mx-2" />
-                <span className="text-white">Ürünler</span>
+                <span className="text-white">Ürünler {selectedCategory && ` - ${selectedCategory}`}</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none">
-                {brand.name} <br/><span className="text-gray-500 font-light">Ürünleri</span>
+                {brand.name} <br/><span className="text-gray-500 font-light">{selectedCategory || 'Ürünleri'}</span>
               </h1>
               <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
-                Yüksek performanslı {brand.name} klimaları, ısıtıcıları ve %100 orijinal yedek parçaları. Yetkili servis güvencesiyle.
+                Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLowerCase() : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
               </p>
             </div>
             <div className="bg-white p-8 shrink-0 border border-gray-800">
