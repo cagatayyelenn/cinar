@@ -249,6 +249,57 @@ export const products = [
       'Güç İhtiyacı: 56A@12V DC'
     ]
   },
+  { 
+    id: 'art3000', 
+    brandId: 'climart', 
+    name: 'ART3000', 
+    images: ['/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300.png', '/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300-1.png'], 
+    description: '19m³ - 26m³ büyük ölçekli ticari taşıtlar için yüksek kapasiteli ART3000 soğutucu ünite.', 
+    category: 'Ticari Araç Soğutucuları',
+    features: [
+      'Ünite Adı: ART3000',
+      'Soğutma Kapasitesi: @30ᵒC',
+      'Kasa Hacmi: 19m³ / 22m³ / 26m³',
+      'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
+      'Araç Motorundan Tahrikli: 1880Watt / 3650Watt / 4600Watt',
+      'Soğutucu Akışkan: R404A',
+      'Evaporatör Ünite Ölçüleri: 1000 x 650 x 230 mm',
+      'Kondenser Ünite Ölçüleri: 1270 x 560 x 455 mm',
+      'Kondenser Ağırlığı: 54 Kg.',
+      'Evaporatör Ağırlığı: 21,5 Kg.',
+      'Montaj Kit Ağırlığı: 25 Kg.',
+      'Kondenser Hava Debisi: 5400m3/h @0 mmH2O',
+      'Evaporatör Hava Debisi: 2800m3/h @0 mmH2O',
+      'Sıcak Gaz ile Manuel veya Otomatik Defrost: Standart',
+      'Güç İhtiyacı: 28A@24V DC'
+    ]
+  },
+  { 
+    id: 'art3300', 
+    brandId: 'climart', 
+    name: 'ART3300', 
+    images: ['/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300.png', '/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300-1.png'], 
+    description: '19m³ - 26m³ büyük kapasiteli ticari taşıtlar için güçlü ve defrost destekli ART3300 ticari soğutucu.', 
+    category: 'Ticari Araç Soğutucuları',
+    features: [
+      'Ünite Adı: ART3300',
+      'Soğutma Kapasitesi: @30ᵒC',
+      'Kasa Hacmi: 19m³ / 22m³ / 26m³',
+      'Set Sıcaklığı: -18 °C / 0 °C / +5 °C',
+      'Araç Motorundan Tahrikli: 1490Watt / 3005Watt / 3760Watt',
+      'Soğutucu Akışkan: R404A',
+      'Evaporatör Ünite Ölçüleri: 1000 x 650 x 230 mm',
+      'Kondenser Ünite Ölçüleri: 1270 x 560 x 455 mm',
+      'Kondenser Ağırlığı: 104 Kg.',
+      'Evaporatör Ağırlığı: 21,5 Kg.',
+      'Montaj Kit Ağırlığı: 25 Kg.',
+      'Kondenser Hava Debisi: 5400m3/h @0 mmH2O',
+      'Evaporatör Hava Debisi: 2800m3/h @0 mmH2O',
+      'Sıcak Gaz ile Manuel veya Otomatik Defrost: Standart',
+      'Elektrik Motor Özellikleri: 4kW 380V 50Hz',
+      'Güç İhtiyacı: 56A@12V DC'
+    ]
+  },
   { id: 'climart-tavan-tipi-klima', brandId: 'climart', name: 'Climart Tavan Tipi Klima 12V', images: ['https://picsum.photos/seed/klima1/400/300'], description: 'Yüksek soğutma kapasiteli ticari araç kliması.', category: 'Klima' },
   { id: 'climart-panelvan-klima', brandId: 'climart', name: 'Climart Panelvan Klima 24V', images: ['https://picsum.photos/seed/klima11/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
   { id: 'climart-tepe-klimasi', brandId: 'climart', name: 'Climart Tepe Kliması', images: ['https://picsum.photos/seed/klima12/400/300'], description: 'Kamyon ve tırlar için aerodinamik tepe kliması.', category: 'Klima' },
