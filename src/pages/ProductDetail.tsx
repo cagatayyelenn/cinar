@@ -76,14 +76,11 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
             <div className="flex flex-col lg:flex-row gap-20 mb-32">
               <div className="lg:w-1/2 flex flex-col gap-4">
                 <div className="flex justify-center items-center p-12 bg-gray-50 border border-gray-100 relative group overflow-hidden min-h-[400px]">
-                  <div className="absolute top-8 left-8 text-[10px] font-black text-gray-300 uppercase tracking-[0.3em] z-10">
-                    {brand.name} // {product.category.toUpperCase()}
-                  </div>
                   <img 
                     // @ts-ignore
                     src={product.images?.[activeImageIndex] || 'https://picsum.photos/seed/klima1/400/300'} 
                     alt={product.name} 
-                    className="max-w-full max-h-[400px] w-auto h-auto object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-1000" 
+                    className="max-w-full max-h-[400px] w-auto h-auto object-contain mix-blend-multiply transition-transform duration-1000" 
                   />
                 </div>
                 
@@ -134,12 +131,9 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+905555555555" className="bg-black text-white px-10 py-5 text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-colors flex items-center justify-center">
-                    TEKLİF ALIN
+                  <a href="tel:+905070485034" className="bg-black text-white px-10 py-5 text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-colors flex items-center justify-center">
+                    BU ÜRÜN İÇİN İLETİŞİME GEÇİN
                   </a>
-                  <button className="bg-transparent border border-gray-200 text-black px-10 py-5 text-[10px] font-black uppercase tracking-widest hover:bg-gray-50 transition-colors">
-                    TEKNİK DÖKÜMAN (PDF)
-                  </button>
                 </div>
               </div>
             </div>
