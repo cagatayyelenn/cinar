@@ -39,7 +39,7 @@ export const products = [
     id: 'art1000', 
     brandId: 'climart', 
     name: 'ART1000', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art1000-art1000d/art1000-art1000d.png', '/urunler/climart/ticari-arac-sogutuculari/art1000-art1000d/art1000-art1000d-1.png'], 
+    images: ['/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'], 
     description: 'Ticari araçlar için 6m³ - 11m³ kasa hacmine uygun yüksek performanslı soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -63,7 +63,7 @@ export const products = [
     id: 'art1000d', 
     brandId: 'climart', 
     name: 'ART1000D', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art1000-art1000d/art1000-art1000d.png', '/urunler/climart/ticari-arac-sogutuculari/art1000-art1000d/art1000-art1000d-1.png'], 
+    images: ['/climart/art1000-art1000d.jpg','/climart/art1000-art1000d-1.jpg'], 
     description: 'Ticari araçlar için 6m³ - 11m³ kasa hacmine uygun standart defrost sistemli yüksek performanslı soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -88,7 +88,7 @@ export const products = [
     id: 'art2000', 
     brandId: 'climart', 
     name: 'ART2000', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art2000-art2000d/art2000-art2000d.png', '/urunler/climart/ticari-arac-sogutuculari/art2000-art2000d/art2000-art2000d-1.png', '/urunler/climart/ticari-arac-sogutuculari/art2000-art2000d/art2000-art2000d-2.png'], 
+    images: ['/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'], 
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için güçlü soğutma sunan ART Series.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -112,7 +112,7 @@ export const products = [
     id: 'art2000d', 
     brandId: 'climart', 
     name: 'ART2000D', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art2000-art2000d/art2000-art2000d.png', '/urunler/climart/ticari-arac-sogutuculari/art2000-art2000d/art2000-art2000d-1.png', '/urunler/climart/ticari-arac-sogutuculari/art2000-art2000d/art2000-art2000d-2.png'], 
+    images: ['/climart/art2000-art2000d.jpg','/climart/art2000-art2000d-1.jpg'], 
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için standart defrost donanımlı ticari soğutucu.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -137,7 +137,7 @@ export const products = [
     id: 'art2200', 
     brandId: 'climart', 
     name: 'ART2200', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art2200-art2200d/art2200-art2200d.png', '/urunler/climart/ticari-arac-sogutuculari/art2200-art2200d/art2200-art2200d-1.png'], 
+    images: ['/climart/art2200-art2200d.jpg','/climart/art2200-art2200d-1.jpg'], 
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için ART2200 soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -169,7 +169,7 @@ export const products = [
     id: 'art2200d', 
     brandId: 'climart', 
     name: 'ART2200D', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art2200-art2200d/art2200-art2200d.png', '/urunler/climart/ticari-arac-sogutuculari/art2200-art2200d/art2200-art2200d-1.png'], 
+    images: ['/climart/art2200-art2200d.jpg','/climart/art2200-art2200d-1.jpg'], 
     description: '12m³ - 19m³ orta ölçekli ticari taşıtlar için defrost destekli ART2200D ticari soğutucu.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -202,7 +202,7 @@ export const products = [
     id: 'art2500', 
     brandId: 'climart', 
     name: 'ART2500', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art2500-art2550/art2500-art2550.png', '/urunler/climart/ticari-arac-sogutuculari/art2500-art2550/art2500-art2550-1.png'], 
+    images: ['/climart/art2500-art2550.jpg','/climart/art2500-art2550-1.jpg'], 
     description: '12m³ - 22m³ orta-büyük ölçekli ticari taşıtlar için ART2500 soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -227,7 +227,7 @@ export const products = [
     id: 'art2550d', 
     brandId: 'climart', 
     name: 'ART2550D', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art2500-art2550/art2500-art2550.png', '/urunler/climart/ticari-arac-sogutuculari/art2500-art2550/art2500-art2550-1.png'], 
+    images: ['/climart/art2500-art2550.jpg','/climart/art2500-art2550-1.jpg'], 
     description: '12m³ - 22m³ ticari taşıtlar için defrost destekli ART2550D ticari soğutucu.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -253,7 +253,7 @@ export const products = [
     id: 'art3000', 
     brandId: 'climart', 
     name: 'ART3000', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300.png', '/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300-1.png'], 
+    images: ['/climart/art3000-art3300.jpg','/climart/art3000-art3300-1.jpg'], 
     description: '19m³ - 26m³ büyük ölçekli ticari taşıtlar için yüksek kapasiteli ART3000 soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -278,7 +278,7 @@ export const products = [
     id: 'art3300', 
     brandId: 'climart', 
     name: 'ART3300', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300.png', '/urunler/climart/ticari-arac-sogutuculari/art3000-art3300/art3000-art3300-1.png'], 
+    images: ['/climart/art3000-art3300.jpg','/climart/art3000-art3300-1.jpg'], 
     description: '19m³ - 26m³ büyük kapasiteli ticari taşıtlar için güçlü ve defrost destekli ART3300 ticari soğutucu.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -304,7 +304,7 @@ export const products = [
     id: 'art4000', 
     brandId: 'climart', 
     name: 'ART4000', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art4000-art4400/art4000-art4400.png', '/urunler/climart/ticari-arac-sogutuculari/art4000-art4400/art4000-art4400-1.png'], 
+    images: ['/climart/art4000-art4400.jpg','/climart/art4000-art4400-1.jpg'], 
     description: '24m³ - 36m³ geniş hacimli ticari taşıtlar için dev soğutma kapasiteli ART4000 soğutucu ünite.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -329,7 +329,7 @@ export const products = [
     id: 'art4400', 
     brandId: 'climart', 
     name: 'ART4400', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art4000-art4400/art4000-art4400.png', '/urunler/climart/ticari-arac-sogutuculari/art4000-art4400/art4000-art4400-1.png'], 
+    images: ['/climart/art4000-art4400.jpg','/climart/art4000-art4400-1.jpg'], 
     description: '24m³ - 36m³ ekstra büyük hacimli ticari soğutma gereksinimleri için ART4400 soğutucu donanımı.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -355,7 +355,7 @@ export const products = [
     id: 'art5000', 
     brandId: 'climart', 
     name: 'ART5000', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art5000-art5500/art5000-art5500.png', '/urunler/climart/ticari-arac-sogutuculari/art5000-art5500/art5000-art5500-1.png'], 
+    images: ['/climart/art5000-art5500.jpg','/climart/art5000-art5500-1.jpg'], 
     description: '32m³ - 50m³ ekstra dev hacimli ticari taşıtlar için ART5000 maksimum soğutma donanımı.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -380,7 +380,7 @@ export const products = [
     id: 'art5500', 
     brandId: 'climart', 
     name: 'ART5500', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art5000-art5500/art5000-art5500.png', '/urunler/climart/ticari-arac-sogutuculari/art5000-art5500/art5000-art5500-1.png'], 
+    images: ['/climart/art5000-art5500.jpg','/climart/art5000-art5500-1.jpg'], 
     description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans ART5500 ünitesi.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -406,7 +406,7 @@ export const products = [
     id: 'art5000t', 
     brandId: 'climart', 
     name: 'ART5000T', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art5000t-art5500t/art5000t-art5500t.png', '/urunler/climart/ticari-arac-sogutuculari/art5000t-art5500t/art5000t-art5500t-1.png'], 
+    images: ['/climart/art5000t-art5500t.jpg'], 
     description: '32m³ - 50m³ ekstra dev hacimli ticari taşıtlar için ART5000T maksimum soğutma donanımı.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -431,7 +431,7 @@ export const products = [
     id: 'art5500t', 
     brandId: 'climart', 
     name: 'ART5500T', 
-    images: ['/urunler/climart/ticari-arac-sogutuculari/art5000t-art5500t/art5000t-art5500t.png', '/urunler/climart/ticari-arac-sogutuculari/art5000t-art5500t/art5000t-art5500t-1.png'], 
+    images: ['/climart/art5000t-art5500t.jpg'], 
     description: '32m³ - 50m³ ekstra dev hacimli ticari soğutma gereksinimleri için yüksek performans ART5500T Elektrik donanımlı ünitesi.', 
     category: 'Ticari Araç Soğutucuları',
     features: [
@@ -457,7 +457,7 @@ export const products = [
     id: 'art8-eco', 
     brandId: 'climart', 
     name: 'ART8 ECO', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art8-eco/art8-eco.png', '/urunler/climart/ticari-arac-klimalari/art8-eco/art8-eco-1.png'], 
+    images: ['/climart/climart-art8-eco.jpg','/climart/climart-art8-eco-1.jpg'], 
     description: 'Yüksek kapasiteli soğutma ve ısıtma sunan ART8 ECO ticari araç kliması.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -484,7 +484,7 @@ export const products = [
     id: 'art10', 
     brandId: 'climart', 
     name: 'ART10', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art10/art10.png', '/urunler/climart/ticari-arac-klimalari/art10/art10-1.png'], 
+    images: ['/climart/climart-art10.jpg','/climart/climart-art10-1.jpg'], 
     description: 'Büyük araçlar için tasarlanmış 10000Watt güçlü soğutma kapasiteli ART10 ticari araç kliması.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -511,7 +511,7 @@ export const products = [
     id: 'art11', 
     brandId: 'climart', 
     name: 'ART11', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art11/art11.png', '/urunler/climart/ticari-arac-klimalari/art11/art11-1.png'], 
+    images: ['/climart/climart-art11.jpg','/climart/climart-art11-1.jpg'], 
     description: '11000Watt olağanüstü soğutma kapasitesiyle ART11 tepe/tavan tipi ticari split araç kliması.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -538,7 +538,7 @@ export const products = [
     id: 'art12', 
     brandId: 'climart', 
     name: 'ART12', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art12/art12.png', '/urunler/climart/ticari-arac-klimalari/art12/art12-1.png'], 
+    images: ['/climart/climart-art12.jpg'], 
     description: '12000Watt yüksek soğutma kapasitesine sahip ART12 ticari araç kliması.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -563,7 +563,7 @@ export const products = [
     id: 'art15', 
     brandId: 'climart', 
     name: 'ART15', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art15/art15.png', '/urunler/climart/ticari-arac-klimalari/art15/art15-1.png'], 
+    images: ['/climart/climart-art15.jpg'], 
     description: '15000Watt dev soğutma kapasitesiyle ART15 yüksek performanslı ticari araç kliması.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -588,7 +588,7 @@ export const products = [
     id: 'art18-eco', 
     brandId: 'climart', 
     name: 'ART18 ECO', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art18-eco/art18-eco.png', '/urunler/climart/ticari-arac-klimalari/art18-eco/art18-eco-1.png'], 
+    images: ['/climart/climart-art18-eco.jpg'], 
     description: '18000Watt yüksek performanslı ve ekonomik ART18 ECO ticari araç kliması.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -614,7 +614,7 @@ export const products = [
     id: 'art22', 
     brandId: 'climart', 
     name: 'ART22', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art22/art22.png', '/urunler/climart/ticari-arac-klimalari/art22/art22-1.png'], 
+    images: ['/climart/climart-art22.jpg'], 
     description: 'Büyük yolcu araçları ve otobüsler için 22000Watt dev kapasiteli ART22 ticari klima.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -640,7 +640,7 @@ export const products = [
     id: 'art24', 
     brandId: 'climart', 
     name: 'ART24', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art24/art24.png', '/urunler/climart/ticari-arac-klimalari/art24/art24-1.png'], 
+    images: ['/climart/climart-art24.jpg'], 
     description: 'Üst düzey soğutma gereksinimi olan büyük ticari araçlar için 24000Watt gücünde ART24.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -666,7 +666,7 @@ export const products = [
     id: 'art40', 
     brandId: 'climart', 
     name: 'ART40', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art40/art40.png', '/urunler/climart/ticari-arac-klimalari/art40/art40-1.png'], 
+    images: ['/climart/climart-art40.jpg'], 
     description: 'Devasa yolcu otobüsleri ve özel projeler için 40000Watt mega kapasiteli ART40 ticari klima.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -692,7 +692,7 @@ export const products = [
     id: 'art3', 
     brandId: 'climart', 
     name: 'ART3', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art3/art3.png', '/urunler/climart/ticari-arac-klimalari/art3/art3-1.png'], 
+    images: ['/climart/climart-art3.jpg'], 
     description: 'Kompakt boyutlarıyla araç orijinal fanına entegre çalışan 4000Watt kapasiteli ART3 ticari klima.', 
     category: 'Ticari Araç Klimaları',
     features: [
@@ -718,7 +718,7 @@ export const products = [
     id: 'art5', 
     brandId: 'climart', 
     name: 'ART5', 
-    images: ['/urunler/climart/ticari-arac-klimalari/art5/art5.png', '/urunler/climart/ticari-arac-klimalari/art5/art5-1.png'], 
+    images: ['/climart/climart-art5.jpg'], 
     description: '5000Watt soğutma kapasitesiyle standart ticari araç iklimlendirme ünitelerinin favorisi ART5.', 
     category: 'Ticari Araç Klimaları',
     features: [
