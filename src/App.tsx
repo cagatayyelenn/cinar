@@ -6,6 +6,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import { brands } from './data/mockData';
 import BrandService from './pages/BrandService';
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -29,7 +31,7 @@ export default function App() {
             <Route path="yedek-parca" element={<SpareParts />} />
             
             {/* Dynamic brand service routes */}
-            {brands.map(brand => (
+            {brands.map((brand: any) => (
               <Route key={brand.id} path={`${brand.id}-yetkili-servisi`} element={<BrandService brandId={brand.id} />} />
             ))}
             
