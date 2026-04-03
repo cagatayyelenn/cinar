@@ -662,6 +662,32 @@ export const products = [
       'Güç İhtiyacı: 50A@24V DC'
     ]
   },
+  { 
+    id: 'art40', 
+    brandId: 'climart', 
+    name: 'ART40', 
+    images: ['/urunler/climart/ticari-arac-klimalari/art40/art40.png', '/urunler/climart/ticari-arac-klimalari/art40/art40-1.png'], 
+    description: 'Devasa yolcu otobüsleri ve özel projeler için 40000Watt mega kapasiteli ART40 ticari klima.', 
+    category: 'Ticari Araç Klimaları',
+    features: [
+      'Ünite Adı: ART40',
+      'Soğutma Kapasitesi: @35ᵒC',
+      'Isıtma Kapasitesi: @Q80ᵒC',
+      'Araç Motorundan Tahrikli: 34400Kcal (40000Watt)',
+      'Soğutucu Akışkan: R134a',
+      'Çalışma Çevre Sıcaklığı Min: 15 ᵒC(±2)',
+      'Çalışma Çevre Sıcaklığı Max: 43 ᵒC(±2)',
+      'Evaporatör Ünite Ölçüleri: 2575 x 2060 x 240 mm',
+      'Kondenser Ağırlığı: 160 Kg.',
+      'Montaj Kit Ağırlığı: 50 Kg.',
+      'Kompresör Tipi: Pistonlu Tip',
+      'Kondenser Hava Debisi: 13000m3/h @0 mmH2O',
+      'Evaporatör Hava Debisi: 9600m3/h @0 mmH2O',
+      'Taze Hava: Opsiyonel',
+      'Ön Klima: Opsiyonel',
+      'Güç İhtiyacı: 90A@12V DC'
+    ]
+  },
   { id: 'climart-tavan-tipi-klima', brandId: 'climart', name: 'Climart Tavan Tipi Klima 12V', images: ['https://picsum.photos/seed/klima1/400/300'], description: 'Yüksek soğutma kapasiteli ticari araç kliması.', category: 'Klima' },
   { id: 'climart-panelvan-klima', brandId: 'climart', name: 'Climart Panelvan Klima 24V', images: ['https://picsum.photos/seed/klima11/400/300'], description: 'Panelvan araçlar için özel tasarım, yüksek performanslı soğutma.', category: 'Klima' },
   { id: 'climart-tepe-klimasi', brandId: 'climart', name: 'Climart Tepe Kliması', images: ['https://picsum.photos/seed/klima12/400/300'], description: 'Kamyon ve tırlar için aerodinamik tepe kliması.', category: 'Klima' },
