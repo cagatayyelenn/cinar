@@ -23,8 +23,8 @@ export const brands = [
       { label: 'Özel Uygulamalar', path: 'ozel-uygulamalar' }
     ],
     menuServices: [
-      { label: 'Climart Bakım', path: 'bakim' },
-      { label: 'Climart Onarım', path: 'onarim' },
+      { label: 'Climart Klima Bakımı', path: 'bakim' },
+      { label: 'Climart Klima Onarımı ve Tamiri', path: 'onarim' },
       { label: 'Climart Yedek Parça', path: 'yedek-parca' }
     ]
   },
@@ -897,8 +897,8 @@ export const products = [
 ];
 
 export const services = [
-  { id: 'climart-bakim', brandId: 'climart', name: 'Climart Bakım', image: '/climart/climart-arac-bakimi.png', description: 'Climart ticari araç soğutucu ve klimalarının uzun ömürlü olması için periyodik, detaylı bakım hizmeti.' },
-  { id: 'climart-onarim', brandId: 'climart', name: 'Climart Onarım', image: '/climart/climart-arac-onarimi.png', description: 'Klimalarınızda meydana gelen tüm arızaların uzman teknisyenlerimiz tarafından kalıcı ve hızlı onarımı.' },
+  { id: 'climart-bakim', brandId: 'climart', name: 'Climart Klima Bakımı', image: '/climart/climart-arac-bakimi.png', description: 'Climart ticari araç soğutucu ve klimalarının uzun ömürlü olması için periyodik, detaylı bakım hizmeti.' },
+  { id: 'climart-onarim', brandId: 'climart', name: 'Climart Klima Onarımı ve Tamiri', image: '/climart/climart-arac-onarimi.png', description: 'Klimalarınızda meydana gelen tüm arızaların uzman teknisyenlerimiz tarafından kalıcı ve hızlı onarımı.' },
   { id: 'climart-yedek-parca', brandId: 'climart', name: 'Climart Yedek Parça', image: '/climart/climart-arac-yedek-parca.png', description: 'Cihazlarınızın tam performansını koruması için garantili, %100 orijinal ve onaylı Climart yedek parçaları.' },
   { id: 'yilkar-bakim', brandId: 'yilkar', name: 'Yılkar Klima ve Isıtıcı Periyodik Bakımı', image: 'https://picsum.photos/seed/servisyilkar/600/400', description: 'Yılkar marka sistemlerinizin verimliliğini korumak için sezonluk ve yıllık periyodik bakım hizmetleri.' },
   { id: 'webasto-ticari-arac-klimalari', brandId: 'webasto', name: 'Webasto Isıtıcı ve Klima Bakımı', image: 'https://picsum.photos/seed/serviswebasto/600/400', description: 'Webasto sistemlerinizin kışa hazırlığı, arıza onarımı ve periyodik bakımı.' },
