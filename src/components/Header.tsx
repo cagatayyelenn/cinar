@@ -49,7 +49,7 @@ export default function Header() {
                   )}>
                     {/* Left side: Brand Info */}
                     <div className="w-1/3 bg-gray-50 p-8 border-r border-gray-100 flex flex-col items-center justify-center">
-                      <img src={brand.logo} alt={brand.name} className="w-24 h-auto mb-6 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-xl" />
+                      <img src={brand.logo} alt={brand.name} className="w-40 h-auto mb-8 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-xl" />
                       <Link to={`/${brand.id}-yetkili-servisi`} className="text-[10px] text-white font-black bg-black px-6 py-3 rounded-full uppercase tracking-widest hover:bg-gray-800 transition-colors shadow-lg">Yetkili Servis &rarr;</Link>
                     </div>
 
@@ -116,8 +116,8 @@ export default function Header() {
           <div className="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
             {brands.map((brand) => (
               <div key={brand.id} className="border-b border-gray-100 last:border-0 pb-4">
-                <Link to={`/${brand.id}-yetkili-servisi`} className="font-black text-black flex items-center py-3 px-2 hover:bg-gray-50 uppercase tracking-tight">
-                  <img src={brand.logo} alt={brand.name} className="h-6 w-auto object-contain mr-4" />
+                <Link to={`/${brand.id}-yetkili-servisi`} className="font-black text-black flex items-center py-4 px-2 hover:bg-gray-50 uppercase tracking-tight">
+                  <img src={brand.logo} alt={brand.name} className="h-10 w-auto object-contain mr-6" />
                   {brand.name}
                 </Link>
                 <div className="pl-10 space-y-2 mt-2">
