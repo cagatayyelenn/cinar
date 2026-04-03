@@ -54,7 +54,7 @@ export default function Home() {
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
                   <div className="max-w-4xl">
                     <div className="flex items-center gap-4 mb-8">
-                      <span className="font-mono text-[#fa9700] text-sm tracking-widest uppercase border border-[#fa9700] px-3 py-1">
+                      <span className="font-mono text-[#fa9700] text-sm tracking-widest uppercase border border-[#fa9700] px-4 py-1 rounded-full">
                         // YETKİLİ SERVİS
                       </span>
                       <span className="font-mono text-white/50 text-sm tracking-widest">
@@ -69,12 +69,12 @@ export default function Home() {
                     </p>
                   </div>
                   
-                  <div className="flex flex-col gap-4 shrink-0">
-                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#fa9700] text-black px-8 py-5 font-heading font-bold text-lg uppercase tracking-wide hover:bg-white transition-colors">
+                  <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+                    <Link to={`/${brand.id}-yetkili-servisi`} className="group flex items-center justify-between bg-[#fa9700] text-black px-10 py-5 rounded-full font-heading font-bold text-lg uppercase tracking-wide hover:bg-white transition-all shadow-xl hover:shadow-orange-500/20">
                       <span>Hizmetleri İncele</span>
                       <ArrowUpRight className="ml-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={24} />
                     </Link>
-                    <Link to="/iletisim" className="group flex items-center justify-between bg-transparent border border-white/30 text-white px-8 py-5 font-heading font-bold text-lg uppercase tracking-wide hover:bg-white/10 transition-colors">
+                    <Link to="/iletisim" className="group flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-full font-heading font-bold text-lg uppercase tracking-wide hover:bg-white/20 transition-all shadow-xl">
                       <span>İletişime Geç</span>
                       <ArrowRight className="ml-4 group-hover:translate-x-1 transition-transform" size={24} />
                     </Link>
@@ -176,24 +176,28 @@ export default function Home() {
         </div>
 
         {/* Full width brutalist grid */}
-        <div className="w-full border-y-2 border-[#0f2851] bg-[#0f2851] flex flex-wrap md:grid md:grid-cols-5 gap-[2px]">
-          {brands.map((brand, idx) => (
-            <Link 
-              key={brand.id} 
-              to={`/${brand.id}-yetkili-servisi`} 
-              className="w-full md:w-auto bg-white p-6 md:p-10 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-colors duration-500 relative overflow-hidden h-48 md:h-64"
-            >
-              <div className="absolute top-4 left-4 md:top-6 md:left-6 font-mono text-sm md:text-base font-bold text-black group-hover:text-black transition-colors tracking-widest z-20">
-                0{idx + 1} // {brand.name.toUpperCase()}
-              </div>
-              <img 
-                src={brand.logo} 
-                alt={brand.name} 
-                className="max-h-24 md:max-h-32 lg:max-h-40 max-w-[85%] object-contain transition-all duration-500 group-hover:scale-110 mix-blend-multiply relative z-10" 
-              />
-              <ArrowUpRight className="absolute bottom-4 right-4 text-black opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0" size={24} />
-            </Link>
-          ))}
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {brands.map((brand, idx) => (
+              <Link 
+                key={brand.id} 
+                to={`/${brand.id}-yetkili-servisi`} 
+                className="bg-white p-8 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-all duration-500 relative overflow-hidden h-48 md:h-64 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 border border-slate-100"
+              >
+                <div className="absolute top-6 left-8 font-mono text-[10px] font-bold text-gray-400 group-hover:text-black transition-colors tracking-widest z-20">
+                  0{idx + 1} // {brand.name.toUpperCase()}
+                </div>
+                <img 
+                  src={brand.logo} 
+                  alt={brand.name} 
+                  className="max-h-20 md:max-h-24 lg:max-h-28 max-w-[85%] object-contain transition-all duration-500 group-hover:scale-110 mix-blend-multiply relative z-10" 
+                />
+                <div className="absolute bottom-6 right-8 w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center group-hover:border-black transition-colors">
+                  <ArrowUpRight className="text-gray-400 group-hover:text-black transition-all" size={18} />
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -218,13 +222,13 @@ export default function Home() {
                   { icon: Clock, title: 'Hızlı ve Etkili Çözüm', desc: 'Ticari araçlarınızın zaman kaybını önlemek için en hızlı ve kesin onarım süreçleri.' },
                   { icon: ThumbsUp, title: 'Uzman Kadro', desc: 'Sürekli güncel eğitimler alan, alanında uzman ve sertifikalı teknisyen kadrosu.' }
                 ].map((feature, idx) => (
-                  <div key={idx} className="group flex flex-col md:flex-row gap-6 md:gap-12 py-12 border-b border-slate-300 hover:bg-white transition-colors px-6 -mx-6">
-                    <div className="font-mono text-4xl text-black group-hover:text-black transition-colors">
+                  <div key={idx} className="group flex flex-col md:flex-row gap-6 md:gap-12 py-10 border-b border-slate-200 hover:bg-white transition-all px-8 -mx-8 rounded-3xl">
+                    <div className="font-mono text-4xl text-slate-200 group-hover:text-[#fa9700] transition-colors">
                       {String(idx + 1).padStart(2, '0')}
                     </div>
                     <div>
-                      <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase tracking-wide">{feature.title}</h3>
-                      <p className="text-black text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
+                      <h3 className="font-heading text-2xl font-bold text-black mb-3 uppercase tracking-wide">{feature.title}</h3>
+                      <p className="text-gray-500 text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -257,10 +261,10 @@ export default function Home() {
               <Link 
                 key={service.id} 
                 to={`/${service.brandId}-ticari-arac-klimalari`}
-                className="group flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-slate-300 hover:bg-[#0f2851] transition-all duration-500 px-4 md:px-8 -mx-4 md:-mx-8"
+                className="group flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-slate-200 hover:bg-[#0f2851] rounded-[2rem] transition-all duration-500 px-8 -mx-8"
               >
                 <div className="flex items-center gap-6 md:gap-12 w-full md:w-1/2 mb-6 md:mb-0">
-                  <span className="font-mono text-2xl md:text-3xl text-black group-hover:text-black transition-colors">
+                  <span className="font-mono text-2xl md:text-3xl text-slate-200 group-hover:text-white/20 transition-colors">
                     {String(idx + 1).padStart(2, '0')}
                   </span>
                   <h3 className="font-heading text-2xl md:text-4xl font-bold text-black group-hover:text-white transition-colors uppercase tracking-tight">
@@ -269,15 +273,12 @@ export default function Home() {
                 </div>
                 
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 w-full md:w-1/2 justify-between">
-                  <p className="text-black group-hover:text-slate-300 transition-colors text-base md:text-lg font-light line-clamp-2 md:line-clamp-1 max-w-md">
+                  <p className="text-gray-500 group-hover:text-slate-300 transition-colors text-base md:text-lg font-light line-clamp-2 md:line-clamp-1 max-w-md">
                     {service.description}
                   </p>
-                  <div className="hidden md:flex w-16 h-16 rounded-full border border-slate-300 group-hover:border-[#fa9700] items-center justify-center shrink-0 group-hover:bg-[#fa9700] transition-colors relative overflow-hidden">
+                  <div className="hidden md:flex w-16 h-16 rounded-full border border-slate-200 group-hover:border-[#fa9700] items-center justify-center shrink-0 group-hover:bg-[#fa9700] transition-colors relative overflow-hidden shadow-sm">
                     <ArrowUpRight className="text-black absolute transform translate-y-12 group-hover:translate-y-0 transition-transform duration-300" size={24} />
                     <ArrowRight className="text-slate-400 absolute transform group-hover:translate-x-12 transition-transform duration-300" size={24} />
-                  </div>
-                  <div className="md:hidden flex items-center text-black font-mono text-sm uppercase tracking-widest mt-4">
-                    İncele <ArrowRight size={16} className="ml-2" />
                   </div>
                 </div>
               </Link>
@@ -399,10 +400,10 @@ export default function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fa9700] to-orange-400">MAKSİMUM VERİMLİLİK.</span>
             </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white transition-colors flex items-center justify-center">
+              <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-12 py-6 rounded-full font-heading font-bold text-xl uppercase tracking-wide hover:bg-white transition-all shadow-2xl hover:shadow-orange-500/40">
                 Hemen Arayın
               </a>
-              <Link to="/iletisim" className="bg-transparent border-2 border-white text-white px-10 py-6 font-heading font-bold text-xl uppercase tracking-wide hover:bg-white hover:text-black transition-colors flex items-center justify-center">
+              <Link to="/iletisim" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-12 py-6 rounded-full font-heading font-bold text-xl uppercase tracking-wide hover:bg-white hover:text-black transition-all shadow-2xl">
                 Teklif İsteyin
               </Link>
             </div>

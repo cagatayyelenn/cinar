@@ -96,11 +96,11 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLocaleLowerCase('tr-TR') : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
               </p>
             </div>
-            <div className="bg-white p-8 shrink-0 border border-gray-800">
+            <div className="bg-white/10 backdrop-blur-md p-10 shrink-0 border border-white/20 rounded-[2.5rem] shadow-2xl">
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
-                className={`${brand.id === 'yilkar' ? 'h-[135px]' : 'h-[200px]'} w-auto object-contain`} 
+                className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain brightness-0 invert`} 
               />
             </div>
           </div>
@@ -113,28 +113,28 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
           {/* Sidebar */}
           <div className="lg:w-1/4 space-y-8">
             {/* Categories */}
-            <div className="bg-white border border-gray-200 p-8">
-              <h3 className="text-sm font-black text-black mb-6 uppercase tracking-widest border-b border-gray-200 pb-4 flex items-center">
+            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm">
+              <h3 className="text-sm font-black text-black mb-6 uppercase tracking-widest border-b border-slate-100 pb-4 flex items-center">
                 <Filter size={16} className="mr-3" /> Kategoriler
               </h3>
               <ul className="space-y-4">
                 <li>
                   <button 
                     onClick={() => handleCategoryClick(null)}
-                    className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === null ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                    className={`w-full flex items-center justify-between text-left transition-all p-3 rounded-xl uppercase text-[11px] tracking-widest group ${selectedCategory === null ? 'bg-black text-white font-black' : 'text-gray-500 hover:bg-gray-50 hover:text-black font-medium'}`}
                   >
                     <span className="group-hover:translate-x-1 transition-transform">Tüm Ürünler</span>
-                    <span className={`${selectedCategory === null ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>{brandProducts.length}</span>
+                    <span className={`${selectedCategory === null ? 'bg-white/20 text-white' : 'bg-gray-100 text-black'} text-[10px] py-1 px-2 font-mono rounded-md`}>{brandProducts.length}</span>
                   </button>
                 </li>
                 {categories.map(cat => (
                   <li key={cat.path}>
                     <button 
                       onClick={() => handleCategoryClick(cat.label)}
-                      className={`w-full flex items-center justify-between text-left transition-colors uppercase text-sm tracking-wide group ${selectedCategory === cat.label ? 'text-black font-black' : 'text-gray-500 hover:text-black font-medium'}`}
+                      className={`w-full flex items-center justify-between text-left transition-all p-3 rounded-xl uppercase text-[11px] tracking-widest group ${selectedCategory === cat.label ? 'bg-black text-white font-black' : 'text-gray-500 hover:bg-gray-50 hover:text-black font-medium'}`}
                     >
                       <span className="group-hover:translate-x-1 transition-transform">{cat.label}</span>
-                      <span className={`${selectedCategory === cat.label ? 'bg-black text-white' : 'bg-gray-100 text-black'} text-xs py-1 px-2 font-mono`}>
+                      <span className={`${selectedCategory === cat.label ? 'bg-white/20 text-white' : 'bg-gray-100 text-black'} text-[10px] py-1 px-2 font-mono rounded-md`}>
                         {brandProducts.filter(p => p.category === cat.label).length}
                       </span>
                     </button>
@@ -144,17 +144,17 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             </div>
 
             {/* CTA Widget */}
-            <div className="bg-black p-8 text-white">
-              <ShieldCheck size={32} className="text-white mb-6" />
-              <h3 className="text-xl font-black mb-4 uppercase tracking-tight leading-tight">Doğru Ürünü Bulamadınız mı?</h3>
-              <p className="text-gray-400 text-sm mb-8 leading-relaxed">
-                Aradığınız {brand.name} yedek parçası veya ürünü listede yoksa, şasi numaranızla birlikte bize ulaşın. Stoklarımızı sizin için kontrol edelim.
+            <div className="bg-[#0f2851] p-10 text-white rounded-[2rem] shadow-2xl">
+              <ShieldCheck size={32} className="text-amber-500 mb-6" />
+              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter leading-none">Doğru Ürünü Bulamadınız mı?</h3>
+              <p className="text-slate-400 text-sm mb-8 leading-relaxed font-light">
+                Aradığınız {brand.name} yedek parçası veya ürünü listede yoksa, bize ulaşın. Stoklarımızı sizin için kontrol edelim.
               </p>
               
-              <a href="tel:+905070485034" className="w-full bg-white hover:bg-gray-200 text-black py-4 font-bold flex items-center justify-center transition-colors mb-4 uppercase tracking-widest text-xs">
+              <a href="tel:+905070485034" className="w-full bg-[#fa9700] hover:bg-white text-black py-4 rounded-full font-bold flex items-center justify-center transition-all mb-4 uppercase tracking-widest text-[10px] shadow-lg">
                 <PhoneCall className="mr-2" size={16} /> Bizi Arayın
               </a>
-              <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="w-full border border-gray-700 hover:border-white text-white py-4 font-bold flex items-center justify-center transition-colors uppercase tracking-widest text-xs">
+              <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="w-full border border-white/20 hover:border-white text-white py-4 rounded-full font-bold flex items-center justify-center transition-all uppercase tracking-widest text-[10px]">
                 WhatsApp Destek
               </a>
             </div>
@@ -168,16 +168,16 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
               <div className="relative w-full sm:w-[450px] group">
                 <input 
                   type="text" 
-                  placeholder="Ürün adı veya kodu ile ara..." 
+                  placeholder="Ürün ara..." 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border border-gray-200 text-sm font-medium focus:outline-none focus:border-black focus:bg-white transition-all rounded-none placeholder:text-gray-400"
+                  className="w-full pl-12 pr-10 py-4 bg-slate-50 border border-slate-100 text-sm font-medium focus:outline-none focus:border-black focus:bg-white transition-all rounded-full placeholder:text-gray-400"
                 />
-                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-black transition-colors" />
+                <Search size={18} className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-black transition-colors" />
                 {searchQuery && (
                   <button 
                     onClick={() => setSearchQuery('')}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black transition-colors"
+                    className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black transition-colors"
                   >
                     <XCircle size={16} />
                   </button>
@@ -191,37 +191,35 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
               {filteredProducts.length > 0 ? filteredProducts.map(product => (
-                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:border-gray-200 hover:shadow-xl overflow-hidden rounded-none">
+                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-[2rem] overflow-hidden">
                   {/* Top Image Section */}
-                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
-                    <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10">
+                  <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-slate-50 p-6">
+                    <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 rounded-full">
                       YENİ
                     </div>
                     <img 
                       src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
-                      className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-90" 
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" 
                     />
                   </div>
                   {/* Card Content Section */}
                   <div className="p-8 flex flex-col flex-grow">
-                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block opacity-80">
+                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block">
                       {product.category} | {brand.name}
                     </span>
-                    <h3 className="font-bold text-black text-xl mb-8 leading-tight group-hover:underline decoration-2 underline-offset-4">
+                    <h3 className="font-black text-black text-xl mb-8 leading-tight group-hover:text-amber-600 transition-colors">
                       {product.name}
                     </h3>
                     
                     {/* Suitable for Section */}
-                    <div className="mt-auto border-t border-gray-100 pt-6">
-                      <p className="text-black font-black text-[10px] uppercase tracking-widest mb-4 opacity-60">Kullanım Alanı:</p>
-                      <div className="flex flex-wrap gap-4 text-black mb-8 grayscale group-hover:grayscale-0 transition-all duration-500">
-                        <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Ticari Araçlar" />
-                      </div>
-                      <div className="flex items-center justify-end">
-                        <span className="font-black text-xs uppercase tracking-widest text-black flex items-center group-hover:translate-x-1 transition-transform">
-                          İncele <ArrowRight size={16} className="ml-2" />
-                        </span>
+                    <div className="mt-auto pt-6 border-t border-slate-50">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center text-black grayscale group-hover:grayscale-0 transition-all duration-500">
+                           <img src="/ticari.svg" alt="Ticari Araç" className="w-6 h-6 mr-2" />
+                           <span className="text-[10px] font-black uppercase tracking-widest">Ticari Araç</span>
+                        </div>
+                        <ArrowRight size={18} className="text-slate-200 group-hover:text-black transition-all group-hover:translate-x-1" />
                       </div>
                     </div>
                   </div>

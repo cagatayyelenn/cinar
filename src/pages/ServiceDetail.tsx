@@ -57,8 +57,8 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
               <div className="lg:w-2/3">
                 <h1 className="text-3xl md:text-5xl font-black text-black mb-8 uppercase tracking-tighter">{service.name}</h1>
                 
-                <div className="bg-white border-l-4 border-black p-8 mb-12 bg-gray-50">
-                  <p className="text-xl text-gray-700 leading-relaxed font-light italic">
+                <div className="bg-slate-50 rounded-[2.5rem] p-10 mb-12 border border-slate-100 shadow-sm">
+                  <p className="text-xl text-slate-600 leading-relaxed font-light italic">
                     "{service.description}"
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
                       'Sistem Dezenfeksiyonu'
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-black">
-                        <CheckCircle2 size={18} className="text-black shrink-0" />
+                        <CheckCircle2 size={18} className="text-amber-500 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -89,12 +89,15 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
 
                 {/* FAQ Section */}
                 <div className="mt-20">
-                  <h2 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">SIKÇA SORULAR SORULAR</h2>
-                  <div className="space-y-4">
+                  <h2 className="text-2xl font-black text-black mb-10 uppercase tracking-tighter">SIKÇA SORULAR SORULAR</h2>
+                  <div className="grid grid-cols-1 gap-6">
                     {faqs.slice(0, 3).map((faq, i) => (
-                      <div key={i} className="border border-gray-100 p-8 hover:border-black transition-colors bg-white">
-                        <h4 className="text-sm font-black text-black mb-4 uppercase tracking-widest">{faq.question}</h4>
-                        <p className="text-gray-500 text-sm leading-relaxed font-light">{faq.answer}</p>
+                      <div key={i} className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all group">
+                        <h4 className="text-[11px] font-black text-black mb-4 uppercase tracking-[0.2em] flex items-center gap-4">
+                          <span className="w-8 h-px bg-amber-500 group-hover:w-12 transition-all"></span>
+                          {faq.question}
+                        </h4>
+                        <p className="text-gray-500 text-sm leading-relaxed font-light pl-12">{faq.answer}</p>
                       </div>
                     ))}
                   </div>
@@ -103,25 +106,26 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
 
               <div className="lg:w-1/3">
                 <div className="sticky top-32 space-y-8">
-                  <img src={service.image} alt={service.name} className="w-full h-80 object-cover border border-gray-100 transition-all duration-700" />
+                  <img src={service.image} alt={service.name} className="w-full h-80 object-cover rounded-[2.5rem] border border-slate-100 shadow-xl" />
                   
-                  <div className="bg-black p-10 text-white">
-                    <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">RANDEVU ALIN</h3>
-                    <p className="text-gray-400 text-sm mb-8 leading-relaxed font-light">
+                  <div className="bg-[#0f2851] p-12 rounded-[2.5rem] text-white shadow-2xl">
+                    <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter leading-none">RANDEVU ALIN</h3>
+                    <p className="text-slate-400 text-sm mb-10 leading-relaxed font-light">
                       Hızlı servis ve uzman desteği için hemen bizimle iletişime geçin.
                     </p>
-                    <a href="tel:+905555555555" className="flex items-center justify-center gap-4 bg-white text-black py-5 px-8 font-black text-xs uppercase tracking-widest hover:bg-gray-100 transition-colors">
-                      <PhoneCall size={18} />
+                    <a href="tel:+905070485034" className="flex items-center justify-center gap-4 bg-[#fa9700] text-black py-5 px-8 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-white transition-all shadow-lg">
+                      <PhoneCall size={16} />
                       ŞİMDİ ARA
                     </a>
                   </div>
                   
-                  <div className="border border-gray-100 p-8 space-y-6">
-                    <h4 className="text-xs font-black text-gray-400 uppercase tracking-widest">DİĞER HİZMETLER</h4>
-                    <div className="space-y-3">
+                  <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100">
+                    <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-8">DİĞER HİZMETLER</h4>
+                    <div className="space-y-4">
                       {services.filter(s => s.id !== service.id && s.brandId === brand.id).slice(0, 4).map((s, i) => (
-                        <Link key={i} to={`/${s.id}`} className="block text-xs font-bold uppercase tracking-widest text-black hover:text-gray-500 transition-colors py-2 border-b border-gray-50 last:border-0">
-                          {s.name}
+                        <Link key={i} to={`/${s.id}`} className="flex items-center justify-between text-[11px] font-black uppercase tracking-widest text-black hover:text-amber-600 transition-all group">
+                          <span>{s.name}</span>
+                          <ChevronRight size={14} className="text-slate-300 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       ))}
                     </div>

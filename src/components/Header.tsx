@@ -10,7 +10,7 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white border-b-2 border-black">
+    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -32,10 +32,8 @@ export default function Header() {
                   <Link
                     to={`/${brand.id}-yetkili-servisi`}
                     className={cn(
-                      "px-6 py-3 transition-all duration-200 flex items-center h-16 border-x border-transparent",
-                      isActive
-                        ? "bg-black text-white border-black"
-                        : "text-black hover:bg-gray-50 hover:border-gray-100"
+                      "px-6 py-3 transition-all duration-200 flex items-center h-16 rounded-full mx-1 text-black",
+                      isActive && "bg-black text-white"
                     )}
                   >
                     <span className="font-black text-sm uppercase tracking-wide">
@@ -46,19 +44,19 @@ export default function Header() {
 
                   {/* Mega Menu - Sharp Edges */}
                   <div className={cn(
-                    "absolute top-full left-[44%] -translate-x-1/2 w-[700px] bg-white border-2 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] transition-all duration-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
-                    "origin-top"
+                    "absolute top-[calc(100%-8px)] left-[44%] -translate-x-1/2 w-[700px] bg-white rounded-3xl shadow-2xl border border-gray-100 transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
+                    "origin-top scale-95 group-hover:scale-100"
                   )}>
                     {/* Left side: Brand Info */}
                     <div className="w-1/3 bg-gray-50 p-8 border-r border-gray-100 flex flex-col items-center justify-center">
-                      <img src={brand.logo} alt={brand.name} className="w-32 h-auto mb-6 grayscale group-hover:grayscale-0 transition-all duration-500" />
-                      <Link to={`/${brand.id}-yetkili-servisi`} className="text-[10px] text-white font-black bg-black px-4 py-2 uppercase tracking-widest hover:bg-gray-800 transition-colors">Yetkili Servis &rarr;</Link>
+                      <img src={brand.logo} alt={brand.name} className="w-24 h-auto mb-6 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-xl" />
+                      <Link to={`/${brand.id}-yetkili-servisi`} className="text-[10px] text-white font-black bg-black px-6 py-3 rounded-full uppercase tracking-widest hover:bg-gray-800 transition-colors shadow-lg">Yetkili Servis &rarr;</Link>
                     </div>
 
                     {/* Right side: Links */}
                     <div className="w-2/3 p-8 flex space-x-12">
                       <div className="flex-1">
-                        <h4 className="font-black text-black text-xs uppercase tracking-[0.2em] mb-6 border-b-2 border-black pb-2">Ürünler</h4>
+                        <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-6 text-gray-400">Ürünler</h4>
                         <ul className="space-y-4">
                           {/* @ts-ignore */}
                           {brand.menuProducts ? brand.menuProducts.map((p, i) => (
@@ -73,7 +71,7 @@ export default function Header() {
                         </ul>
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-black text-black text-xs uppercase tracking-[0.2em] mb-6 border-b-2 border-black pb-2">Hizmetler</h4>
+                        <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-6 text-gray-400">Hizmetler</h4>
                         <ul className="space-y-4">
                           {/* @ts-ignore */}
                           {brand.menuServices ? brand.menuServices.map((s, i) => (
@@ -96,25 +94,25 @@ export default function Header() {
         </nav>
 
         {/* Contact Buttons - Sharp */}
-        <div className="hidden lg:flex items-center space-x-0">
-          <a href="tel:+905070485034" className="flex items-center bg-gray-50 border-y border-l border-gray-200 px-6 py-4 hover:bg-gray-100 transition-colors h-16">
-            <Phone size={16} className="text-black mr-3" />
-            <span className="font-black text-black text-sm tracking-tighter uppercase">0507 048 50 34</span>
+        <div className="hidden lg:flex items-center space-x-3">
+          <a href="tel:+905070485034" className="flex items-center bg-gray-50 border border-gray-100 px-6 py-3 hover:bg-gray-100 transition-colors h-12 rounded-full shadow-sm">
+            <Phone size={14} className="text-black mr-3" />
+            <span className="font-black text-black text-xs tracking-tighter uppercase">0507 048 50 34</span>
           </a>
-          <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="flex items-center bg-black text-white px-8 py-4 font-black text-xs uppercase tracking-[0.2em] hover:bg-gray-900 transition-colors h-16">
+          <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="flex items-center bg-black text-white px-8 py-3 font-black text-xs uppercase tracking-[0.2em] hover:bg-gray-900 transition-colors h-12 rounded-full shadow-lg">
             WhatsApp <ChevronRight size={14} className="ml-2" />
           </a>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="lg:hidden text-black p-2 border-2 border-black" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <button className="lg:hidden text-black p-3 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Menu - Sharp Edges */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-b-2 border-black shadow-2xl overflow-hidden z-50">
+        <div className="lg:hidden absolute top-[calc(100%+12px)] left-4 right-4 bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden z-50">
           <div className="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
             {brands.map((brand) => (
               <div key={brand.id} className="border-b border-gray-100 last:border-0 pb-4">

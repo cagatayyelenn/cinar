@@ -53,11 +53,11 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 {brand.heroDescription || `${brand.name} ürünleriniz için garantili bakım, onarım, montaj ve orijinal yedek parça hizmetleri.`}
               </p>
             </div>
-            <div className="bg-white p-8 shrink-0 border border-gray-800">
+            <div className="bg-white/10 backdrop-blur-md p-10 shrink-0 border border-white/20 rounded-[2.5rem] shadow-2xl">
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
-                className={`${brand.id === 'yilkar' ? 'h-[135px]' : 'h-[200px]'} w-auto object-contain`} 
+                className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain brightness-0 invert`} 
               />
             </div>
           </div>
@@ -79,14 +79,14 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 {brand.whyDescription || `Çınar Oto Klima olarak, ${brand.name} markasının resmi yetkili servisi olmaktan gurur duyuyoruz. Aracınızdaki ${brand.name} marka klima ve ısıtıcı sistemlerinin en yüksek performansta çalışması için gerekli tüm teknik donanıma ve sertifikalı uzman kadroya sahibiz.`}
               </p>
               <div className="grid sm:grid-cols-2 gap-8">
-                <div className="bg-gray-50 p-8 border border-gray-100">
-                  <ShieldCheck className="text-black mb-6" size={40} strokeWidth={1.5} />
-                  <h3 className="font-black text-lg mb-3 uppercase tracking-tight">Garantili Hizmet</h3>
+                <div className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all">
+                  <ShieldCheck className="text-black mb-6" size={40} strokeWidth={1.2} />
+                  <h3 className="font-black text-xl mb-3 uppercase tracking-tight">Garantili Hizmet</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">Tüm bakım ve onarım işlemlerimiz yetkili servis garantisi altındadır.</p>
                 </div>
-                <div className="bg-gray-50 p-8 border border-gray-100">
-                  <Wrench className="text-black mb-6" size={40} strokeWidth={1.5} />
-                  <h3 className="font-black text-lg mb-3 uppercase tracking-tight">Orijinal Yedek Parça</h3>
+                <div className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all">
+                  <Wrench className="text-black mb-6" size={40} strokeWidth={1.2} />
+                  <h3 className="font-black text-xl mb-3 uppercase tracking-tight">Orijinal Yedek Parça</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">Sadece {brand.name} onaylı, %100 orijinal yedek parçalar kullanıyoruz.</p>
                 </div>
               </div>
@@ -99,14 +99,14 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </h2>
               <div className="space-y-8">
                 {brandServices.length > 0 ? brandServices.map(service => (
-                  <div key={service.id} className="flex flex-col md:flex-row gap-8 bg-white border border-gray-100 group hover:border-black hover:shadow-2xl transition-all duration-300">
-                    <div className="md:w-2/5 overflow-hidden">
-                      <img src={service.image} alt={service.name} className="w-full h-64 md:h-full object-cover transition-all duration-700" />
+                  <div key={service.id} className="flex flex-col md:flex-row gap-8 bg-white border border-slate-100 rounded-[2.5rem] p-4 group hover:shadow-2xl hover:border-slate-200 transition-all duration-500">
+                    <div className="md:w-2/5 overflow-hidden rounded-[2rem]">
+                      <img src={service.image} alt={service.name} className="w-full h-64 md:h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div className="md:w-3/5 p-8 flex flex-col justify-center">
                       <h3 className="text-2xl font-black text-black mb-4 uppercase tracking-tight leading-tight">{service.name}</h3>
-                      <p className="text-gray-500 mb-8 leading-relaxed">{service.description}</p>
-                      <Link to={`/${service.id}`} className="text-xs font-black text-black uppercase tracking-widest flex items-center mt-auto group-hover:text-gray-600 transition-colors">
+                      <p className="text-gray-500 mb-8 leading-relaxed font-light">{service.description}</p>
+                      <Link to={`/${service.id}`} className="inline-flex items-center text-xs font-black text-black uppercase tracking-widest mt-auto group-hover:text-amber-600 transition-colors">
                         Hizmet Detayları <ArrowRight size={14} className="ml-2 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>
@@ -127,34 +127,31 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {brandProducts.length > 0 ? brandProducts.map(product => (
-                  <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-300 relative border border-gray-100 hover:shadow-2xl overflow-hidden rounded-none">
+                  <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-[2rem] overflow-hidden">
                     {/* Top Image Section */}
-                    <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50">
-                      <div className="absolute top-4 left-4 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 transition-transform origin-bottom-left">
+                    <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50 p-6">
+                      <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 rounded-full">
                         YENİ
                       </div>
-                      {/* @ts-ignore */}
-                      <img src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} alt={product.name} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-90" />
+                      <img src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} alt={product.name} className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" />
                     </div>
                     {/* Card Content Section */}
                     <div className="p-8 flex flex-col flex-grow">
-                      <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block opacity-80">
+                      <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block">
                         {product.category} | {brand.name}
                       </span>
-                      <h3 className="font-bold text-black text-2xl mb-8 leading-snug group-hover:text-gray-600 transition-colors">
+                      <h3 className="font-black text-black text-xl mb-8 leading-tight group-hover:text-amber-600 transition-colors">
                         {product.name}
                       </h3>
                       
                       {/* Suitable for Section */}
-                      <div className="mt-auto border-t border-gray-100 pt-6">
-                        <p className="text-black font-black text-[10px] uppercase tracking-widest mb-4 opacity-60">Kullanım Alanı:</p>
-                        <div className="flex flex-wrap gap-4 text-black mb-8 grayscale group-hover:grayscale-0 transition-all duration-500">
-                          <img src="/ticari.svg" alt="Ticari Araç" className="w-8 h-8" title="Ticari Araçlar" />
-                        </div>
-                        <div className="flex items-center justify-end">
-                          <span className="font-bold text-sm text-black flex items-center transition-colors">
-                            Ürün Detayları <ArrowRight size={18} className="ml-2" />
-                          </span>
+                      <div className="mt-auto pt-6 border-t border-slate-50">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center text-black grayscale group-hover:grayscale-0 transition-all duration-500">
+                             <img src="/ticari.svg" alt="Ticari Araç" className="w-6 h-6 mr-2" />
+                             <span className="text-[10px] font-black uppercase tracking-widest">Ticari Araç</span>
+                          </div>
+                          <ArrowRight size={18} className="text-slate-200 group-hover:text-black transition-all group-hover:translate-x-1" />
                         </div>
                       </div>
                     </div>
@@ -172,11 +169,11 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </h2>
               <div className="space-y-6">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="bg-gray-50 p-8 border border-gray-100">
+                  <div key={index} className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100">
                     <h3 className="text-lg font-black text-black mb-4 flex items-start uppercase tracking-tight leading-tight">
-                      <span className="text-gray-400 mr-4 font-light">Q.</span> {faq.question}
+                      <span className="text-amber-500 mr-4 font-black">Q.</span> {faq.question}
                     </h3>
-                    <p className="text-gray-500 pl-10 text-sm leading-relaxed border-l border-gray-200">{faq.answer}</p>
+                    <p className="text-gray-500 pl-10 text-sm leading-relaxed border-l border-slate-200 font-light">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -185,31 +182,31 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
 
           {/* Sidebar CTA */}
           <div className="lg:w-1/3">
-            <div className="sticky top-32 bg-black p-10 text-white">
-              <h3 className="text-3xl font-black mb-6 uppercase tracking-tight leading-tight">Servis <br/>Randevusu</h3>
-              <p className="text-gray-400 mb-10 leading-relaxed">
+            <div className="sticky top-32 bg-[#0f2851] p-12 rounded-[2.5rem] text-white shadow-2xl">
+              <h3 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-[0.9]">Servis <br/>Randevusu</h3>
+              <p className="text-slate-400 mb-10 leading-relaxed font-light">
                 Aracınızın iklimlendirme sistemi için profesyonel destek alın. Hemen randevu oluşturun veya bilgi alın.
               </p>
               
               <ul className="space-y-6 mb-12">
-                <li className="flex items-center text-sm font-bold uppercase tracking-widest">
-                  <CheckCircle2 className="text-white mr-4" size={18} />
+                <li className="flex items-center text-xs font-bold uppercase tracking-widest text-slate-300">
+                  <CheckCircle2 className="text-amber-500 mr-4" size={18} />
                   <span>Aynı Gün Servis</span>
                 </li>
-                <li className="flex items-center text-sm font-bold uppercase tracking-widest">
-                  <CheckCircle2 className="text-white mr-4" size={18} />
+                <li className="flex items-center text-xs font-bold uppercase tracking-widest text-slate-300">
+                  <CheckCircle2 className="text-amber-500 mr-4" size={18} />
                   <span>Ücretsiz Arıza Tespiti</span>
                 </li>
-                <li className="flex items-center text-sm font-bold uppercase tracking-widest">
-                  <CheckCircle2 className="text-white mr-4" size={18} />
+                <li className="flex items-center text-xs font-bold uppercase tracking-widest text-slate-300">
+                  <CheckCircle2 className="text-amber-500 mr-4" size={18} />
                   <span>1 Yıl İşçilik Garantisi</span>
                 </li>
               </ul>
-
-              <a href="tel:+905070485034" className="w-full bg-white hover:bg-gray-200 text-black py-5 font-black flex items-center justify-center transition-colors mb-6 uppercase tracking-widest text-xs">
-                <PhoneCall className="mr-3" size={18} /> 0507 048 50 34
+ 
+              <a href="tel:+905070485034" className="w-full bg-[#fa9700] hover:bg-white text-black py-5 rounded-full font-black flex items-center justify-center transition-all mb-6 uppercase tracking-widest text-[10px] shadow-lg">
+                <PhoneCall className="mr-3" size={16} /> 0507 048 50 34
               </a>
-              <Link to="/iletisim" className="w-full border border-gray-700 hover:border-white text-white py-5 font-black flex items-center justify-center transition-colors uppercase tracking-widest text-xs">
+              <Link to="/iletisim" className="w-full border border-white/20 hover:border-white text-white py-5 rounded-full font-black flex items-center justify-center transition-all uppercase tracking-widest text-[10px]">
                 Mesaj Gönder
               </Link>
             </div>

@@ -1,116 +1,127 @@
-import { Facebook, Instagram, Linkedin, Twitter, CheckCircle2 } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, CheckCircle2, PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { brands } from '../data/mockData';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1e293b] text-slate-300 pt-20 pb-8 font-sans">
-      <div className="container mx-auto px-4 md:px-8">
+    <footer className="bg-[#0f2851] text-slate-400 pt-24 pb-12 font-sans overflow-hidden relative">
+      {/* Background decoration */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#fa9700]/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
+      
+      <div className="container mx-auto px-6 md:px-8 relative z-10">
         
         {/* Top Section: 4 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-0 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           
           {/* Col 1: Brand & About */}
-          <div className="lg:pr-12 lg:border-r border-white/10">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#fa9700] rounded-lg flex items-center justify-center">
-                <span className="text-[#0f2851] font-black text-xl">Ç</span>
+          <div className="lg:pr-12">
+            <Link to="/" className="flex items-center gap-4 mb-8 group">
+              <div className="w-12 h-12 bg-[#fa9700] rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
+                <span className="text-[#0f2851] font-black text-2xl">Ç</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-black text-xl leading-none tracking-tight">ÇINAR</span>
-                <span className="text-[#fa9700] font-semibold text-xs tracking-widest">OTO KLİMA</span>
+                <span className="text-white font-black text-2xl leading-none tracking-tighter">ÇINAR</span>
+                <span className="text-amber-500 font-bold text-[10px] tracking-[0.3em] uppercase">OTO KLİMA</span>
               </div>
-            </div>
-            <p className="text-sm text-slate-400 mb-8 leading-relaxed">
+            </Link>
+            <p className="text-sm text-slate-400 mb-10 leading-relaxed font-light">
               Ticari araç klimaları ve ısıtıcı sistemlerinde uzman kadromuzla, güvenli ve orijinal yedek parça garantili servis hizmeti sunuyoruz.
             </p>
-            <div className="flex space-x-5">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Facebook size={18} /></a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Linkedin size={18} /></a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Instagram size={18} /></a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Twitter size={18} /></a>
+            <div className="flex space-x-4">
+              {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
+                <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#fa9700] hover:text-black hover:border-[#fa9700] transition-all">
+                  <Icon size={18} />
+                </a>
+              ))}
             </div>
           </div>
-
+ 
           {/* Col 2: Quick Links */}
-          <div className="lg:px-12 lg:border-r border-white/10">
-            <h3 className="text-white font-bold text-base mb-6">Hızlı Bağlantılar</h3>
-            <ul className="space-y-3.5">
-              <li><Link to="/" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Anasayfa</Link></li>
-              <li><Link to="/hakkimizda" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Hakkımızda</Link></li>
-              <li><Link to="/yedek-parca" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Yedek Parça</Link></li>
-              <li><Link to="/urunlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Ürünlerimiz</Link></li>
-              <li><Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Hizmetlerimiz</Link></li>
-              <li><Link to="/iletisim" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>İletişim</Link></li>
+          <div>
+            <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10">Hızlı Bağlantılar</h3>
+            <ul className="space-y-4">
+              {[
+                { label: 'Anasayfa', path: '/' },
+                { label: 'Hakkımızda', path: '/hakkimizda' },
+                { label: 'Yedek Parça', path: '/yedek-parca' },
+                { label: 'Ürünlerimiz', path: '/urunlerimiz' },
+                { label: 'Hizmetlerimiz', path: '/hizmetlerimiz' },
+                { label: 'İletişim', path: '/iletisim' }
+              ].map((link, i) => (
+                <li key={i}>
+                  <Link to={link.path} className="text-sm text-slate-400 hover:text-white transition-all flex items-center group">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500/50 mr-4 group-hover:scale-150 group-hover:bg-amber-500 transition-all"></span>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-
+ 
           {/* Col 3: Services / Brands */}
-          <div className="lg:px-12 lg:border-r border-white/10">
-            <h3 className="text-white font-bold text-base mb-6">Yetkili Servisler</h3>
-            <ul className="space-y-3.5">
+          <div>
+            <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10">Yetkili Servisler</h3>
+            <ul className="space-y-4">
               {brands.map(brand => (
                 <li key={brand.id}>
-                  <Link to={`/${brand.id}-yetkili-servisi`} className="text-sm text-slate-400 hover:text-white transition-colors flex items-center">
-                    <span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>
+                  <Link to={`/${brand.id}-yetkili-servisi`} className="text-sm text-slate-400 hover:text-white transition-all flex items-center group">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500/50 mr-4 group-hover:scale-150 group-hover:bg-amber-500 transition-all"></span>
                     {brand.name} Servisi
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-
+ 
           {/* Col 4: Services */}
-          <div className="lg:pl-12">
-            <h3 className="text-white font-bold text-base mb-6">Hizmetlerimiz</h3>
-            <ul className="space-y-3.5">
-              <li><Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Klima Montajı</Link></li>
-              <li><Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Isıtıcı Sistemleri</Link></li>
-              <li><Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Periyodik Bakım</Link></li>
-              <li><Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Gaz Dolumu</Link></li>
-              <li><Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Arıza Tespiti</Link></li>
-              <li><Link to="/yedek-parca" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center"><span className="w-1 h-1 rounded-full bg-slate-500 mr-3"></span>Yedek Parça Temini</Link></li>
+          <div>
+            <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10">Hizmetlerimiz</h3>
+            <ul className="space-y-4">
+              {[
+                'Klima Montajı',
+                'Isıtıcı Sistemleri',
+                'Periyodik Bakım',
+                'Gaz Dolumu',
+                'Arıza Tespiti',
+                'Yedek Parça Temini'
+              ].map((service, i) => (
+                <li key={i}>
+                  <Link to="/hizmetlerimiz" className="text-sm text-slate-400 hover:text-white transition-all flex items-center group">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500/50 mr-4 group-hover:scale-150 group-hover:bg-amber-500 transition-all"></span>
+                    {service}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-
+ 
         </div>
-
-        {/* Middle Section: Features */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-10 border-y border-white/5 mb-10">
-          <div className="flex items-center justify-center gap-3 text-sm text-white font-medium">
-            <CheckCircle2 size={18} className="text-emerald-400" />
-            %100 Orijinal Parça
-          </div>
-          <div className="flex items-center justify-center gap-3 text-sm text-white font-medium">
-            <CheckCircle2 size={18} className="text-emerald-400" />
-            Yetkili Servis Güvencesi
-          </div>
-          <div className="flex items-center justify-center gap-3 text-sm text-white font-medium">
-            <CheckCircle2 size={18} className="text-emerald-400" />
-            Uzman Teknisyenler
-          </div>
-          <div className="flex items-center justify-center gap-3 text-sm text-white font-medium">
-            <CheckCircle2 size={18} className="text-emerald-400" />
-            Hızlı Teknik Destek
-          </div>
-        </div>
-
+ 
         {/* Bottom Alert Box */}
-        <div className="bg-white/5 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-center gap-2 text-center md:text-left mb-12 border border-white/5">
-          <span className="text-white font-medium text-sm md:text-base">Servis ve randevu talepleriniz için:</span>
-          <span className="text-slate-400 text-sm md:text-base">Lütfen <strong className="text-white">0507 048 50 34</strong> numaralı telefonu arayın veya servis noktamıza gelin.</span>
+        <div className="bg-white/5 backdrop-blur-md rounded-[2.5rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 border border-white/10 shadow-2xl">
+          <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            <div className="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500">
+              <PhoneCall size={32} />
+            </div>
+            <div>
+              <span className="text-white font-black text-lg block uppercase tracking-tight">Servis ve Randevu Talepleriniz İçin</span>
+              <span className="text-slate-400 text-sm font-light">7/24 Kesintisiz Teknik Destek ve Randevu Hattı</span>
+            </div>
+          </div>
+          <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-10 py-5 rounded-full font-black text-xl hover:bg-white transition-all shadow-xl shadow-orange-500/20">
+            0507 048 50 34
+          </a>
         </div>
-
+ 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-6 border-t border-white/5 text-sm text-slate-400">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/5 text-[11px] font-bold uppercase tracking-widest text-slate-500">
           <p>© {new Date().getFullYear()} Çınar Oto Klima. Tüm hakları saklıdır.</p>
-          <div className="flex items-center gap-6 mt-4 md:mt-0">
-            <Link to="/gizlilik" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
-            <span className="w-px h-3 bg-slate-600"></span>
-            <Link to="/kullanim-kosullari" className="hover:text-white transition-colors">Kullanım Koşulları</Link>
+          <div className="flex items-center gap-8 mt-6 md:mt-0">
+            <Link to="/gizlilik" className="hover:text-amber-500 transition-colors">Gizlilik Politikası</Link>
+            <Link to="/kullanim-kosullari" className="hover:text-amber-500 transition-colors">Kullanım Koşulları</Link>
           </div>
         </div>
-
+ 
       </div>
     </footer>
   );

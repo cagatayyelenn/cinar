@@ -75,12 +75,12 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
             {/* Top Section: Image & Specs */}
             <div className="flex flex-col lg:flex-row gap-20 mb-32">
               <div className="lg:w-1/2 flex flex-col gap-4">
-                <div className="flex justify-center items-center p-12 bg-gray-50 border border-gray-100 relative group overflow-hidden min-h-[400px]">
+                <div className="flex justify-center items-center p-12 bg-white border border-slate-100 relative group overflow-hidden min-h-[400px] rounded-[2.5rem] shadow-sm">
                   <img 
                     // @ts-ignore
                     src={product.images?.[activeImageIndex] || 'https://picsum.photos/seed/klima1/400/300'} 
                     alt={product.name} 
-                    className="max-w-full max-h-[400px] w-auto h-auto object-contain mix-blend-multiply transition-transform duration-1000" 
+                    className="max-w-full max-h-[400px] w-auto h-auto object-contain transition-transform duration-1000 group-hover:scale-105" 
                   />
                 </div>
                 
@@ -93,9 +93,9 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                       <button 
                         key={idx} 
                         onClick={() => setActiveImageIndex(idx)}
-                        className={`w-24 h-24 shrink-0 border-2 overflow-hidden bg-gray-50 flex items-center justify-center transition-all ${activeImageIndex === idx ? 'border-black' : 'border-gray-100 hover:border-gray-300'}`}
+                        className={`w-24 h-24 shrink-0 border-2 overflow-hidden bg-white rounded-2xl flex items-center justify-center transition-all ${activeImageIndex === idx ? 'border-amber-500 shadow-lg' : 'border-slate-100 hover:border-slate-200'}`}
                       >
-                        <img src={img} alt={`${product.name} - Görsel ${idx + 1}`} className="max-w-full max-h-full p-2 object-contain mix-blend-multiply" />
+                        <img src={img} alt={`${product.name} - Görsel ${idx + 1}`} className="max-w-full max-h-full p-2 object-contain" />
                       </button>
                     ))}
                   </div>
@@ -111,27 +111,27 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                 </h1>
                 
                 <div className="mb-12">
-                  <h3 className="text-xs font-black text-black mb-6 uppercase tracking-widest border-b border-gray-200 pb-4">Teknik Özellikler</h3>
-                  <div className="grid grid-cols-1 gap-px bg-gray-200 border border-gray-200">
+                  <h3 className="text-xs font-black text-black mb-6 uppercase tracking-widest border-b border-slate-100 pb-4">Teknik Özellikler</h3>
+                  <div className="grid grid-cols-1 gap-px bg-slate-100 border border-slate-100 rounded-[2rem] overflow-hidden shadow-sm">
                     {[
-                      { label: 'Soğutma Kapasitesi', value: '6 - 14 kW (20472 - 47770 BTU/sa)' },
+                      { label: 'Soğutma Kapasitesi', value: '6 - 14 kW' },
                       { label: 'Soğutulmuş Hava', value: '1800 m³/sa' },
-                      { label: 'Performans Limiti', value: '45 C° (Dış ortam sıcaklığı)' },
-                      { label: 'Çektiği Akım', value: '47 A @12 VDC - 23 A @24 VDC' },
-                      { label: 'Dış Ölçüler', value: '1280*1480*260 mm' },
-                      { label: 'Ünite Ağırlığı', value: '55 kg' },
+                      { label: 'Performans Limiti', value: '45 C°' },
+                      { label: 'Çektiği Akım', value: '47 A @12 VDC' },
+                      { label: 'Ölçüler', value: '1280*1480*260 mm' },
+                      { label: 'Ağırlık', value: '55 kg' },
                       { label: 'Soğutucu Akışkan', value: 'R134a' }
                     ].map((spec, i) => (
-                      <div key={i} className="flex bg-white py-4 px-6 text-[11px] uppercase tracking-wider">
+                      <div key={i} className="flex bg-white py-4 px-6 text-[10px] uppercase tracking-widest">
                         <span className="w-1/2 font-black text-black">{spec.label}</span>
-                        <span className="w-1/2 text-gray-500 font-medium">{spec.value}</span>
+                        <span className="w-1/2 text-gray-400 font-medium">{spec.value}</span>
                       </div>
                     ))}
                   </div>
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+905070485034" className="bg-black text-white px-10 py-5 text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-colors flex items-center justify-center">
+                  <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-12 py-6 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all shadow-2xl hover:shadow-orange-500/20">
                     BU ÜRÜN İÇİN İLETİŞİME GEÇİN
                   </a>
                 </div>
@@ -139,25 +139,25 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
             </div>
 
             {/* Features Grid - Sharp Blocks */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200 border border-gray-200 mb-32">
-              <div className="bg-white p-12">
-                <Settings className="text-black mb-8" size={32} strokeWidth={1.5} />
-                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tight">OPSİYONEL SİSTEMLER</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+              <div className="bg-slate-50 p-12 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all">
+                <Settings className="text-black mb-8" size={32} strokeWidth={1} />
+                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tighter">OPSİYONEL SİSTEMLER</h3>
                 <p className="text-gray-500 text-sm leading-relaxed font-light">
                   Polen partikül filtresi entegre edilebilir yapısı ile iç mekan hava kalitesini maksimum seviyeye çıkarır.
                 </p>
               </div>
-              <div className="bg-white p-12">
-                <Zap className="text-black mb-8" size={32} strokeWidth={1.5} />
-                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tight">YÜKSEK VERİMLİLİK</h3>
+              <div className="bg-slate-50 p-12 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all">
+                <Zap className="text-black mb-8" size={32} strokeWidth={1} />
+                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tighter">YÜKSEK VERİMLİLİK</h3>
                 <p className="text-gray-500 text-sm leading-relaxed font-light">
                   Değişken ortam parametrelerine uyum sağlayan akışkan kontrolü ile kompresör ömrünü uzatır.
                 </p>
               </div>
-              <div className="bg-white p-12">
-                <ShieldCheck className="text-black mb-8" size={32} strokeWidth={1.5} />
-                <h3 className="text-lg font-black text-black mb-4 uppercase tracking-tight">ECE R10 SERTİFİKASI</h3>
-                <p className="text-gray-500 text-sm leading-relaxed font-light">
+              <div className="bg-[#0f2851] p-12 rounded-[2.5rem] shadow-2xl text-white">
+                <ShieldCheck className="text-amber-500 mb-8" size={32} strokeWidth={1} />
+                <h3 className="text-lg font-black mb-4 uppercase tracking-tighter">ECE R10 SERTİFİKASI</h3>
+                <p className="text-slate-400 text-sm leading-relaxed font-light">
                   Uluslararası elektromanyetik uyumluluk standartlarına tam uygunluk ve güvenli çalışma onayı.
                 </p>
               </div>
@@ -165,8 +165,8 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
 
             {/* Control Panel - Sharp Split */}
             <div className="flex flex-col lg:flex-row gap-20 items-center mb-32">
-              <div className="lg:w-1/2 bg-gray-50 p-12 border border-gray-100">
-                <img src="https://picsum.photos/seed/panel/800/500?grayscale" alt="Kontrol Paneli" className="w-full grayscale border border-gray-200" />
+              <div className="lg:w-1/2 bg-slate-50 p-12 rounded-[3.5rem] border border-slate-100 flex items-center justify-center">
+                <img src="https://picsum.photos/seed/panel/800/500?grayscale" alt="Kontrol Paneli" className="w-[80%] brightness-90 contrast-125 mix-blend-multiply" />
               </div>
               <div className="lg:w-1/2">
                 <div className="text-xs font-black text-gray-400 tracking-[0.3em] uppercase mb-6 flex items-center gap-6">
@@ -194,15 +194,15 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
             </div>
 
             {/* Dökümanlar - Sharp List */}
-            <div className="bg-black p-16 text-white">
+            <div className="bg-[#0f2851] p-16 rounded-[4rem] text-white shadow-2xl">
               <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-16">
                 <div>
-                  <div className="text-xs font-black text-gray-500 tracking-[0.3em] uppercase mb-6 flex items-center gap-6">
+                  <div className="text-xs font-black text-slate-500 tracking-[0.3em] uppercase mb-6 flex items-center gap-6">
                     <span className="w-12 h-px bg-white/20"></span> KAYNAKLAR
                   </div>
-                  <h2 className="text-4xl font-black uppercase tracking-tighter leading-none">TEKNİK <span className="text-gray-600 font-light">KÜTÜPHANE</span></h2>
+                  <h2 className="text-4xl font-black uppercase tracking-tighter leading-[0.9]">TEKNİK <span className="text-slate-500 font-light">KÜTÜPHANE</span></h2>
                 </div>
-                <FileText size={48} className="text-white/10" />
+                <FileText size={48} className="text-amber-500/20" />
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -211,12 +211,12 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                   { title: 'Montaj Talimatı', desc: 'Adım adım kurulum ve entegrasyon rehberi.' },
                   { title: 'Elektrik Şeması', desc: 'Kablolama ve kontrol ünitesi bağlantı planı.' }
                 ].map((doc, i) => (
-                  <a key={i} href="#" className="group bg-white/5 border border-white/10 p-8 hover:bg-white hover:text-black transition-all duration-500">
-                    <h4 className="text-sm font-black uppercase tracking-widest mb-4">{doc.title}</h4>
-                    <p className="text-gray-400 group-hover:text-gray-600 text-xs leading-relaxed mb-8 font-light">{doc.desc}</p>
+                  <a key={i} href="#" className="group bg-white/5 border border-white/10 p-10 rounded-[2.5rem] hover:bg-white hover:text-black transition-all duration-500">
+                    <h4 className="text-[11px] font-black uppercase tracking-[0.2em] mb-6">{doc.title}</h4>
+                    <p className="text-slate-400 group-hover:text-slate-600 text-xs leading-relaxed mb-10 font-light">{doc.desc}</p>
                     <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest">
-                      <span>İNDİR (PDF)</span>
-                      <ArrowRight size={12} className="group-hover:translate-x-2 transition-transform" />
+                      <span className="border-b border-white/20 group-hover:border-black/20 pb-1">İNDİR (PDF)</span>
+                      <ArrowRight size={14} className="group-hover:translate-x-3 transition-transform" />
                     </div>
                   </a>
                 ))}
