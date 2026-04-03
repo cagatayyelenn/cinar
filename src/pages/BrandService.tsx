@@ -106,7 +106,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                     <div className="md:w-3/5 p-8 flex flex-col justify-center">
                       <h3 className="text-2xl font-black text-black mb-4 uppercase tracking-tight leading-tight">{service.name}</h3>
                       <p className="text-gray-500 mb-8 leading-relaxed">{service.description}</p>
-                      <Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-xs font-black text-black uppercase tracking-widest flex items-center mt-auto group-hover:text-gray-600 transition-colors">
+                      <Link to={`/${service.id}`} className="text-xs font-black text-black uppercase tracking-widest flex items-center mt-auto group-hover:text-gray-600 transition-colors">
                         Hizmet Detayları <ArrowRight size={14} className="ml-2 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>

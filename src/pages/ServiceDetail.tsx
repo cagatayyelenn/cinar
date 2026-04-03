@@ -17,7 +17,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
     : 'Hizmet Bulunamadı | Çınar Oto Klima';
 
   const pageDescription = service?.description || `${brand?.name || 'Marka'} yetkili servisi olarak sunduğumuz hizmetler hakkında detaylı bilgi, randevu ve uzman desteği.`;
-  const canonicalUrl = service ? `https://cinarotoklima.com/${brandId}-yetkili-servisi` : 'https://cinarotoklima.com';
+  const canonicalUrl = service ? `https://cinarotoklima.com/${service.id}` : 'https://cinarotoklima.com';
 
   return (
     <>
@@ -119,8 +119,8 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
                   <div className="border border-gray-100 p-8 space-y-6">
                     <h4 className="text-xs font-black text-gray-400 uppercase tracking-widest">DİĞER HİZMETLER</h4>
                     <div className="space-y-3">
-                      {services.filter(s => s.id !== service.id).slice(0, 4).map((s, i) => (
-                        <Link key={i} to={`/${brand.id}/servis/${s.id}`} className="block text-xs font-bold uppercase tracking-widest text-black hover:text-gray-500 transition-colors py-2 border-b border-gray-50 last:border-0">
+                      {services.filter(s => s.id !== service.id && s.brandId === brand.id).slice(0, 4).map((s, i) => (
+                        <Link key={i} to={`/${s.id}`} className="block text-xs font-bold uppercase tracking-widest text-black hover:text-gray-500 transition-colors py-2 border-b border-gray-50 last:border-0">
                           {s.name}
                         </Link>
                       ))}

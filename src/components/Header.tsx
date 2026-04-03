@@ -77,7 +77,7 @@ export default function Header() {
                         <ul className="space-y-4">
                           {/* @ts-ignore */}
                           {brand.menuServices ? brand.menuServices.map((s, i) => (
-                            <li key={i}><Link to={`/${brand.id}-yetkili-servisi#${s.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {s.label}</Link></li>
+                            <li key={i}><Link to={`/${brand.id}-${s.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {s.label}</Link></li>
                           )) : (
                             <>
                               <li><Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black uppercase tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
