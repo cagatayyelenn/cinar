@@ -41,7 +41,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
               </p>
             </div>
             <div className="bg-white p-8 shrink-0 border border-gray-800">
-              <img src={brand.logo} alt={brand.name} className="h-12 w-auto object-contain grayscale opacity-80" />
+              <img src={brand.logo} alt={brand.name} className="h-[200px] w-auto object-contain" />
             </div>
           </div>
         </div>
