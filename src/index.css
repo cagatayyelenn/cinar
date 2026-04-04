@@ -73,6 +73,8 @@
     --margin-inline-underline: 0;
     --width-underline: 60px;
     @apply mb-8;
+    position: relative;
+    display: block;
   }
   h2::after {
     -webkit-margin-before: var(--size-s);
@@ -85,6 +87,6 @@
     width: var(--width-underline);
   }
   p {
-    color: #000879;
+    color: #000879 !important;
   }
 }

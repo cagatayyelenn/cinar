@@ -42,10 +42,10 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
         <>
           {/* Breadcrumb */}
           <div className="bg-slate-50 border-b border-slate-200 pt-32 pb-4">
-            <div className="container mx-auto px-4 flex items-center text-[10px] font-black tracking-tight text-black overflow-x-auto breadcrumb">
-              <Link to="/" className="hover:text-black">Anasayfa</Link>
+            <div className="container mx-auto px-4 flex items-center text-[10px] font-black tracking-tight overflow-x-auto breadcrumb">
+              <Link to="/" className="">Anasayfa</Link>
               <ChevronRight size={14} className="mx-2 shrink-0" />
-              <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black">{brand.name} servisi</Link>
+              <Link to={`/${brand.id}-yetkili-servisi`} className="">{brand.name} servisi</Link>
               <ChevronRight size={14} className="mx-2 shrink-0" />
               <span className="text-black font-medium truncate">{service.name}</span>
             </div>
@@ -58,7 +58,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
                 <h1 className="text-3xl md:text-5xl font-black text-black mb-8 tracking-tighter">{service.name}</h1>
                 
                 <div className="bg-slate-50 rounded-[2.5rem] p-10 mb-12 border border-slate-100 shadow-sm">
-                  <p className="text-xl text-slate-600 leading-relaxed font-light italic">
+                  <p className="text-xl leading-relaxed font-light italic">
                     "{service.description}"
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
                           <span className="w-8 h-px bg-amber-500 group-hover:w-12 transition-all"></span>
                           {faq.question}
                         </h4>
-                        <p className="text-gray-500 text-sm leading-relaxed font-light pl-12">{faq.answer}</p>
+                        <p className="text-sm leading-relaxed font-light pl-12">{faq.answer}</p>
                       </div>
                     ))}
                   </div>

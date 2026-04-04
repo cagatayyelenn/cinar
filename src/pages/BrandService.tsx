@@ -42,15 +42,15 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="flex flex-col md:flex-row items-end justify-between gap-12">
             <div className="text-white max-w-3xl">
-              <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight breadcrumb">
-                <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
+              <div className="flex items-center text-xs mb-8 font-bold tracking-tight breadcrumb">
+                <Link to="/" className="transition-colors">Anasayfa</Link>
                 <ChevronRight size={14} className="mx-2" />
-                <span className="text-white tracking-tight">{brand.name} yetkili servisi</span>
+                <span className="tracking-tight">{brand.name} yetkili servisi</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">
                 {brand.name} <br/><span className="text-gray-500 font-light">yetkili servisi</span>
               </h1>
-              <p className="text-gray-300 text-lg leading-relaxed max-w-xl drop-shadow-md">
+              <p className="text-lg leading-relaxed max-w-xl drop-shadow-md">
                 {/* @ts-ignore */}
                 {brand.heroDescription || `${brand.name} ürünleriniz için garantili bakım, onarım, montaj ve orijinal yedek parça hizmetleri.`}
               </p>
@@ -94,7 +94,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                     <Settings size={24} strokeWidth={1} />
                   </div>
                   <h3 className="font-black text-xl mb-3 tracking-tight">Orijinal yedek parça</h3>
-                  <p className="text-gray-500 font-light leading-relaxed">
+                  <p className="font-light leading-relaxed">
                     Aracınızın ömrünü uzatmak için sadece %100 orijinal yedek parçalar kullanıyoruz.
                   </p>
                 </div>

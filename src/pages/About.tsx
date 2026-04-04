@@ -14,15 +14,15 @@ export default function About() {
       <div className="bg-black pt-32 pb-20 relative">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-white max-w-3xl">
-            <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight breadcrumb">
-              <Link to="/" className="hover:text-black transition-colors">Anasayfa</Link>
+            <div className="flex items-center text-xs mb-8 font-bold tracking-tight breadcrumb">
+              <Link to="/" className="transition-colors">Anasayfa</Link>
               <ChevronRight size={12} className="mx-3" />
-              <span className="text-black tracking-tight font-medium">Hakkımızda</span>
+              <span className="tracking-tight font-medium">Hakkımızda</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">
               Modern <br/><span className="text-gray-200">mühendislik.</span>
             </h1>
-            <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
+            <p className="text-lg leading-relaxed max-w-xl">
               20 yılı aşkın süredir ticari araç iklimlendirme sistemlerinde Türkiye'nin öncü servis noktalarından biri olarak hizmet veriyoruz.
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function About() {
                 <Zap size={32} strokeWidth={1} />
               </div>
               <h3 className="text-xl font-black mb-4 tracking-tight">Sürekli gelişim</h3>
-              <p className="text-gray-500 font-light leading-relaxed">
+              <p className="font-light leading-relaxed">
                 Teknolojiyi yakından takip ederek kendimizi ve hizmet kalitemizi sürekli güncelliyoruz.
               </p>
             </div>

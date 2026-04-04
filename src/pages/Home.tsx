@@ -233,7 +233,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-heading text-2xl font-bold text-black mb-3 tracking-wide">{feature.title}</h3>
-                      <p className="text-gray-500 text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
+                      <p className="text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
                     </div>
                   </div>
                 ))}

@@ -58,15 +58,15 @@ export default function Services() {
       {/* Hero Section */}
       <div className="bg-white pt-40 pb-24 border-b border-gray-100">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex items-center text-[10px] text-gray-400 mb-12 font-black tracking-tight breadcrumb">
-            <Link to="/" className="hover:text-black transition-colors">Anasayfa</Link>
+          <div className="flex items-center text-[10px] mb-12 font-black tracking-tight breadcrumb">
+            <Link to="/" className="transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
-            <span className="text-black">Hizmetlerimiz</span>
+            <span>Hizmetlerimiz</span>
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-black tracking-tighter leading-[0.9] mb-8">
             Uzman <br/><span className="text-gray-200">hizmetler</span>
           </h1>
-          <p className="text-gray-500 text-xl max-w-2xl leading-relaxed font-light">
+          <p className="text-xl max-w-2xl leading-relaxed font-light">
             Ticari araç iklimlendirme dünyasında, teknik mükemmellik ve müşteri memnuniyetini bir araya getiren profesyonel çözümler sunuyoruz.
           </p>
           {/* Scroll Down Arrow */}
@@ -133,7 +133,7 @@ export default function Services() {
                     </div>
                     <div>
                       <h3 className="text-xl font-black text-black mb-4 tracking-wide">{feature.title}</h3>
-                      <p className="text-gray-500 text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
+                      <p className="text-lg font-light leading-relaxed max-w-xl">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
