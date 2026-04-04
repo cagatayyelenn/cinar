@@ -42,7 +42,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
         <>
           {/* Breadcrumb */}
           <div className="bg-slate-50 border-b border-slate-200 pt-32 pb-4">
-            <div className="container mx-auto px-4 flex items-center text-[10px] font-black tracking-tight text-black overflow-x-auto">
+            <div className="container mx-auto px-4 flex items-center text-[10px] font-black tracking-tight text-black overflow-x-auto breadcrumb">
               <Link to="/" className="hover:text-black">Anasayfa</Link>
               <ChevronRight size={14} className="mx-2 shrink-0" />
               <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black">{brand.name} servisi</Link>

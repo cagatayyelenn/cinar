@@ -51,6 +51,9 @@
   .aux-light {
     @apply text-white font-bold tracking-wide;
   }
+  .breadcrumb, .breadcrumb a, .breadcrumb span {
+    color: #000879 !important;
+  }
 }
 
 @layer base {
@@ -63,5 +66,8 @@
   }
   h2, h3, h4, h5, h6 {
     @apply capitalize;
+  }
+  p {
+    color: #000879;
   }
 }

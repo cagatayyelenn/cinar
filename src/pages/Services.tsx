@@ -58,7 +58,7 @@ export default function Services() {
       {/* Hero Section */}
       <div className="bg-white pt-40 pb-24 border-b border-gray-100">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex items-center text-[10px] text-gray-400 mb-12 font-black tracking-tight">
+          <div className="flex items-center text-[10px] text-gray-400 mb-12 font-black tracking-tight breadcrumb">
             <Link to="/" className="hover:text-black transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
             <span className="text-black">Hizmetlerimiz</span>

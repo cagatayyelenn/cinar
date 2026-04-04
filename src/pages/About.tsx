@@ -14,7 +14,7 @@ export default function About() {
       <div className="bg-black pt-32 pb-20 relative">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-white max-w-3xl">
-            <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight">
+            <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight breadcrumb">
               <Link to="/" className="hover:text-black transition-colors">Anasayfa</Link>
               <ChevronRight size={12} className="mx-3" />
               <span className="text-black tracking-tight font-medium">Hakkımızda</span>

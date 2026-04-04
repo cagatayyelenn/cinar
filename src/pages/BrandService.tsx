@@ -42,7 +42,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="flex flex-col md:flex-row items-end justify-between gap-12">
             <div className="text-white max-w-3xl">
-              <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight">
+              <div className="flex items-center text-xs text-gray-400 mb-8 font-bold tracking-tight breadcrumb">
                 <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
                 <ChevronRight size={14} className="mx-2" />
                 <span className="text-white tracking-tight">{brand.name} yetkili servisi</span>
