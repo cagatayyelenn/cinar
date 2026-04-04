@@ -33,7 +33,7 @@ export default function Home() {
       </Helmet>
 
       {/* HERO SECTION - Editorial & Brutalist */}
-      <section className="relative min-h-[85vh] bg-[#0f2851] pt-32 pb-12 flex flex-col justify-end overflow-hidden">
+      <section className="relative min-h-[73vh] bg-[#0f2851] pt-32 pb-12 flex flex-col justify-end overflow-hidden">
         {/* Technical Grid Background */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         
