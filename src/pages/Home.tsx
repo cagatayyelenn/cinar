@@ -396,71 +396,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA - Modern Gallery Section */}
-      <section className="bg-blue-50/40 border-t border-slate-100 overflow-hidden">
-        <div className="container mx-auto px-4 md:px-8 py-24 md:py-32">
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-            
-            {/* Left: Slanted Image Gallery */}
-            <div className="flex-1 relative w-full h-[400px] md:h-[500px] hidden md:block">
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* Image 1: Main Focus */}
-                <div className="absolute transform -rotate-12 -translate-x-32 -translate-y-8 w-48 h-64 md:w-64 md:h-80 bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-white z-10 hover:z-50 hover:scale-105 transition-all duration-500">
-                  <img src="https://picsum.photos/seed/klima1/800/1000" alt="Service" className="w-full h-full object-cover" />
-                </div>
-                
-                {/* Image 2: Secondary */}
-                <div className="absolute transform rotate-6 translate-x-12 -translate-y-24 w-40 h-56 md:w-56 md:h-72 bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-white z-20 hover:z-50 hover:scale-105 transition-all duration-500">
-                  <img src="https://picsum.photos/seed/klima2/800/1000" alt="Workshop" className="w-full h-full object-cover grayscale" />
-                </div>
-                
-                {/* Image 3: Detail */}
-                <div className="absolute transform -rotate-3 translate-x-48 translate-y-12 w-32 h-44 md:w-48 md:h-64 bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-white z-30 hover:z-50 hover:scale-105 transition-all duration-500">
-                  <img src="https://picsum.photos/seed/klima3/800/1000" alt="Tech" className="w-full h-full object-cover" />
-                </div>
-                
-                {/* Image 4: Small Accent */}
-                <div className="absolute transform rotate-12 -translate-x-8 translate-y-40 w-24 h-32 md:w-40 md:h-56 bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-white z-0 hover:z-50 hover:scale-105 transition-all duration-500 opacity-60">
-                  <img src="https://picsum.photos/seed/klima4/800/1000" alt="Spare Parts" className="w-full h-full object-cover grayscale" />
-                </div>
-              </div>
-            </div>
-
-            {/* Right: Content Area */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="mb-8 inline-flex items-center gap-2">
-                <span className="w-8 h-px bg-blue-600"></span>
-                <span className="font-mono text-blue-600 font-bold text-sm tracking-widest uppercase">7/24 Kesintisiz Hizmet</span>
-              </div>
-              
-              <h2 className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-[#0f2851] leading-[1.1] tracking-tight mb-8">
-                Sistemleriniz için <br className="hidden md:block" />
-                <span className="text-blue-600">maksimum verimlilik.</span>
-              </h2>
-              
-              <p className="text-gray-500 text-lg md:text-xl font-light mb-12 max-w-xl mx-auto lg:mx-0">
-                Oto klima ve ısıtma sistemlerinde dünya markalarının yetkili servisi güvencesiyle aracınızın konforunu zirveye taşıyın.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-                <a 
-                  href="tel:+905070485034" 
-                  className="w-full sm:w-auto bg-blue-600 text-white px-10 py-5 rounded-full font-heading font-bold text-lg tracking-wide hover:bg-[#0f2851] transition-all shadow-xl hover:shadow-blue-500/20 active:scale-95"
-                >
-                  Hemen arayın
-                </a>
-                <Link 
-                  to="/iletisim" 
-                  className="w-full sm:w-auto bg-white border border-blue-100 text-[#0f2851] px-10 py-5 rounded-full font-heading font-bold text-lg tracking-wide hover:bg-blue-50 transition-all shadow-md group"
-                >
-                  <span>Teklif isteyin</span>
-                  <ArrowRight className="inline-block ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+      {/* CTA - Fixed User Selection */}
+      <div className="mb-section container mx-auto px-4 md:px-8">
+        <div className="flex overflow-hidden rounded-2xl bg-aux-13 lg:block md:rounded-none flex-row-reverse">
+          <div className="w-1/2 py-20 pl-20 lg:w-full lg:p-10 lg:pb-0">
+            <div className="subtitle-sm-tint mb-1">Yetkili Servis Güvencesi</div>
+            <div className="heading-sm mb-8 max-w-[500px] lg:max-w-2xl md:mb-5">Sistemleriniz için <br /> maksimum verimlilik.</div>
+            <div className="inline-block">
+              <div className="cursor-pointer select-none">
+                <Link to="/hizmetlerimiz">
+                  <div>
+                    <div className="group relative">
+                      <div className="absolute inset-0 rounded-full transition-transform duration-300 ease-out lg:group-hover:scale-100 bg-tint-light group-hover:scale-x-105 group-hover:scale-y-[1.15]"></div>
+                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0">
+                        <div className="animate-spin rounded-full border-4 border-b-transparent border-white border-tint size-14" style={{ height: '23px', width: '23px' }}></div>
+                      </div>
+                      <div className="relative z-10 flex items-center justify-center rounded-full px-10 py-5 text-center group-hover:duration-[0ms] bg-tint group-hover:bg-tint-light lg:group-hover:bg-tint transition-colors duration-300">
+                        <div className="aux-light">Hizmetleri İncele</div>
+                      </div>
+                    </div>
+                  </div>
                 </Link>
               </div>
             </div>
           </div>
+          
+          <div className="min-h-full flex-1 lg:hidden">
+            <div className="relative h-full min-h-[400px]">
+              <img 
+                src="/deneme.jpeg" 
+                alt="Banner image" 
+                className="absolute inset-0 w-full h-full object-cover object-right transition-opacity duration-500 opacity-100" 
+              />
+            </div>
+          </div>
+          
+          <div className="relative hidden lg:block">
+            <div className="relative w-full pb-[77%]">
+              <img 
+                src="/deneme.jpeg" 
+                alt="Banner mobile image" 
+                className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 opacity-100" 
+              />
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

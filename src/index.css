@@ -13,6 +13,11 @@
   --light-blue-100: #0f2851;
   --gradient-6: linear-gradient(104.6deg, #0a1529, #0f2851);
 
+  /* User Custom Colors */
+  --color-aux-13: #f1f5f9; /* bg-aux-13 */
+  --color-tint: #2563eb; /* bg-tint */
+  --color-tint-light: #1d4ed8; /* bg-tint-light */
+
   @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
@@ -21,6 +26,30 @@
   @keyframes bounce-slow {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
+  }
+}
+
+@layer utilities {
+  .mb-section {
+    @apply mb-16 md:mb-24;
+  }
+  .subtitle-sm-tint {
+    @apply font-mono text-xs font-bold text-blue-600 tracking-widest uppercase;
+  }
+  .heading-sm {
+    @apply font-heading text-3xl md:text-5xl font-bold text-[#0f2851] leading-tight tracking-tight;
+  }
+  .bg-aux-13 {
+    @apply bg-slate-100;
+  }
+  .bg-tint {
+    @apply bg-blue-600;
+  }
+  .bg-tint-light {
+    @apply bg-blue-700;
+  }
+  .aux-light {
+    @apply text-white font-bold tracking-wide;
   }
 }
 
