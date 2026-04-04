@@ -67,6 +67,23 @@
   h2, h3, h4, h5, h6 {
     @apply capitalize;
   }
+  h2 {
+    --size-s: 0.75rem;
+    --brand-primary: #2563eb;
+    --margin-inline-underline: 0;
+    --width-underline: 60px;
+    @apply mb-8;
+  }
+  h2::after {
+    -webkit-margin-before: var(--size-s);
+    background-color: var(--brand-primary);
+    content: "";
+    display: block;
+    height: .5rem;
+    margin-block-start: var(--size-s);
+    margin-inline: var(--margin-inline-underline);
+    width: var(--width-underline);
+  }
   p {
     color: #000879;
   }
