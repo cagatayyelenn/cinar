@@ -396,50 +396,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA - Fixed User Selection */}
+      {/* CTA - Fixed User Selection (Image Left, Text Right) */}
       <div className="mb-section container mx-auto px-4 md:px-8">
-        <div className="flex overflow-hidden rounded-2xl bg-aux-13 lg:block md:rounded-none flex-row-reverse">
-          <div className="w-1/2 py-20 pl-20 lg:w-full lg:p-10 lg:pb-0">
-            <div className="subtitle-sm-tint mb-1">Yetkili Servis Güvencesi</div>
-            <div className="heading-sm mb-8 max-w-[500px] lg:max-w-2xl md:mb-5">Sistemleriniz için <br /> maksimum verimlilik.</div>
+        <div className="flex flex-col lg:flex-row overflow-hidden rounded-2xl bg-aux-13 md:rounded-none">
+          
+          {/* Left: Image (First in DOM) */}
+          <div className="w-full lg:w-1/2 min-h-[300px] md:min-h-[400px] relative">
+            <img 
+              src="/deneme.jpeg" 
+              alt="Banner image" 
+              className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500 opacity-100" 
+            />
+          </div>
+          
+          {/* Right: Text/Content (Second in DOM) */}
+          <div className="w-full lg:w-1/2 py-12 px-8 md:py-20 md:px-20 flex flex-col justify-center">
+            <div className="subtitle-sm-tint mb-1 uppercase text-blue-600 font-bold text-xs tracking-widest">Yetkili Servis Güvencesi</div>
+            <div className="heading-sm mb-6 max-w-[500px] lg:max-w-2xl text-3xl md:text-5xl font-bold text-[#0f2851] leading-tight tracking-tight">
+              Sistemleriniz için <br /> maksimum verimlilik.
+            </div>
+            
             <div className="inline-block">
               <div className="cursor-pointer select-none">
                 <Link to="/hizmetlerimiz">
-                  <div>
-                    <div className="group relative">
-                      <div className="absolute inset-0 rounded-full transition-transform duration-300 ease-out lg:group-hover:scale-100 bg-tint-light group-hover:scale-x-105 group-hover:scale-y-[1.15]"></div>
-                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0">
-                        <div className="animate-spin rounded-full border-4 border-b-transparent border-white border-tint size-14" style={{ height: '23px', width: '23px' }}></div>
-                      </div>
-                      <div className="relative z-10 flex items-center justify-center rounded-full px-10 py-5 text-center group-hover:duration-[0ms] bg-tint group-hover:bg-tint-light lg:group-hover:bg-tint transition-colors duration-300">
-                        <div className="aux-light">Hizmetleri İncele</div>
-                      </div>
+                  <div className="group relative inline-block">
+                    {/* Hover Glow Effect */}
+                    <div className="absolute inset-0 rounded-full transition-transform duration-300 ease-out bg-blue-700/10 group-hover:scale-110"></div>
+                    
+                    {/* Main Button */}
+                    <div className="relative z-10 flex items-center justify-center rounded-full px-10 py-5 text-center bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
+                      <div className="text-white font-bold tracking-wide">Hizmetleri İncele</div>
                     </div>
                   </div>
                 </Link>
               </div>
             </div>
           </div>
-          
-          <div className="min-h-full flex-1 lg:hidden">
-            <div className="relative h-full min-h-[400px]">
-              <img 
-                src="/deneme.jpeg" 
-                alt="Banner image" 
-                className="absolute inset-0 w-full h-full object-cover object-right transition-opacity duration-500 opacity-100" 
-              />
-            </div>
-          </div>
-          
-          <div className="relative hidden lg:block">
-            <div className="relative w-full pb-[77%]">
-              <img 
-                src="/deneme.jpeg" 
-                alt="Banner mobile image" 
-                className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 opacity-100" 
-              />
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
