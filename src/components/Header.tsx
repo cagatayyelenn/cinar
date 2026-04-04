@@ -30,16 +30,21 @@ export default function Header() {
                   onMouseLeave={() => setActiveBrand(null)}
                 >
                   <Link
-                    to={`/${brand.id}-yetkili-servisi`}
+                    to={`/${brand.id}-yet-yetkili-servisi`.replace('-yet-yetkili', '-yetkili')}
                     className={cn(
-                      "px-6 py-3 transition-all duration-200 flex items-center h-16 rounded-full mx-1 text-black",
-                      isActive && "bg-black text-white"
+                      "px-6 py-3 transition-all duration-200 flex items-center h-16 mx-1 text-black relative group/link",
+                      isActive && "text-[#000879]"
                     )}
                   >
-                    <span className="font-black text-sm capitalize tracking-wide">
+                    <span className="font-black text-sm capitalize tracking-wide relative">
                       {brand.name}
+                      {/* Underline Effect */}
+                      <span className={cn(
+                        "absolute -bottom-1 left-0 h-0.5 bg-[#000879] transition-all duration-300",
+                        isActive ? "w-full" : "w-0 group-hover/link:w-full"
+                      )}></span>
                     </span>
-                    <ChevronDown size={14} className={cn("ml-2 transition-transform group-hover:rotate-180", isActive ? "text-white" : "text-gray-400")} />
+                    <ChevronDown size={14} className={cn("ml-2 transition-transform group-hover:rotate-180", isActive ? "text-[#000879]" : "text-gray-400")} />
                   </Link>
 
                   {/* Mega Menu - Sharp Edges */}
