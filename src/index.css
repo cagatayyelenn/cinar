@@ -54,7 +54,14 @@
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
+    @apply capitalize;
+    background: linear-gradient(0deg, rgba(255, 237, 224, .1), rgba(255, 237, 224, .1)), linear-gradient(85deg, #000 -20.25%, #1c47ff 27.92%, #fa5507 73.93%, #f5de69 119.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background-clip: text;
+  }
+  h2, h3, h4, h5, h6 {
     @apply capitalize;
   }
 }
