@@ -76,7 +76,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
           {/* Main Content */}
           <div className="lg:w-2/3">
             <section className="mb-24">
-              <h2 className="text-3xl font-black text-black mb-8 tracking-tight leading-tight border-b border-gray-200 pb-6">
+              <h2 className="text-3xl font-black text-black mb-8 tracking-tight leading-tight">
                 Neden {brand.name}?
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -103,7 +103,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
 
             {/* Hizmetlerimiz */}
             <section className="mb-24">
-              <h2 className="text-3xl font-black text-black mb-12 tracking-tight leading-tight border-b border-gray-200 pb-6">
+              <h2 className="text-3xl font-black text-black mb-12 tracking-tight leading-tight">
                 Verdiğimiz hizmetler
               </h2>
               <div className="space-y-8">
@@ -130,7 +130,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
 
             {/* Ürünler */}
             <section className="mb-24">
-              <div className="flex items-center justify-between mb-12 border-b border-gray-200 pb-6">
+              <div className="flex items-center justify-between mb-12">
                 <h2 className="text-3xl font-black text-black tracking-tight leading-tight">
                   {brand.name} <span className="text-gray-400 font-light">ürünleri</span>
                 </h2>
@@ -170,7 +170,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
 
             {/* SSS */}
             <section>
-              <h2 className="text-3xl font-black text-black mb-12 tracking-tight leading-tight border-b border-gray-200 pb-6">
+              <h2 className="text-3xl font-black text-black mb-12 tracking-tight leading-tight">
                 Sıkça sorulan sorular
               </h2>
               <div className="space-y-6">
