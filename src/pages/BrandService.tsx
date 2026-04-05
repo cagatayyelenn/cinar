@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { brands, products, services, faqs } from '../data/mockData';
-import { CheckCircle2, ArrowRight, PhoneCall, ShieldCheck, Wrench, ChevronRight, Car, Truck, Bus, Tractor, ChevronDown, Settings } from 'lucide-react';
+import { CheckCircle2, ArrowRight, PhoneCall, ShieldCheck, Wrench, ChevronRight, Car, Truck, Bus, Tractor, ChevronDown, Settings, Plus } from 'lucide-react';
+import ServiceCard from '../components/ui/ServiceCard';
 
 export default function BrandService({ brandId: propBrandId }: { brandId?: string }) {
   const { brandId: paramBrandId } = useParams<{ brandId: string }>();
@@ -125,6 +126,35 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 )) : (
                   <p className="text-gray-500 italic">Bu marka için özel hizmet detayları yakında eklenecektir.</p>
                 )}
+              </div>
+            </section>
+
+            {/* Hizmetlerimiz - Modern Interactive Cards Section */}
+            <section className="mb-24">
+              <div className="flex items-center justify-between mb-12">
+                <h2 className="text-3xl font-black text-black tracking-tight leading-tight">
+                  Hizmetlerimiz
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <ServiceCard 
+                  title="Bakım" 
+                  description="Aracınızın klima sisteminin uzun ömürlü ve verimli çalışması için düzenli periyodik bakım hizmetleri sunuyoruz."
+                  image="/hizmetler/bakim.png"
+                  color="#703020"
+                />
+                <ServiceCard 
+                  title="Onarım" 
+                  description="Arıza tespitinden kompresör değişimine kadar tüm teknik sorunlar için uzman teknisyenlerimizle kesin çözüm sağlıyoruz."
+                  image="/hizmetler/onarim.png"
+                  color="#1e5163" 
+                />
+                <ServiceCard 
+                  title="Montaj" 
+                  description="Yeni nesil ve yüksek verimli iklimlendirme ünitelerinin aracınıza profesyonel standartlarda montajını gerçekleştiriyoruz."
+                  image="/hizmetler/montaj.png"
+                  color="#144d2d" 
+                />
               </div>
             </section>
 
