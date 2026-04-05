@@ -187,7 +187,7 @@ export default function Home() {
               <Link 
                 key={brand.id} 
                 to={`/${brand.id}-yetkili-servisi`} 
-                className="bg-white p-8 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-all duration-500 relative overflow-hidden h-48 md:h-64 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 border border-slate-100"
+                className="bg-white p-8 flex flex-col items-center justify-center group hover:bg-[#fa9700] transition-all duration-500 relative overflow-hidden h-48 md:h-64 rounded-md shadow-sm hover:shadow-2xl hover:-translate-y-2 border border-slate-100"
               >
                 <div className="absolute top-6 left-8 font-mono text-[10px] font-bold text-gray-400 group-hover:text-black transition-colors tracking-tight z-20">
                   0{idx + 1} // {brand.name}
@@ -266,7 +266,7 @@ export default function Home() {
               <Link 
                 key={service.id} 
                 to={`/${service.brandId}-ticari-arac-klimalari`}
-                className="group flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-slate-200 hover:bg-[#0f2851] rounded-[2rem] transition-all duration-500 px-8 -mx-8"
+                className="group flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-slate-200 hover:bg-[#0f2851] rounded-md transition-all duration-500 px-8 -mx-8"
               >
                 <div className="flex items-center gap-6 md:gap-12 w-full md:w-1/2 mb-6 md:mb-0">
                   <span className="font-mono text-2xl md:text-3xl text-slate-200 group-hover:text-white/20 transition-colors">

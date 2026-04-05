@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
  
         {/* Bottom Alert Box */}
-        <div className="bg-white/5 backdrop-blur-md rounded-[2.5rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 border border-white/10 shadow-2xl">
+        <div className="bg-white/5 backdrop-blur-md rounded-md p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 border border-white/10 shadow-2xl">
           <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
             <div className="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500">
               <PhoneCall size={32} />

@@ -55,7 +55,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 {brand.heroDescription || `${brand.name} ürünleriniz için garantili bakım, onarım, montaj ve orijinal yedek parça hizmetleri.`}
               </p>
             </div>
-            <div className="bg-white p-10 shrink-0 border border-white/20 rounded-[2.5rem] shadow-2xl">
+            <div className="bg-white p-10 shrink-0 border border-white/20 rounded-md shadow-2xl">
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
@@ -108,8 +108,8 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </h2>
               <div className="space-y-8">
                 {brandServices.length > 0 ? brandServices.map(service => (
-                  <div key={service.id} className="flex flex-col md:flex-row gap-8 bg-white border border-slate-100 rounded-[2.5rem] p-4 group hover:shadow-2xl hover:border-slate-200 transition-all duration-500">
-                    <div className="md:w-2/5 overflow-hidden rounded-[2rem]">
+                  <div key={service.id} className="flex flex-col md:flex-row gap-8 bg-white border border-slate-100 rounded-md p-4 group hover:shadow-2xl hover:border-slate-200 transition-all duration-500">
+                    <div className="md:w-2/5 overflow-hidden rounded-md">
                       <img src={service.image} alt={service.name} className="w-full h-64 md:h-full object-cover transition-transform duration-700" />
                     </div>
                     <div className="md:w-3/5 p-8 flex flex-col justify-center">
@@ -138,7 +138,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {brandProducts.length > 0 ? brandProducts.map(product => (
-                  <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-[2rem] overflow-hidden">
+                  <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-md overflow-hidden">
                     {/* Top Image Section */}
                     <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50 p-6">
                       <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 rounded-full">
@@ -175,7 +175,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               </h2>
               <div className="space-y-6">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100">
+                  <div key={index} className="bg-slate-50 p-10 rounded-md border border-slate-100">
                     <h3 className="text-lg font-black text-black mb-4 flex items-start tracking-tight leading-tight">
                       <span className="text-amber-500 mr-4 font-black">Q.</span> {faq.question}
                     </h3>
@@ -188,7 +188,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
 
           {/* Sidebar CTA */}
           <div className="lg:w-1/3">
-            <div className="sticky top-32 bg-[#0f2851] p-12 rounded-[2.5rem] text-white shadow-2xl">
+            <div className="sticky top-32 bg-[#0f2851] p-12 rounded-md text-white shadow-2xl">
               <h3 className="text-3xl font-black mb-6 tracking-tighter leading-[0.9]">Servis <br/>randevusu</h3>
               <p className="text-slate-400 text-sm mb-10 leading-relaxed font-light">
                 Size en yakın servis noktamızdan randevu almak için formu doldurun veya doğrudan arayın.

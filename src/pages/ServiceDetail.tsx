@@ -57,7 +57,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
               <div className="lg:w-2/3">
                 <h1 className="text-3xl md:text-5xl font-black text-black mb-8 tracking-tighter">{service.name}</h1>
                 
-                <div className="bg-slate-50 rounded-[2.5rem] p-10 mb-12 border border-slate-100 shadow-sm">
+                <div className="bg-slate-50 rounded-md p-10 mb-12 border border-slate-100 shadow-sm">
                   <p className="text-xl leading-relaxed font-light italic">
                     "{service.description}"
                   </p>
@@ -92,7 +92,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
                   <h2 className="text-2xl font-black text-black mb-10 tracking-tighter">Sıkça sorulan sorular</h2>
                   <div className="grid grid-cols-1 gap-6">
                     {faqs.slice(0, 3).map((faq, i) => (
-                      <div key={i} className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all group">
+                      <div key={i} className="bg-slate-50 p-10 rounded-md border border-slate-100 hover:shadow-xl transition-all group">
                         <h4 className="text-[11px] font-black text-black mb-4 tracking-tight flex items-center gap-4">
                           <span className="w-8 h-px bg-amber-500 group-hover:w-12 transition-all"></span>
                           {faq.question}
@@ -106,9 +106,9 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
 
               <div className="lg:w-1/3">
                 <div className="sticky top-32 space-y-8">
-                  <img src={service.image} alt={service.name} className="w-full h-80 object-cover rounded-[2.5rem] border border-slate-100 shadow-xl" />
+                  <img src={service.image} alt={service.name} className="w-full h-80 object-cover rounded-md border border-slate-100 shadow-xl" />
                   
-                  <div className="bg-[#0f2851] p-12 rounded-[2.5rem] text-white shadow-2xl">
+                  <div className="bg-[#0f2851] p-12 rounded-md text-white shadow-2xl">
                     <h3 className="text-2xl font-black mb-4 tracking-tighter leading-none">Randevu alın</h3>
                     <p className="text-slate-400 text-sm mb-10 leading-relaxed font-light">
                       Hızlı servis ve uzman desteği için hemen bizimle iletişime geçin.
@@ -119,7 +119,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
                     </a>
                   </div>
                   
-                  <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100">
+                  <div className="bg-slate-50 p-10 rounded-md border border-slate-100">
                     <h4 className="text-[10px] font-black text-slate-400 tracking-tight mb-8">Diğer hizmetler</h4>
                     <div className="space-y-4">
                       {services.filter(s => s.id !== service.id && s.brandId === brand.id).slice(0, 4).map((s, i) => (

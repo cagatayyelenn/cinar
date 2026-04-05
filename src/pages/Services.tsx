@@ -143,7 +143,7 @@ export default function Services() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-32 bg-black p-16 text-center shadow-2xl rounded-[3rem]">
+        <div className="mt-32 bg-black p-16 text-center shadow-2xl rounded-md">
           <h2 className="text-4xl font-black text-white mb-8 tracking-tight leading-tight">
             Aracınız için <br/>randevu alın
           </h2>

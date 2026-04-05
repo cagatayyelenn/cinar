@@ -27,6 +27,15 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
   }
+
+  --radius-xs: 10px;
+  --radius-sm: 10px;
+  --radius-md: 10px;
+  --radius-lg: 10px;
+  --radius-xl: 10px;
+  --radius-2xl: 10px;
+  --radius-3xl: 10px;
+  --radius-full: 10px;
 }
 
 @layer utilities {

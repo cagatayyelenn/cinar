@@ -96,7 +96,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                 Yüksek performanslı {brand.name} {selectedCategory ? selectedCategory.toLocaleLowerCase('tr-TR') : 'klimaları, ısıtıcıları ve %100 orijinal yedek parçaları'}. Yetkili servis güvencesiyle.
               </p>
             </div>
-            <div className="bg-white p-10 shrink-0 border border-white/20 rounded-[2.5rem] shadow-2xl">
+            <div className="bg-white p-10 shrink-0 border border-white/20 rounded-md shadow-2xl">
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
@@ -117,7 +117,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
           {/* Sidebar */}
           <div className="lg:w-1/4 space-y-8">
             {/* Categories */}
-            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm">
+            <div className="bg-white border border-slate-100 p-8 rounded-md shadow-sm">
               <h3 className="text-sm font-black text-black mb-6 tracking-tight border-b border-slate-100 pb-4 flex items-center">
                 <Filter size={16} className="mr-3" /> Kategoriler
               </h3>
@@ -148,7 +148,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             </div>
 
             {/* CTA Widget */}
-            <div className="bg-[#0f2851] p-10 text-white rounded-[2rem] shadow-2xl">
+            <div className="bg-[#0f2851] p-10 text-white rounded-md shadow-2xl">
               <ShieldCheck size={32} className="text-amber-500 mb-6" />
               <h3 className="text-xl font-black mb-4 tracking-tighter leading-none">Doğru ürünü bulamadınız mı?</h3>
               <p className="text-slate-400 text-sm mb-8 leading-relaxed font-light">
@@ -195,7 +195,7 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
             {/* Product Grid */}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
               {filteredProducts.length > 0 ? filteredProducts.map(product => (
-                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-[2rem] overflow-hidden">
+                <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-md overflow-hidden">
                   {/* Top Image Section */}
                   <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-slate-50 p-6">
                     <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-tight z-10 rounded-full">
