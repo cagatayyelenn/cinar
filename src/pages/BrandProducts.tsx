@@ -48,6 +48,10 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
       (p.description || '').toLocaleLowerCase('tr-TR').includes(searchLower);
     
     if (!selectedCategory) return matchesSearch;
+    // Map 'Elektrikli Klima' to 'Tavan Klimaları' for Webasto products in Delphi view
+    if (brandId?.toLowerCase() === 'delphi' && selectedCategory === 'Elektrikli Klima') {
+      return (p.category === 'Elektrikli Klima' || p.category === 'Tavan Klimaları' || p.category === 'Araç Soğutma Sistemleri') && matchesSearch;
+    }
     return p.category === selectedCategory && matchesSearch;
   });
 

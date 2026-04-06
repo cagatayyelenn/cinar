@@ -130,17 +130,14 @@ export const brands = [
       canonical: 'https://cinarotoklima.com/delphi-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Klima Kompresörleri', path: 'kompresorler' },
-      { label: 'Kondenser ve Evaporatörler', path: 'sogutucu-uniteler' },
       { label: 'Araç Isıtma Sistemleri', path: 'isitma-sistemleri' },
       { label: 'Araç Soğutma Sistemleri', path: 'sogutma-sistemleri' },
-      { label: 'Tavan Klimaları', path: 'tavan-klimalari' },
-      { label: 'Klima Yedek Parçaları', path: 'yedek-parcalar' }
+      { label: 'Elektrikli Klima', path: 'elektrikli-klima' }
     ],
     menuServices: [
-      { label: 'Delphi Klima Bakımı', path: 'bakim' },
-      { label: 'Delphi Sistem Onarımı', path: 'onarim' },
-      { label: 'Delphi Orijinal Parça', path: 'yedek-parca' }
+      { label: 'Webasto Bakım', path: 'bakim' },
+      { label: 'Webasto Onarım', path: 'onarim' },
+      { label: 'Webasto Yedek Parça', path: 'yedek-parca' }
     ]
   },
 ];

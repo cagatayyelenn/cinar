@@ -12,8 +12,12 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
 
-  const brandProducts = products.filter(p => p.brandId === activeBrandId).slice(0, 9);
-  const brandServices = services.filter(s => s.brandId === activeBrandId);
+  const brandProducts = products.filter(p => 
+    p.brandId === activeBrandId || (activeBrandId === 'delphi' && p.brandId === 'webasto')
+  ).slice(0, 9);
+  const brandServices = services.filter(s => 
+    s.brandId === activeBrandId || (activeBrandId === 'delphi' && s.brandId === 'webasto')
+  );
 
   return (
     <div className="bg-white min-h-screen pb-20">
