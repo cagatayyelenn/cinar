@@ -60,7 +60,33 @@ export const brands = [
       { label: 'Yılkar Yedek Parça', path: 'yedek-parca' }
     ]
   },
-  { id: 'webasto', name: 'Webasto', logo: '/logolar/webasto-logo1.png' },
+  { 
+    id: 'webasto', 
+    name: 'Webasto', 
+    logo: '/logolar/webasto-logo1.png',
+    heroDescription: 'Çınar Oto Klima; Webasto yetkili servisi olarak araç ısıtma, soğutma sistemleri ve elektrikli klima çözümlerinde dünya devi Webasto teknolojisini uzman kadrosuyla sunar.',
+    whyTitle: 'Webasto Isıtma ve Soğutma Çözümlerinde Küresel Standart',
+    whyDescription: 'Dünya lideri Webasto markasının yetkili servisi olarak, ticari araçlarınızın iklimlendirme konforunu en üst seviyeye taşıyoruz. Havalı ve sulu ısıtma sistemlerinden, frigorifik soğutma ünitelerine ve yeni nesil elektrikli klimalara kadar geniş bir ürün yelpazesiyle hizmet veriyoruz. Orijinal yedek parça ve profesyonel montaj desteğiyle Webasto kalitesini güvence altına alıyoruz.',
+    seo: {
+      title: 'Webasto Yetkili Servisi | Araç Isıtma ve Soğutma Sistemleri',
+      description: 'Webasto yetkili servisi Çınar Oto Klima; araç ısıtma sistemleri, soğutma çözümleri ve elektrikli klimalarda profesyonel destek sunar.',
+      keywords: 'Webasto yetkili servisi, Webasto ısıtıcı, araç soğutma sistemleri, elektrikli klima, Webasto servis, araç iklimlendirme',
+      ogTitle: 'Webasto Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Webasto ısıtma ve soğutma sistemlerinde yetkili servis güvencesi ve orijinal parça desteği.',
+      ogUrl: 'https://cinarotoklima.com/webasto-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/webasto-yetkili-servisi'
+    },
+    menuProducts: [
+      { label: 'Araç Isıtma Sistemleri', path: 'isitma-sistemleri' },
+      { label: 'Araç Soğutma Sistemleri', path: 'sogutma-sistemleri' },
+      { label: 'Elektrikli Klima', path: 'elektrikli-klima' }
+    ],
+    menuServices: [
+      { label: 'Webasto Bakım', path: 'bakim' },
+      { label: 'Webasto Onarım', path: 'onarim' },
+      { label: 'Webasto Yedek Parça', path: 'yedek-parca' }
+    ]
+  },
   { id: 'coolman', name: 'Coolman', logo: '/logolar/coolman-logo1.png' },
   { id: 'delphi', name: 'Delphi', logo: '/logolar/delphi-logo1.png' },
 ];
@@ -1336,7 +1362,28 @@ export const products = [
       'Kompresör Koruması: Mevcut'
     ]
   },
-  { id: 'webasto-sulu-isitici', brandId: 'webasto', name: 'Webasto Sulu Isıtıcı', images: ['https://picsum.photos/seed/isitici1/400/300'], description: 'Motor bağımsız sulu ısıtıcı sistemi.', category: 'Isıtıcı' },
+  { 
+    id: 'webasto-rte-23', 
+    brandId: 'webasto', 
+    name: 'Webasto Elektrikli Klima Cool Top RTE 23', 
+    images: [
+      '/webasto/webasto-elektrikli-klima-cool-top-rte-23.png',
+      '/webasto/webasto-elektrikli-klima-cool-top-rte-23-1.png'
+    ], 
+    description: 'Webasto’nun güçlü, elektrikli Cool Top RTE 23 tavan tipi klima sistemi; kamyon kabinlerinde sessiz, tasarruflu ve yüksek performanslı soğutma sağlar. 24V araç aküsünden güç alan sistem, motor bağımsız çalıştığı için rölanti sürelerini kısaltır ve yakıt tasarrufu sağlar.', 
+    category: 'Elektrikli Klima',
+    features: [
+      'Soğutma Kapasitesi: 0,9 – 2,5 kW',
+      'Nominal Gerilim: 24 V',
+      'Kondansatör Ölçüleri: 990 x 734 x 163 mm',
+      'Evaporatör Ölçüleri: 350 x 355 x 138 mm',
+      'Montaj Yüksekliği: 163 mm',
+      'Ağırlık: 28 kg',
+      'Sessiz ve uzun ömürlü iki adet fırçasız fan teknolojisi',
+      'Hafif ve düz tasarım (165 mm yükseklik)',
+      'Hızlı ve kolay tavan montajı'
+    ]
+  },
   { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
   { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
 ];
