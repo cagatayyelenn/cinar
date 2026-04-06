@@ -1693,24 +1693,26 @@ export const products = [
   { 
     id: 'webasto-frigo-45', 
     brandId: 'webasto', 
-    name: 'Webasto Frigo 45 RT-D Soğuk Depolama', 
+    name: 'Webasto Frigo 45 RT-D', 
     images: ['/webasto/frigo-45-rt-d-webasto.png'], 
-    description: 'Maksimum soğutma gücü sunan profesyonel frigorifik sistem.', 
+    description: 'Frigofirik soğutma sistemleri, uzun mesafeli yolculuklarda bile ürünlerinizin optimum derecede taşınabilmesini ve mükemmel koşullarda varış noktasına ulaşmasını sağlar. Hafif ticari araçlar için tasarlanmış olup araç motorundan tahriklidir. Geniş montaj kiti alternatifi ile bir çok araç modeline montaj imkanı sunar. Yüksek kaliteli komponentler sayesinde uzun servis ömrüne sahiptir. Talep edilen taşıma sıcaklığına göre R134a ve R404A alternatifleri mevcuttur.', 
     category: 'Araç Soğutma Sistemleri',
     technicalTable: {
-      headers: ['KLİMA ÜNİTESİ', 'FRİGO 45 RT-D', 'STAND-BY OPSİYONLU'],
+      headers: ['KLİMA ÜNİTESİ', 'FRİGO 45 RT-D'],
       rows: [
-        ['Soğutucu akışkan', 'R404A', 'R404A'],
-        ['0°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '4,300', '4,300'],
-        ['-20°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '2,400', '2,400'],
-        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
-        ['Hava akımı (m³/h)', '2,860 / 2,800', '2,860 / 2,800'],
-        ['Maksimum akım tüketimi (12V)', '34.0 / 22.0', '34.0 / 22.0'],
-        ['Ölçüler Kondenser E x B x Y (mm)', '1,033 x 551 x 174', '1,033 x 551 x 174'],
-        ['Ağırlık Kondenser / Evaporatör (kg)', '34.0 / 22.0', '34.0 / 22.0']
+        ['Soğutucu akışkan', 'R404A'],
+        ['+30°C ortam sıcaklığında ve +5°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '–'],
+        ['+30°C ortam sıcaklığında ve 0°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '4,300'],
+        ['+30°C ortam sıcaklığında ve -20°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '2,050'],
+        ['Nominal voltaj (V)', '12/24'],
+        ['Hava akımı (m/h)3', '2,860 / 2,800'],
+        ['Maksimum güç tüketimi kondenser ünitesi / evaporatör ünitesi (A) (12V)', '24.6 / 13.0'],
+        ['Maksimum güç tüketimi kondenser ünitesi / evaporatör ünitesi (A) (24V)', '15.2 / 7.4'],
+        ['Ölçüler kondenser / evaporatör E x B x Y (mm)', '1,115 x 663 x 194 / 1,130 x 530 x 158'],
+        ['Ağırlık kondenser / evaporatör (kg)', '34.0 / 22.0']
       ]
     },
-    features: ['Maksimum Soğutma Gücü', 'R404A Akışkan', 'Zorlu Koşullar İçin']
+    features: ['Frigorifik Soğutma', 'Motor Tahrikli', 'R404A Alternatifi']
   },
   { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
   { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },

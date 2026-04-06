@@ -76,13 +76,13 @@ export default function WebastoDetail({ product, brand }: { product: any, brand:
           </div>
         </div>
 
-        {/* Technical Data Table - Integrated Look */}
+        {/* Technical Data Table - Integrated Look - NOW FIRST */}
         {product.technicalTable && (
-          <div className="mb-32">
+          <div className="mb-20">
             <h3 className="text-xl font-black text-black mb-8 tracking-tighter flex items-center gap-4">
-              Teknik Veriler <span className="text-gray-300 font-light">| Teknik Spesifikasyonlar</span>
+              TEKNİK ÖZELLİKLER <span className="text-gray-300 font-light">| Teknik Spesifikasyonlar</span>
             </h3>
-            <div className="overflow-x-auto rounded-xl border border-slate-100 shadow-2xl bg-white">
+            <div className="overflow-x-auto rounded-xl border border-slate-100 shadow-2xl bg-white mb-12">
               <table className="w-full text-left border-collapse min-w-[800px]">
                 <thead>
                   <tr className="bg-[#0f2851] text-white">
@@ -106,13 +106,21 @@ export default function WebastoDetail({ product, brand }: { product: any, brand:
                 </tbody>
               </table>
             </div>
+
+            {/* User Requested: Header and Description under Table */}
+            <h2 className="text-3xl font-black text-black mb-6 tracking-tighter">Ürün özellikleri</h2>
+            <div className="prose prose-slate max-w-none">
+              <p className="text-gray-600 leading-relaxed font-light text-lg">
+                {product.description}
+              </p>
+            </div>
           </div>
         )}
 
         {/* Fallback for regular features if no table */}
         {!product.technicalTable && product.features && (
           <div className="mb-32">
-            <h3 className="text-xs font-black text-black mb-6 tracking-tight border-b border-slate-100 pb-4 uppercase">Ürün Özellikleri</h3>
+            <h3 className="text-xs font-black text-black mb-6 tracking-tight border-b border-slate-100 pb-4 uppercase">Teknik özellikler</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {product.features.map((f: string, i: number) => (
                 <div key={i} className="flex bg-slate-50 p-6 rounded-md text-[11px] font-bold tracking-tight text-gray-700">
