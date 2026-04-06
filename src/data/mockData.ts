@@ -90,7 +90,7 @@ export const brands = [
   { 
     id: 'coolman', 
     name: 'Coolman', 
-    logo: '/coolman/gizli-elektrikli-klima-seti-12v-24v.webp',
+    logo: '/logolar/coolman-logo.png',
     heroDescription: 'Çınar Oto Klima; Coolman yetkili servisi olarak tır, kamyon ve karavanlar için 12V/24V elektrikli park klima sistemlerinde profesyonel çözümler sunar.',
     whyTitle: 'Elektrikli Park Klima Sistemlerinde Coolman Uzmanlığı',
     whyDescription: 'Ağır vasıta sürücülerinin park halindeki konforu için Coolman teknolojisini aracınıza taşıyoruz. Motor çalıştırmadan soğutma sağlayan 12V ve 24V elektrikli klima sistemleri, yakıt tasarrufu ve sessiz çalışma avantajıyla sürüş kalitenizi artırır. Mercedes, Volvo, Scania, MAN gibi tüm çekici gruplarına uyumlu gizli ve tavan tipi soğutma çözümleriyle hizmetinizdeyiz.',
