@@ -835,18 +835,133 @@ export const products = [
     ]
   },
   { 
+    id: 'yh-5', 
+    brandId: 'yilkar', 
+    name: 'YH 5 Kuru Tip Isıtıcı', 
+    images: [
+      '/yilkar/yh-5-kuru-tip-isitici.jpg',
+      '/yilkar/yh-5-kuru-tip-isitici-1.jpg',
+      '/yilkar/yh-5-kuru-tip-isitici-2.jpg'
+    ], 
+    description: 'Yüksek ısıtma kapasiteli (5.0 kW) motor bağımsız dizel ısıtıcı. Büyük kabinler ve zorlu kış şartları için tasarlanmış profesyonel çözüm.', 
+    category: 'Kuru Tip Isıtma',
+    features: [
+      'ECE R122 Numarası: 122 R - 0010869',
+      'ECE R10 Numarası: 10R - 05 15114',
+      'Isıtma Kapasitesi: 1,0 - 5,0 kW',
+      'Hava debisi: 200 m³/sa (maks.)',
+      'Yakıt Cinsi: Dizel',
+      'Yakıt Tüketimi: 0,46 lt/sa (maks.) - 0,35 lt/sa (ortalama)',
+      'Çalışma Voltajı: 12 / 24 VDC',
+      'Başlangıç Çalışma Akımı: 8A @ 12VDC - 4A @ 24VDC',
+      'Sürekli Çalışma Akımı (maks.): 3A @ 12VDC - 1.5A @ 24VDC',
+      'Ağırlık: 5,2 kg',
+      'Ünite Ölçüleri: 400x140x180 mm'
+    ]
+  },
+  { 
+    id: 'yk-100-s', 
+    brandId: 'yilkar', 
+    name: 'YK 100 S Tavan Kliması', 
+    images: [
+      '/yilkar/yk-100-s-tavan-klimasi.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-1.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-2.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-3.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-4.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-5.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-6.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-7.jpg',
+      '/yilkar/yk-100-s-tavan-klimasi-8.jpg'
+    ], 
+    description: 'Büyük ölçekli ticari araçlar için 10kW kapasiteli üstün iklimlendirme performansı sunan tavan tipi klima sistemi.', 
+    category: 'Tavan Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 6 - 10 kW (20472 - 34121 BTU/h)',
+      'Soğutulmuş Hava: 2700 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 65 A @12 VDC - 32.5 A @24 VDC',
+      'İç Ölçüler: 1280*380*180 mm',
+      'Dış Ölçüler: 1200*1680*190 mm',
+      'Ünite Ağırlığı: 44.5 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-80-s', 
+    brandId: 'yilkar', 
+    name: 'YK 80 S Tavan Kliması', 
+    images: [
+      '/yilkar/yk-80-s-tavan-klimasi.jpg',
+      '/yilkar/yk-80-s-tavan-klimasi-1.jpg',
+      '/yilkar/yk-80-s-tavan-klimasi-2.jpg',
+      '/yilkar/yk-80-s-tavan-klimasi-3.jpg',
+      '/yilkar/yk-80-s-tavan-klimasi-4.jpg',
+      '/yilkar/yk-80-s-tavan-klimasi-5.jpg'
+    ], 
+    description: 'Orta segment ticari araçlar için ideal 8kW soğutma kapasiteli, dayanıklı ve verimli tavan tipi klima çözümü.', 
+    category: 'Tavan Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 6 - 8 kW (20472 - 27297 BTU/h)',
+      'Soğutulmuş Hava: 1800 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 47 A @12 VDC - 25 A @24 VDC',
+      'İç Ölçüler: 1098*366*174 mm',
+      'Dış Ölçüler: 1200*1200*190 mm',
+      'Ünite Ağırlığı: 34.5 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-120-s', 
+    brandId: 'yilkar', 
+    name: 'YK 120 S Tavan Kliması', 
+    images: [
+      '/yilkar/yk-120-s-tavan-klimasi.jpg',
+      '/yilkar/yk-120-s-tavan-klimasi-1.jpg',
+      '/yilkar/yk-120-s-tavan-klimasi-2.jpg',
+      '/yilkar/yk-120-s-tavan-klimasi-3.jpg',
+      '/yilkar/yk-120-s-tavan-klimasi-4.jpg'
+    ], 
+    description: 'Yüksek yolcu kapasiteli araçlar için 12kW gücünde maksimum soğutma performansı sağlayan tavan tipi klima.', 
+    category: 'Tavan Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 9 - 12 kW (30709 - 40945 BTU/sa)',
+      'Soğutulmuş Hava: 2700 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 65 A @12 VDC - 32,5 A @24 VDC',
+      'İç Ölçüler: 1300 * 420 * 226 mm',
+      'Dış Ölçüler: 1200 * 1680 * 190 mm',
+      'Ünite Ağırlığı: 44,5 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
     id: 'yk-90-s', 
     brandId: 'yilkar', 
-    name: 'YK-90 S Split Klima', 
-    images: ['https://picsum.photos/seed/yk90/400/300'], 
-    description: 'Minibüs ve midibüsler için tasarlanmış yüksek performanslı split klima sistemi.', 
-    category: 'Split Klimalar',
+    name: 'YK 90 S Tavan Kliması', 
+    images: [
+      '/yilkar/yk-90-s-tavan-klimasi.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-1.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-2.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-3.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-4.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-5.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-6.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-7.jpg',
+      '/yilkar/yk-90-s-tavan-klimasi-8.jpg'
+    ], 
+    description: 'Minibüs ve midibüs segmenti için özel olarak geliştirilmiş 9kW kapasiteli, kompakt ve estetik tavan tipi klima.', 
+    category: 'Tavan Klimaları',
     features: [
-      'Soğutma Kapasitesi: 9.0 kW',
-      'Soğutucu Akışkan: R134a',
-      'Hava Debisi: 2400 m³/sa',
-      'Kompresör: Tahrikli',
-      'Besleme: 12V / 24V DC'
+      'Soğutma Kapasitesi: 6 - 9 kW (20472 - 30709 BTU/sa)',
+      'Soğutulmuş Hava: 1800 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 36 A @12 VDC - 18 A @24 VDC',
+      'İç Ölçüler: 952 *420* 222 mm',
+      'Dış Ölçüler: 1200*1200*190 mm',
+      'Ünite Ağırlığı: 32.5 kg',
+      'Soğutucu Akışkan: R134a'
     ]
   },
   { 
