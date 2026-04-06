@@ -900,13 +900,6 @@ export const services = [
   { id: 'climart-bakim', brandId: 'climart', name: 'Climart Klima Bakımı', image: '/climart/climart-arac-bakimi.png', description: 'Climart ticari araç soğutucu ve klimalarının uzun ömürlü olması için periyodik, detaylı bakım hizmeti.' },
   { id: 'climart-onarim', brandId: 'climart', name: 'Climart Klima Onarımı ve Tamiri', image: '/climart/climart-arac-onarimi.png', description: 'Klimalarınızda meydana gelen tüm arızaların uzman teknisyenlerimiz tarafından kalıcı ve hızlı onarımı.' },
   { id: 'climart-yedek-parca', brandId: 'climart', name: 'Climart Yedek Parça', image: '/climart/climart-arac-yedek-parca.png', description: 'Cihazlarınızın tam performansını koruması için garantili, %100 orijinal ve onaylı Climart yedek parçaları.' },
-  { id: 'yilkar-bakim', brandId: 'yilkar', name: 'Yılkar Klima ve Isıtıcı Periyodik Bakımı', image: 'https://picsum.photos/seed/servisyilkar/600/400', description: 'Yılkar marka sistemlerinizin verimliliğini korumak için sezonluk ve yıllık periyodik bakım hizmetleri.' },
-  { id: 'webasto-ticari-arac-klimalari', brandId: 'webasto', name: 'Webasto Isıtıcı ve Klima Bakımı', image: 'https://picsum.photos/seed/serviswebasto/600/400', description: 'Webasto sistemlerinizin kışa hazırlığı, arıza onarımı ve periyodik bakımı.' },
-  { id: 'coolman-ticari-arac-klimalari', brandId: 'coolman', name: 'Coolman Tepe Kliması Montajı', image: 'https://picsum.photos/seed/serviscoolman/600/400', description: 'Coolman tepe klimalarının profesyonel montajı ve garantili bakım hizmetleri.' },
-  { id: 'delphi-ticari-arac-klimalari', brandId: 'delphi', name: 'Delphi Klima Sistemleri Onarımı', image: 'https://picsum.photos/seed/servisdelphi/600/400', description: 'Delphi kompresör ve klima sistemlerinin arıza tespiti, onarımı ve bakımı.' },
-  { id: 'yilkar-onarim', brandId: 'yilkar', name: 'Yılkar Arıza Tespit ve Onarım', image: 'https://picsum.photos/seed/servis2/600/400', description: 'Yılkar klimalarında ve ısıtıcılarında meydana gelen her türlü donanımsal ve yazılımsal arızanın onarımı.' },
-  { id: 'yilkar-yedek-parca', brandId: 'yilkar', name: 'Yılkar Orijinal Yedek Parça Desteği', image: 'https://picsum.photos/seed/servis3/600/400', description: 'Yılkar sistemleri için %100 orijinal kompresör, fan ve kontrol ünitesi gibi yedek parça temini.' },
-  { id: 'webasto-isitici-tamiri', brandId: 'webasto', name: 'Isıtıcı Tamiri ve Bakımı', image: 'https://picsum.photos/seed/servis3/600/400', description: 'Webasto ısıtıcılarınızın kışa hazırlığı ve arıza onarımı.' },
 ];
 
 export const faqs = [

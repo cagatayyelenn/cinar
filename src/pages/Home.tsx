@@ -262,7 +262,7 @@ export default function Home() {
           </div>
 
           <div className="border-t-2 border-[#0f2851]">
-            {services.slice(0, 4).map((service, idx) => (
+            {services.map((service, idx) => (
               <Link 
                 key={service.id} 
                 to={`/${service.brandId}-ticari-arac-klimalari`}
