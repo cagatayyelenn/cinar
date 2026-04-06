@@ -108,11 +108,27 @@ export default function WebastoDetail({ product, brand }: { product: any, brand:
             </div>
 
             {/* User Requested: Header and Description under Table */}
-            <h2 className="text-3xl font-black text-black mb-6 tracking-tighter">Ürün özellikleri</h2>
-            <div className="prose prose-slate max-w-none">
-              <p className="text-gray-600 leading-relaxed font-light text-lg">
-                {product.description}
-              </p>
+            <div className="mt-16 pt-16 border-t border-slate-100">
+              <h2 className="text-3xl font-black text-black mb-8 tracking-tighter">Ürün özellikleri</h2>
+              <div className="prose prose-slate max-w-none mb-12">
+                <p className="text-gray-600 leading-relaxed font-light text-xl italic border-l-4 border-blue-600 pl-8 py-2">
+                  {product.description}
+                </p>
+              </div>
+
+              {/* Added: Specific Features Grid even when technicalTable exists */}
+              {product.features && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {product.features.map((f: string, i: number) => (
+                    <div key={i} className="flex items-center gap-4 bg-slate-50 p-6 rounded-xl border border-slate-100 group hover:bg-blue-600 hover:border-blue-600 transition-all duration-500">
+                      <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:bg-blue-500 transition-colors">
+                        <Zap size={14} className="text-blue-600 group-hover:text-white" />
+                      </div>
+                      <span className="text-[11px] font-black tracking-tight text-gray-700 group-hover:text-white transition-colors uppercase">{f}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}
