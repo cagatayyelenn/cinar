@@ -1432,7 +1432,7 @@ export const products = [
     
     <h3>Hoş sıcaklıklar</h3>
     <p>Klimanın yüksek performansı kabinde ideal sıcaklığı sağlar ve nemi azaltır.</p>`,
-    category: 'Elektrikli Klima',
+    category: 'Coolman Klimalar',
     features: [
       'Soğutma Kapasitesi: 0,9 – 2,5 kW',
       'Nominal Gerilim: 24 V',
@@ -1727,24 +1727,6 @@ export const products = [
     features: ['Frigorifik Soğutma', 'Motor Tahrikli', 'Kompakt Tasarım']
   },
   { 
-    id: 'coolman-ws3000-24v', 
-    brandId: 'coolman', 
-    name: 'WS3000 Elektrikli Tavan Park Kliması (24V)', 
-    images: ['/coolman/ws3000-elektrikli-tavan-park-klimasi-24v.webp'], 
-    description: `Coolman WS3000 Elektrikli Tavan Park Kliması (24V), araç motoru çalışmadan kabin içi soğutma sağlayan yüksek performanslı bir tavan park kliması çözümüdür. Özellikle uzun yol sürücüleri ve ağır vasıta kullanıcıları için geliştirilen bu sistem, güçlü soğutma kapasitesi sayesinde tır park kliması, kamyon kabin kliması, kamyonet kabin kliması ve karavan kliması olarak profesyonel kullanım sunar.`,
-    category: 'Park Kliması',
-    usageAreas: [
-      'Tır park kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Karavan uyku kliması', 'Yat ve tekne kliması', 'Motordan bağımsız klima sistemi', 'Orijinal kliması olmayan araçlar', 'Gazlı elektrikli klima sistemi'
-    ],
-    advantages: [
-      'Güçlü soğutma kapasitesi (3800 W)', 'Motor çalıştırmadan kabin soğutma imkanı', 'Yakıt tasarrufu sağlayan park klima sistemi', 'Enerji verimli çalışma sistemi', 'R134a gaz ile çevre dostu kullanım', 'Dayanıklı ve uzun ömürlü klima sistemi', 'Park halinde konforlu dinlenme ortamı', 'Profesyonel ağır vasıta klima çözümü'
-    ],
-    compatibleVehicles: [
-      'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo', 'Isuzu NPR / NQR / F Serisi', 'Mitsubishi Fuso Canter', 'BMC Tuğra', 'Hyundai Mighty', 'Otokar Atlas'
-    ],
-    features: ['Soğutma: 3800W', 'Scroll Kompresör', 'Hava Debisi: 540 m³/h']
-  },
-  { 
     id: 'webasto-frigo-40', 
     brandId: 'webasto', 
     name: 'Webasto Frigo 40 RT-D Soğuk Depolama', 
@@ -1794,7 +1776,7 @@ export const products = [
     name: 'WS2000 Elektrikli Tavan Park Kliması (24V)', 
     images: ['/coolman/ws2000-elektrikli-tavan-park-klimasi-24v.webp'], 
     description: `Coolman WS2000 Elektrikli Tavan Park Kliması (24V), araç motoru çalışmadan kabin içi soğutma sağlayan yüksek performanslı bir tavan park kliması çözümüdür. Scroll kompresör teknolojisi sayesinde 3800W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini hızlı şekilde serinletir.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: ['Tır park kliması', 'Kamyon kabin kliması'],
     advantages: ['Motor çalıştırmadan soğutma', 'Yakıt tasarrufu'],
     compatibleVehicles: ['MAN TGX', 'Mercedes-Benz Actros'],
@@ -1816,7 +1798,7 @@ export const products = [
     Coolman ve Coolertech mühendisliği ile geliştirilen MD2000 park klima sistemi, 24V araç elektrik altyapısı ile uyumlu çalışarak ağır ticari araçlar ve mobil yaşam araçlarında güvenli kullanım sağlar. Scroll kompresör teknolojisi sayesinde 2300W seviyesine kadar soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini hızlı şekilde serinletir.
     
     Alüminyum petek evaporatör ve güçlü fan sistemi ile donatılan cihaz, 300 – 380 m³/h hava debisi ile kabin içerisinde dengeli hava sirkülasyonu sağlayarak sürücüler için konforlu bir ortam oluşturur. Kompakt tasarımı ve hafif yapısı sayesinde birçok ticari araca kolayca uygulanabilen bu araç tavan kliması, özellikle park halinde dinlenme ihtiyacı olan sürücüler için ideal bir çözümdür.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır park kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Panelvan ve ticari araç kliması', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Karavan uyku kliması', 'Yat ve tekne kliması', 'Motordan bağımsız klima sistemi', 'Orijinal kliması olmayan araçlar'
     ],
@@ -1840,7 +1822,7 @@ export const products = [
     description: `Coolman Gizli Elektrikli Klima Seti (Yatay 405 Evaporatörlü – 12V/24V), araç kabinlerinde motor çalışmadan soğutma sağlayan yüksek verimli bir split elektrikli araç klima sistemi çözümüdür. Yatay tip evaporatör tasarımı sayesinde dar kabinli araçlarda kolay montaj imkanı sunarak tır kabin kliması, kamyon kabin kliması, karavan kliması ve mobil araç klima sistemi olarak profesyonel kullanım sağlar.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen bu gizli klima sistemi, 12V ve 24V araç elektrik altyapıları ile uyumlu çalışarak farklı araç segmentlerinde güvenli kullanım sunar. Scroll kompresör teknolojisi sayesinde 2400W seviyesine kadar güçlü soğutma kapasitesi sağlayarak sıcak yaz günlerinde araç kabinini kısa sürede serinletir.`,
-    category: 'Elektrikli Klima',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır kabin kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Karavan klima sistemi', 'Mobil servis araçları', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Tekne ve yat kliması', 'Mobil ofis araçları', 'Orijinal kliması olmayan araçlar'
     ],
@@ -1864,7 +1846,7 @@ export const products = [
     description: `Coolman Haier Elektrikli Park Kliması (24V), araç motoru çalışmadan kabin içi soğutma sağlayan yüksek performanslı bir tavan park kliması çözümüdür. Özellikle uzun yol sürücüleri için geliştirilen bu sistem, güçlü soğutma kapasitesi ve enerji verimliliği ile tır park kliması, kamyon tavan kliması, kamyon kabin kliması ve karavan kliması kategorilerinde öne çıkan profesyonel bir çözümdür.
     
     Coolman ve Coolertech güvencesi ile Haier serisi park klima sistemi, 24V araç elektrik sistemleri ile uyumlu çalışarak ağır ticari araçlar ve mobil yaşam araçlarında güvenli kullanım sağlar. Hermetik kompresör teknolojisi sayesinde 2800W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini kısa sürede serinletir.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır park kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Karavan uyku kliması', 'Yat ve tekne kliması', 'Motordan bağımsız klima sistemi', 'Orijinal kliması olmayan araçlar', 'Gazlı elektrikli klima sistemi'
     ],
@@ -1889,7 +1871,7 @@ export const products = [
     description: `Coolman Gizli Elektrikli Klima Seti (12/24V), araç kabinlerinde motor çalışmadan soğutma sağlayan yüksek verimli bir split elektrikli klima sistemi çözümüdür. Duvar tipi iç ünite ve harici kondenser yapısı sayesinde özellikle dar kabinli araçlarda etkili soğutma sağlayarak tır kabin kliması, kamyon kabin kliması, karavan kliması ve mobil araç klima sistemi olarak profesyonel kullanım sunar.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen bu gizli klima sistemi, 12V and 24V araç elektrik altyapıları ile uyumlu çalışarak farklı araç segmentlerinde güvenli kullanım sağlar. Scroll kompresör teknolojisi sayesinde 2400W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini hızlı şekilde serinletir.`,
-    category: 'Elektrikli Klima',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır kabin kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Karavan klima sistemi', 'Mobil servis araçları', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Tekne ve yat kliması', 'Mobil ofis araçları', 'Orijinal kliması olmayan araçlar'
     ],
@@ -1914,7 +1896,7 @@ export const products = [
     description: `Coolman D-10000 Plus Elektrikli Tavan Park Kliması (12V-24V), araç motoru çalışmadan kabin içi soğutma sağlayan yüksek performanslı bir tavan park kliması çözümüdür. Uzun yol sürücüleri için geliştirilen bu sistem, güçlü soğutma kapasitesi ve enerji verimliliği ile tır park kliması, kamyon tavan kliması, panelvan kliması ve karavan kliması kategorilerinde öne çıkan profesyonel bir çözümdür.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen D-10000 Plus park klima sistemi, 12V ve 24V araç elektrik sistemleri ile uyumlu çalışarak farklı araç segmentlerinde güvenli ve verimli kullanım sağlar. Scroll kompresör teknolojisi sayesinde 3000W – 3100W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini kısa sürede serinletir.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır ve çekici araçlar', 'Kamyon ve ağır ticari araçlar', 'Panelvan ve ticari araçlar', 'Karavan ve camper araçlar', 'Minibüs ve servis araçları', 'Pickup araçlar', 'Mobil servis araçları', 'Tarım ve iş makineleri', 'Tekne ve yatlar'
     ],
@@ -1939,7 +1921,7 @@ export const products = [
     description: `Coolman CT-1500 MD-X Elektrikli Tavan Park Kliması (12V-24V), araç motoru çalışmadan kabin içi soğutma sağlayan yüksek verimli bir tavan park kliması çözümüdür. Özellikle uzun yol sürücüleri ve ticari araç kullanıcıları için geliştirilen bu sistem, güçlü performansı sayesinde tır park kliması, kamyon tavan kliması, kamyon kabin kliması ve karavan kliması olarak güvenilir bir kullanım sunar.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen CT-1500 MD-X park klima sistemi, 12V ve 24V araç elektrik altyapıları ile uyumlu çalışarak farklı araç segmentlerinde verimli kullanım sağlar. Scroll kompresör teknolojisi sayesinde 2600W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini kısa sürede serinletir.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır park kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Panelvan ve ticari araç kliması', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Karavan uyku kliması', 'Yat ve tekne kliması'
     ],
@@ -1964,7 +1946,7 @@ export const products = [
     description: `Coolman CT-1500 MD-X Eko Elektrikli Tavan Park Kliması (12V-24V), araç motoru çalışmadan kabin içi soğutma sağlayan verimli ve ekonomik bir tavan park kliması çözümüdür. Özellikle uzun yol sürücüleri ve ticari araç kullanıcıları için geliştirilen bu sistem, kompakt yapısı ve enerji tasarrufu sağlayan teknolojisi ile tır park kliması, kamyon tavan kliması, kamyon kabin kliması ve karavan kliması kategorilerinde pratik bir çözüm sunar.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen CT-1500 MD-X Eko park klima sistemi, 12V ve 24V araç elektrik sistemleri ile uyumlu çalışarak farklı araç segmentlerinde güvenli kullanım sağlar. Scroll kompresör teknolojisi sayesinde 2400W seviyesine kadar soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini kısa sürede serinletir.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır park kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Panelvan ve ticari araç kliması', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Karavan uyku kliması', 'Yat ve tekne kliması'
     ],
@@ -1989,7 +1971,7 @@ export const products = [
     description: `Coolman Haier Small Home Elektrikli Tavan Park Kliması, araç motoru çalışmadan kabin içi soğutma sağlayan yüksek performanslı bir tavan park kliması çözümüdür. Özellikle uzun yol sürücüleri için geliştirilen bu sistem, güçlü soğutma kapasitesi ve enerji verimliliği sayesinde tır park kliması, kamyon tavan kliması ve karavan kliması kategorilerinde öne çıkan çözümlerden biridir.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen bu elektrikli park klima sistemi, 12V ve 24V araç elektrik altyapıları ile uyumlu çalışarak farklı araç segmentlerinde güvenle kullanılabilir. Güçlü kompresör teknolojisi sayesinde 3000W – 3200W seviyesine kadar soğutma kapasitesi sağlayarak sıcak yaz günlerinde kabin içi sıcaklığı kısa sürede düşürür.`,
-    category: 'Park Kliması',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır ve çekici araçlar', 'Kamyon ve ağır ticari araçlar', 'Panelvan ve ticari araçlar', 'Karavan ve camper araçlar', 'Minibüs ve servis araçları', 'Pickup araçlar', 'Mobil servis araçları', 'Tarım ve iş makineleri'
     ],
@@ -2017,7 +1999,7 @@ export const products = [
     description: `Coolman CT1500 Split Elektrikli Klima Seti (12V-24V), araç kabinlerinde motor çalışmadan etkili soğutma sağlayan yüksek performanslı bir split elektrikli araç klima sistemi çözümüdür. İç ve dış ünite yapısına sahip olan bu sistem özellikle tır kabin kliması, kamyon kabin kliması, karavan kliması ve mobil araç klima sistemi olarak profesyonel kullanım sunar.
     
     Coolman ve Coolertech mühendisliği ile geliştirilen CT1500 split klima sistemi, 12V ve 24V araç elektrik altyapıları ile uyumlu çalışarak farklı araç segmentlerinde güvenilir kullanım sağlar. Scroll kompresör teknolojisi sayesinde 2600W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini kısa sürede serinletir.`,
-    category: 'Elektrikli Klima',
+    category: 'Coolman Klimalar',
     usageAreas: [
       'Tır kabin kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Karavan klima sistemi', 'Mobil servis araçları', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Tekne ve yat kliması', 'Mobil ofis araçları'
     ],
