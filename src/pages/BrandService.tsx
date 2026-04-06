@@ -70,6 +70,34 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
         </div>
       </div>
 
+      {/* Rebranding Information Banner */}
+      {/* @ts-ignore */}
+      {brand.rebrandedTo && (
+        <div className="bg-[#0f2851] border-y border-white/10 py-6">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-4 text-white">
+                <div className="bg-amber-500 p-3 rounded-full shrink-0">
+                  <ShieldCheck size={24} className="text-black" />
+                </div>
+                <div>
+                  <h3 className="font-black tracking-tighter text-lg mb-1 leading-none uppercase">Delphi & Webasto Güçlerini Birleştirdi</h3>
+                  <p className="text-slate-400 text-sm font-medium">
+                    Delphi yetkili servis hizmetleri artık Webasto uzmanlığı ve garantisi ile sunulmaktadır.
+                  </p>
+                </div>
+              </div>
+              <a 
+                href="tel:+905070485034"
+                className="bg-amber-500 text-black px-8 py-3 rounded-full font-black text-[10px] tracking-tight hover:bg-white transition-all flex items-center shrink-0 shadow-lg shadow-amber-500/20"
+              >
+                Servis Randevusu Al <ArrowRight size={14} className="ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 max-w-7xl py-20">
         <div className="flex flex-col lg:flex-row gap-16">
           

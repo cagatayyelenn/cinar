@@ -33,7 +33,10 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
     return <div className="container mx-auto py-20 text-center">Marka bulunamadı.</div>;
   }
 
-  const brandProducts = products.filter(p => p.brandId.toLowerCase() === brandId?.toLowerCase());
+  const brandProducts = products.filter(p => 
+    p.brandId.toLowerCase() === brandId?.toLowerCase() || 
+    (brandId?.toLowerCase() === 'delphi' && p.brandId === 'webasto')
+  );
   
   // Dynamic categories based on brand menu or defaults
   const categories = brand.menuProducts || [];
@@ -115,6 +118,34 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
           </div>
         </div>
       </div>
+
+      {/* Rebranding Information Banner */}
+      {/* @ts-ignore */}
+      {brand.rebrandedTo && (
+        <div className="bg-amber-50 border-y border-amber-100 py-6">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-4 text-amber-900">
+                <div className="bg-amber-100 p-3 rounded-full shrink-0">
+                  <ShieldCheck size={24} className="text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="font-black tracking-tight text-lg mb-1">Bilgilendirme: Marka Değişimi</h3>
+                  <p className="text-amber-800/80 text-sm font-medium">
+                    {brand.name} artık Webasto bünyesinde! Tüm ürünler ve servis desteği Webasto uzmanlığıyla sunulmaktadır.
+                  </p>
+                </div>
+              </div>
+              <Link 
+                to="/webasto/urunler"
+                className="bg-black text-white px-8 py-3 rounded-full font-black text-[10px] tracking-tight hover:bg-amber-600 transition-all flex items-center shrink-0 shadow-lg shadow-amber-900/10"
+              >
+                Webasto Ürünlerini İncele <ArrowRight size={14} className="ml-2" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="container mx-auto px-4 max-w-7xl py-16">
         <div className="flex flex-col lg:flex-row gap-12">
