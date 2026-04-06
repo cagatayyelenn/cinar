@@ -1370,7 +1370,18 @@ export const products = [
       '/webasto/webasto-elektrikli-klima-cool-top-rte-23.png',
       '/webasto/webasto-elektrikli-klima-cool-top-rte-23-1.png'
     ], 
-    description: 'Webasto’nun güçlü, elektrikli Cool Top RTE 23 tavan tipi klima sistemi; kamyon kabinlerinde sessiz, tasarruflu ve yüksek performanslı soğutma sağlar. 24V araç aküsünden güç alan sistem, motor bağımsız çalıştığı için rölanti sürelerini kısaltır ve yakıt tasarrufu sağlar.', 
+    description: `<h2>Webasto Elektrikli Klima Cool Top RTE 23</h2>
+    <p>Webasto’nun güçlü, elektrikli Cool Top RTE 23 tavan tipi klima sistemi, sıcak ortamlardaki molalarda kabinlerde hoş sıcaklıklar ve düşük nem sağlar. İki yenilikçi fırçasız fan sayesinde daha az güç tüketir, çok sessizdir ve uzun ömürlüdür. 24 Volt araç aküsünden gerekli gücü çeker ve 2,5 kW’a kadar enerji verimli bir şekilde soğutabilir. Motordan bağımsız çalıştığı için rölanti sürelerini kısaltır ve bu sayede yakıt tasarrufu sağlar. Düşük gerilim kesintisi, motorun sorunsuz çalışması için akünün her zaman yeterince şarj edilmesini sağlar.</p>
+    
+    <h2>Cool Top RTE 23 Faydaları</h2>
+    <h3>Verimli, sessiz çalışma</h3>
+    <p>Elektrikle çalışma, motor rölantisini azaltır ve böylece yakıt tasarrufu sağlar. İki yenilikçi fırçasız fan az güç tüketir ve çok sessizdir.</p>
+    
+    <h3>Kolay kurulum</h3>
+    <p>Cool Top RTE 23, aracın tavan penceresine kolayca ve hızlıca monte edilebilir.</p>
+    
+    <h3>Hoş sıcaklıklar</h3>
+    <p>Klimanın yüksek performansı kabinde ideal sıcaklığı sağlar ve nemi azaltır.</p>`,
     category: 'Elektrikli Klima',
     features: [
       'Soğutma Kapasitesi: 0,9 – 2,5 kW',
@@ -1389,7 +1400,11 @@ export const products = [
     brandId: 'webasto', 
     name: 'Webasto Air Top 2000 STC Hava Isıtıcı', 
     images: ['/webasto/air-top-2000-stc-webasto.jpeg', '/webasto/air-top-2000-stc-webasto-1.jpeg'], 
-    description: 'Webasto\'nun 2 kW ısı çıkışıyla hava ısıtıcıları arasında çok yönlü modeli. Kompakt, güvenli ve son derece verimli bir ısıtma çözümü sunar.', 
+    description: `<h2>Çok yönlü, verimli hava ısıtıcısı</h2>
+    <p>Webasto'nun Air Top 2000 STC modeli, 2 kW ısı çıkışıyla hava ısıtıcıları arasında "çok yönlü" bir üründür. Kompakt, güvenli, yakıt tüketimi açısından son derece verimli olup, neredeyse tüm araç ve teknelerde geniş bir montaj seçeneği sunar. İster zemin altına ister tekneye monte edilsin, istenen sıcaklığa hızla ulaşır ve sabit tutar. Sessiz çalışır ve sürekli ısıtma için olduğu kadar, sıcaklığa duyarlı malların ve tehlikeli maddelerin taşınması için kargo bölmelerinin ısıtılması için de uygundur.</p>
+    
+    <h2>Ürün özellikleri</h2>
+    <p>Ölçüler (Uzunluk x Genişlik x Yükseklik) mm cinsinden: 310 x 120 x 118. Ağırlık: 2,6 kg. Nominal gerilim: 12 V, 24 V. Yakıt: Dizel, benzin, parafin yakıtlar elektrikle çalışma, motor rölantisini azaltır ve böylece yakıt tasarrufu sağlar.</p>`,
     category: 'Araç Isıtma Sistemleri',
     technicalTable: {
       headers: ['AİR TOP 2000 STC', 'DİZEL', 'BENZİN'],
@@ -1412,7 +1427,7 @@ export const products = [
     brandId: 'webasto', 
     name: 'Webasto Air Top Evo 40 Hava Isıtıcı', 
     images: ['/webasto/air-top-evo-40-webasto.jpeg'], 
-    description: 'Büyük kabinler için tasarlanmış 4 kW kapasiteli hava ısıtıcısı. Akıllı üfleyici kontrolü ile sessiz çalışma sağlar.', 
+    description: `<h2>Konforlu, sessiz, güçlü hava ısıtıcısı</h2><p>Air Top Evo modelleri, her zamankinden daha fazla konfor, güvenlik ve ısı çıkışı sunarak öne çıkar. Geniş ticari araçlardan kamp araçlarına kadar geniş bir yelpazede sessiz ve hızlı ısıtma sağlar. Isıtma performansı modüle edilerek yakıt ve güç tüketimi minimize edilir.</p><h2>Air Top Evo: Konforlu, sessiz, güçlü</h2><h3>Isıtma performansının modüle edilmesi</h3><p>Isıtma performansı, hedeflenen sıcaklığa ulaşıldığında enerji tasarrufu sağlamak üzere otomatik olarak ayarlanır (modülasyon). Bu, hem yakıt tüketimini azaltır hem de cihazın ömrünü uzatır.</p>`,
     category: 'Araç Isıtma Sistemleri',
     technicalTable: {
       headers: ['AİR TOP EVO 40', 'DİZEL', 'BENZİN'],
@@ -1435,7 +1450,7 @@ export const products = [
     brandId: 'webasto', 
     name: 'Webasto Air Top Evo 55 Hava Isıtıcı', 
     images: ['/webasto/air-top-evo-55-webasto.jpeg'], 
-    description: 'Otobüsler ve büyük kargo bölmeleri için 5.5 kW çıkış gücüne sahip en güçlü Webasto hava ısıtıcısı.', 
+    description: `<h2>Air Top Evo: Konforlu, sessiz, güçlü</h2><p>Isıtma performansının modüle edilmesi sayesinde çok düşük yakıt ve elektrik tüketimi. Modern Air Top Evo modülünün sundukları: Kompakt boyutlar, yüksek güvenilirlik ve kullanıcı dostu arayüz.</p><h3>Modern Air Top Evo modülünün sundukları</h3><p>Kompakt tasarımı sayesinde en dar alanlara bile monte edilebilir. Akıllı kontrol paneli ile istenen sıcaklık hassas bir şekilde ayarlanabilir.</p>`,
     category: 'Araç Isıtma Sistemleri',
     technicalTable: {
       headers: ['AIR TOP EVO 55', 'DİZEL', 'BENZİN'],
@@ -1458,7 +1473,7 @@ export const products = [
     brandId: 'webasto', 
     name: 'Webasto Thermo Pro 90 Sulu Isıtıcı', 
     images: ['/webasto/thermo-pro-90-webasto.jpeg', '/webasto/thermo-pro-90-webasto-1.jpeg'], 
-    description: 'Büyük ticari araçlar için 9.1 kW kapasiteli güçlü sulu ısıtıcı sistemi. Arctic Start özelliği ile aşırı soğuklarda bile çalışır.', 
+    description: `<h2>Thermo Pro 90 - Büyük ticari araçlar ve ağır iş makineleri için yüksek performanslı sulu ısıtıcı</h2><p>Gelişmiş özellikleri ve 9.1 kW'a kadar çıkan ısıtma gücü ile Thermo Pro 90, en zorlu kış koşullarında bile motorun ve kabinin hızlı bir şekilde ısınmasını sağlar. Arctic Start özelliği sayesinde aşırı düşük sıcaklıklarda bile güvenilir çalışma performansı sunar.</p><h2>Thermo Pro 90 Faydaları</h2><p>Daha düşük yakıt tüketimi ve sessiz çalışma. Arctic Start ve hızlı ısıtma performansı. Kompakt boyutları sayesinde kolay montaj imkanı.</p>`,
     category: 'Araç Isıtma Sistemleri',
     technicalTable: {
       headers: ['TEKNİK ÖZELLİKLER', 'THERMO PRO 90'],

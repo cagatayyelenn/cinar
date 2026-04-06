@@ -109,12 +109,11 @@ export default function WebastoDetail({ product, brand }: { product: any, brand:
 
             {/* User Requested: Header and Description under Table */}
             <div className="mt-16 pt-16 border-t border-slate-100">
-              <h2 className="text-3xl font-black text-black mb-8 tracking-tighter">Ürün özellikleri</h2>
-              <div className="prose prose-slate max-w-none mb-12">
-                <p className="text-gray-600 leading-relaxed font-light text-xl italic border-l-4 border-blue-600 pl-8 py-2">
-                  {product.description}
-                </p>
-              </div>
+              <h2 className="text-3xl font-black text-black mb-10 tracking-tighter">Detaylı Ürün Bilgileri</h2>
+              <div 
+                className="prose prose-slate max-w-none mb-12 prose-h2:text-2xl prose-h2:font-black prose-h2:text-[#0f2851] prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-lg prose-h3:font-bold prose-h3:text-black prose-h3:mt-8 prose-h3:mb-4 prose-p:text-gray-600 prose-p:leading-relaxed prose-p:font-light prose-p:text-lg"
+                dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br />') }}
+              />
 
               {/* Added: Specific Features Grid even when technicalTable exists */}
               {product.features && (
