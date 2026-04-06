@@ -87,7 +87,31 @@ export const brands = [
       { label: 'Webasto Yedek Parça', path: 'yedek-parca' }
     ]
   },
-  { id: 'coolman', name: 'Coolman', logo: '/logolar/coolman-logo1.png' },
+  { 
+    id: 'coolman', 
+    name: 'Coolman', 
+    logo: '/coolman/gizli-elektrikli-klima-seti-12v-24v.webp',
+    heroDescription: 'Çınar Oto Klima; Coolman yetkili servisi olarak tır, kamyon ve karavanlar için 12V/24V elektrikli park klima sistemlerinde profesyonel çözümler sunar.',
+    whyTitle: 'Elektrikli Park Klima Sistemlerinde Coolman Uzmanlığı',
+    whyDescription: 'Ağır vasıta sürücülerinin park halindeki konforu için Coolman teknolojisini aracınıza taşıyoruz. Motor çalıştırmadan soğutma sağlayan 12V ve 24V elektrikli klima sistemleri, yakıt tasarrufu ve sessiz çalışma avantajıyla sürüş kalitenizi artırır. Mercedes, Volvo, Scania, MAN gibi tüm çekici gruplarına uyumlu gizli ve tavan tipi soğutma çözümleriyle hizmetinizdeyiz.',
+    seo: {
+      title: 'Coolman Yetkili Servisi | Elektrikli Park Klima Sistemleri',
+      description: 'Coolman yetkili servisi Çınar Oto Klima; tır, kamyon ve karavanlar için 12V/24V elektrikli park klimaları ve gizli klima setleri sunar.',
+      keywords: 'Coolman yetkili servisi, elektrikli park kliması, tır kliması, kamyonet kliması, karavan kliması, 24V klima, 12V elektrikli klima, park kliması servis',
+      ogTitle: 'Coolman Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Park halinde motor çalıştırmadan soğutma sağlayan Coolman elektrikli klima sistemlerinde yetkili servis desteği.',
+      ogUrl: 'https://cinarotoklima.com/coolman-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/coolman-yetkili-servisi'
+    },
+    menuProducts: [
+      { label: 'Coolman Klimalar', path: 'elektrikli-klimalar' }
+    ],
+    menuServices: [
+      { label: 'Coolman Bakım', path: 'bakim' },
+      { label: 'Coolman Onarım', path: 'onarim' },
+      { label: 'Coolman Yedek Parça', path: 'yedek-parca' }
+    ]
+  },
   { id: 'delphi', name: 'Delphi', logo: '/logolar/delphi-logo1.png' },
 ];
 
@@ -1729,8 +1753,83 @@ export const products = [
     },
     features: ['Frigorifik Soğutma', 'Motor Tahrikli', 'R404A Alternatifi']
   },
-  { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
-  { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
+  { 
+    id: 'coolman-gizli-elektrikli-klima-seti', 
+    brandId: 'coolman', 
+    name: 'Gizli Elektrikli Klima Seti (12V/24V)', 
+    images: [
+      '/coolman/gizli-elektrikli-klima-seti-12v-24v.webp',
+      '/coolman/gizli-elektrikli-klima-seti-12v-24v-1.webp',
+      '/coolman/gizli-elektrikli-klima-seti-12v-24v-2.webp',
+      '/coolman/gizli-elektrikli-klima-seti-12v-24v-3.webp'
+    ], 
+    description: `Coolman Gizli Elektrikli Klima Seti (12/24V), araç kabinlerinde motor çalışmadan soğutma sağlayan yüksek verimli bir split elektrikli klima sistemi çözümüdür. Duvar tipi iç ünite ve harici kondenser yapısı sayesinde özellikle dar kabinli araçlarda etkili soğutma sağlayarak tır kabin kliması, kamyon kabin kliması, karavan kliması ve mobil araç klima sistemi olarak profesyonel kullanım sunar.
+    
+    Coolman ve Coolertech mühendisliği ile geliştirilen bu gizli klima sistemi, 12V ve 24V araç elektrik altyapıları ile uyumlu çalışarak farklı araç segmentlerinde güvenli kullanım sağlar. Scroll kompresör teknolojisi sayesinde 2400W seviyesine kadar güçlü soğutma kapasitesi sunarak sıcak yaz günlerinde araç kabinini hızlı şekilde serinletir.
+    
+    Alüminyum petek evaporatör ve güçlü fan sistemi ile donatılan klima seti, 300 – 380 m³/h hava debisi sağlayarak kabin içerisinde dengeli hava sirkülasyonu oluşturur. Split sistem yapısı sayesinde iç ünite kabin içerisine monte edilirken kondenser ünitesi araç dışında konumlandırılarak daha verimli soğutma sağlanır.`,
+    category: 'Elektrikli Klima',
+    usageAreas: [
+      'Tır kabin kliması', 'Kamyon kabin kliması', 'Kamyonet kabin kliması', 'Karavan klima sistemi', 'Mobil servis araçları', 'İş makinesi kabin kliması', 'Vinç kabin kliması', 'Tekne ve yat kliması', 'Mobil ofis araçları', 'Orijinal kliması olmayan araçlar'
+    ],
+    advantages: [
+      '12V ve 24V uyumlu elektrikli klima sistemi', 'Motor çalıştırmadan kabin soğutma imkanı', 'Split sistem sayesinde verimli soğutma', 'Kompakt ve gizli montaj imkanı', 'Yakıt tasarrufu sağlayan klima sistemi', 'Dayanıklı alüminyum evaporatör yapısı', 'Kolay montaj ve servis imkanı', 'Sessiz çalışma teknolojisi', 'Park halinde konforlu dinlenme ortamı'
+    ],
+    compatibleVehicles: [
+      'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo', 'Isuzu NPR / NQR / F Serisi', 'Mitsubishi Fuso Canter', 'BMC Tuğra', 'Hyundai Mighty', 'Otokar Atlas'
+    ],
+    features: ['Soğutma: 2400W Max', 'Scroll Kompresör', '12V/24V Desteği']
+  },
+  { 
+    id: 'coolman-gizli-elektrikli-klima-seti-yatay', 
+    brandId: 'coolman', 
+    name: 'Gizli Elektrikli Klima Seti Yatay Evaporatörlü', 
+    images: [
+      '/coolman/gizli-elektrikli-klima-seti-yatay-405-evaporatorlu-12v-24v.webp',
+      '/coolman/gizli-elektrikli-klima-seti-yatay-405-evaporatorlu-12v-24v-1.webp',
+      '/coolman/gizli-elektrikli-klima-seti-yatay-405-evaporatorlu-12v-24v-2.webp'
+    ], 
+    description: 'Yatay 405 evaporatör yapısı ile daha kompakt montaj imkanı sunan profesyonel elektrikli klima seti.', 
+    category: 'Elektrikli Klima'
+  },
+  { 
+    id: 'coolman-haier-24v', 
+    brandId: 'coolman', 
+    name: 'Haier Elektrikli Park Kliması 24V', 
+    images: [
+      '/coolman/haier-elektrikli-park-klimasi-24v.webp',
+      '/coolman/haier-elektrikli-park-klimasi-24v-1.webp',
+      '/coolman/haier-elektrikli-park-klimasi-24v-2.webp'
+    ], 
+    description: 'Dünyaca ünlü Haier kalitesiyle tır ve kamyonlar için 24V elektrikli park kliması.', 
+    category: 'Park Kliması'
+  },
+  { 
+    id: 'coolman-md2000-24v', 
+    brandId: 'coolman', 
+    name: 'Coolman MD2000 Elektrikli Tavan Park Kliması', 
+    images: [
+      '/coolman/md2000-elektrikli-tavan-park-klimasi-24v.webp',
+      '/coolman/md2000-elektrikli-tavan-park-klimasi-24v-1.webp',
+      '/coolman/md2000-elektrikli-tavan-park-klimasi-24v-2.webp',
+      '/coolman/md2000-elektrikli-tavan-park-klimasi-24v-3.webp',
+      '/coolman/md2000-elektrikli-tavan-park-klimasi-24v-4.webp'
+    ], 
+    description: '24V elektrik altyapısına sahip tır ve kamyonlar için yüksek performanslı tavan tipi park kliması.', 
+    category: 'Park Kliması'
+  },
+  { 
+    id: 'coolman-ws2000-24v', 
+    brandId: 'coolman', 
+    name: 'Coolman WS2000 Elektrikli Tavan Park Kliması', 
+    images: [
+      '/coolman/ws2000-elektrikli-tavan-park-klimasi-24v.webp',
+      '/coolman/ws2000-elektrikli-tavan-park-klimasi-24v-1.webp',
+      '/coolman/ws2000-elektrikli-tavan-park-klimasi-24v-2.webp'
+    ], 
+    description: 'Güçlü ve estetik tasarımlı 24V elektrikli tavan park kliması çözümü.', 
+    category: 'Park Kliması'
+  },
 ];
 
 export const services = [
