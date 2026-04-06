@@ -72,8 +72,41 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
               <Link to={`/${brand.id}/urunler`} className="hover:text-white transition-colors shrink-0">Ürünler</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
               <span className="text-white truncate">{product.name}</span>
+              </div>
             </div>
-          </div>
+
+            {/* Advanced Technical Datasheet - Professional Table */}
+            {product.technicalTable && (
+              <div className="mb-32">
+                <div className="text-xs font-black text-gray-400 tracking-tight mb-8 flex items-center gap-6">
+                  <span className="w-12 h-px bg-black"></span> Teknik veri sayfası (Datasheet)
+                </div>
+                <div className="overflow-x-auto rounded-xl border border-slate-100 shadow-2xl bg-white">
+                  <table className="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                      <tr className="bg-[#0f2851] text-white">
+                        {product.technicalTable.headers.map((header: string, i: number) => (
+                          <th key={i} className="py-6 px-8 text-[11px] font-black uppercase tracking-widest border-r border-white/10 last:border-0">
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="text-black">
+                      {product.technicalTable.rows.map((row: string[], i: number) => (
+                        <tr key={i} className="border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors group">
+                          {row.map((cell: string, j: number) => (
+                            <td key={j} className={`py-5 px-8 text-[10px] tracking-tight border-r border-slate-50 last:border-0 font-medium ${j === 0 ? 'bg-slate-50/50 font-bold w-1/3' : 'text-gray-500'}`}>
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
 
           <div className="container mx-auto px-4 max-w-7xl py-20">
             

@@ -1388,130 +1388,152 @@ export const products = [
     id: 'webasto-air-top-2000-stc', 
     brandId: 'webasto', 
     name: 'Webasto Air Top 2000 STC Hava Isıtıcı', 
-    images: [
-      '/webasto/air-top-2000-stc-webasto.jpg'
-    ], 
+    images: ['/webasto/air-top-2000-stc-webasto.jpeg', '/webasto/air-top-2000-stc-webasto-1.jpeg'], 
     description: 'Webasto\'nun 2 kW ısı çıkışıyla hava ısıtıcıları arasında çok yönlü modeli. Kompakt, güvenli ve son derece verimli bir ısıtma çözümü sunar.', 
     category: 'Araç Isıtma Sistemleri',
-    features: [
-      'Isıtma Kapasitesi: 0.9 – 2.0 kW (Dizel) / 1.0 – 2.0 kW (Benzin)',
-      'Yakıt Tüketimi: 0.12 – 0.24 l/sa (Dizel) / 0.14 – 0.27 l/sa (Benzin)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Hava Debisi: 93 m³/sa',
-      'Ölçüler: 311 x 120 x 121 mm',
-      'Ağırlık: 2.6 kg',
-      'Sessiz çalışma ve hızlı ısıtma',
-      'Düşük güç tüketimi ve yüksek verimlilik'
-    ]
+    technicalTable: {
+      headers: ['AİR TOP 2000 STC', 'DİZEL', 'BENZİN'],
+      rows: [
+        ['ECE onay numarası ECE R122 (ısıtıcı)', 'E1 00 0216', 'E1 00 0216'],
+        ['ECE onay numarası ECE R10 (EMC)', 'E1 04 1085', 'E1 04 1085'],
+        ['Isıtma kapasitesi, kontrol aralığı (kW)', '0.9 – 2.0', '1.0 – 2.0'],
+        ['Yakıt tüketimi, kontrol aralığı ( l/h )', '0.12 – 0.24', '0.14 – 0.27'],
+        ['Nominal voltaj (V)', '12 / 24', '12'],
+        ['Nominal güç tüketimi, kontrol aralığı (W)', '14 – 29', '14 – 29'],
+        ['Isıtma hava debisi (0,31 bar)', '93 m³/h', '93 m³/h'],
+        ['Ölçüler B x E x Y (mm)', '311 x 120 x 121', '311 x 120 x 121'],
+        ['Ağırlık (kg)', '2.6', '2.6']
+      ]
+    },
+    features: ['Isıtma Kapasitesi: 2.0 kW', 'Düşük Yakıt Tüketimi', 'Sessiz Çalışma']
   },
   { 
     id: 'webasto-air-top-evo-40', 
     brandId: 'webasto', 
     name: 'Webasto Air Top Evo 40 Hava Isıtıcı', 
-    images: [
-      '/webasto/air-top-evo-40-webasto.jpeg'
-    ], 
-    description: 'Büyük kabinler ve kargo bölmeleri için tasarlanmış 4 kW kapasiteli profesyonel hava ısıtıcısı. Akıllı üfleyici kontrolü ile sessiz ve verimli çalışma sağlar.', 
+    images: ['/webasto/air-top-evo-40-webasto.jpeg'], 
+    description: 'Büyük kabinler için tasarlanmış 4 kW kapasiteli hava ısıtıcısı. Akıllı üfleyici kontrolü ile sessiz çalışma sağlar.', 
     category: 'Araç Isıtma Sistemleri',
-    features: [
-      'Isıtma Kapasitesi: 1.5 – 3.5 kW (Boost: 4.0 kW)',
-      'Yakıt Tüketimi: 0.18 – 0.43 l/sa (Dizel)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Hava Debisi: 132 m³/sa (Boost: 140 m³/sa)',
-      'Otomatik Yükseklik Ayarı: 2,200 m\'ye kadar',
-      'Ölçüler: 423 x 148 x 162 mm',
-      'Ağırlık: 5.9 kg'
-    ]
+    technicalTable: {
+      headers: ['AİR TOP EVO 40', 'DİZEL', 'BENZİN'],
+      rows: [
+        ['ECE onay numarası ECE R122 (ısıtıcı)', 'E1 00 0385', 'E1 00 0385'],
+        ['Isıtma kapasitesi, kontrol aralığı / boost (kW)', '1.5 – 3.5 / 4.0*', '1.7 – 3.5 / 4.0*'],
+        ['Yakıt tüketimi, kontrol aralığı ( l/h )', '0.18 – 0.43 / 0.49', '0.25 – 0.51 / 0.58'],
+        ['Nominal voltaj (V)', '12 / 24', '12'],
+        ['Nominal güç tüketimi, kontrol aralığı (W)', '15 – 40 / 55', '15 – 40 / 55'],
+        ['Isıtma hava hacmi (m3/h)', '132 / 140', '132 / 140'],
+        ['Otomatik yükseklik ayarı (m)', '2,200', '2,200'],
+        ['Ölçüler B x E x Y (mm)', '423 x 148 x 162', '423 x 148 x 162'],
+        ['Ağırlık (kg)', '5.9', '5.9']
+      ]
+    },
+    features: ['Boost Kapasitesi: 4.0 kW', 'Otomatik Yükseklik Ayarı', 'Düşük Elektrik Tüketimi']
   },
   { 
     id: 'webasto-air-top-evo-55', 
     brandId: 'webasto', 
     name: 'Webasto Air Top Evo 55 Hava Isıtıcı', 
-    images: [
-      '/webasto/air-top-evo-55-webasto.jpeg'
-    ], 
-    description: 'Otobüs ve büyük kamp araçları için 5.5 kW çıkış gücüne sahip en güçlü Webasto hava ısıtıcısı. Yüksek rakımlarda bile güvenilir performans sunar.', 
+    images: ['/webasto/air-top-evo-55-webasto.jpeg'], 
+    description: 'Otobüsler ve büyük kargo bölmeleri için 5.5 kW çıkış gücüne sahip en güçlü Webasto hava ısıtıcısı.', 
     category: 'Araç Isıtma Sistemleri',
-    features: [
-      'Isıtma Kapasitesi: 1.5 – 5.0 kW (Boost: 5.5 kW)',
-      'Yakıt Tüketimi: 0.18 – 0.61 l/sa (Dizel)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Hava Debisi: 200 m³/sa (Boost: 220 m³/sa)',
-      'Otomatik Yükseklik Ayarı: 2,200 m\'ye kadar',
-      'Ölçüler: 423 x 148 x 162 mm',
-      'Ağırlık: 5.9 kg'
-    ]
+    technicalTable: {
+      headers: ['AIR TOP EVO 55', 'DİZEL', 'BENZİN'],
+      rows: [
+        ['ECE onay numarası ECE R122 (ısıtıcı)', 'E1 00 0386', 'E1 00 0386'],
+        ['Isıtma kapasitesi, kontrol aralığı / boost (kW)', '1.5 – 5.0 / 5.5**', '1.7 – 5.0 / 5.5**'],
+        ['Yakıt tüketimi, kontrol aralığı ( l/h )', '0.18 – 0.61 / 0.67', '0.28 – 0.73 / 0.80'],
+        ['Nominal voltaj (V)', '12 / 24', '12'],
+        ['Nominal güç tüketimi, kontrol aralığı (W)', '15 – 95 / 130', '15 – 95 / 130'],
+        ['Hava hacmi akımı ısıtma (m3/h)', '200 / 220', '200 / 220'],
+        ['Otomatik yükseklik ayarı (m)', '2,200', '2,200'],
+        ['Ölçüler B x E x Y (mm)', '423 x 148 x 162', '423 x 148 x 162'],
+        ['Ağırlık (kg)', '5.9', '5.9']
+      ]
+    },
+    features: ['Maksimum Isıtma Kapasitesi: 5.5 kW', 'Uzun Ömürlü Fan', 'Kompakt Boyutlar']
   },
   { 
     id: 'webasto-thermo-pro-90', 
     brandId: 'webasto', 
     name: 'Webasto Thermo Pro 90 Sulu Isıtıcı', 
-    images: [
-      '/webasto/thermo-pro-90-webasto.jpeg',
-      '/webasto/thermo-pro-90-webasto-1.jpeg',
-      '/webasto/thermo-pro-90-webasto-2.jpeg',
-      '/webasto/thermo-pro-90-webasto-3.jpeg'
-    ], 
-    description: 'Büyük ticari ve özel araçlar için geliştirilen Sulu ısitıcı; motoru ideal sıcaklığa getirirken kabin konforunu da artırır. Arctic Start özelliği ile aşırı soğuklarda bile çalışır.', 
+    images: ['/webasto/thermo-pro-90-webasto.jpeg', '/webasto/thermo-pro-90-webasto-1.jpeg'], 
+    description: 'Büyük ticari araçlar için 9.1 kW kapasiteli güçlü sulu ısıtıcı sistemi. Arctic Start özelliği ile aşırı soğuklarda bile çalışır.', 
     category: 'Araç Isıtma Sistemleri',
-    features: [
-      'Isıtma Kapasitesi: 1,8 / 7,6 kW (Boost: 9,1 kW)',
-      'Yakıt Tüketimi: 0,15 – 1,1 l/sa',
-      'Su Pompası Debisi: 700 l/sa',
-      'Nominal Voltaj: 12 / 24 V',
-      'Çalışma Sıcaklığı: –40 to +80 °C',
-      'Ölçüler: 381 x 131 x 224 mm',
-      'Ağırlık: 4.9 kg'
-    ]
+    technicalTable: {
+      headers: ['TEKNİK ÖZELLİKLER', 'THERMO PRO 90'],
+      rows: [
+        ['Isıtma kapasitesi, kısmi yük / tam yük / boost (kW)', '1,8 / 7,6 / 9,1'],
+        ['Yakıt tüketimi, kısmi yük / tam yük / boost (l/h)', '0,15 / 0,90 / 1,1'],
+        ['Nominal voltaj (V)', '12 / 24'],
+        ['Nominal güç tüketimi, kısmi yük / tam yük (W)', '37 / 80'],
+        ['Su pompası U4840 debisi (l/h)', '700'],
+        ['Ölçüler B x E x Y (mm)', '381 x 131 x 224'],
+        ['Ağırlık (kg)', '4,9']
+      ]
+    },
+    features: ['Sulu Tip Isıtıcı', '9.1 kW Isıtma Gücü', 'Motor Ön Isıtma Özelliği']
   },
   { 
     id: 'webasto-cool-top-140-ert-c', 
     brandId: 'webasto', 
     name: 'Cool Top 140 eRT-C Tavan Kliması', 
     images: ['/webasto/cool-top-140-ert-c-webasto.jpeg'], 
-    description: '15 ila 20 koltuklu minibüsler için tasarlanmış yüksek performanslı tavan tipi klima. Dayanıklı bileşenleri ve opsiyonel ısıtma seçeneği ile maksimum konfor sağlar.', 
+    description: '15 ila 20 koltuklu minibüsler için tasarlanmış yüksek performanslı tavan tipi klima.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Nominal Soğutma Kapasitesi: 14.0 kW',
-      'Isıtma Kapasitesi: 12.0 kW (Opsiyonel)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Evaporatör Hava Debisi: 2.400 m³/sa (12V) / 2.000 m³/sa (24V)',
-      'Boyutlar: 1.600 x 1.150 x 204 mm',
-      'Ağırlık: 50 kg',
-      'Soğutucu Akışkan: R134a'
-    ]
+    technicalTable: {
+      headers: ['KLİMA ÜNİTESİ', 'COOL TOP RTC 140 E'],
+      rows: [
+        ['Nominal soğutma kapasitesi (kW)', '14.0'],
+        ['Isıtma kapasitesi (opsiyonel) (kW)', '12.0'],
+        ['Nominal voltaj (V)', '12 / 24'],
+        ['Evaporatör hava debisi (m³/h) (12V)', '2,400'],
+        ['Evaporatör hava debisi (m³/h) (24V)', '2,000'],
+        ['Ölçüler B x E x Y (mm)', '1,600 x 1,150 x 204'],
+        ['Ağırlık (kg)', '50']
+      ]
+    },
+    features: ['Soğutma: 14 kW', 'Isıtma Opsiyonu', 'Kompakt Tavan Tasarımı']
   },
   { 
     id: 'webasto-efes-2-riga', 
     brandId: 'webasto', 
     name: 'Webasto Efes 2 Riga Split Klima', 
     images: ['/webasto/efes-2-riga-webasto.jpeg'], 
-    description: 'Minibüsler için özel olarak tasarlanmış, 15 kW\'a kadar soğutma gücü sunan split klima sistemi. Tavan kondenseri ve araç içi evaporatör kombinasyonu ile mükemmel iklimlendirme.', 
+    description: 'Minibüsler için 15 kW\'a kadar soğutma çözümü sağlayan split klima sistemi.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 15.0 kW (Efes 2) / 12.0 kW (Riga)',
-      'Hava Debisi: 4.140 m³/sa (Efes 2) / 2.070 m³/sa (Riga)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Boyutlar (Efes 2): 1.505 x 1.285 x 187 mm',
-      'Ağırlık (Efes 2): 24.0 kg',
-      'Minimum enerji tüketimi ve yüksek verimli fanlar'
-    ]
+    technicalTable: {
+      headers: ['TEKNİK ÖZELLİKLER', 'EFES 2', 'RİGA'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '15.0', '12.0'],
+        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
+        ['Maksimum enerji tüketimi (A) (12V)', '24.6', '45.0'],
+        ['Hava debisi (m³/ h)', '4,140', '2,070'],
+        ['Ölçüler B x E x Y (mm)', '1,505 x 1,285 x 187', '1,240 x 320 x 175'],
+        ['Ağırlık (kg)', '24.0', '18.0']
+      ]
+    },
+    features: ['Split Klima Sistemi', '15 kW Soğutma', 'Minibüse Özel Tasarım']
   },
   { 
     id: 'webasto-efes-3-riga', 
     brandId: 'webasto', 
     name: 'Webasto Efes 3 Riga Split Klima', 
     images: ['/webasto/efes-2-riga-webasto.jpeg'], 
-    description: '19 kW\'a kadar yüksek performanslı soğutma sağlayan profesyonel split sistem. Sürücü kabini ve yolcu bölmesi için hızlı ve etkili soğutma sağlar.', 
+    description: '19.0 kW\'a kadar yüksek performanslı soğutma sağlayan profesyonel split sistem.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 19.0 kW (Efes 3) / 12.0 kW (Riga)',
-      'Hava Debisi: 6.210 m³/sa (Efes 3) / 2.070 m³/sa (Riga)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Boyutlar (Efes 3): 1.505 x 1.285 x 187 mm',
-      'Ağırlık (Efes 3): 28.0 kg',
-      'Aerodinamik yapı ve kolay montaj avantajı'
-    ]
+    technicalTable: {
+      headers: ['TEKNİK ÖZELLİKLER', 'EFES 3', 'RİGA'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '19.0', '12.0'],
+        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
+        ['Maksimum enerji tüketimi (A) (12V)', '36.9', '45.0'],
+        ['Hava debisi (m³/ h)', '6,210', '2,070'],
+        ['Ölçüler B x E x Y (mm)', '1,505 x 1,285 x 187', '1,240 x 320 x 175'],
+        ['Ağırlık (kg)', '28.0', '18.0']
+      ]
+    },
+    features: ['Yüksek Kapasiteli Soğutma', 'Split Sistem', 'Hızlı Montaj']
   },
   { 
     id: 'webasto-madrid', 
@@ -1520,105 +1542,152 @@ export const products = [
     images: ['/webasto/webasto-madrid.jpeg'], 
     description: '35 koltuğa kadar olan mini ve midi otobüsler için dayanıklı ve yüksek randımanlı tavan tipi klima çözümü.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 15.5 kW',
-      'Isıtma Performansı: 20.0 kW (Opsiyonel)',
-      'Max Hava Debisi: 2.100 - 2.500 m³/sa',
-      'Ağırlık: 59.0 kg',
-      'Boyaya hazır kapak tasarımı',
-      'Dayanıklı fan ve üfleyici teknolojisi'
-    ]
+    technicalTable: {
+      headers: ['TEKNİK ÖZELLİKLER', 'MADRİD'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '15.5'],
+        ['Isıtma kapasitesi (opsiyonel) (kW)', '20.0'],
+        ['Nominal voltaj (V)', '24'],
+        ['Maksimum enerji tüketimi (A)', '35.0'],
+        ['Maksimum Hava debisi (m³/h)', '2,500'],
+        ['Ölçüler B x E x Y (mm)', '1,760 x 1,280 x 220'],
+        ['Ağırlık (kg)', '59.0']
+      ]
+    },
+    features: ['Soğutma: 15.5 kW', 'Midi Otobüs Uygunluğu', 'Yüksek Hava Debisi']
   },
   { 
     id: 'webasto-myra-newport', 
     brandId: 'webasto', 
     name: 'Myra Newport Split Klima', 
     images: ['/webasto/myra-newport.jpeg'], 
-    description: '15 kW kapasiteli, minibüslere özel split klima sistemi. Modüler yapısı ile yüksek esneklik ve uzun servis ömrü sunar.', 
+    description: '15 kW kapasiteli, minibüslere özel split klima sistemi.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 15.0 kW',
-      'Hava Debisi: 4.140 m³/sa (Myra)',
-      'Nominal Voltaj: 12 / 24 V',
-      'Boyutlar (Myra): 1.300 x 1.300 x 160 mm',
-      'Ağırlık (Myra): 27.0 kg'
-    ]
+    technicalTable: {
+      headers: ['TEKNİK ÖZELLİKLER', 'MYRA', 'NEWPORT'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '15.0', '12.0'],
+        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
+        ['Maksimum enerji tüketimi (A) (12V)', '24.6', '45.0'],
+        ['Hava debisi (m³/ h)', '4,140', '2,070'],
+        ['Ölçüler B x E x Y (mm)', '1,300 x 1,300 x 160', '1,240 x 320 x 165'],
+        ['Ağırlık (kg)', '27.0', '18.0']
+      ]
+    },
+    features: ['Split Klima', '15 kW Kapasite', 'Modüler Tasarım']
   },
   { 
     id: 'webasto-london-tr', 
     brandId: 'webasto', 
     name: 'Webasto London TR / Vancouver TR Entegre Klima', 
     images: ['/webasto/london-tr-vancouver-tr-webasto.jpeg'], 
-    description: 'Entegre klima sistemleri; torpido altına, tavana veya dikey olarak arka panele monte edilebilir. Maksimum 15 koltuklu minibüsler için idealdir.', 
+    description: 'Entegre klima sistemleri; torpido altına veya arka panele dikey olarak monte edilebilir.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 9.5 kW',
-      'Isıtma Kapasitesi (London): 13.0 kW',
-      'Hava Debisi: 1.130 m³/sa',
-      'Ölçüler: 400 x 550 x 180 mm',
-      'Ağırlık: 7.7 kg',
-      'Eksiksiz klima çözümü için entegre tasarım'
-    ]
+    technicalTable: {
+      headers: ['KLİMA ÜNİTESİ', 'LONDON TR', 'VANCOUVER TR'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '9.5', '9.5'],
+        ['Isıtma kapasitesi (kW)', '13.0', '–'],
+        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
+        ['Maksimum enerji tüketimi (A) (12V)', '31.0', '31.0'],
+        ['Hava debisi (m³/h)', '1,130', '1,130'],
+        ['Ölçüler B x E x Y (mm)', '400 x 550 x 180', '400 x 550 x 180'],
+        ['Ağırlık (kg)', '7.7', '7.7']
+      ]
+    },
+    features: ['Entegre Tasarım', 'Ek Isıtma Fonksiyonu (London)', 'Yüksek Esneklik']
   },
   { 
     id: 'webasto-quebec-tr', 
     brandId: 'webasto', 
     name: 'Webasto Quebec TR / Montreal TR Entegre Klima', 
     images: ['/webasto/quebec-tr-montreal-tr-webasto.jpeg'], 
-    description: 'Çok yönlü entegre sistem; ambulans, itfaiye ve tarım makineleri için yüksek dayanıklılık sunar. Quebec modelinde ek ısıtma fonksiyonu mevcuttur.', 
+    description: 'Ambulanslar ve iş makineleri için çok yönlü entegre klima çözümleri.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 5.0 kW',
-      'Isıtma Kapasitesi (Quebec): 6.7 kW',
-      'Hava Debisi: 690 m³/sa',
-      'Ölçüler: 183 x 382 x 335 mm',
-      'Ağırlık: 6.5 kg'
-    ]
+    technicalTable: {
+      headers: ['KLİMA ÜNİTESİ', 'QUEBEC TR', 'MONTREAL TR'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '5.0', '5.0'],
+        ['Isıtma kapasitesi (kW)', '6.7', '–'],
+        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
+        ['Maksimum enerji tüketimi (A) (12V)', '15.0', '15.0'],
+        ['Hava debisi (m³/h)', '690', '690'],
+        ['Ölçüler B x E x Y (mm)', '183 x 382 x 335', '183 x 382 x 335'],
+        ['Ağırlık (kg)', '6.5', '6.5']
+      ]
+    },
+    features: ['Dayanıklı Yapı', 'Kompakt Entegrasyon', 'Ambulans Tipi Klima']
   },
   { 
     id: 'webasto-rimini', 
     brandId: 'webasto', 
     name: 'Webasto Rimini Tavan Kliması', 
     images: ['/webasto/rimini-webasto.jpeg'], 
-    description: 'Küçük otobüslerden özel hizmet araçlarına kadar geniş kullanım alanı sunan, kompakt ve güvenilir tavan tipi iklimlendirme.', 
+    description: 'Küçük otobüsler ve özel hizmet araçları için kompakt tavan tipi klima.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 3.5 - 6.2 kW',
-      'Nominal Voltaj: 12 / 24 V',
-      'Rimini Boyutlar: 605 x 800 x 165 mm',
-      'Rimini Ağırlık: 23.5 kg',
-      'Hizmet tipi: Hafif ticari ve özel araçlar'
-    ]
+    technicalTable: {
+      headers: ['TEKNİK ÖZELLİKLER', 'RİMİNİ', 'PORTOFINO', 'MINSK'],
+      rows: [
+        ['Soğutma kapasitesi (kW)', '3.5', '5.0', '6.2'],
+        ['Nominal voltaj (V)', '12', '12 / 24', '12 / 24'],
+        ['Maksimum enerji tüketimi (A) (12V)', '15.0', '19.0', '21.0'],
+        ['Hava debisi (m³/h)', '550', '680', '740'],
+        ['Ölçüler B x E x Y (mm)', '605 x 800 x 165', '710 x 855 x 185', '710 x 855 x 185'],
+        ['Ağırlık (kg)', '18.0', '23.5', '23.5']
+      ]
+    },
+    features: ['Kompakt Tasarım', '3 Farklı Kapasite Seçeneği', 'Hafif Yapı']
   },
   { 
     id: 'webasto-frigo-20', 
     brandId: 'webasto', 
     name: 'Webasto Frigo 20 RT-D Soğuk Depolama', 
     images: ['/webasto/webasto-frigo-20-rt-d.png'], 
-    description: 'Hafif ticari araçlar için motor tahrikli frigorifik soğutma sistemi. Taze ve dondurulmuş ürün taşımacılığı için idealdir.', 
+    description: 'Hafif ticari araçlar için motor tahrikli frigorifik soğutma sistemi.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 1.950 W (+5°C\'de R134a)',
-      'Seçenek: R404A ile dondurucu fonksiyonu',
-      'Hava Akımı: 1.430 m³/sa',
-      'Voltaj: 12 V',
-      'Kondenser Boyutları: 797 x 510 x 173 mm',
-      'Evaporatör Boyutları: 655 x 493 x 147 mm'
-    ]
+    technicalTable: {
+      headers: ['KLİMA ÜNİTESİ', 'FRİGO 20 RT-D (R404A)', 'FRİGO 20 (R134a)'],
+      rows: [
+        ['+5°C Soğutma Kapasitesi (W)', '–', '1,950'],
+        ['0°C Soğutma Kapasitesi (W)', '2,505', '1,650'],
+        ['-20°C Soğutma Kapasitesi (W)', '1,350', '–'],
+        ['Nominal voltaj (V)', '12', '12'],
+        ['Hava akımı (m³/h)', '1,430', '1,430'],
+        ['Maksimum akım tüketimi (A)', '24.0 / 12.0', '17.0 / 9.0'],
+        ['Ölçüler Kondenser E x B x Y (mm)', '797 x 510 x 173', '797 x 510 x 173'],
+        ['Ölçüler Evaporatör E x B x Y (mm)', '655 x 493 x 147', '655 x 493 x 147'],
+        ['Ağırlık Kodenser / Evaporatör (kg)', '23.0 / 12.0', '22.0 / 11.5']
+      ]
+    },
+    features: ['Frigorifik Soğutma', 'Geniş Montaj Kiti', 'Yüksek Performans']
   },
   { 
     id: 'webasto-frigo-40', 
     brandId: 'webasto', 
     name: 'Webasto Frigo 40 RT-D Soğuk Depolama', 
     images: ['/webasto/frigo-40-rt-d-webasto.png'], 
-    description: 'Büyük hacimli frigorifik taşımacılık çözümü. Uzun servis ömrü sağlayan yüksek kaliteli komponentler ile donatılmıştır.', 
+    description: 'Frigofirik soğutma sistemleri, uzun mesafeli yolculuklarda bile ürünlerinizin optimum derecede taşınabilmesini ve mükemmel koşullarda varış noktasına ulaşmasını sağlar. Hafif ticari araçlar için tasarlanmış olup araç motorundan tahriklidir. Geniş montaj kiti alternatifi ile bir çok araç modeline montaj imkanı sunar.', 
     category: 'Araç Soğutma Sistemleri',
+    technicalTable: {
+      headers: ['KLİMA ÜNİTESİ', 'FRİGO 40 RT-D', 'KRANK TAHRİKLİ'],
+      rows: [
+        ['Soğutucu akışkan', 'R404A', 'R134a'],
+        ['+30°C ortam sıcaklığında ve +5°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '–', '3,550'],
+        ['+30°C ortam sıcaklığında ve 0°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '3,930', '3,050'],
+        ['+30°C ortam sıcaklığında ve -20°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '2,040', '–'],
+        ['Nominal voltaj (V)', '12/24', '12/24'],
+        ['Hava akımı (m³/h)', '2,860 / 2,800', '2,860 / 2,800'],
+        ['Maksimum güç tüketimi kondenser ünitesi / evaporatör ünitesi (A) (12V)', '24.6 / 13.0', '24.6 / 13.0'],
+        ['Maksimum güç tüketimi kondenser ünitesi / evaporatör ünitesi (A) (24V)', '15.2 / 7.4', '15.2 / 7.4'],
+        ['Ölçüler kondenser / evaporatör E x B x Y (mm)', '1,033 x 551 x 174', '995 x 493 x 152'],
+        ['Ağırlık kondenser / evaporatör (kg)', '27.0 / 17.0', '26.0 / 16.5']
+      ]
+    },
     features: [
-      'Soğutma Kapasitesi: 3.550 W (+5°C\'de R134a)',
+      'Soğutma Kapasitesi: 3.550 W (Maks)',
       'Hava Akımı: 2.860 m³/sa',
-      'Nominal Voltaj: 12 / 24 V',
-      'Kondenser Ağırlığı: 27 kg',
-      'Evaporatör Ağırlığı: 17 kg'
+      'Yüksek Kaliteli Komponentler',
+      'Hızlı ve Kolay Servis İmkânı'
     ]
   },
   { 
@@ -1626,14 +1695,22 @@ export const products = [
     brandId: 'webasto', 
     name: 'Webasto Frigo 45 RT-D Soğuk Depolama', 
     images: ['/webasto/frigo-45-rt-d-webasto.png'], 
-    description: 'Frigo serisinin 4.3 kW soğutma gücüne sahip en güçlü modeli. Zorlu taşıma koşullarında sabit derece koruması sağlar.', 
+    description: 'Maksimum soğutma gücü sunan profesyonel frigorifik sistem.', 
     category: 'Araç Soğutma Sistemleri',
-    features: [
-      'Soğutma Kapasitesi: 4.300 W (0°C\'de R404A)',
-      'Hava Akımı: 2.860 m³/sa',
-      'Nominal Voltaj: 12 / 24 V',
-      'Ağırlık (Cond/Evap): 34 kg / 22 kg'
-    ]
+    technicalTable: {
+      headers: ['KLİMA ÜNİTESİ', 'FRİGO 45 RT-D', 'STAND-BY OPSİYONLU'],
+      rows: [
+        ['Soğutucu akışkan', 'R404A', 'R404A'],
+        ['0°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '4,300', '4,300'],
+        ['-20°C bölme sıcaklığında nominal soğutma kapasitesi motor çalışırken (W)', '2,400', '2,400'],
+        ['Nominal voltaj (V)', '12 / 24', '12 / 24'],
+        ['Hava akımı (m³/h)', '2,860 / 2,800', '2,860 / 2,800'],
+        ['Maksimum akım tüketimi (12V)', '34.0 / 22.0', '34.0 / 22.0'],
+        ['Ölçüler Kondenser E x B x Y (mm)', '1,033 x 551 x 174', '1,033 x 551 x 174'],
+        ['Ağırlık Kondenser / Evaporatör (kg)', '34.0 / 22.0', '34.0 / 22.0']
+      ]
+    },
+    features: ['Maksimum Soğutma Gücü', 'R404A Akışkan', 'Zorlu Koşullar İçin']
   },
   { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
   { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
