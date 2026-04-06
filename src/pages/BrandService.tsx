@@ -168,11 +168,13 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
                 <h2 className="text-3xl font-black text-black tracking-tight leading-tight">
                   {brand.name} <span className="text-gray-400 font-light">ürünleri</span>
                 </h2>
-                <Link to={`/${brand.id}/urunler`} className="text-xs font-black text-black tracking-tight hover:text-gray-600 transition-colors">Tümünü gör</Link>
+                {/* @ts-ignore */}
+                <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}/urunler` : `/${brand.id}/urunler`} className="text-xs font-black text-black tracking-tight hover:text-gray-600 transition-colors">Tümünü gör</Link>
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {brandProducts.length > 0 ? brandProducts.map(product => (
-                  <Link key={product.id} to={`/${brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-md overflow-hidden">
+                  /* @ts-ignore */
+                  <Link key={product.id} to={`/${brand.rebrandedTo || brand.id}-${product.id}`} className="group flex flex-col h-full bg-white transition-all duration-500 relative border border-slate-100 hover:shadow-2xl rounded-md overflow-hidden">
                     {/* Top Image Section */}
                     <div className="relative h-64 bg-white flex justify-center items-center overflow-hidden border-b border-gray-50 p-6">
                       <div className="absolute top-4 left-6 bg-[#dbe825] px-4 py-1 text-[10px] font-black text-black tracking-widest z-10 rounded-full">

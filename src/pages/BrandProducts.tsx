@@ -57,11 +57,13 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
 
   const handleCategoryClick = (catLabel: string | null) => {
     if (catLabel === null) {
-      navigate(`/${brand.id}/urunler`);
+      /* @ts-ignore */
+      navigate(brand.rebrandedTo ? `/${brand.rebrandedTo}/urunler` : `/${brand.id}/urunler`);
     } else {
-      const catPath = brand.menuProducts?.find(m => m.label === catLabel)?.path;
-      if (catPath) {
-        navigate(`/${brand.id}/${catPath}`);
+      const cat = brand.menuProducts?.find(m => m.label === catLabel);
+      if (cat?.path) {
+        // If path is absolute, use it. Otherwise, construct it.
+        navigate(cat.path.startsWith('/') ? cat.path : `/${brand.id}/${cat.path}`);
       }
     }
   };

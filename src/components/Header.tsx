@@ -65,7 +65,14 @@ export default function Header() {
                         <ul className="space-y-4">
                           {/* @ts-ignore */}
                           {brand.menuProducts ? brand.menuProducts.map((p, i) => (
-                            <li key={i}><Link to={`/${brand.id}/${p.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {p.label}</Link></li>
+                            <li key={i}>
+                              <Link 
+                                to={p.path.startsWith('/') ? p.path : `/${brand.id}/${p.path}`} 
+                                className="text-black hover:text-gray-500 flex items-center text-xs font-black tracking-widest transition-colors"
+                              >
+                                <ChevronRight size={12} className="mr-2 text-black" /> {p.label}
+                              </Link>
+                            </li>
                           )) : (
                             <>
                               <li><Link to={`/${brand.id}/tum-urunler`} className="text-black hover:text-gray-500 flex items-center text-xs font-black tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Tüm Ürünler</Link></li>
@@ -80,7 +87,14 @@ export default function Header() {
                         <ul className="space-y-4">
                           {/* @ts-ignore */}
                           {brand.menuServices ? brand.menuServices.map((s, i) => (
-                            <li key={i}><Link to={`/${brand.id}-${s.path}`} className="text-black hover:text-gray-500 flex items-center text-xs font-black tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> {s.label}</Link></li>
+                            <li key={i}>
+                              <Link 
+                                to={s.path.startsWith('/') ? s.path : `/${brand.id}-${s.path}`} 
+                                className="text-black hover:text-gray-500 flex items-center text-xs font-black tracking-widest transition-colors"
+                              >
+                                <ChevronRight size={12} className="mr-2 text-black" /> {s.label}
+                              </Link>
+                            </li>
                           )) : (
                             <>
                               <li><Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-black hover:text-gray-500 flex items-center text-xs font-black tracking-widest transition-colors"><ChevronRight size={12} className="mr-2 text-black" /> Montaj</Link></li>
@@ -126,8 +140,10 @@ export default function Header() {
                   {brand.name}
                 </Link>
                 <div className="pl-10 space-y-2 mt-2">
-                  <Link to={`/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Ürünler</Link>
-                  <Link to={`/${brand.id}-ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Hizmetler</Link>
+                  {/* @ts-ignore */}
+                  <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}/urunler` : `/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Ürünler</Link>
+                  {/* @ts-ignore */}
+                  <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}-ticari-arac-klimalari` : `/${brand.id}-ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Hizmetler</Link>
                 </div>
               </div>
             ))}

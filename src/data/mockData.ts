@@ -130,14 +130,13 @@ export const brands = [
       canonical: 'https://cinarotoklima.com/delphi-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Araç Isıtma Sistemleri', path: 'isitma-sistemleri' },
-      { label: 'Araç Soğutma Sistemleri', path: 'sogutma-sistemleri' },
-      { label: 'Elektrikli Klima', path: 'elektrikli-klima' }
+      { label: 'Araç Isıtma Sistemleri', path: '/webasto/isitma-sistemleri' },
+      { label: 'Araç Soğutma Sistemleri', path: '/webasto/sogutma-sistemleri' },
+      { label: 'Elektrikli Klima', path: '/webasto/tavan-klimalari' }
     ],
     menuServices: [
-      { label: 'Webasto Bakım', path: 'bakim' },
-      { label: 'Webasto Onarım', path: 'onarim' },
-      { label: 'Webasto Yedek Parça', path: 'yedek-parca' }
+      { label: 'Webasto Bakım', path: '/webasto/bakim' },
+      { label: 'Webasto Onarım', path: '/webasto/onarim' }
     ]
   },
 ];
