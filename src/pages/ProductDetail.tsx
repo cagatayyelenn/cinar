@@ -118,20 +118,16 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                 <div className="mb-12">
                   <h3 className="text-xs font-black text-black mb-6 tracking-tight border-b border-slate-100 pb-4">Teknik özellikler</h3>
                   <div className="grid grid-cols-1 gap-px bg-slate-100 border border-slate-100 rounded-md overflow-hidden shadow-sm">
-                    {[
-                      { label: 'Soğutma Kapasitesi', value: '6 - 14 kW' },
-                      { label: 'Soğutulmuş Hava', value: '1800 m³/sa' },
-                      { label: 'Performans Limiti', value: '45 C°' },
-                      { label: 'Çektiği Akım', value: '47 A @12 VDC' },
-                      { label: 'Ölçüler', value: '1280*1480*260 mm' },
-                      { label: 'Ağırlık', value: '55 kg' },
-                      { label: 'Soğutucu Akışkan', value: 'R134a' }
-                    ].map((spec, i) => (
-                      <div key={i} className="flex bg-white py-4 px-6 text-[10px] tracking-tight">
-                        <span className="w-1/2 font-black text-black">{spec.label}</span>
-                        <span className="w-1/2 text-gray-400 font-medium">{spec.value}</span>
-                      </div>
-                    ))}
+                    {product.features?.map((feature, i) => {
+                      const [label, ...valueParts] = feature.split(':');
+                      const value = valueParts.join(':').trim();
+                      return (
+                        <div key={i} className="flex bg-white py-4 px-6 text-[10px] tracking-tight border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors">
+                          <span className="w-1/2 font-black text-black">{label.trim()}</span>
+                          <span className="w-1/2 text-gray-500 font-medium">{value}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
                 
@@ -179,7 +175,7 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
                 </div>
                 <h3 className="text-3xl font-black text-black mb-8 tracking-tighter leading-none">Klimatronik <br/><span className="text-gray-400 font-light">yönetim sistemi</span></h3>
                 <p className="text-gray-600 mb-10 leading-relaxed font-light text-lg">
-                  Etkin sıcaklık ve hava hızı kontrolü imkanı ile ısıl konforunuzu dilediğiniz gibi kontrol edin.
+                  {product.description}
                 </p>
                 
                 <ul className="space-y-6">
