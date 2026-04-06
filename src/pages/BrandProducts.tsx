@@ -78,7 +78,12 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
       </Helmet>
 
       {/* Hero Section */}
-      <div className="bg-[#0f2851]/80 bg-[url('/arkaplan.jpg')] bg-cover bg-center bg-no-repeat bg-blend-overlay pt-32 pb-20 relative">
+      <div 
+        className="pt-32 pb-20 relative"
+        style={{ 
+          background: 'linear-gradient(178deg, rgba(0, 0, 0, .2) -106.73%, rgba(41, 51, 236, .2) -14.51%, rgba(255, 157, 72, .2) 47.94%, rgba(237, 210, 173, .2) 75.02%)' 
+        }}
+      >
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="flex flex-col md:flex-row items-end justify-between gap-12">
             <div className="text-white max-w-3xl">

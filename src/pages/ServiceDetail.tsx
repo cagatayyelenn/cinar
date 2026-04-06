@@ -41,13 +41,18 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
       ) : (
         <>
           {/* Breadcrumb */}
-          <div className="bg-slate-50 border-b border-slate-200 pt-32 pb-4">
-            <div className="container mx-auto px-4 flex items-center text-[10px] font-black tracking-tight overflow-x-auto breadcrumb">
-              <Link to="/" className="">Anasayfa</Link>
+          <div 
+            className="pt-32 pb-4 relative"
+            style={{ 
+              background: 'linear-gradient(178deg, rgba(0, 0, 0, .2) -106.73%, rgba(41, 51, 236, .2) -14.51%, rgba(255, 157, 72, .2) 47.94%, rgba(237, 210, 173, .2) 75.02%)' 
+            }}
+          >
+            <div className="container mx-auto px-4 flex items-center text-[10px] font-black tracking-tight overflow-x-auto breadcrumb text-gray-400">
+              <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
               <ChevronRight size={14} className="mx-2 shrink-0" />
-              <Link to={`/${brand.id}-yetkili-servisi`} className="">{brand.name} servisi</Link>
+              <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-white transition-colors">{brand.name} servisi</Link>
               <ChevronRight size={14} className="mx-2 shrink-0" />
-              <span className="text-black font-medium truncate">{service.name}</span>
+              <span className="text-white font-medium truncate">{service.name}</span>
             </div>
           </div>
 

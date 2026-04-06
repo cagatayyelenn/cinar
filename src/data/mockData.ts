@@ -805,6 +805,37 @@ export const products = [
     ]
   },
   { 
+    id: 'yh-2', 
+    brandId: 'yilkar', 
+    name: 'YH 2 Kuru Tip Isıtıcı', 
+    images: [
+      '/yilkar/yh-2-kuru-tip-isitici.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-1.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-2.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-3.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-4.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-5.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-6.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-7.jpg',
+      '/yilkar/yh-2-kuru-tip-isitici-8.jpg'
+    ], 
+    description: 'Ticari araçlar için kompakt dizel ısıtıcı çözümü. Yüksek verimlilik ve düşük yakıt tüketimi ile kış aylarında ideal konfor sağlar.', 
+    category: 'Kuru Tip Isıtma',
+    features: [
+      'ECE R122 Numarası: 122 R - 0010869',
+      'ECE R10 Numarası: 10R - 05 15114',
+      'Isıtma Kapasitesi: 0,9 - 2,5 kW',
+      'Hava debisi: 90 m³/sa (maks.)',
+      'Yakıt Cinsi: Dizel',
+      'Yakıt Tüketimi: 0,28 lt/sa (maks.) - 0,2 lt/sa (ortalama)',
+      'Çalışma Voltajı: 12 / 24 VDC',
+      'Başlangıç Çalışma Akımı: 8A @ 12VDC - 4A @ 24VDC',
+      'Sürekli Çalışma Akımı (maks.): 3A @ 12VDC - 1.5A @ 24VDC',
+      'Ağırlık: 3 kg',
+      'Ünite Ölçüleri: 320x130x150 mm'
+    ]
+  },
+  { 
     id: 'yk-12', 
     brandId: 'yilkar', 
     name: 'YK-12 Monoblok Klima', 

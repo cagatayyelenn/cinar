@@ -56,21 +56,26 @@ export default function Services() {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="bg-white pt-40 pb-24 border-b border-gray-100">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex items-center text-[10px] mb-12 font-black tracking-tight breadcrumb">
-            <Link to="/" className="transition-colors">Anasayfa</Link>
+      <div 
+        className="pt-40 pb-24 relative"
+        style={{ 
+          background: 'linear-gradient(178deg, rgba(0, 0, 0, .2) -106.73%, rgba(41, 51, 236, .2) -14.51%, rgba(255, 157, 72, .2) 47.94%, rgba(237, 210, 173, .2) 75.02%)' 
+        }}
+      >
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="flex items-center text-[10px] mb-12 font-black tracking-tight text-gray-400 breadcrumb">
+            <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
-            <span>Hizmetlerimiz</span>
+            <span className="text-white">Hizmetlerimiz</span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-black text-black tracking-tighter leading-[0.9] mb-8">
-            Uzman <br/><span className="text-gray-200">hizmetler</span>
+          <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
+            Uzman <br/><span className="text-gray-500/50">hizmetler</span>
           </h1>
-          <p className="text-xl max-w-2xl leading-relaxed font-light">
+          <p className="text-gray-200 text-xl max-w-2xl leading-relaxed font-light">
             Ticari araç iklimlendirme dünyasında, teknik mükemmellik ve müşteri memnuniyetini bir araya getiren profesyonel çözümler sunuyoruz.
           </p>
           {/* Scroll Down Arrow */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-gray-300 animate-bounce-slow">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 animate-bounce-slow">
             <ChevronDown size={32} strokeWidth={1} />
           </div>
         </div>

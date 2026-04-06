@@ -58,15 +58,20 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
       ) : (
         <>
           {/* Breadcrumb - Sharp & Minimal */}
-          <div className="bg-gray-50 border-b border-gray-200 pt-32 pb-4">
+          <div 
+            className="pt-32 pb-4 relative"
+            style={{ 
+              background: 'linear-gradient(178deg, rgba(0, 0, 0, .2) -106.73%, rgba(41, 51, 236, .2) -14.51%, rgba(255, 157, 72, .2) 47.94%, rgba(237, 210, 173, .2) 75.02%)' 
+            }}
+          >
             <div className="container mx-auto px-4 max-w-7xl flex items-center text-[10px] font-bold tracking-widest text-gray-400 overflow-x-auto">
-              <Link to="/" className="hover:text-black transition-colors shrink-0">Anasayfa</Link>
+              <Link to="/" className="hover:text-white transition-colors shrink-0">Anasayfa</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
-              <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-black transition-colors shrink-0">{brand.name} servisi</Link>
+              <Link to={`/${brand.id}-yetkili-servisi`} className="hover:text-white transition-colors shrink-0">{brand.name} servisi</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
-              <Link to={`/${brand.id}/urunler`} className="hover:text-black transition-colors shrink-0">Ürünler</Link>
+              <Link to={`/${brand.id}/urunler`} className="hover:text-white transition-colors shrink-0">Ürünler</Link>
               <ChevronRight size={12} className="mx-3 shrink-0" />
-              <span className="text-black truncate">{product.name}</span>
+              <span className="text-white truncate">{product.name}</span>
             </div>
           </div>
 

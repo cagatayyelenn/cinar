@@ -13,8 +13,13 @@ export default function SpareParts() {
         <meta name="description" content="Ticari araç klimaları ve ısıtıcıları için %100 orijinal yedek parçalar." />
       </Helmet>
 
-      <div className="bg-slate-900 pt-36 pb-16">
-        <div className="container mx-auto px-4 text-center">
+      <div 
+        className="pt-36 pb-16 relative"
+        style={{ 
+          background: 'linear-gradient(178deg, rgba(0, 0, 0, .2) -106.73%, rgba(41, 51, 236, .2) -14.51%, rgba(255, 157, 72, .2) 47.94%, rgba(237, 210, 173, .2) 75.02%)' 
+        }}
+      >
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl font-bold text-white mb-4">Orijinal Yedek Parçalar</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Tüm yetkili servis markalarımızın %100 orijinal yedek parçaları stoklarımızda.
