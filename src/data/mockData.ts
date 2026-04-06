@@ -1110,6 +1110,262 @@ export const products = [
       'Soğutucu Akışkan: R134a'
     ]
   },
+  { 
+    id: 'yk-300', 
+    brandId: 'yilkar', 
+    name: 'YK 300 Tavan Kliması', 
+    images: [
+      '/yilkar/yk-300-tavan-klimasi.jpg',
+      '/yilkar/yk-300-tavan-klimasi-1.jpg',
+      '/yilkar/yk-300-tavan-klimasi-2.jpg',
+      '/yilkar/yk-300-tavan-klimasi-3.jpg',
+      '/yilkar/yk-300-tavan-klimasi-4.jpg',
+      '/yilkar/yk-300-tavan-klimasi-5.jpg',
+      '/yilkar/yk-300-tavan-klimasi-6.jpg',
+      '/yilkar/yk-300-tavan-klimasi-7.jpg',
+      '/yilkar/yk-300-tavan-klimasi-8.jpg'
+    ], 
+    description: '30 kW yüksek soğutma kapasiteli tavan tipi klima. 150 kg ünitesi ile otobüsler için dayanıklı ve güçlü çözüm.', 
+    category: 'Otobüs Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 20 - 30 kW (68242 - 102364 BTU/h)',
+      'Isıtma Kapesitesi: 40000 kcal/sa (Opsiyonel)',
+      'Temiz Hava: %0 - %30 (Opsiyonel)',
+      'Soğutulmuş Hava: 3600 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 130 A @12 VDC - 65 A @24 VDC',
+      'Dış Ölçüler: 2080 / 1930 / 1780 * 1990 * 270 mm',
+      'Ünite Ağırlığı: 150 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-400', 
+    brandId: 'yilkar', 
+    name: 'YK 400 Otobüs Tavan Kliması', 
+    images: [
+      '/yilkar/yk-400-otobus-tavan-klimasi.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-1.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-2.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-3.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-4.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-5.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-6.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-7.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-8.jpg',
+      '/yilkar/yk-400-otobus-tavan-klimasi-9.jpg'
+    ], 
+    description: '40 kW soğutma gücüyle şehirlerarası ve turizm otobüsleri için en yüksek performanslı iklimlendirme sistemi.', 
+    category: 'Otobüs Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 35 - 40 kW (119424 - 136485 BTU/h)',
+      'Isıtma Kapesitesi: 42992 kcal/sa (Opsiyonel)',
+      'Temiz Hava: %0 - %30 (Opsiyonel)',
+      'Soğutulmuş Hava: 5400 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 85 A @24 VDC',
+      'Dış Ölçüler: 2080 / 1930 / 1780 * 2450 * 270 mm',
+      'Ünite Ağırlığı: 200 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-450', 
+    brandId: 'yilkar', 
+    name: 'YK 450 Otobüs Tavan Kliması', 
+    images: [
+      '/yilkar/yk-450-otobus-tavan-klimasi.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-1.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-2.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-3.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-4.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-5.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-6.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-7.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-8.jpg',
+      '/yilkar/yk-450-otobus-tavan-klimasi-9.jpg'
+    ], 
+    description: '45 kW soğutma ve 55000 kcal/sa ısıtma kapasitesiyle dev otobüs serisinin amiral gemisi.', 
+    category: 'Otobüs Klimaları',
+    features: [
+      'Soğutma Kapasitesi: 40 - 45 kW (136485 - 153546 BTU/h)',
+      'Isıtma Kapesitesi: 55000 kcal/sa (Opsiyonel)',
+      'Temiz Hava: %0 - %30 (Opsiyonel)',
+      'Soğutulmuş Hava: 7200 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 105 A @24 VDC',
+      'Dış Ölçüler: 2120 / 2020 / 1920 * 2885 * 290 mm',
+      'Ünite Ağırlığı: 250 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-60-s-split', 
+    brandId: 'yilkar', 
+    name: 'YK 60 S İlave Split Minibüs Kliması', 
+    images: [
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-1.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-2.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-3.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-4.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-5.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-6.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-7.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-8.jpg',
+      '/yilkar/yk-60-s-ilave-split-minibus-klimasi-9.jpg'
+    ], 
+    description: 'Minibüsler için tasarlanmış 6 kW soğutma kapasiteli ilave split tip iklimlendirme çözümü.', 
+    category: 'İlave Split Klimalar',
+    features: [
+      'Soğutma Kapasitesi: 2 - 6 kW (6824 - 20472 BTU/sa)',
+      'Isıtma Kapasitesi: 4500 kcal/sa (Opsiyonel)',
+      'Soğutulmuş Hava: 900 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 18 A @12 VDC - 9 A @24 VDC',
+      'Dış Ölçüler: 610*420*226 mm',
+      'Ünite Ağırlığı: 8 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-90-s-split', 
+    brandId: 'yilkar', 
+    name: 'YK 90 S İlave Split Minibüs Kliması', 
+    images: [
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-1.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-2.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-3.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-4.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-5.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-6.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-7.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-8.jpg',
+      '/yilkar/yk-90-s-ilave-split-minibus-klimasi-9.jpg'
+    ], 
+    description: '9 kW kapasiteli ilave split sistemi ile minibüslerde konforlu ve verimli taze hava sirkülasyonu.', 
+    category: 'İlave Split Klimalar',
+    features: [
+      'Soğutma Kapasitesi: 6 - 9 kW (20472 - 30709 BTU/sa)',
+      'Isıtma Kapasitesi: 6750 kcal/sa (Opsiyonel)',
+      'Soğutulmuş Hava: 1800 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 36 A @12 VDC - 18 A @24 VDC',
+      'Dış Ölçüler: 980*420*226 mm',
+      'Ünite Ağırlığı: 13,5 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-120-s-split', 
+    brandId: 'yilkar', 
+    name: 'YK 120 S İlave Split Minibüs Kliması', 
+    images: [
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-1.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-2.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-3.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-4.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-5.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-6.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-7.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-8.jpg',
+      '/yilkar/yk-120-s-ilave-split-minibus-klimasi-9.jpg'
+    ], 
+    description: '12 kW soğutma gücüyle büyük minibüsler için profesyonel ilave split klima çözümü.', 
+    category: 'İlave Split Klimalar',
+    features: [
+      'Soğutma Kapasitesi: 9 - 12 kW (30709 - 40945 BTU/sa)',
+      'Isıtma Kapasitesi: 9000 kcal/sa (Opsiyonel)',
+      'Soğutulmuş Hava: 2700 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 54 A @12 VDC - 27 A @24 VDC',
+      'Dış Ölçüler: 1300*420*226 mm',
+      'Ünite Ağırlığı: 23 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-140-mb-extra', 
+    brandId: 'yilkar', 
+    name: 'YK 140 MB İlave Minibüs Tavan Kliması', 
+    images: [
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-1.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-2.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-3.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-4.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-5.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-6.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-7.jpg',
+      '/yilkar/yk-140-mb-ilave-minibus-tavan-klimasi-8.jpg'
+    ], 
+    description: 'Minibüsler için 14 kW soğutma kapasiteli tavan tipi ilave iklimlendirme ünitesi.', 
+    category: 'İlave Tavan Kliması',
+    features: [
+      'Soğutma Kapasitesi: 6 - 14 kW (20472 - 47770 BTU/sa)',
+      'Soğutulmuş Hava: 1800 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 33 A @12 VDC - 17 A @24 VDC',
+      'Dış Ölçüler: 1280*825*260 mm',
+      'Ünite Ağırlığı: 25 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'yk-50-mb', 
+    brandId: 'yilkar', 
+    name: 'YK 50 MB Monoblok Kabin Kliması', 
+    images: [
+      '/yilkar/yk-50-mb-monoblok-kabin-klimasi.jpg',
+      '/yilkar/yk-50-mb-monoblok-kabin-klimasi-1.jpg',
+      '/yilkar/yk-50-mb-monoblok-kabin-klimasi-2.jpg',
+      '/yilkar/yk-50-mb-monoblok-kabin-klimasi-3.jpg',
+      '/yilkar/yk-50-mb-monoblok-kabin-klimasi-4.jpg',
+      '/yilkar/yk-50-mb-monoblok-kabin-klimasi-5.jpg'
+    ], 
+    description: 'İş makineleri ve traktör kabinleri için tasarlanmış 5 kW monoblok kabin kliması sistemi.', 
+    category: 'Kabin Kliması',
+    features: [
+      'Soğutma Kapasitesi: 5 kW (17060 BTU/h)',
+      'Soğutulmuş Hava: 525 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 30 A @12 VDC - 15 A @24 VDC',
+      'Dış Ölçüler: 760 * 800 * 195 mm',
+      'Ünite Ağırlığı: 25 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
+  },
+  { 
+    id: 'ys-50', 
+    brandId: 'yilkar', 
+    name: 'YS 50 Araç Soğutucusu', 
+    images: [
+      '/yilkar/ys-50-arac-sogutucusu.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-1.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-2.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-3.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-4.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-5.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-6.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-7.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-8.jpg',
+      '/yilkar/ys-50-arac-sogutucusu-9.jpg'
+    ], 
+    description: 'Frigorifik Sistem +4 C° Nakliye Soğutucusu. 5-13 m³ hacimli araçlar için güvenilir soğuk zincir çözümü.', 
+    category: 'Frigorifik Soğutucu',
+    features: [
+      'Uygun Hacim: 5 - 13 m³',
+      'Soğutma Kapasitesi (Maks): 5 kW',
+      'Hava Debisi: 1200 m³/saat',
+      'Çalışma Voltajı: 12 / 24 VDC',
+      'Maksimum Akım (12V): 20 A',
+      'Maksimum Akım (24V): 10 A',
+      'Soğutucu Akışkan: R134a',
+      'Kompresör Koruması: Mevcut'
+    ]
+  },
   { id: 'webasto-sulu-isitici', brandId: 'webasto', name: 'Webasto Sulu Isıtıcı', images: ['https://picsum.photos/seed/isitici1/400/300'], description: 'Motor bağımsız sulu ısıtıcı sistemi.', category: 'Isıtıcı' },
   { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
   { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
