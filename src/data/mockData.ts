@@ -1384,6 +1384,86 @@ export const products = [
       'Hızlı ve kolay tavan montajı'
     ]
   },
+  { 
+    id: 'webasto-air-top-2000-stc', 
+    brandId: 'webasto', 
+    name: 'Webasto Air Top 2000 STC Hava Isıtıcı', 
+    images: [
+      '/webasto/air-top-2000-stc-webasto.jpg'
+    ], 
+    description: 'Webasto\'nun 2 kW ısı çıkışıyla hava ısıtıcıları arasında çok yönlü modeli. Kompakt, güvenli ve son derece verimli bir ısıtma çözümü sunar.', 
+    category: 'Araç Isıtma Sistemleri',
+    features: [
+      'Isıtma Kapasitesi: 0.9 – 2.0 kW (Dizel) / 1.0 – 2.0 kW (Benzin)',
+      'Yakıt Tüketimi: 0.12 – 0.24 l/sa (Dizel) / 0.14 – 0.27 l/sa (Benzin)',
+      'Nominal Voltaj: 12 / 24 V',
+      'Hava Debisi: 93 m³/sa',
+      'Ölçüler: 311 x 120 x 121 mm',
+      'Ağırlık: 2.6 kg',
+      'Sessiz çalışma ve hızlı ısıtma',
+      'Düşük güç tüketimi ve yüksek verimlilik'
+    ]
+  },
+  { 
+    id: 'webasto-air-top-evo-40', 
+    brandId: 'webasto', 
+    name: 'Webasto Air Top Evo 40 Hava Isıtıcı', 
+    images: [
+      '/webasto/air-top-evo-40-webasto.jpeg'
+    ], 
+    description: 'Büyük kabinler ve kargo bölmeleri için tasarlanmış 4 kW kapasiteli profesyonel hava ısıtıcısı. Akıllı üfleyici kontrolü ile sessiz ve verimli çalışma sağlar.', 
+    category: 'Araç Isıtma Sistemleri',
+    features: [
+      'Isıtma Kapasitesi: 1.5 – 3.5 kW (Boost: 4.0 kW)',
+      'Yakıt Tüketimi: 0.18 – 0.43 l/sa (Dizel)',
+      'Nominal Voltaj: 12 / 24 V',
+      'Hava Debisi: 132 m³/sa (Boost: 140 m³/sa)',
+      'Otomatik Yükseklik Ayarı: 2,200 m\'ye kadar',
+      'Ölçüler: 423 x 148 x 162 mm',
+      'Ağırlık: 5.9 kg'
+    ]
+  },
+  { 
+    id: 'webasto-air-top-evo-55', 
+    brandId: 'webasto', 
+    name: 'Webasto Air Top Evo 55 Hava Isıtıcı', 
+    images: [
+      '/webasto/air-top-evo-55-webasto.jpeg'
+    ], 
+    description: 'Otobüs ve büyük kamp araçları için 5.5 kW çıkış gücüne sahip en güçlü Webasto hava ısıtıcısı. Yüksek rakımlarda bile güvenilir performans sunar.', 
+    category: 'Araç Isıtma Sistemleri',
+    features: [
+      'Isıtma Kapasitesi: 1.5 – 5.0 kW (Boost: 5.5 kW)',
+      'Yakıt Tüketimi: 0.18 – 0.61 l/sa (Dizel)',
+      'Nominal Voltaj: 12 / 24 V',
+      'Hava Debisi: 200 m³/sa (Boost: 220 m³/sa)',
+      'Otomatik Yükseklik Ayarı: 2,200 m\'ye kadar',
+      'Ölçüler: 423 x 148 x 162 mm',
+      'Ağırlık: 5.9 kg'
+    ]
+  },
+  { 
+    id: 'webasto-thermo-pro-90', 
+    brandId: 'webasto', 
+    name: 'Webasto Thermo Pro 90 Sulu Isıtıcı', 
+    images: [
+      '/webasto/thermo-pro-90-webasto.jpeg',
+      '/webasto/thermo-pro-90-webasto-1.jpeg',
+      '/webasto/thermo-pro-90-webasto-2.jpeg',
+      '/webasto/thermo-pro-90-webasto-3.jpeg'
+    ], 
+    description: 'Büyük ticari ve özel araçlar için geliştirilen Sulu ısitıcı; motoru ideal sıcaklığa getirirken kabin konforunu da artırır. Arctic Start özelliği ile aşırı soğuklarda bile çalışır.', 
+    category: 'Araç Isıtma Sistemleri',
+    features: [
+      'Isıtma Kapasitesi: 1,8 / 7,6 kW (Boost: 9,1 kW)',
+      'Yakıt Tüketimi: 0,15 – 1,1 l/sa',
+      'Su Pompası Debisi: 700 l/sa',
+      'Nominal Voltaj: 12 / 24 V',
+      'Çalışma Sıcaklığı: –40 to +80 °C',
+      'Ölçüler: 381 x 131 x 224 mm',
+      'Ağırlık: 4.9 kg'
+    ]
+  },
   { id: 'coolman-tepe-klimasi', brandId: 'coolman', name: 'Coolman Tepe Kliması', images: ['https://picsum.photos/seed/klima3/400/300'], description: 'Kamyon ve tırlar için tepe kliması.', category: 'Klima' },
   { id: 'delphi-kompresor', brandId: 'delphi', name: 'Delphi Klima Kompresörü', images: ['https://picsum.photos/seed/kompresor1/400/300'], description: 'Orijinal Delphi klima kompresörü.', category: 'Yedek Parça' },
 ];
