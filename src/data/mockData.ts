@@ -1479,7 +1479,7 @@ export const products = [
     brandId: 'webasto', 
     name: 'Cool Top 140 eRT-C Tavan Kliması', 
     images: ['/webasto/cool-top-140-ert-c-webasto.jpeg'], 
-    description: '15 ila 20 koltuklu minibüsler için tasarlanmış yüksek performanslı tavan tipi klima.', 
+    description: 'Bu tavan üstü klima sistemleri, 15 ila 20 koltuklu minibüsler için tasarlanmıştır. Bu cihazlar, tüm sürüş koşullarında çok güvenilirdir ve yüksek kalite standartlarındaki bileşenleri sayesinde uzun servis ömrüne sahiptirler. Kolay erişebilir ve değiştirilebilir bileşenler ile tasarlanmış bu sistemlerde kolay ve hızlı bakım mümkündür. Bu klima sistemleri için geniş aralıkta aksesuar yelpazesi, çeşitli montaj ve motor kiti alternatifleri bulunmaktadır. Kullanıcı dostu ve pratik kumanda çeşitleri mevcuttur. Isıtma seçeneği, yolcu konforunu daha da arttırmaktadır. Bu klima sistemlerinin kapakları aracın rengine uyacak şekilde boyaya hazırlıklıdırlar. Uygulamanızın performans değerleri nominal değerlerden farklı olabilir. Bu değerler kompresör, hava kanalları ve iklim koşulları gibi çeşitli etkenlere bağlıdır.', 
     category: 'Araç Soğutma Sistemleri',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'COOL TOP RTC 140 E'],
