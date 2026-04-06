@@ -132,6 +132,9 @@ export const brands = [
     menuProducts: [
       { label: 'Klima Kompresörleri', path: 'kompresorler' },
       { label: 'Kondenser ve Evaporatörler', path: 'sogutucu-uniteler' },
+      { label: 'Araç Isıtma Sistemleri', path: 'isitma-sistemleri' },
+      { label: 'Araç Soğutma Sistemleri', path: 'sogutma-sistemleri' },
+      { label: 'Tavan Klimaları', path: 'tavan-klimalari' },
       { label: 'Klima Yedek Parçaları', path: 'yedek-parcalar' }
     ],
     menuServices: [
