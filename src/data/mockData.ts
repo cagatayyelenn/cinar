@@ -773,22 +773,6 @@ export const products = [
   },
 
   { 
-    id: 'yh-2', 
-    brandId: 'yilkar', 
-    name: 'YH-2 Kuru Tip Isıtıcı', 
-    images: ['/yilkar/kuru-tipi-isitici-yh-2.jpg'], 
-    description: 'Ticari araçlar için motor bağımsız, düşük yakıt tüketimli ve yüksek verimlilikli kabin ısıtma çözümü.', 
-    category: 'Kuru Tip Isıtma',
-    features: [
-      'Isıtma Kapasitesi: 2.2 kW',
-      'Yakıt Tipi: Dizel',
-      'Yakıt Tüketimi (max): 0.28 L/sa',
-      'Anma Gerilimi: 12V / 24V DC',
-      'Hava Debisi: 105 m³/sa',
-      'Ağırlık: 2.6 Kg'
-    ]
-  },
-  { 
     id: 'yh-4', 
     brandId: 'yilkar', 
     name: 'YH-4 Kuru Tip Isıtıcı', 
