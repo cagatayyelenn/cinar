@@ -773,22 +773,6 @@ export const products = [
   },
 
   { 
-    id: 'yh-4', 
-    brandId: 'yilkar', 
-    name: 'YH-4 Kuru Tip Isıtıcı', 
-    images: ['https://picsum.photos/seed/yh4/400/300'], 
-    description: 'Büyük kabinli ticari araçlar ve tekneler için 4 kW kapasiteli motor bağımsız ısıtıcı.', 
-    category: 'Kuru Tip Isıtma',
-    features: [
-      'Isıtma Kapasitesi: 4.0 kW',
-      'Yakıt Tipi: Dizel',
-      'Yakıt Tüketimi (max): 0.51 L/sa',
-      'Anma Gerilimi: 12V / 24V DC',
-      'Hava Debisi: 185 m³/sa',
-      'Ağırlık: 4.5 Kg'
-    ]
-  },
-  { 
     id: 'yh-2', 
     brandId: 'yilkar', 
     name: 'YH 2 Kuru Tip Isıtıcı', 
@@ -819,21 +803,7 @@ export const products = [
       'Ünite Ölçüleri: 320x130x150 mm'
     ]
   },
-  { 
-    id: 'yk-12', 
-    brandId: 'yilkar', 
-    name: 'YK-12 Monoblok Klima', 
-    images: ['https://picsum.photos/seed/yk12/400/300'], 
-    description: 'Panelvan tipi ticari araçlar için kompakt tasarım monoblok iklimlendirme sistemi.', 
-    category: 'Monoblok Klimalar',
-    features: [
-      'Soğutma Kapasitesi: 4.5 kW',
-      'Soğutucu Akışkan: R134a',
-      'Hava Debisi: 1200 m³/sa',
-      'Ağırlık: 32 Kg',
-      'Tip: Tepe Tipi Monoblok'
-    ]
-  },
+
   { 
     id: 'yh-5', 
     brandId: 'yilkar', 
