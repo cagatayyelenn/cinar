@@ -2060,9 +2060,25 @@ export const products = [
 ];
 
 export const services = [
+  // Climart Services
   { id: 'climart-bakim', brandId: 'climart', name: 'Climart Klima Bakımı', image: '/climart/climart-arac-bakimi.png', description: 'Climart ticari araç soğutucu ve klimalarının uzun ömürlü olması için periyodik, detaylı bakım hizmeti.' },
   { id: 'climart-onarim', brandId: 'climart', name: 'Climart Klima Onarımı ve Tamiri', image: '/climart/climart-arac-onarimi.png', description: 'Klimalarınızda meydana gelen tüm arızaların uzman teknisyenlerimiz tarafından kalıcı ve hızlı onarımı.' },
   { id: 'climart-yedek-parca', brandId: 'climart', name: 'Climart Yedek Parça', image: '/climart/climart-arac-yedek-parca.png', description: 'Cihazlarınızın tam performansını koruması için garantili, %100 orijinal ve onaylı Climart yedek parçaları.' },
+  
+  // Yılkar Services
+  { id: 'yilkar-bakim', brandId: 'yilkar', name: 'Yılkar Bakım', image: '/logolar/yilkar-logo.png', description: 'Yılkar kuru tip ısıtıcılar ve araç klimaları için yetkili servis güvencesiyle periyodik bakım hizmeti.' },
+  { id: 'yilkar-onarim', brandId: 'yilkar', name: 'Yılkar Onarım', image: '/logolar/yilkar-logo.png', description: 'Yılkar ısıtma ve soğutma sistemlerindeki tüm teknik arızaların orijinal parça desteğiyle onarımı.' },
+  { id: 'yilkar-yedek-parca', brandId: 'yilkar', name: 'Yılkar Yedek Parça', image: '/logolar/yilkar-logo.png', description: 'Yılkar sistemleriniz için %100 orijinal, garantili ve onaylı yedek parça tedarik ve montaj desteği.' },
+
+  // Webasto Services
+  { id: 'webasto-bakim', brandId: 'webasto', name: 'Webasto Bakım', image: '/logolar/webasto-logo1.png', description: 'Dünya devi Webasto ısıtma ve soğutma sistemleri için küresel standartlarda periyodik bakım ve kontrol.' },
+  { id: 'webasto-onarim', brandId: 'webasto', name: 'Webasto Onarım', image: '/logolar/webasto-logo1.png', description: 'Webasto servis uzmanlığıyla, ısıtıcı ve klimalarınızdaki arızaların profesyonel tamir ve yazılım desteği.' },
+  { id: 'webasto-yedek-parca', brandId: 'webasto', name: 'Webasto Yedek Parça', image: '/logolar/webasto-logo1.png', description: 'Webasto cihazlarınızın ömrünü uzatan orijinal yedek parçalar ve uzman montaj işçiliği.' },
+
+  // Coolman Services
+  { id: 'coolman-bakim', brandId: 'coolman', name: 'Coolman Bakım', image: '/logolar/coolman-logo.png', description: 'Coolman elektrikli park klimaları ve gizli klima sistemleri için düzenli bakım ve performans testi.' },
+  { id: 'coolman-onarim', brandId: 'coolman', name: 'Coolman Onarım', image: '/logolar/coolman-logo.png', description: 'Coolman 12V/24V elektrikli park klimalarındaki kompresör ve kart arızalarının hızlı ve garantili onarımı.' },
+  { id: 'coolman-yedek-parca', brandId: 'coolman', name: 'Coolman Yedek Parça', image: '/logolar/coolman-logo.png', description: 'Coolman elektrikli klima setleri için orijinal yedek parça desteği ve geniş stok avantajı.' },
 ];
 
 export const faqs = [
