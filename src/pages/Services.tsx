@@ -60,8 +60,8 @@ export default function Services() {
   return (
     <div className="bg-white min-h-screen">
       <Helmet>
-        <title>Uzman Hizmetler ve Çözümler | Çınar Oto Klima</title>
-        <meta name="description" content="35'ten fazla uzman hizmetimizle; araç klima montajı, ısıtıcı sistemleri, karavan iklimlendirme ve ağır vasıta çözümleri sunuyoruz." />
+        <title>Uzmanı Olduğumuz Hizmet Alanları | Çınar Oto Klima</title>
+        <meta name="description" content="35'ten fazla uzmanlık alanımızla; araç klima montajı, ısıtıcı sistemleri, karavan iklimlendirme ve ağır vasıta çözümleri sunuyoruz." />
       </Helmet>
 
       {/* Hero Section */}
@@ -78,7 +78,7 @@ export default function Services() {
             <span className="text-white uppercase">Hizmetlerimiz</span>
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
-            Uzman <br/><span className="text-gray-500/50 uppercase">hizmetler</span>
+            Uzmanı olduğumuz <br/><span className="text-gray-500/50 uppercase text-4xl md:text-6xl">hizmet alanları</span>
           </h1>
           <p className="text-gray-200 text-xl max-w-2xl leading-relaxed font-light">
             İstanbul'un en kapsamlı araç iklimlendirme kataloğu. 35'ten fazla uzmanlık alanıyla her türlü teknik ihtiyaca profesyonel yanıt.
