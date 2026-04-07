@@ -61,7 +61,7 @@
     @apply text-white font-bold tracking-wide;
   }
   .breadcrumb, .breadcrumb a, .breadcrumb span {
-    color: #000879 !important;
+    color: #000879;
   }
 }
 
@@ -96,6 +96,6 @@
     width: var(--width-underline);
   }
   p {
-    color: #000879 !important;
+    color: #000879;
   }
 }
