@@ -24,10 +24,37 @@ export default function Services() {
   };
 
   const categorizedServices = {
-    network: mockServices.filter(s => s.id.includes('servis-agi') || s.id.includes('-servis') || s.brandId !== 'general' && s.brandId !== 'other'),
-    climate: mockServices.filter(s => s.brandId === 'general' && (s.id.includes('isitma') || s.id.includes('klima-sistemi') || s.id.includes('elektrikli'))),
-    sectoral: mockServices.filter(s => s.brandId === 'general' && (s.id.includes('is-makinasi') || s.id.includes('karavan') || s.id.includes('marin') || s.id.includes('tir') || s.id.includes('kamyon'))),
-    general: mockServices.filter(s => s.id.includes('oto-klima') || s.id.includes('sogutma-uygulamalari') || s.id.includes('ticari-klima'))
+    network: mockServices.filter(s => 
+      s.id.includes('servis-agi') || 
+      s.id.includes('-servis') || 
+      (s.brandId !== 'general' && s.brandId !== 'other')
+    ),
+    climate: mockServices.filter(s => 
+      s.brandId === 'general' && (
+        s.id.includes('isitma') || 
+        s.id.includes('isitici') ||
+        s.id.includes('klima-sistemi') || 
+        s.id.includes('elektrikli') ||
+        s.id.includes('bagimsiz-klima')
+      )
+    ),
+    sectoral: mockServices.filter(s => 
+      s.brandId === 'general' && (
+        s.id.includes('is-makinasi') || 
+        s.id.includes('karavan') || 
+        s.id.includes('marin') || 
+        s.id.includes('tir') || 
+        s.id.includes('kamyon')
+      )
+    ),
+    general: mockServices.filter(s => 
+      s.id.includes('oto-klima') || 
+      s.id.includes('sogutma') || 
+      s.id.includes('ticari-klima') ||
+      s.id.includes('onarim') ||
+      s.id.includes('tamiri') ||
+      s.id.includes('servisi')
+    )
   };
 
   return (

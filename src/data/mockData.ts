@@ -2096,7 +2096,6 @@ export const products = [
     description: 'Yazkar marka ticari araç ve minibüs klimaları için yerinde ve hızlı servis çözümleri.',
     features: ['Yazkar Bakım Kiti', 'Hızlı Arıza Tespiti', 'Gaz Kaçağı Onarımı', 'Elektrik Tesisat Kontrolü', 'Kabin İçi Hava Kalite Testi', 'Montaj Desteği']
   },
-  },
   { 
     id: 'delphi-dcs17e-kompresor', 
     brandId: 'delphi', 
