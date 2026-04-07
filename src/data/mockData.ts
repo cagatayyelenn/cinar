@@ -1729,8 +1729,8 @@ export const products = [
   { 
     id: 'webasto-frigo-40', 
     brandId: 'webasto', 
-    name: 'Webasto Frigo 40 RT-D Soğuk Depolama', 
-    images: ['/webasto/webasto-frigo-40-rt-d.png'], 
+    name: 'Webasto Frigo 40 RT-D', 
+    images: ['/webasto/frigo-40-rt-d-webasto.png'], 
     description: 'Frigofirik soğutma sistemleri, uzun mesafeli yolculuklarda bile ürünlerinizin optimum derecede taşınabilmesini ve mükemmel koşullarda varış noktasına ulaşmasını sağlar. Hafif ticari araçlar için tasarlanmış olup araç motorundan tahriklidir. Geniş montaj kiti alternatifi ile bir çok araç modeline montaj imkanı sunar. Yüksek kaliteli komponentler sayesinde uzun servis ömrüne sahiptir. Talep edilen taşıma sıcaklığına göre R134a ve R404A alternatifleri mevcuttur.', 
     category: 'Araç Soğutma Sistemleri',
     technicalTable: {
