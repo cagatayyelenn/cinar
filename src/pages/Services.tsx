@@ -1,58 +1,40 @@
 import { Helmet } from 'react-helmet-async';
-import { ChevronRight, Wind, Thermometer, Settings, Zap, Search, ShieldCheck, Wrench, Clock, ThumbsUp, ChevronDown } from 'lucide-react';
+import { ChevronRight, Wind, Thermometer, Settings, Zap, Search, ShieldCheck, Wrench, Clock, ThumbsUp, ChevronDown, Rocket, Truck, Anchor, HardHat } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { services as mockServices } from '../data/mockData';
 
-const services = [
-  {
-    id: 'klima-montaj',
-    title: 'Klima montajı',
-    description: 'Ticari araçlarınız için en uygun iklimlendirme çözümlerini, orijinal ekipmanlar ve uzman teknisyenlerimizle gerçekleştiriyoruz.',
-    icon: Wind,
-    features: ['Orijinal ekipman garantisi', 'Hızlı ve temiz işçilik', 'Sızdırmazlık testi']
-  },
-  {
-    id: 'isitici-sistemleri',
-    title: 'Isıtıcı sistemleri',
-    description: 'Kış aylarında konforlu bir sürüş için Webasto ve Eberspächer gibi dünya markalarının ısıtıcı sistemleri montaj ve bakım hizmeti.',
-    icon: Thermometer,
-    features: ['Düşük yakıt tüketimi', 'Sessiz çalışma', 'Uzaktan kontrol seçenekleri']
-  },
-  {
-    id: 'periyodik-bakim',
-    title: 'Periyodik bakım',
-    description: 'Sistemlerinizin ömrünü uzatmak ve verimliliğini artırmak için düzenli kontrol ve filtre değişim hizmetleri sunuyoruz.',
-    icon: Settings,
-    features: ['Filtre değişimi', 'Sistem temizliği', 'Performans ölçümü']
-  },
-  {
-    id: 'gaz-dolumu',
-    title: 'Gaz dolumu',
-    description: 'Klima sistemlerinizin soğutma performansını korumak için hassas tartım ve vakum cihazlarıyla gaz dolumu yapıyoruz.',
-    icon: Zap,
-    features: ['Hassas tartım', 'Vakum testi', 'Kaçak kontrolü']
-  },
-  {
-    id: 'ariza-tespiti',
-    title: 'Arıza tespiti',
-    description: 'Modern bilgisayarlı arıza tespit cihazlarımızla, sistemdeki sorunları hızlıca buluyor ve kalıcı çözümler üretiyoruz.',
-    icon: Search,
-    features: ['Bilgisayarlı diyagnoz', 'Elektriksel kontrol', 'Mekanik inceleme']
-  },
-  {
-    id: 'yedek-parca',
-    title: 'Yedek parça',
-    description: 'Yılkar, Safkar ve Webasto gibi markaların %100 orijinal yedek parçalarını stoktan hızlıca temin ediyoruz.',
-    icon: ShieldCheck,
-    features: ['Geniş stok', 'Orijinal parça garantisi', 'Uygun fiyat']
-  }
+// Category Definitions
+const categories = [
+  { id: 'network', title: 'Marka Servis Ağı', description: 'Dünya markaları için yetkili servis güvencesi' },
+  { id: 'climate', title: 'İklimlendirme Çözümleri', description: 'Isıtma ve soğutma sistemleri uzmanlığı' },
+  { id: 'sectoral', title: 'Sektörel Uygulamalar', description: 'Karavan, marin ve ağır hizmet çözümleri' },
+  { id: 'general', title: 'Genel Bakım ve Onarım', description: 'Periyodik kontroller ve teknik tamir' }
 ];
 
 export default function Services() {
+  const getIcon = (id: string) => {
+    if (id.includes('bakim') || id.includes('servis')) return Settings;
+    if (id.includes('onarim') || id.includes('tamir')) return Wrench;
+    if (id.includes('isitma') || id.includes('isitici')) return Thermometer;
+    if (id.includes('marin')) return Anchor;
+    if (id.includes('tir') || id.includes('kamyon')) return Truck;
+    if (id.includes('is-makinasi')) return HardHat;
+    if (id.includes('elektrikli')) return Zap;
+    return Wind;
+  };
+
+  const categorizedServices = {
+    network: mockServices.filter(s => s.id.includes('servis-agi') || s.id.includes('-servis') || s.brandId !== 'general' && s.brandId !== 'other'),
+    climate: mockServices.filter(s => s.brandId === 'general' && (s.id.includes('isitma') || s.id.includes('klima-sistemi') || s.id.includes('elektrikli'))),
+    sectoral: mockServices.filter(s => s.brandId === 'general' && (s.id.includes('is-makinasi') || s.id.includes('karavan') || s.id.includes('marin') || s.id.includes('tir') || s.id.includes('kamyon'))),
+    general: mockServices.filter(s => s.id.includes('oto-klima') || s.id.includes('sogutma-uygulamalari') || s.id.includes('ticari-klima'))
+  };
+
   return (
     <div className="bg-white min-h-screen">
       <Helmet>
-        <title>Hizmetlerimiz | Çınar Oto Klima</title>
-        <meta name="description" content="Ticari araç klima montajı, ısıtıcı sistemleri, periyodik bakım ve orijinal yedek parça hizmetlerimizle İstanbul'da yanınızdayız." />
+        <title>Uzman Hizmetler ve Çözümler | Çınar Oto Klima</title>
+        <meta name="description" content="35'ten fazla uzman hizmetimizle; araç klima montajı, ısıtıcı sistemleri, karavan iklimlendirme ve ağır vasıta çözümleri sunuyoruz." />
       </Helmet>
 
       {/* Hero Section */}
@@ -66,15 +48,14 @@ export default function Services() {
           <div className="flex items-center text-[10px] mb-12 font-black tracking-tight text-gray-400 breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
-            <span className="text-white">Hizmetlerimiz</span>
+            <span className="text-white uppercase">Hizmetlerimiz</span>
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
-            Uzman <br/><span className="text-gray-500/50">hizmetler</span>
+            Uzman <br/><span className="text-gray-500/50 uppercase">hizmetler</span>
           </h1>
           <p className="text-gray-200 text-xl max-w-2xl leading-relaxed font-light">
-            Ticari araç iklimlendirme dünyasında, teknik mükemmellik ve müşteri memnuniyetini bir araya getiren profesyonel çözümler sunuyoruz.
+            İstanbul'un en kapsamlı araç iklimlendirme kataloğu. 35'ten fazla uzmanlık alanıyla her türlü teknik ihtiyaca profesyonel yanıt.
           </p>
-          {/* Scroll Down Arrow */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 animate-bounce-slow">
             <ChevronDown size={32} strokeWidth={1} />
           </div>
@@ -82,35 +63,56 @@ export default function Services() {
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl py-24">
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border border-gray-100">
-          {services.map((service, index) => (
-            <div 
-              key={service.id} 
-              className={`p-12 border-gray-100 transition-all duration-500 group hover:bg-black
-                ${index % 3 !== 2 ? 'lg:border-r' : ''} 
-                ${index < 3 ? 'lg:border-b' : ''}
-                ${index % 2 !== 1 ? 'md:border-r lg:md:border-r-0' : ''}
-                ${index < 4 ? 'md:border-b lg:md:border-b-0' : ''}
-                border-b md:border-b lg:border-b-0
-              `}
-            >
-              <service.icon className="mb-8 text-black group-hover:text-white transition-colors" size={40} strokeWidth={1} />
-              <h3 className="text-xl font-black mb-4 tracking-tight group-hover:text-white transition-colors">{service.title}</h3>
-              <p className="text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed mb-8 text-sm">
-                {service.description}
-              </p>
-              <ul className="space-y-2">
-                {service.features.map((feature, fIndex) => (
-                  <li key={fIndex} className="flex items-center text-[10px] font-bold text-gray-400 tracking-widest group-hover:text-gray-500 transition-colors">
-                    <div className="w-1 h-1 bg-gray-300 rounded-full mr-3 group-hover:bg-gray-600"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+        {/* Categories Loop */}
+        {categories.map((category) => {
+          const catServices = categorizedServices[category.id as keyof typeof categorizedServices];
+          if (!catServices || catServices.length === 0) return null;
+
+          return (
+            <div key={category.id} className="mb-32">
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                  <div className="text-[10px] font-black tracking-[0.3em] text-orange-500 uppercase mb-4 flex items-center gap-4">
+                    <span className="w-8 h-[1px] bg-orange-500"></span> {category.title}
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-black tracking-tighter">
+                    {category.description}
+                  </h2>
+                </div>
+                <div className="text-gray-400 font-mono text-sm">
+                  {catServices.length} Hizmet Bulundu
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-gray-100">
+                {catServices.map((service, index) => {
+                  const Icon = getIcon(service.id);
+                  return (
+                    <Link 
+                      to={`/${service.id}`}
+                      key={service.id} 
+                      className={`p-10 border-gray-100 transition-all duration-500 group hover:bg-black
+                        ${index % 3 !== 2 ? 'lg:border-r' : ''} 
+                        border-b
+                      `}
+                    >
+                      <Icon className="mb-8 text-black group-hover:text-white transition-colors" size={32} strokeWidth={1} />
+                      <h3 className="text-lg font-black mb-4 tracking-tight group-hover:text-white transition-colors uppercase leading-tight">
+                        {service.name}
+                      </h3>
+                      <p className="text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed mb-8 text-xs font-medium">
+                        {service.description.substring(0, 120)}...
+                      </p>
+                      <div className="flex items-center text-[10px] font-black tracking-widest text-orange-500 group-hover:text-white opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">
+                        DETAYLARI İNCELE <ChevronRight size={12} className="ml-2" />
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
 
         {/* FEATURES - Sticky Sidebar List (From Home) */}
         <div className="mt-32">
