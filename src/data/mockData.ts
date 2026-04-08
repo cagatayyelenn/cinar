@@ -921,7 +921,7 @@ export const products = [
       '/yilkar/yk-100-s-tavan-klimasi-8.jpg'
     ], 
     description: 'Büyük ölçekli ticari araçlar için 10kW kapasiteli üstün iklimlendirme performansı sunan tavan tipi klima sistemi.', 
-    category: 'Tavan Klimaları',
+    category: 'Split Klimalar',
     features: [
       'Soğutma Kapasitesi: 6 - 10 kW (20472 - 34121 BTU/h)',
       'Soğutulmuş Hava: 2700 m³/sa',
@@ -946,7 +946,7 @@ export const products = [
       '/yilkar/yk-80-s-tavan-klimasi-5.jpg'
     ], 
     description: 'Orta segment ticari araçlar için ideal 8kW soğutma kapasiteli, dayanıklı ve verimli tavan tipi klima çözümü.', 
-    category: 'Tavan Klimaları',
+    category: 'Split Klimalar',
     features: [
       'Soğutma Kapasitesi: 6 - 8 kW (20472 - 27297 BTU/h)',
       'Soğutulmuş Hava: 1800 m³/sa',
@@ -970,7 +970,7 @@ export const products = [
       '/yilkar/yk-120-s-tavan-klimasi-4.jpg'
     ], 
     description: 'Yüksek yolcu kapasiteli araçlar için 12kW gücünde maksimum soğutma performansı sağlayan tavan tipi klima.', 
-    category: 'Tavan Klimaları',
+    category: 'Split Klimalar',
     features: [
       'Soğutma Kapasitesi: 9 - 12 kW (30709 - 40945 BTU/sa)',
       'Soğutulmuş Hava: 2700 m³/sa',
@@ -998,7 +998,7 @@ export const products = [
       '/yilkar/yk-90-s-tavan-klimasi-8.jpg'
     ], 
     description: 'Minibüs ve midibüs segmenti için özel olarak geliştirilmiş 9kW kapasiteli, kompakt ve estetik tavan tipi klima.', 
-    category: 'Tavan Klimaları',
+    category: 'Split Klimalar',
     features: [
       'Soğutma Kapasitesi: 6 - 9 kW (20472 - 30709 BTU/sa)',
       'Soğutulmuş Hava: 1800 m³/sa',
