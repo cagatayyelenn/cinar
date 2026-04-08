@@ -1786,7 +1786,8 @@ export const products = [
     usageAreas: ['Tır park kliması', 'Kamyon kabin kliması'],
     advantages: ['Motor çalıştırmadan soğutma', 'Yakıt tasarrufu'],
     compatibleVehicles: ['MAN TGX', 'Mercedes-Benz Actros'],
-    features: ['Soğutma: 3800W', 'Scroll Kompresör', 'Hava Debisi: 540 m³/h']
+    features: ['Soğutma: 3800W', 'Scroll Kompresör', 'Hava Debisi: 540 m³/h'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Soğutma Kapasitesi', '3800W'], ['Kompresör Tipi', 'Scroll Kompresör'], ['Hava Debisi', '540 m³/h']] }
   },
   { 
     id: 'coolman-md2000-24v', 
@@ -1814,7 +1815,8 @@ export const products = [
     compatibleVehicles: [
       'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo', 'Isuzu NPR / NQR / F Serisi', 'Mitsubishi Fuso Canter', 'BMC Tuğra', 'Hyundai Mighty', 'Otokar Atlas'
     ],
-    features: ['Soğutma: 2300W', 'Hafif Tasarım', 'Scroll Kompresör']
+    features: ['Soğutma: 2300W', 'Hafif Tasarım', 'Scroll Kompresör'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Soğutma Kapasitesi', '2300W'], ['Tasarım', 'Hafif Tasarım'], ['Kompresör Tipi', 'Scroll Kompresör']] }
   },
   { 
     id: 'coolman-gizli-elektrikli-klima-seti-yatay', 
@@ -1838,7 +1840,8 @@ export const products = [
     compatibleVehicles: [
       'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo', 'Isuzu NPR / NQR / F Serisi', 'Mitsubishi Fuso Canter', 'BMC Tuğra', 'Hyundai Mighty', 'Otokar Atlas'
     ],
-    features: ['Kondanser: 340x400x25 mm', 'Evaporatör: 350x400x150 mm', 'Soğutma: 2400W']
+    features: ['Kondanser: 340x400x25 mm', 'Evaporatör: 350x400x150 mm', 'Soğutma: 2400W'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Kondanser Boyutları', '340x400x25 mm'], ['Evaporatör Boyutları', '350x400x150 mm'], ['Soğutma Kapasitesi', '2400W']] }
   },
   { 
     id: 'coolman-haier-24v', 
@@ -1862,7 +1865,8 @@ export const products = [
     compatibleVehicles: [
       'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo', 'Isuzu NPR / NQR / F Serisi', 'Mitsubishi Fuso Canter', 'BMC Tuğra', 'Hyundai Mighty', 'Otokar Atlas'
     ],
-    features: ['Soğutma: 2800W', 'Bakır Evaporatör', 'Fırçasız Fan']
+    features: ['Soğutma: 2800W', 'Bakır Evaporatör', 'Fırçasız Fan'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Soğutma Kapasitesi', '2800W'], ['Evaporatör Tipi', 'Bakır Evaporatör'], ['Fan Tipi', 'Fırçasız Fan']] }
   },
   { 
     id: 'coolman-gizli-elektrikli-klima-seti', 
@@ -1887,7 +1891,8 @@ export const products = [
     compatibleVehicles: [
       'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo', 'Isuzu NPR / NQR / F Serisi', 'Mitsubishi Fuso Canter', 'BMC Tuğra', 'Hyundai Mighty', 'Otokar Atlas'
     ],
-    features: ['Soğutma: 2400W Max', 'Split Sistem', 'Akü Koruması']
+    features: ['Soğutma: 2400W Max', 'Split Sistem', 'Akü Koruması'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Soğutma Kapasitesi', '2400W Max'], ['Sistem Tipi', 'Split Sistem'], ['Koruma', 'Akü Koruması']] }
   },
   { 
     id: 'coolman-d10000-plus-12v-24v', 
@@ -1912,7 +1917,8 @@ export const products = [
     compatibleVehicles: [
       'Tır ve çekici araçlar', 'Kamyon ve ağır ticari araçlar', 'Panelvan araçlar', 'Karavan ve camper van araçlar', 'Minibüs ve midibüs araçlar', 'Servis araçları', 'Pickup araçlar', 'Mobil servis araçları'
     ],
-    features: ['Soğutma: 3100W', 'Çift Voltaj: 12V/24V', 'Alüminyum Evaporatör']
+    features: ['Soğutma: 3100W', 'Çift Voltaj: 12V/24V', 'Alüminyum Evaporatör'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Soğutma Kapasitesi', '3100W'], ['Çalışma Gerilimi', '12V / 24V Çift Voltaj'], ['Evaporatör Tipi', 'Alüminyum Evaporatör']] }
   },
   { 
     id: 'coolman-ct1500-md-x-12v-24v', 
@@ -1937,7 +1943,8 @@ export const products = [
     compatibleVehicles: [
       'MAN TGX / TGS / TGA', 'Mercedes-Benz Actros / Axor / Atego / Arocs', 'Volvo FH / FM / FMX', 'Scania R / S / G Serisi', 'DAF XF / CF', 'Renault Trucks T / C / K Serisi', 'Iveco Stralis / S-Way / Eurocargo', 'Ford Trucks F-MAX / Cargo'
     ],
-    features: ['Soğutma: 2600W', 'Bakır Evaporatör', 'Kompakt Tasarım']
+    features: ['Soğutma: 2600W', 'Bakır Evaporatör', 'Kompakt Tasarım'],
+    technicalTable: { headers: ['Teknik Özellikler', 'Detay'], rows: [['Soğutma Kapasitesi', '2600W'], ['Evaporatör Tipi', 'Bakır Evaporatör'], ['Tasarım', 'Kompakt Tasarım']] }
   },
   { 
     id: 'coolman-ct1500-split-12v-24v', 
@@ -2062,9 +2069,10 @@ S44 PORTATİF DİZEL ISITICI ÜRÜN ÖZELLİKLERİ
         ['Çalışma Gerilimi', '220V - 12V - 24V'],
         ['Isı Yönetimi', 'Kuru Tip Hava Isıtıcısı'],
         ['Yakıt Tipi', 'Dizel'],
-        ['Kalorifik Değer', 'Minimum 1500 - Maximum 5000'],
-        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12 - 0,25'],
-        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W - 20W'],
+        ['Teknik Değerler', 'Minimum Sıcaklık', 'Maximum Sıcaklık'],
+        ['Kalorifik Değer', '1500', '5000'],
+        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12', '0,25'],
+        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W', '20W'],
         ['Kademe Sayısı', '10 Kademeli'],
         ['Başlangıçta Güç Tüketimi', '60W'],
         ['Boyutlar', '260 x 250 x 380 cm'],
@@ -2125,9 +2133,10 @@ Tüm montaj elemanları kutu içeriğine dahil olup, kullanıcı dostu yapısıy
         ['Çalışma Gerilimi', '12V - 24V'],
         ['Isı Yönetimi', 'Kuru Tip Hava Isıtıcısı'],
         ['Yakıt Tipi', 'Dizel'],
-        ['Kalorifik Değer', 'Minimum 1500 - Maximum 5500'],
-        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12 - 0,35'],
-        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W - 20W'],
+        ['Teknik Değerler', 'Minimum Sıcaklık', 'Maximum Sıcaklık'],
+        ['Kalorifik Değer', '1500', '5500'],
+        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12', '0,35'],
+        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W', '20W'],
         ['Kademe Sayısı', '10 Kademeli'],
         ['Başlangıçta Güç Tüketimi', '60W'],
         ['Boyutlar', '390 x 140 x 140 mm'],
@@ -2179,9 +2188,10 @@ Paslanmaz Bağlantı Ekipmanları`,
         ['Çalışma Gerilimi', '12V - 24V'],
         ['Isı Yönetimi', 'Kuru Tip Hava Isıtıcısı'],
         ['Yakıt Tipi', 'Dizel'],
-        ['Kalorifik Değer', 'Minimum 1500 - Maximum 5000'],
-        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12 - 0,25'],
-        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W - 20W'],
+        ['Teknik Değerler', 'Minimum Sıcaklık', 'Maximum Sıcaklık'],
+        ['Kalorifik Değer', '1500', '5000'],
+        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12', '0,25'],
+        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W', '20W'],
         ['Kademe Sayısı', '10 Kademeli'],
         ['Başlangıçta Güç Tüketimi', '60W'],
         ['Boyutlar', '370 x 140 x 115 cm'],
@@ -2226,9 +2236,10 @@ Thermon 2 ile aracınızda veya kamp alanında etkili ısınma deneyimini yaşay
         ['Çalışma Gerilimi', '12V - 24V'],
         ['Isı Yönetimi', 'Kuru Tip Hava Isıtıcısı'],
         ['Yakıt Tipi', 'Dizel'],
-        ['Kalorifik Değer', 'Minimum 1000 - Maximum 2500'],
-        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12 - 0,25'],
-        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W - 20W'],
+        ['Teknik Değerler', 'Minimum Sıcaklık', 'Maximum Sıcaklık'],
+        ['Kalorifik Değer', '1000', '2500'],
+        ['Çalışma Sırasında Yakıt Tüketimi (Litre / Saat)', '0,12', '0,25'],
+        ['Çalışma Sırasında Elektrik Tüketimi (W/S)', '4W', '20W'],
         ['Kademe Sayısı', '10 Kademeli'],
         ['Başlangıçta Güç Tüketimi', '60W'],
         ['Boyutlar', '316 x 115 x 110 cm'],

@@ -91,6 +91,34 @@ export default function CoolmanDetail({ product, brand }: { product: any, brand:
           </div>
         </div>
 
+        {/* Technical Table Section */}
+        {product.technicalTable && (
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm mb-24 overflow-hidden">
+            <h2 className="text-2xl font-black text-[#0f2851] mb-8 tracking-tighter flex items-center gap-3">
+              <Gauge size={24} className="text-[#fa9700]" />
+              Teknik Özellikler
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left">
+                <tbody>
+                  {product.technicalTable.rows.map((row: string[], idx: number) => (
+                    <tr key={idx} className="border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
+                      <th className={`py-5 px-4 font-bold text-slate-500 ${row.length === 3 ? 'w-1/3' : 'w-1/2 md:w-1/3'}`}>
+                        {row[0]}
+                      </th>
+                      {row.slice(1).map((colText, colIdx) => (
+                        <td key={colIdx} className={`py-5 px-4 font-medium ${row[0] === 'Teknik Değerler' ? 'text-slate-400 font-bold' : 'text-slate-700'}`}>
+                          {colText}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
         {/* Areas & Advantages Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
           <div className="bg-white p-12 rounded-3xl border border-slate-100 shadow-sm">
