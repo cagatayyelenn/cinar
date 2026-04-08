@@ -64,9 +64,7 @@ export default function WebastoDetail({ product, brand }: { product: any, brand:
               {boldPart} <br/><span className="text-gray-400 font-light">{lightPart}</span>
             </h1>
             
-            <p className="text-gray-600 mb-12 leading-relaxed font-light text-lg">
-              {product.description}
-            </p>
+
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a href="tel:+905070485034" className="bg-[#0f2851] text-white px-12 py-6 rounded-full text-[11px] font-black tracking-tight hover:bg-blue-600 transition-all shadow-xl">
