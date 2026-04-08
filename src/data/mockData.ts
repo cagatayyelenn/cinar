@@ -52,7 +52,8 @@ export const brands = [
       { label: 'İlave Split Klimalar', path: 'ilave-split-klimalar' },
       { label: 'İlave Tavan Kliması', path: 'ilave-tavan-klimasi' },
       { label: 'Kabin Kliması', path: 'kabin-klimasi' },
-      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' }
+      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' },
+      { label: 'Elektirikli Kabin Kliması', path: 'elektrikli-kabin-klimasi' }
     ],
     menuServices: [
       { label: 'Yılkar Bakım', path: 'bakim' },
@@ -2196,6 +2197,31 @@ export const services = [
     image: '/hizmetler/klima-onarim.webp', 
     description: 'Her türlü araç kliması arızasının profesyonel ekipmanlarla teşhisi and tamiri.',
     features: ['Hızlı Diyagnoz', 'Mekanik Onarım', 'Elektriksel Tamir', 'Hortum Revizyonu', 'Basınç Sensörü Değişimi', 'Yol Testi']
+  },
+  { 
+    id: 'yk-20-mb-elektrikli-park-klimasi', 
+    brandId: 'yilkar', 
+    name: 'YK 20 MB Elektirikli Park Kliması', 
+    images: [
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi.jpg',
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi-1.jpg',
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi-2.jpg',
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi-3.jpg',
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi-4.jpg',
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi-5.jpg',
+      '/yilkar/yk-20-mb-elektrikli-park-klimasi-6.jpg'
+    ], 
+    description: 'Yüksek performanslı ve kabin konforunu en üst seviyeye çıkaran elektrikli park kliması.', 
+    category: 'Elektirikli Kabin Kliması',
+    features: [
+      'Soğutma Kapasitesi: 2.2 kW (7500 BTU/sa) (1900 kcal/sa)',
+      'Soğutulmuş Hava: 450 m³/sa',
+      'Performans Limiti: 45 C° (Dış ortam sıcaklığı)',
+      'Çektiği Akım: 55 A @12 VDC - 33 A @24 VDC',
+      'Dış Ölçüler: 950*750*185 mm',
+      'Ünite Ağırlığı: 28,9 kg',
+      'Soğutucu Akışkan: R134a'
+    ]
   },
   { 
     id: 'oto-klima-servisi', 
