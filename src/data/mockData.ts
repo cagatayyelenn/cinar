@@ -2022,10 +2022,7 @@ export const products = [
       'Ünite Ağırlığı: 28,9 kg',
       'Soğutucu Akışkan: R134a'
     ]
-  }
-];
-
-
+  },
   { 
     id: 'coolman-s44-portatif-dizel-isitici', 
     brandId: 'coolman', 
