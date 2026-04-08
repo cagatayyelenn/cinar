@@ -14,7 +14,7 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
 
   const brandProducts = products.filter(p => 
     p.brandId === activeBrandId || (activeBrandId === 'delphi' && p.brandId === 'webasto')
-  ).slice(0, 9);
+  );
   const brandServices = services.filter(s => 
     s.brandId === activeBrandId || (activeBrandId === 'delphi' && s.brandId === 'webasto')
   );
