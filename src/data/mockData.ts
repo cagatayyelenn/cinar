@@ -78,8 +78,12 @@ export const brands = [
       canonical: 'https://cinarotoklima.com/webasto-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Araç Isıtma Sistemleri', path: 'isitma-sistemleri' },
-      { label: 'Araç Soğutma Sistemleri', path: 'sogutma-sistemleri' },
+      { label: 'Araç Isıtma Sistemleri', path: 'arac-isitma-sistemleri' },
+      { label: 'Split Klimalar', path: 'split-klimalar' },
+      { label: 'İlave Split Klimalar', path: 'ilave-split-klimalar' },
+      { label: 'İlave Tavan Kliması', path: 'ilave-tavan-klimasi' },
+      { label: 'Kabin Kliması', path: 'kabin-klimasi' },
+      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' },
       { label: 'Elektrikli Klima', path: 'elektrikli-klima' }
     ],
     menuServices: [
@@ -1433,7 +1437,7 @@ export const products = [
     
     <h3>Hoş sıcaklıklar</h3>
     <p>Klimanın yüksek performansı kabinde ideal sıcaklığı sağlar ve nemi azaltır.</p>`,
-    category: 'Coolman Klimalar',
+    category: 'Elektrikli Klima',
     features: [
       'Soğutma Kapasitesi: 0,9 – 2,5 kW',
       'Nominal Gerilim: 24 V',
@@ -1546,7 +1550,7 @@ export const products = [
     name: 'Cool Top 140 eRT-C Tavan Kliması', 
     images: ['/webasto/cool-top-140-ert-c-webasto.jpeg'], 
     description: 'Bu tavan üstü klima sistemleri, 15 ila 20 koltuklu minibüsler için tasarlanmıştır. Bu cihazlar, tüm sürüş koşullarında çok güvenilirdir ve yüksek kalite standartlarındaki bileşenleri sayesinde uzun servis ömrüne sahiptirler. Kolay erişebilir ve değiştirilebilir bileşenler ile tasarlanmış bu sistemlerde kolay ve hızlı bakım mümkündür. Bu klima sistemleri için geniş aralıkta aksesuar yelpazesi, çeşitli montaj ve motor kiti alternatifleri bulunmaktadır. Kullanıcı dostu ve pratik kumanda çeşitleri mevcuttur. Isıtma seçeneği, yolcu konforunu daha da arttırmaktadır. Bu klima sistemlerinin kapakları aracın rengine uyacak şekilde boyaya hazırlıklıdırlar. Uygulamanızın performans değerleri nominal değerlerden farklı olabilir. Bu değerler kompresör, hava kanalları ve iklim koşulları gibi çeşitli etkenlere bağlıdır.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'İlave Tavan Kliması',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'COOL TOP RTC 140 E'],
       rows: [
@@ -1567,7 +1571,7 @@ export const products = [
     name: 'Webasto Efes 2 Riga Split Klima', 
     images: ['/webasto/efes-2-riga-webasto.jpeg'], 
     description: 'Minibüsler için 15 kW\'a kadar soğutma çözümü sağlayan split klima sistemi.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Split Klimalar',
     technicalTable: {
       headers: ['TEKNİK ÖZELLİKLER', 'EFES 2', 'RİGA'],
       rows: [
@@ -1587,7 +1591,7 @@ export const products = [
     name: 'Webasto Efes 3 Riga Split Klima', 
     images: ['/webasto/efes-2-riga-webasto.jpeg'], 
     description: '19.0 kW\'a kadar yüksek performanslı soğutma sağlayan profesyonel split sistem.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Split Klimalar',
     technicalTable: {
       headers: ['TEKNİK ÖZELLİKLER', 'EFES 3', 'RİGA'],
       rows: [
@@ -1607,7 +1611,7 @@ export const products = [
     name: 'Webasto Madrid Tavan Kliması', 
     images: ['/webasto/webasto-madrid.jpeg'], 
     description: '35 koltuğa kadar olan mini ve midi otobüsler için dayanıklı ve yüksek randımanlı tavan tipi klima çözümü.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Split Klimalar',
     technicalTable: {
       headers: ['TEKNİK ÖZELLİKLER', 'MADRİD'],
       rows: [
@@ -1628,7 +1632,7 @@ export const products = [
     name: 'Myra Newport Split Klima', 
     images: ['/webasto/myra-newport.jpeg'], 
     description: '15 kW kapasiteli, minibüslere özel split klima sistemi.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Split Klimalar',
     technicalTable: {
       headers: ['TEKNİK ÖZELLİKLER', 'MYRA', 'NEWPORT'],
       rows: [
@@ -1648,7 +1652,7 @@ export const products = [
     name: 'Webasto London TR / Vancouver TR Entegre Klima', 
     images: ['/webasto/london-tr-vancouver-tr-webasto.jpeg'], 
     description: 'Entegre klima sistemleri; torpido altına veya arka panele dikey olarak monte edilebilir.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'İlave Split Klimalar',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'LONDON TR', 'VANCOUVER TR'],
       rows: [
@@ -1669,7 +1673,7 @@ export const products = [
     name: 'Webasto Quebec TR / Montreal TR Entegre Klima', 
     images: ['/webasto/quebec-tr-montreal-tr-webasto.jpeg'], 
     description: 'Ambulanslar ve iş makineleri için çok yönlü entegre klima çözümleri.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'İlave Split Klimalar',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'QUEBEC TR', 'MONTREAL TR'],
       rows: [
@@ -1690,7 +1694,7 @@ export const products = [
     name: 'Webasto Rimini Tavan Kliması', 
     images: ['/webasto/rimini-webasto.jpeg'], 
     description: 'Küçük otobüsler ve özel hizmet araçları için kompakt tavan tipi klima.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Kabin Kliması',
     technicalTable: {
       headers: ['TEKNİK ÖZELLİKLER', 'RİMİNİ', 'PORTOFINO', 'MINSK'],
       rows: [
@@ -1710,7 +1714,7 @@ export const products = [
     name: 'Webasto Frigo 20 RT-D Soğuk Depolama', 
     images: ['/webasto/webasto-frigo-20-rt-d.png'], 
     description: 'Hafif ticari araçlar için motor tahrikli frigorifik soğutma sistemi.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Frigorifik Soğutucu',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'FRİGO 20 RT-D (R404A)', 'FRİGO 20 (R134a)'],
       rows: [
@@ -1733,7 +1737,7 @@ export const products = [
     name: 'Webasto Frigo 40 RT-D', 
     images: ['/webasto/frigo-40-rt-d-webasto.png'], 
     description: 'Frigofirik soğutma sistemleri, uzun mesafeli yolculuklarda bile ürünlerinizin optimum derecede taşınabilmesini ve mükemmel koşullarda varış noktasına ulaşmasını sağlar. Hafif ticari araçlar için tasarlanmış olup araç motorundan tahriklidir. Geniş montaj kiti alternatifi ile bir çok araç modeline montaj imkanı sunar. Yüksek kaliteli komponentler sayesinde uzun servis ömrüne sahiptir. Talep edilen taşıma sıcaklığına göre R134a ve R404A alternatifleri mevcuttur.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Frigorifik Soğutucu',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'FRİGO 40 RT-D', 'KRANK TAHRİKLİ'],
       rows: [
@@ -1757,7 +1761,7 @@ export const products = [
     name: 'Webasto Frigo 45 RT-D', 
     images: ['/webasto/frigo-45-rt-d-webasto.png'], 
     description: 'Frigofirik soğutma sistemleri, uzun mesafeli yolculuklarda bile ürünlerinizin optimum derecede taşınabilmesini ve mükemmel koşullarda varış noktasına ulaşmasını sağlar. Bu sistemler hafif ticari araçlar için tasarlanmış olup araç motorundan tahriklidir. Geniş montaj kiti alternatifi ile bir çok araç modeline montaj imkanı sunar.', 
-    category: 'Araç Soğutma Sistemleri',
+    category: 'Frigorifik Soğutucu',
     technicalTable: {
       headers: ['KLİMA ÜNİTESİ', 'FRİGO 45 RT-D'],
       rows: [
