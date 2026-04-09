@@ -2265,7 +2265,7 @@ Thermon 2 ile aracınızda veya kamp alanında etkili ısınma deneyimini yaşay
         ['Ağırlık', '4,6 Kg']
       ]
     }
-  },,
+  },
   {
     id: 'yp-tm16-klima-kompresor',
     brandId: 'yedek-parca',
