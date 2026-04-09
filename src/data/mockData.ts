@@ -145,6 +145,25 @@ export const brands = [
       { label: 'Webasto Onarım', path: '/webasto/onarim' }
     ]
   },
+  {
+    id: 'yedek-parca',
+    name: 'Yedek Parça',
+    logo: '',
+    heroDescription: 'Orjinal yedek parça kataloğu.',
+    whyTitle: 'Yedek Parça',
+    whyDescription: 'Orijinal Yedek Parça',
+    seo: {
+      title: 'Yedek Parça | Çınar Oto Klima',
+      description: 'Yedek parça listesi',
+      keywords: 'yedek parça',
+      ogTitle: 'Yedek Parçalar',
+      ogDescription: 'Tüm yedek parça ürünleri',
+      ogUrl: 'https://cinarotoklima.com/yedek-parca',
+      canonical: 'https://cinarotoklima.com/yedek-parca'
+    },
+    menuProducts: [],
+    menuServices: []
+  }
 ];
 
 export const products = [
