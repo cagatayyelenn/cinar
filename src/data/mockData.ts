@@ -2246,7 +2246,861 @@ Thermon 2 ile aracınızda veya kamp alanında etkili ısınma deneyimini yaşay
         ['Ağırlık', '4,6 Kg']
       ]
     }
+  },,
+  {
+    id: 'yp-tm16-klima-kompresor',
+    brandId: 'yedek-parca',
+    name: 'TM16 Klima Kompresör',
+    images: ['/yedek-parca/tm16-klima-kompresoru-valeo.jpg'],
+    description: `TM16 klima kompresörü, Valeo markası tarafından üretilen ve araçların klima sistemlerinde kullanılan bir bileşendir. Klima kompresörünün ana görevi, klima gazını sıkıştırarak aracın iç mekanını soğutmak ve klima sisteminin verimli çalışmasını sağlamaktır. TM16 kompresörü, güçlü ve dayanıklı yapısıyla bilinir, bu da onu uzun süreli kullanım için ideal bir seçenek haline getirir.`,
+    category: 'Yedek Parça'
   },
+  {
+    id: 'yp-tm16-klima-kompresoru-valeo',
+    brandId: 'yedek-parca',
+    name: 'TM16 Klima Kompresörü Valeo',
+    images: ['/yedek-parca/tm16-klima-kompresoru-valeo.jpg'],
+    description: `TM16 klima kompresörü, Valeo tarafından üretilen ve araçların klima sistemlerinde kullanılan bir bileşendir. Klima kompresörleri, soğutma gazını sıkıştırarak aracın iç mekanının soğumasını sağlar. TM16 kompresörü, güçlü yapısı ve verimli çalışma özellikleri ile bilinir. Valeo, otomotiv sektöründe güvenilir markalardan biri olup, TM16 modeliyle de yüksek performanslı klima çözümleri sunmaktadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-tm31-klima-kompresor',
+    brandId: 'yedek-parca',
+    name: 'TM31 Klima Kompresör',
+    images: ['/yedek-parca/TM31-klima-kompresoru-valeo.jpg'],
+    description: `TM31 klima kompresörü, Valeo tarafından üretilen bir klima kompresörüdür. Araçların klima sistemlerinde kullanılan bu kompresör, klima gazını sıkıştırarak aracın iç mekanını soğutur. Aracın soğutma işlevini düzgün bir şekilde yerine getirebilmesi için, kompresörün yüksek verimle çalışması gerekir. TM31, dayanıklılığı ve verimliliği ile bilinen bir modeldir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-tm31-klima-kompresoru-valeo',
+    brandId: 'yedek-parca',
+    name: 'TM31 Klima Kompresörü Valeo',
+    images: ['/yedek-parca/TM31-klima-kompresoru-valeo.jpg'],
+    description: `TM31 klima kompresörü, Valeo tarafından üretilen ve araç klima sistemlerinde soğutma sağlayan önemli bir bileşendir. Bu kompresör, klima gazını sıkıştırarak aracın iç mekanını soğutur. TM31, dayanıklı yapısı ve yüksek verimliliği ile dikkat çeker. Soğutma sisteminin düzgün çalışabilmesi için kaliteli bir kompresör kullanmak önemlidir ve TM31, bu konuda mükemmel bir tercihtir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-tm21-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'TM21 Klima Kompresörü',
+    images: ['/yedek-parca/TM21-klima-kompresoru.webp'],
+    description: `TM21 klima kompresörü, otomobillerin klima sistemlerinde soğutma işlemi yapan önemli bir bileşendir. Valeo tarafından üretilen bu kompresör, klima gazını sıkıştırarak aracın iç mekanını serin tutmayı sağlar. Verimli bir klima kompresörü, aracın klima sisteminin uzun ömürlü olmasına ve iç mekanın konforlu kalmasına katkı sağlar. TM21, bu ihtiyacı karşılayan yüksek kaliteli bir üründür ve araç sahiplerinin en çok tercih ettiği kompresörlerden biridir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-tm21-klima-kompresoru-valeo',
+    brandId: 'yedek-parca',
+    name: 'TM21 Klima Kompresörü Valeo',
+    images: ['/yedek-parca/TM21-klima-kompresoru-Valeo.png'],
+    description: `TM21 klima kompresörü, Valeo markasının otomobiller için geliştirdiği yüksek kaliteli bir klima kompresörüdür. Valeo, dünya çapında bilinen güvenilir bir markadır ve otomotiv sektöründe klima sistemleri konusunda uzun yıllara dayanan tecrübesi ile öne çıkmaktadır. TM21 modeli, araçların klima sistemlerini verimli bir şekilde çalıştırmak için tasarlanmıştır ve genellikle farklı araç modellerinde kullanılır. Bu kompresör, klima gazını yüksek basınca çıkararak aracın iç mekanının serin kalmasını sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-sd7-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'SD7 Klima Kompresörü',
+    images: ['/yedek-parca/sd7-klima-kompresoru.jpg'],
+    description: `SD7 klima kompresörü, otomobillerde kullanılan önemli bir klima bileşenidir. Klima sisteminin verimli çalışabilmesi için kompresörün sağlıklı olması gerekir. SD7, özellikle yüksek performanslı araçlarda sıklıkla tercih edilen bir modeldir. Bu kompresör, soğutma gazını yüksek basınca çıkararak aracın iç mekanını serin tutar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-7h15-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: '7H15 Klima Kompresörü',
+    images: ['/yedek-parca/7H15-klima-kompresoru.jpg'],
+    description: `7H15 klima kompresörü, klima sistemlerinin en önemli bileşenlerinden biridir ve özellikle ticari araçlar ve ağır vasıtalar için kullanılır. Kompresör, soğutucu gazı sıkıştırarak klima sistemine yönlendirir, böylece araç içindeki hava soğutulur. 7H15 kompresörleri yüksek verimlilikleri ile bilinir ve aracın serin kalmasını sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-5h14-sanden-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: '5H14 Sanden Klima Kompresörü',
+    images: ['/yedek-parca/5H14-sanden-klima-kompresoru.jpg'],
+    description: `5H14 Sanden klima kompresörü, Sanden markasının ürettiği, özellikle otomotiv endüstrisinde yaygın olarak kullanılan bir klima kompresörüdür. Bu kompresör, araçların klima sistemlerinde soğutma gazını sıkıştırarak, aracın iç ortamını soğutmak için gerekli olan enerjiyi sağlar. 5H14, Sanden tarafından üretilen bir model olup, özellikle araç içi klima sistemlerinde verimli soğutma sağlamak amacıyla tasarlanmıştır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-5h14-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: '5H14 Klima Kompresörü',
+    images: ['/yedek-parca/5H14-klima-kompresoru.webp'],
+    description: `5H14 klima kompresörü, otomotiv ve ticari araçlarda kullanılan bir klima kompresörü türüdür. Bu kompresör, soğutma işlemi için kullanılan gazı sıkıştırarak klima sisteminin çalışmasını sağlar. “5H14” adı, bu kompresörün model numarasını ifade eder ve genellikle yüksek verimlilik, dayanıklılık ve uzun ömürlü performansıyla bilinir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-sd5-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'SD5 Klima Kompresörü',
+    images: ['/yedek-parca/SD5-klima-kompresoru.webp'],
+    description: `SD5 klima kompresörü, özellikle araç klima sistemlerinde yaygın olarak kullanılan ve yüksek verimlilik sağlayan bir kompresör türüdür. Bu kompresör, soğutucu gazı sıkıştırarak ve bir hava akışını yönlendirerek klima sistemine soğutma sağlamak için çalışır. SD5 kompresörleri, sağlamlıkları ve uzun ömürleri ile bilinirler ve otomobil, kamyon, minibüs gibi çeşitli araçlarda kullanılır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-transporter-denso-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Transporter Denso Klima Kompresörü',
+    images: ['/yedek-parca/volkswagen-transporter-denso-klima-kompresoru.webp'],
+    description: `Volkswagen Transporter Denso klima kompresörü, Volkswagen Transporter araçları için özel olarak üretilmiş, klima sisteminin düzgün çalışmasını sağlayan önemli bir bileşendir. Denso, dünya çapında otomotiv sektöründe kalitesiyle tanınan bir markadır ve bu nedenle Denso klima kompresörleri, verimlilik ve uzun ömürlü performans sunar.
+
+Kompresör, klima sisteminin kalbini oluşturur. Soğutucu gazı sıkıştırarak, bu gazın klima sisteminde dolaşmasını sağlar ve araç içindeki sıcaklık kontrolünü mümkün kılar. Denso marka klima kompresörleri, güvenilirlikleri ve yüksek kaliteli üretimleriyle öne çıkar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-crafter-ckma-denso-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Crafter Çıkma Denso Klima Kompresörü',
+    images: ['/yedek-parca/volkswagen-crafter-klima-kompresoru-denso.webp'],
+    description: `Crafter çıkma Denso klima kompresörü, Volkswagen Crafter araçları için özel olarak üretilen ve aracın klima sisteminin verimli bir şekilde çalışmasını sağlayan bir parçadır. Denso, dünya çapında tanınan bir marka olup, klima sistemlerinde yüksek kalite ve güvenilirlik sunar. Çıkma Denso klima kompresörü, sıfır kompresörler yerine daha ekonomik bir alternatif arayan araç sahipleri için idealdir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-crafter-klima-kondenseri',
+    brandId: 'yedek-parca',
+    name: 'Crafter Klima Kondenseri',
+    images: ['/yedek-parca/crafter-klima-kondenseri.jpg'],
+    description: `Crafter klima kondenseri, araç klima sistemlerinin soğutma sürecinde önemli bir rol oynayan parçadır. Klimanın içinde dolaşan soğutucu gazın sıcaklığını düşürerek, gazın yoğunlaşmasını sağlar ve ardından soğutulmuş gazı klima sistemine geri gönderir. Bu sayede, araç içindeki sıcaklık kontrol altına alınır ve ferah bir ortam sağlanır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-crafter-universal-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Crafter Üniversal Klima Kompresörü',
+    images: ['/yedek-parca/crafter-universal-klima-kompresoru.webp'],
+    description: `Crafter üniversal klima kompresörü, Volkswagen Crafter araçları için farklı marka ve modeldeki klima sistemlerine uyumlu olan bir parçadır. Klima kompresörü, aracın klima sisteminin temel bileşenlerinden biridir ve klima gazını sıkıştırarak soğutma işleminin gerçekleşmesini sağlar. Eğer aracınızın orijinal klima kompresörü arızalandıysa veya değiştirilmesi gerekiyorsa, üniversal kompresörler bir alternatif olabilir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-denso-crafter-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Denso Crafter Klima Kompresörü',
+    images: ['/yedek-parca/denso-crafter-klima-kompresoru.webp'],
+    description: `Volkswagen Crafter, geniş iç hacmiyle ticari taşımacılığın önemli modellerinden biridir. Özellikle yaz aylarında araç içerisindeki sıcaklık, sürücü ve yolcu konforunu doğrudan etkiler. İşte bu noktada klima kompresörü, sistemin kalbi olarak görev yapar. ❄️`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-vito-ckma-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Vito Çıkma Klima Kompresörü',
+    images: ['/yedek-parca/mercedes-vito-denso-klima-kompresoru-scaled (1).webp'],
+    description: `Klima kompresörü, aracın klima sisteminin kalbidir. Soğutucu gazı sıkıştırarak sisteme gönderir ve kabin içinin soğutulmasını sağlar. Arızalı kompresör, serinliği büyük ölçüde etkiler.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-vito-denso-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Vito Denso Klima Kompresörü',
+    images: ['/yedek-parca/mercedes-vito-denso-klima-kompresoru-scaled (1).webp'],
+    description: `Mercedes Vito, ticari araç kategorisinde uzun yıllardır popülerliğini sürdüren bir modeldir. Hem şehir içi hem de uzun yolculuklar için tercih edilen bu araç, konforlu bir sürüş sağlamak amacıyla gelişmiş iklimlendirme sistemlerine sahiptir. Bu sistemin temel bileşenlerinden biri de klima kompresörüdür. Mercedes Vito’nun klima kompresörleri arasında, Denso marka kompresörler sıklıkla tercih edilir. Denso, otomotiv sektöründe kalite ve güvenilirliği ile bilinen bir markadır. Mercedes Vito Denso klima kompresörü, aracınızın klima sisteminin verimli çalışmasını sağlayan önemli bir bileşendir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-vito-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Vito Klima Kompresörü',
+    images: ['/yedek-parca/mercedes-vito-klima-kompresoru.webp'],
+    description: `Mercedes Vito, uzun yolculuklar ve şehir içi kullanım için oldukça popüler bir araçtır. Ancak, bu araçlarda da tıpkı diğer araçlarda olduğu gibi, klima sisteminin düzenli çalışması için bazı bileşenlerin bakımı gerekir. Klima kompresörü, bu sistemin en önemli parçalarından biridir. Klima kompresörü, soğutma sisteminin çalışmasını sağlayan ve aracınızın klima performansını doğrudan etkileyen bir parçadır. Mercedes Vito klima kompresörünün arızalanması durumunda, aracınızın klima sistemi verimsiz çalışabilir ve rahat bir sürüş sağlanamayabilir. Bu yazıda, Mercedes Vito klima kompresörü hakkında bilmeniz gerekenleri ele alacağız.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-karsan-jest-klima-kondanser-petegi',
+    brandId: 'yedek-parca',
+    name: 'Karsan Jest Klima Kondanser Peteği',
+    images: ['/yedek-parca/karsan-jest-klima-kondanser-petegi.jpg'],
+    description: `Karsan Jest minibüslerinde klima sisteminin verimli çalışabilmesi için çeşitli bileşenler birbirleriyle uyumlu bir şekilde çalışmalıdır. Bu bileşenlerden biri de klima kondanser peteğidir. Kondanser peteği, klima sisteminde önemli bir rol oynar ve soğutma sisteminin verimli çalışmasını sağlamak için bakım gerektirir. Bu yazıda, Karsan Jest klima kondanser peteğinin görevini, arızalarını ve tamir sürecini detaylı bir şekilde ele alacağız.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-karsan-jest-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Karsan Jest Klima Kompresörü',
+    images: ['/yedek-parca/karsan-jest-klima-kompresoru.webp'],
+    description: `Karsan Jest minibüslerinde klima, yolcuların konforlu bir seyahat deneyimi yaşaması için önemli bir özelliktir. Klima sisteminin düzgün çalışabilmesi için ise birçok parçanın uyum içinde çalışması gerekmektedir. Bunlardan biri de klima kompresörüdür. Karsan Jest klima kompresörü, klima sisteminin kalbidir ve doğru çalışması, klima sisteminin performansını doğrudan etkiler.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-otokar-sultan-klima-kondenseri',
+    brandId: 'yedek-parca',
+    name: 'Otokar Sultan Klima Kondenseri',
+    images: ['/yedek-parca/otokar-sultan-klima-kondenseri.jpg'],
+    description: `Klima sistemlerinin sağlıklı çalışabilmesi için her bir parçasının uyum içinde işlemesi gerekir. Bu parçalardan biri olan klima kondenseri, Otokar Sultan gibi ticari araçlarda yaz-kış konforu sağlayan hayati bir unsurdur. Arızalanması durumunda klima sistemi çalışmaz hale gelir ve özellikle yaz aylarında sürüş konforu ciddi biçimde düşer`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-otokar-sultan-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Otokar Sultan Klima Kompresörü',
+    images: ['/yedek-parca/otokar-sultan-klima-kompresoru.jpg'],
+    description: `Klima sistemleri, şehir içi ve şehirler arası taşımacılıkta kullanılan Otokar Sultan midibüslerinde hem yolcular hem de şoför konforu açısından büyük önem taşır. Bu sistemlerin en kritik parçalarından biri olan klima kompresörü, arıza yaptığında tüm sistem devre dışı kalabilir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-sprinter-ckma-valeo-kompresor',
+    brandId: 'yedek-parca',
+    name: 'Sprinter Çıkma Valeo Kompresör',
+    images: ['/yedek-parca/sprinter-cikma-valeo-kompresor.webp'],
+    description: `Mercedes Sprinter araçlarında klima sistemlerinin en önemli parçası olan kompresörler, zaman içinde arızalanabilir ya da performans kaybı yaşayabilir. Orijinal yedek parça fiyatlarının yüksekliği nedeniyle, birçok araç sahibi çıkma Valeo kompresör gibi alternatif çözümlere yönelmektedir`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-sprinter-universal-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Sprinter Üniversal Klima Kompresörü',
+    images: ['/yedek-parca/sprinter-klima-kompresoru-denso.jpg'],
+    description: `Sprinter modellerinde klima sistemi, uzun yolculuklar ve sıcak hava koşullarında büyük bir konfor sağlar. Klima sisteminin en temel bileşeni ise klima kompresörüdür. Ancak orijinal parça maliyetleri bazı kullanıcılar için yüksek olabilmektedir. Bu noktada, Sprinter üniversal klima kompresörü alternatif bir çözüm olarak karşımıza çıkar. Hem fiyat avantajı hem de geniş uyumluluk özelliği sayesinde birçok araç sahibinin tercihi haline gelmiştir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-sprinter-klima-kompresoru-denso',
+    brandId: 'yedek-parca',
+    name: 'Sprinter Klima Kompresörü Denso',
+    images: ['/yedek-parca/sprinter-klima-kompresoru-denso.jpg'],
+    description: `Mercedes Sprinter kullanıcıları için konfor, performans kadar önemlidir. Özellikle yaz aylarında veya uzun yolculuklarda klima sisteminin sorunsuz çalışması büyük fark yaratır. Bu sistemin kalbinde yer alan parça ise klima kompresörüdür. Kalitesiyle öne çıkan Sprinter klima kompresörü Denso, güçlü performansı ve uzun ömrüyle tercih edilmektedir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-sprinter-klima-kompresoru-valeo',
+    brandId: 'yedek-parca',
+    name: 'Sprinter Klima Kompresörü Valeo',
+    images: ['/yedek-parca/sprinter-klima-kompresoru-valeo.webp'],
+    description: `Mercedes Sprinter, hafif ticari araç sınıfında dayanıklılığı ve geniş iç hacmi ile tercih edilen bir modeldir. Bu aracın konfor sistemleri içinde en kritik parçaların başında klima kompresörü gelir. Özellikle uzun yolculuklarda sürücü ve yolcu konforunu doğrudan etkileyen bu sistemin düzgün çalışması büyük önem taşır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-kondanser-isuzu-prestige-mitsubishi-nova-safkar-climart',
+    brandId: 'yedek-parca',
+    name: 'KONDANSER ISUZU PRESTİGE MITSUBİSHİ NOVA SAFKAR CLİMART',
+    images: ['/yedek-parca/kondanser-isuzu-prestige-mitsubishi-nova-safkar-climart.png'],
+    description: `Isuzu Prestige ve Mitsubishi Nova model araçlarda kullanılan klima sistemleri için özel olarak üretilmiş kondenser (klima radyatörü), Safkar ve Climart marka klima sistemleri ile uyumlu çalışacak şekilde tasarlanmıştır. Yüksek ısı transferi sağlayan yapısı sayesinde klima gazını verimli şekilde soğutarak sistemin maksimum performansla çalışmasına yardımcı olur.
+
+1100 x 580 x 26 mm ölçülerindeki geniş yüzey alanı, özellikle otobüs ve midibüs tipi ticari araçlarda güçlü soğutma performansı sunar. Dayanıklı alüminyum yapısı sayesinde uzun ömürlü kullanım sağlar ve zorlu yol koşullarında yüksek dayanım gösterir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-avenue-bus-otobus-mercedes-travego-safkar-tip',
+    brandId: 'yedek-parca',
+    name: 'AVENUE BUS OTOBÜS MERCEDES TRAVEGO (SAFKAR TİP)',
+    images: ['/yedek-parca/avenue-bus-otobus-mercedes-travego-safkar-tip.png'],
+    description: `Safkar tip klima sistemleri için üretilmiş olan 1400 x 500 mm ölçülerindeki kondenser, otobüs ve büyük ticari araçların klima sistemlerinde yüksek performanslı soğutma sağlamak amacıyla tasarlanmıştır. Özellikle Avenue Bus ve Mercedes Travego model otobüslerde kullanılan Safkar klima sistemleri ile uyumlu çalışır.
+
+Yüksek kaliteli alüminyum yapısı sayesinde klima gazının hızlı ve verimli şekilde soğutulmasını sağlar. Geniş yüzey alanı ve güçlü ısı transfer kapasitesi, klima sisteminin daha verimli çalışmasına yardımcı olur ve aracın iç ortamında ideal sıcaklık dengesinin korunmasını sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-kondanser-safkar-sogutucu-penguen-230-universal',
+    brandId: 'yedek-parca',
+    name: 'KONDANSER SAFKAR SOĞUTUCU PENGUEN 230 üniversal',
+    images: ['/yedek-parca/kondanser-safkar-sogutucu-penguen-230-universal.png'],
+    description: `Safkar Penguen 230 klima sistemleri ile uyumlu olarak tasarlanmış kondenser (klima soğutucu radyatör), ticari araç ve otobüs klima sistemlerinde yüksek performanslı soğutma sağlamak amacıyla üretilmiştir. Klima gazının hızlı ve verimli şekilde soğutulmasını sağlayarak klima sisteminin daha verimli çalışmasına yardımcı olur.
+
+Dayanıklı alüminyum yapısı sayesinde uzun ömürlü kullanım sunan bu üniversal kondenser, Safkar Penguen 230 klima sistemine sahip araçlarda sorunsuz şekilde kullanılabilir. Geniş yüzey alanı sayesinde yüksek ısı transferi sağlayarak özellikle yoğun çalışan klima sistemlerinde güçlü performans suna`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-kondanser-safkar-climart-sogutucu-s75425485-art5000-80x40x26mm',
+    brandId: 'yedek-parca',
+    name: 'KONDANSER SAFKAR CLİMART SOĞUTUCU S75/425/485 ART5000 80X40X26MM',
+    images: ['/yedek-parca/kondanser-safkar-climart-sogutucu.png'],
+    description: `Safkar ve Climart marka klima sistemleri ile uyumlu olarak üretilmiş kondenser (klima soğutucu radyatörü), otobüs ve ticari araç klima sistemlerinde yüksek performanslı soğutma sağlamak amacıyla tasarlanmıştır. S75, 425, 485 ve ART5000 model klima sistemleri ile uyumlu olan bu kondenser, klima gazının hızlı şekilde soğutulmasını sağlayarak sistemin verimli çalışmasına yardımcı olur.
+
+80 x 40 x 26 mm ölçülerindeki kompakt ve dayanıklı yapısı sayesinde yüksek ısı transferi sağlar. Kaliteli alüminyum malzemeden üretilmiş olup uzun ömürlü kullanım ve yüksek performans sunar. Yoğun çalışan araç klima sistemleri için ideal bir yedek parçadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-drier-filtre-yilkar-klima-universal-ayakli-aluminyum',
+    brandId: 'yedek-parca',
+    name: 'DRİER FİLTRE YILKAR KLİMA ÜNİVERSAL AYAKLI ALÜMİNYUM',
+    images: ['/yedek-parca/drier-filtre-yilkar-klima-universal-ayakli-aluminyum.png'],
+    description: `Yılkar marka klima sistemleri ile uyumlu drier filtre (klima kurutucu filtre), araç klima sistemlerinde gaz içerisindeki nemi ve kirli partikülleri filtreleyerek sistemin daha verimli ve uzun ömürlü çalışmasını sağlar. Klima sisteminin önemli parçalarından biri olan drier filtre, kompresör ve diğer klima bileşenlerinin korunmasına yardımcı olur.
+
+Dayanıklı alüminyum gövde yapısına sahip olan bu ürün, ayaklı montaj tasarımı sayesinde kolay kurulum imkanı sunar. Üniversal yapısı sayesinde otobüs, minibüs ve ticari araç klima sistemlerinde geniş kullanım alanına sahiptir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-kondanser-yilkar-2-fanli-75055020mm',
+    brandId: 'yedek-parca',
+    name: 'KONDANSER YILKAR 2 FANLI 750*550*20MM',
+    images: ['/yedek-parca/kondanser-yilkar-2-fanli.png'],
+    description: `Yılkar klima sistemleri ile uyumlu olarak üretilmiş 2 fanlı kondenser, araç klima sistemlerinde yüksek soğutma performansı sağlamak amacıyla tasarlanmıştır. Üzerinde bulunan 2 adet güçlü fan, klima gazının hızlı ve verimli şekilde soğutulmasına yardımcı olarak sistemin daha verimli çalışmasını sağlar.
+
+750 x 550 x 20 mm ölçülerindeki yapısı sayesinde yüksek ısı transferi sunar ve özellikle otobüs, minibüs ve ticari araç klima sistemlerinde etkili performans sağlar. Dayanıklı yapısı sayesinde uzun ömürlü kullanım sunan bu ürün, araç klima sistemlerinin güvenli ve verimli çalışmasına katkı sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ylkar-yk100-fanl-kondanser-universal-100040020mm',
+    brandId: 'yedek-parca',
+    name: 'Yılkar YK100 Fanlı KONDANSER ÜNİVERSAL 1000*400*20MM',
+    images: ['/yedek-parca/yilkar-yk100-fanli-kondanser-universal.png'],
+    description: `Yılkar YK100 klima sistemleri ile uyumlu olarak üretilmiş fanlı kondenser (klima radyatörü), araç klima sistemlerinde yüksek performanslı soğutma sağlamak amacıyla tasarlanmıştır. Üzerinde bulunan fan sayesinde klima gazının daha hızlı soğutulmasını sağlayarak klima sisteminin verimli ve stabil çalışmasına yardımcı olur.
+
+1000 x 400 x 20 mm ölçülerindeki yapısı sayesinde geniş ısı transfer yüzeyi sunar ve özellikle otobüs, minibüs ve ticari araç klima sistemlerinde etkili performans sağlar. Dayanıklı malzeme yapısı sayesinde uzun ömürlü kullanım sunan bu ürün, araç klima sistemleri için ideal bir yedek parçadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ylkar-yk-80-kondanser-universal66054020mm',
+    brandId: 'yedek-parca',
+    name: 'Yılkar YK 80 KONDANSER ÜNİVERSAL660*540*20MM',
+    images: ['/yedek-parca/yilkar-yk-80-kondanser-universal.png'],
+    description: `Yılkar YK 80 klima sistemleri ile uyumlu olarak üretilmiş üniversal kondenser (klima radyatörü), araç klima sistemlerinde yüksek soğutma performansı sağlamak amacıyla tasarlanmıştır. Klima gazının hızlı ve verimli şekilde soğutulmasını sağlayarak klima sisteminin daha stabil ve verimli çalışmasına yardımcı olur.
+
+660 x 540 x 20 mm ölçülerindeki yapısı sayesinde yüksek ısı transferi sağlayan bu kondenser, özellikle otobüs, minibüs ve ticari araç klima sistemlerinde etkili performans sunar. Dayanıklı yapısı sayesinde uzun ömürlü kullanım sağlar ve araç klima sistemleri için güvenilir bir yedek parçadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-fan-motoru-11-inc-12v-120w-emisuflec-dis',
+    brandId: 'yedek-parca',
+    name: 'FAN MOTORU 11 İNÇ 12V 120W EMİŞ/ÜFLEÇ DIŞ',
+    images: ['/yedek-parca/fan-motoru-11-inc-12v-120w-emis-uflec-dis.png'],
+    description: `Araç klima ve soğutma sistemlerinde kullanılmak üzere tasarlanmış 11 inç fan motoru, güçlü performansı sayesinde hava akışını artırarak sistemin daha verimli çalışmasını sağlar. 12V 120W güç kapasitesine sahip olan bu fan motoru, hem emiş hem de üfleç olarak kullanılabilen yapısı ile farklı soğutma ve klima uygulamalarında tercih edilir.
+
+Dayanıklı yapısı sayesinde uzun ömürlü kullanım sunan bu fan motoru, özellikle otobüs, minibüs, ticari araç klima sistemleri ve kondenser radyatör soğutma sistemlerinde etkili performans sağlar. Dış montaj tipine uygun olarak üretilmiştir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-fan-motoru-12-inc-12v-120w-emisuflec-dis',
+    brandId: 'yedek-parca',
+    name: 'FAN MOTORU 12 İNÇ 12V 120W EMİŞ/ÜFLEÇ DIŞ',
+    images: ['/yedek-parca/fan-motoru-12-inc-12v-120w-emis-uflec-dis.png'],
+    description: `Araç klima ve soğutma sistemleri için tasarlanmış 12 inç fan motoru, güçlü hava akışı sağlayarak klima ve kondenser sistemlerinin daha verimli çalışmasına yardımcı olur. 12V 120W güç kapasitesine sahip olan bu fan motoru, hem emiş hem de üfleç olarak kullanılabilen yapısı sayesinde farklı soğutma uygulamalarında kullanılabilir.
+
+Dayanıklı motor yapısı ve yüksek performansı sayesinde uzun ömürlü kullanım sunar. Özellikle otobüs, minibüs ve ticari araç klima sistemleri ile kondenser radyatör soğutma sistemlerinde etkili performans sağlar. Dış montaj tipine uygun olarak üretilmiştir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-fan-motoru-14-inc-12v-120w-emisuflec-dis',
+    brandId: 'yedek-parca',
+    name: 'FAN MOTORU 14 İNÇ 12V 120W EMİŞ/ÜFLEÇ DIŞ',
+    images: ['/yedek-parca/fan-motoru-14-inc-12v-120w-emis-uflec-dis.jpg'],
+    description: `Araç klima ve soğutma sistemleri için tasarlanmış 14 inç fan motoru, güçlü hava akışı sağlayarak klima ve kondenser sistemlerinin daha verimli çalışmasına yardımcı olur. 12V 120W güç kapasitesine sahip olan bu fan motoru, emiş ve üfleç olarak kullanılabilen yapısı sayesinde farklı soğutma ve havalandırma uygulamalarında tercih edilir.
+
+Dayanıklı motor yapısı ve yüksek performansı sayesinde uzun ömürlü kullanım sunar. Özellikle otobüs, minibüs ve ticari araç klima sistemleri ile kondenser radyatör soğutma sistemlerinde etkili performans sağlar. Dış montaj tipine uygun olarak üretilmiştir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-otokar-sultan-klima-fani-motoru-bes-kanat',
+    brandId: 'yedek-parca',
+    name: 'Otokar Sultan Klima FANI MOTORU BEŞ KANAT',
+    images: ['/yedek-parca/otokar-sultan-klima-fani-motoru-bes-kanat.jpg'],
+    description: `Otokar Sultan model araçların klima sistemlerinde kullanılmak üzere tasarlanmış beş kanatlı klima fan motoru, güçlü hava akışı sağlayarak klima sisteminin verimli çalışmasına yardımcı olur. Fan kanat yapısı sayesinde kondenser ve radyatör üzerinden geçen havayı hızlandırarak klima gazının daha hızlı soğutulmasını sağlar. Dayanıklı motor yapısı ve 5 kanatlı fan tasarımı, yüksek performans ve uzun ömürlü kullanım sunar. Özellikle otobüs ve ticari araç klima sistemlerinde güvenilir bir soğutma performansı sağlar ve klima sisteminin stabil çalışmasına katkıda bulunur.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-700-blower-fan-1224-v',
+    brandId: 'yedek-parca',
+    name: '700 BLOWER FAN 12/24 V',
+    images: ['/yedek-parca/700-blower-fan-12-24-v.png'],
+    description: `700 blower fan, minibüs, midibüs ve otobüs klima sistemlerinde güçlü hava sirkülasyonu sağlamak için kullanılan yüksek performanslı bir klima fan motorudur. 700 blower fan, klima evaporatöründen geçen havayı hızlandırarak araç içi soğutma performansını artırır ve kabin içerisinde dengeli hava dağılımı sağlar. Dayanıklı motor yapısı sayesinde uzun süreli kullanım sunar ve ticari araç klima sistemlerinde güvenilir performans sağlar. Özellikle minibüs, midibüs ve otobüs gibi yolcu taşıma araçlarında klima sisteminin daha verimli çalışmasına yardımcı olur.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ylkar-klima-dugmesi',
+    brandId: 'yedek-parca',
+    name: 'Yılkar Klima Düğmesi',
+    images: ['/yedek-parca/webasto-klima-dugmesi.jpg'],
+    description: `Yılkar klima düğmesi, araç klima sistemlerinde fan hızını ve klima çalışma ayarlarını kontrol etmek için kullanılan dayanıklı bir kontrol düğmesidir. Yılkar klima düğmesi, özellikle minibüs, midibüs ve otobüs klima sistemlerinde kullanıcıya kolay kontrol imkânı sunarak klima sisteminin verimli çalışmasına yardımcı olur. Sağlam yapısı ve uzun ömürlü kullanım özelliği sayesinde ticari araç klima sistemlerinde güvenilir bir yedek parça olarak tercih edilmektedir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-webasto-klima-dugmesi',
+    brandId: 'yedek-parca',
+    name: 'Webasto Klima Düğmesi',
+    images: ['/yedek-parca/webasto-klima-dugmesi.jpg'],
+    description: `Webasto klima düğmesi, araç klima ve havalandırma sistemlerinin kontrol edilmesini sağlayan önemli bir klima kontrol parçasıdır. Webasto klima düğmesi, özellikle minibüs, midibüs ve otobüs gibi ticari araçlarda klima sisteminin fan ayarı ve çalışma kontrolünü kolaylaştırır. Dayanıklı yapısı sayesinde uzun ömürlü kullanım sunan Webasto klima düğmesi, araç klima sistemlerinin stabil ve verimli çalışmasına yardımcı olur.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-delphi-klima-kondenseri',
+    brandId: 'yedek-parca',
+    name: 'Delphi Klima Kondenseri',
+    images: ['/yedek-parca/delphi-klima-kondenseri.webp'],
+    description: `Delphi klima kondenseri, araç klima sistemlerinde soğutucu gazın yoğunlaştırılmasını sağlayarak klima sisteminin verimli şekilde çalışmasına yardımcı olan önemli bir klima parçasıdır. Delphi klima kondenseri, klima gazının yüksek basınç altında soğutulmasını sağlayarak evaporatöre gönderilmeden önce gazın sıvı hale dönüşmesine yardımcı olur. Dayanıklı alüminyum yapısı sayesinde uzun ömürlü kullanım sunan Delphi klima kondenseri, özellikle minibüs, midibüs ve otobüs gibi ticari araç klima sistemlerinde güçlü soğutma performansı sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-webasto-klima-kondenseri',
+    brandId: 'yedek-parca',
+    name: 'Webasto Klima Kondenseri',
+    images: ['/yedek-parca/webasto-klima-kondenseri.webp'],
+    description: `Webasto klima kondenseri, araç klima sistemlerinde soğutucu gazın yoğunlaştırılmasını sağlayarak klima sisteminin verimli çalışmasına yardımcı olan önemli bir klima bileşenidir. Webasto klima kondenseri, klima kompresöründen gelen yüksek basınçlı gazı soğutarak sıvı hale dönüştürür ve klima sisteminin daha etkili soğutma performansı sağlamasını destekler. Dayanıklı yapısı sayesinde uzun ömürlü kullanım sunan Webasto klima kondenseri, özellikle minibüs, midibüs ve otobüs gibi ticari araç klima sistemlerinde güvenilir bir şekilde kullanılmaktadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-delphi-klima-kompresoru-poli-trigal-kays',
+    brandId: 'yedek-parca',
+    name: 'Delphi Klima Kompresörü Poli Trigal Kayış',
+    images: ['/yedek-parca/delphi-klima-kompresoru-v-kayis.jpg'],
+    description: `Delphi klima kompresörü, araç klima sistemlerinde soğutucu gazın sıkıştırılmasını sağlayarak klima sisteminin çalışmasını mümkün kılan temel klima bileşenlerinden biridir. Delphi klima kompresörü, klima gazını yüksek basınç altında dolaştırarak sistemin soğutma performansını artırır ve araç içerisinde etkili bir soğutma sağlar. Dayanıklı yapısı ve yüksek performansı sayesinde Delphi klima kompresörü, özellikle minibüs, midibüs ve otobüs gibi ticari araçların klima sistemlerinde güvenilir şekilde kullanılmaktadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-delphi-klima-kompresoru-v-kays',
+    brandId: 'yedek-parca',
+    name: 'Delphi Klima Kompresörü V Kayış',
+    images: ['/yedek-parca/delphi-klima-kompresoru-v-kayis.jpg'],
+    description: `Delphi klima kompresörü V kayış, araç klima kompresörünün motor gücünü alarak çalışmasını sağlayan önemli bir aktarma parçasıdır. Delphi klima kompresörü V kayış, motor kasnağından aldığı hareketi klima kompresörüne ileterek klima sisteminin sorunsuz şekilde çalışmasına yardımcı olur. Dayanıklı kauçuk ve lif takviyeli yapısı sayesinde uzun ömürlü kullanım sunan Delphi klima kompresörü V kayış, özellikle minibüs, midibüs ve otobüs gibi ticari araç klima sistemlerinde güvenilir performans sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-transporter-klima-kompresoru-denso',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Transporter Klima Kompresörü (Denso)',
+    images: ['/yedek-parca/volkswagen-transporter-klima-kompresoru-denso.webp'],
+    description: `Volkswagen Transporter modelinizin klima sisteminin kalbi olan Denso marka Klima Kompresörü ile tanışın. Araç içi konforu en üst düzeye çıkarmak ve uzun ömürlü, güvenilir soğutma performansı elde etmek için tasarlanan bu yedek parça, orijinal ekipman kalitesini doğrudan kapınıza getiriyor.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-renault-master-klima-kompresoru-valeo',
+    brandId: 'yedek-parca',
+    name: 'Renault Master Klima Kompresörü (Valeo)',
+    images: ['/yedek-parca/renault-master-klima-kompresoru-valeo.webp'],
+    description: `Yaz sıcaklarında aracınızın içindeki konforu korumak, sürüş güvenliğinizin ayrılmaz bir parçasıdır. Renault Master ticari araçlarınız için özel olarak tasarlanmış, yüksek performanslı ve dayanıklı Renault Master Klima Kompresörü (Valeo) ile aracınızın soğutma sistemini en üst seviyede güvence altına alın. Orijinal ekipman üreticisi (OEM) kalitesiyle bilinen Valeo güvencesi, size uzun ömürlü ve sorunsuz bir çalışma performansı sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-transporter-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Transporter Klima Kompresörü',
+    images: ['/yedek-parca/volkswagen-transporter-klima-kompresoru.webp'],
+    description: `Volkswagen Transporter serisi ticari araçlarınızın klima sisteminin kalbi olan klima kompresörleri, yaz aylarında konforunuzu ve yolculuk güvenliğinizi doğrudan etkiler. Orijinal ekipman kalitesinde veya eşdeğeri yüksek standartlarda üretilmiş Volkswagen Transporter Klima Kompresörü arayışınızda, doğru adrestesiniz. Uzun ömürlü, yüksek verimli ve aracınızın orijinal spesifikasyonlarına tam uyumlu bu kompresörler ile aracınızın soğutma sistemini ilk günkü performansına geri kazandırın.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-crafter-klima-kompresoru-denso',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Crafter Klima Kompresörü (Denso)',
+    images: ['/yedek-parca/volkswagen-crafter-klima-kompresoru-denso.webp'],
+    description: `Volkswagen Crafter ticari aracınızın iklimlendirme sisteminin kalbi olan klima kompresörünün performans kaybı yaşadığını mı düşünüyorsunuz? İşte bu soruna kesin ve güvenilir çözüm: Volkswagen Crafter Klima Kompresörü (Denso). Denso, otomotiv sektöründe dünya çapında bilinen, orijinal ekipman kalitesinde parça üretimiyle tanınan bir markadır. Bu kompresör, aracınızın klima sisteminin en kritik bileşenidir ve yaz aylarında konforunuzu doğrudan etkiler.
+
+Crafter modeliniz için özel olarak tasarlanmış bu Denso kompresör, orijinal ekipman standartlarına tam uyum sağlayarak sorunsuz montaj ve uzun ömürlü performans garantisi sunar. Eski veya arızalı kompresörünüzün neden olduğu soğutmama, sesli çalışma veya gaz kaçağı gibi tüm problemleri ortadan kaldırır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-crafter-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Crafter Klima Kompresörü',
+    images: ['/yedek-parca/volkswagen-crafter-klima-kompresoru.webp'],
+    description: `Volkswagen Crafter model aracınızın iklimlendirme sisteminin kalbi olan Klima Kompresörü, yaz aylarının bunaltıcı sıcağında konforunuzu garanti altına alan kritik bir yedek parçadır. Aracınızın orijinal performansını ve soğutma verimliliğini yeniden kazanmak için tasarlanmış bu yüksek kaliteli kompresör, uzun ömürlü kullanım ve mükemmel uyum sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-renault-master-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Renault Master Klima Kompresörü',
+    images: ['/yedek-parca/renault-master-klima-kompresoru.webp'],
+    description: `Yaz aylarında aracınızın içindeki konforu en üst seviyeye taşımak için kritik bir yedek parça olan Renault Master Klima Kompresörü, aracınızın iklimlendirme sisteminin kalbidir. Orijinal ekipman kalitesinde üretilmiş bu kompresör, Renault Master modelinizin klima performansını ilk günkü verimliliğine geri döndürmek üzere tasarlanmıştır. Klima sisteminde hissedilen yetersiz soğutma, gürültü veya kompresörden gelen anormal sesler, değiştirilmesi gerektiğinin en büyük işaretleridir. Bu yüksek kaliteli yedek parça ile Master aracınızda kesintisiz ve etkili soğutmanın keyfini yeniden yaşayın.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-vito-klima-kompresoru-denso',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Vito Klima Kompresörü (Denso)',
+    images: ['/yedek-parca/mercedes-vito-klima-kompresoru-denso.webp'],
+    description: `Araç klima sistemlerinin kalbi olan klima kompresörü, özellikle Mercedes Vito gibi ticari ve binek araçlarda konforun ve güvenli sürüşün temel taşıdır. Yüksek performanslı ve dayanıklı bir çözüm arayanlar için Mercedes Vito Klima Kompresörü (Denso), orijinal ekipman kalitesini ve üstün verimliliği bir araya getiriyor.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-vito-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Vito Klima Kompresörü',
+    images: ['/yedek-parca/mercedes-vito-klima-kompresoru.webp'],
+    description: `Mercedes Vito, ticari ve binek kullanımlarda konfor ve güvenilirliği bir araya getiren efsanevi bir araçtır. Ancak, yoğun kullanım koşullarında veya zamanla, aracınızın klima sistemi kritik bir bileşen olan klima kompresörüne ihtiyaç duyabilir. Orijinal ekipman standartlarında üretilmiş, yüksek performanslı Mercedes Vito Klima Kompresörü ile aracınızın soğutma kapasitesini ilk günkü seviyesine taşıyın.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-klima-kompresoru-valeo',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter Klima Kompresörü (Valeo)',
+    images: ['/yedek-parca/mercedes-sprinter-klima-kompresoru-valeo.webp'],
+    description: `Mercedes Sprinter aracınızın iklimlendirme sisteminin kalbi olan klima kompresörü, yolculuk konforunuzu doğrudan etkileyen kritik bir bileşendir. Yüksek performanslı ve güvenilir bir çözüm arıyorsanız, Valeo kalitesiyle üretilmiş bu orijinal ekipman kalitesindeki Mercedes Sprinter Klima Kompresörü tam size göre. Aracınızın orijinal klima performansını geri kazanmak ve uzun ömürlü bir çözüm elde etmek için ideal bir seçimdir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter Klima Kompresörü',
+    images: ['/yedek-parca/mercedes-sprinter-klima-kompresoru.webp'],
+    description: `Mercedes Sprinter, ticari araç kullanıcıları için güvenilirlik ve konforun simgesidir. Ancak, uzun yolculukların veya yoğun şehir trafiğinin vazgeçilmezi olan klima sisteminin kalbi olan Mercedes Sprinter Klima Kompresörü, zamanla aşınabilir ve performans kaybına uğrayabilir. Aracınızın kabin içi sıcaklığını ideal seviden tutmak, konforu artırmak ve sürücü yorgunluğunu azaltmak için orijinal standartlara uygun, yüksek kaliteli bir yedek kompresöre yatırım yapmalısınız.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-renault-master-3-hazrlksz-klima-braketi-2011-2019',
+    brandId: 'yedek-parca',
+    name: 'Renault Master 3 Hazırlıksız Klima Braketi (2011-2019)',
+    images: ['/yedek-parca/renault-master-3-hazirliksiz-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, sürüş konforu ve iş verimliliği açısından büyük önem taşır. Renault Master 3 Hazırlıksız Klima Braketi (2011-2019) ile birlikte kullanılan Mercedes Sprinter Klima Kompresörü, güçlü ve verimli bir soğutma sistemi oluşturmanızı sağlar.
+
+Sonradan klima takılacak araçlar için özel olarak geliştirilen bu sistem, doğru montaj ekipmanlarıyla birleştiğinde yüksek performans ve uzun ömürlü kullanım sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ford-transit-155lik-kasnakl-klima-braketi',
+    brandId: 'yedek-parca',
+    name: 'Ford Transit 155’lik Kasnaklı Klima Braketi',
+    images: ['/yedek-parca/ford-transit-155lik-kasnakli-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, özellikle yoğun kullanımda sürüş konforunu ve iş verimliliğini doğrudan etkiler. Ford Transit 155’lik Kasnaklı Klima Braketi, klima kompresörünün motora doğru ve sağlam şekilde bağlanmasını sağlayarak sistemin verimli çalışmasının temelini oluşturur.
+
+Özellikle sonradan klima takılacak araçlar için geliştirilen bu braket sistemi, yüksek uyumluluk ve dayanıklılığı ile öne çıkar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ford-custom-klima-braketi',
+    brandId: 'yedek-parca',
+    name: 'Ford Custom Klima Braketi',
+    images: ['/yedek-parca/ford-custom-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, sürüş konforu ve iş verimliliği açısından büyük önem taşır. Ford Custom Klima Braketi, klima kompresörünün motora doğru ve sağlam şekilde monte edilmesini sağlayarak sistemin verimli ve uzun ömürlü çalışmasına katkı sağlar.
+
+Özellikle sonradan klima sistemi kurulacak Ford Custom araçlar için tasarlanan bu braket, yüksek uyumluluk ve dayanıklılığı ile profesyonel çözümler sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-fiat-ducato-klima-braket-govdesi-2007-2017',
+    brandId: 'yedek-parca',
+    name: 'Fiat Ducato Klima Braket Gövdesi (2007-2017)',
+    images: ['/yedek-parca/fiat-ducato-klima-braket-govdesi.png'],
+    description: `Ticari araçlarda klima sistemi, özellikle uzun yol ve yoğun kullanımda sürüş konforunu doğrudan etkiler. Fiat Ducato Klima Braket Gövdesi (2007-2017), klima kompresörünün motora sağlam ve doğru şekilde sabitlenmesini sağlayarak sistemin verimli çalışmasının temelini oluşturur.
+
+Bu parça, özellikle sonradan klima kurulumu yapılacak Ducato modelleri için geliştirilmiş olup yüksek uyumluluk ve dayanıklılık sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-2013-model-sag-klima-braketi',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter 2013 Model Sağ Klima Braketi',
+    images: ['/yedek-parca/mercedes-sprinter-2013-model-sag-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, sürüş konforu ve verimlilik açısından büyük önem taşır. Mercedes Sprinter 2013 Model Sağ Klima Braketi, klima kompresörünün motor üzerinde doğru konumda ve sağlam şekilde sabitlenmesini sağlayarak sistemin verimli çalışmasına yardımcı olur.
+
+Özellikle Sprinter araçlarda sağ taraf klima montajı için özel olarak tasarlanan bu braket, yüksek dayanıklılığı ve tam uyumu ile profesyonel çözümler sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-euro-5-klima-braketi-315',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter Euro 5 Klima Braketi (315)',
+    images: ['/yedek-parca/mercedes-sprinter-euro-5-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, özellikle uzun yol ve yoğun kullanımda sürüş konforunu doğrudan etkiler. Mercedes Sprinter Euro 5 Klima Braketi (315), klima kompresörünün motor üzerinde doğru konumda ve sağlam şekilde sabitlenmesini sağlayarak sistemin maksimum verimle çalışmasına yardımcı olur.
+
+Euro 5 motor yapısına sahip Sprinter 315 modeller için özel olarak tasarlanan bu braket, yüksek dayanıklılığı ve birebir uyumu ile profesyonel klima kurulumlarında tercih edilir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-euro-3-klima-braketi-313413',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter Euro 3 Klima Braketi (313/413)',
+    images: ['/yedek-parca/mercedes-sprinter-euro-3-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, sürüş konforu ve iş verimliliği açısından büyük önem taşır. Mercedes Sprinter Euro 3 Klima Braketi (313/413), klima kompresörünün motor üzerinde doğru konumda ve sağlam şekilde sabitlenmesini sağlayarak sistemin verimli ve uzun ömürlü çalışmasına katkı sağlar.
+
+Euro 3 motor yapısına sahip Sprinter 313 ve 413 modeller için özel olarak tasarlanan bu klima braketi, yüksek dayanıklılığı ve birebir uyumu ile profesyonel klima kurulumlarında tercih edilir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-euro-6-klima-braketi-515',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter Euro 6 Klima Braketi (515)',
+    images: ['/yedek-parca/mercedes-sprinter-euro-6-klima-braketi.png'],
+    description: `Ticari araçlarda klima sistemi, özellikle uzun yol ve yoğun kullanımda sürüş konforunu doğrudan etkiler. Mercedes Sprinter Euro 6 Klima Braketi (515), klima kompresörünün motor üzerinde doğru konumda ve sağlam şekilde sabitlenmesini sağlayarak sistemin maksimum verimle çalışmasına katkı sağlar.
+
+Euro 6 motor teknolojisine sahip Sprinter 515 modeller için özel olarak tasarlanan bu klima braketi, yüksek dayanıklılığı ve tam uyumu ile profesyonel klima kurulumlarının vazgeçilmez parçalarından biridir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-sprinter-kabin-klima-seti',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Sprinter Kabin Klima Seti',
+    images: ['/yedek-parca/mercedes-sprinter-kabin-klima-seti.jpeg'],
+    description: `Ticari araçlarda kabin içi konfor, sürüş güvenliği ve iş verimliliği açısından büyük önem taşır. Mercedes Sprinter Kabin Klima Seti, araç içinde ideal sıcaklık dengesini sağlayarak hem sürücü hem de yolcular için konforlu bir ortam oluşturur.
+
+Özellikle sonradan klima sistemi kurulacak Sprinter araçlar için tasarlanan bu set, tüm gerekli bileşenleri bir arada sunarak pratik, güçlü ve uzun ömürlü bir çözüm sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-crafter-kabin-klima-seti',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Crafter Kabin Klima Seti',
+    images: ['/yedek-parca/volkswagen-crafter-kabin-klima-seti.jpeg'],
+    description: `Ticari araçlarda klima sistemi, özellikle uzun yolculuklarda ve yoğun kullanımda sürüş konforu için vazgeçilmezdir. Volkswagen Crafter Kabin Klima Seti, araç içi sıcaklığı dengede tutarak sürücü ve yolcular için maksimum konfor sağlar.
+
+Sonradan klima sistemi kurulumu için ideal olan bu set, tüm gerekli bileşenleri bir arada sunarak güçlü, verimli ve uzun ömürlü bir çözüm oluşturur.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-fiat-ducato-kabin-klima-seti',
+    brandId: 'yedek-parca',
+    name: 'Fiat Ducato Kabin Klima Seti',
+    images: ['/yedek-parca/fiat-ducato-kabin-klima-seti.jpg'],
+    description: `Ticari araçlarda klima sistemi, özellikle yoğun kullanım ve uzun yol şartlarında sürüş konforunun en önemli unsurlarından biridir. Fiat Ducato Kabin Klima Seti, araç içi sıcaklığı dengede tutarak sürücü ve yolcular için ideal bir ortam oluşturur.
+
+Sonradan klima sistemi kurulacak Ducato araçlar için özel olarak geliştirilen bu set, tüm gerekli bileşenleri bir arada sunarak güçlü, verimli ve uzun ömürlü bir çözüm sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-citroen-jumper-kabin-klima-seti',
+    brandId: 'yedek-parca',
+    name: 'Citroën Jumper Kabin Klima Seti',
+    images: ['/yedek-parca/citroen-jumper-kabin-klima-seti.jpg'],
+    description: `Ticari araçlarda klima sistemi, sürüş konforu ve verimlilik açısından kritik bir rol oynar. Citroën Jumper Kabin Klima Seti, araç içi sıcaklığı dengede tutarak hem sürücü hem de yolcular için konforlu bir ortam sağlar.
+
+Sonradan klima sistemi kurulumu için özel olarak tasarlanan bu set, tüm gerekli bileşenleri bir arada sunarak güçlü, verimli ve uzun ömürlü bir klima çözümü sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-albatros-klima-kapag',
+    brandId: 'yedek-parca',
+    name: 'Albatros Klima Kapağı',
+    images: ['/yedek-parca/albatros-klima-kapagi.png'],
+    description: `Ticari araçlarda klima sisteminin dış etkenlerden korunması, sistemin uzun ömürlü ve verimli çalışması için büyük önem taşır. Albatros Klima Kapağı, klima sistemini darbelere, toza, güneş ışınlarına ve çevresel etkilere karşı koruyarak performansın korunmasına yardımcı olur.
+
+Özellikle kabin üstü veya dış ünite klima sistemlerinde kullanılan bu kapak, hem koruma hem de estetik görünüm açısından önemli bir parçadır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-coolertech-klima-kapag',
+    brandId: 'yedek-parca',
+    name: 'COOLERTECH Klima Kapağı',
+    images: ['/yedek-parca/coolertech-coolman-klima-kondansoru-petegi.png'],
+    description: `Ticari araçlarda kullanılan klima sistemlerinin dış etkenlere karşı korunması, sistemin performansı ve ömrü açısından büyük önem taşır. CoolerTech Klima Kapağı, klima ünitesini güneş, yağmur, toz ve darbelere karşı koruyarak daha uzun ömürlü ve verimli kullanım sağlar.
+
+Özellikle kabin üstü ve dış ünite klima sistemlerinde kullanılan bu kapak, hem koruyucu hem de estetik bir çözüm sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-coolertech-coolman-klima-dugmesi',
+    brandId: 'yedek-parca',
+    name: 'COOLERTECH / Coolman Klima Düğmesi',
+    images: ['/yedek-parca/coolertech-coolman-klima-dugmesi.png'],
+    description: `Ticari araçlarda klima sisteminin verimli kullanılabilmesi için kontrol bileşenleri büyük önem taşır. COOLERTECH / Coolman Klima Düğmesi, klima sistemini kolay, hızlı ve hassas bir şekilde kontrol etmenizi sağlayarak sürüş konforunu artırır.
+
+Ergonomik tasarımı ve dayanıklı yapısı sayesinde uzun ömürlü kullanım sunan bu klima düğmesi, özellikle yoğun kullanımda güvenilir performans sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-coolertech-coolman-klima-kondansoru-petegi',
+    brandId: 'yedek-parca',
+    name: 'COOLERTECH / Coolman Klima Kondansörü (Peteği)',
+    images: ['/yedek-parca/coolertech-coolman-klima-kondansoru-petegi.png'],
+    description: `Ticari araç klima sistemlerinde soğutma performansının en önemli parçalarından biri **kondansör (klima peteği)**dir. COOLERTECH / Coolman Klima Kondansörü (Peteği), klima gazının soğutulmasını sağlayarak sistemin verimli ve güçlü çalışmasına yardımcı olur.
+
+Yüksek ısı transfer kapasitesi ve dayanıklı yapısı sayesinde, yoğun kullanımda bile maksimum performans sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-safkar-klima-fan',
+    brandId: 'yedek-parca',
+    name: 'Safkar Klima Fanı',
+    images: ['/yedek-parca/safkar-klima-dugmesi.jpg'],
+    description: `Ticari araç klima sistemlerinde hava sirkülasyonu, soğutma performansının en kritik unsurlarından biridir. Safkar Klima Fanı, klima sisteminin verimli çalışmasını sağlayarak kabin içi hava dağılımını optimize eder ve hızlı soğutma sağlar.
+
+Yüksek devir gücü ve dayanıklı motor yapısı sayesinde, yoğun kullanımda bile stabil ve güçlü performans sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-safkar-klima-sogutucu-kapag',
+    brandId: 'yedek-parca',
+    name: 'Safkar Klima Soğutucu Kapağı',
+    images: ['/yedek-parca/safkar-klima-sogutucu-kapagi.jpg'],
+    description: `Ticari araç klima sistemlerinde dış ünitenin korunması ve hava akışının doğru yönlendirilmesi, sistem performansı açısından büyük önem taşır. Safkar Klima Soğutucu Kapağı, klima sistemini dış etkenlere karşı korurken aynı zamanda hava sirkülasyonunu optimize ederek daha verimli soğutma sağlar.
+
+Dayanıklı yapısı ve profesyonel tasarımı sayesinde özellikle otobüs ve ticari araçlarda uzun ömürlü kullanım sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-safkar-klima-dugmesi',
+    brandId: 'yedek-parca',
+    name: 'Safkar Klima Düğmesi',
+    images: ['/yedek-parca/safkar-klima-dugmesi.jpg'],
+    description: `Ticari araç klima sistemlerinde kontrol bileşenleri, sistemin verimli ve doğru çalışması açısından büyük önem taşır. Safkar Klima Düğmesi, klima sistemini kolay, hızlı ve hassas şekilde yönetmenizi sağlayarak sürüş konforunu artırır.
+
+Ergonomik tasarımı ve dayanıklı yapısı sayesinde yoğun kullanımda bile uzun ömürlü ve stabil performans sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-volt-klima-braketi',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Volt Klima Braketi',
+    images: ['/yedek-parca/volkswagen-volt-klima-braketi.png'],
+    description: `Ticari araçlarda klima sisteminin verimli çalışabilmesi için montaj ekipmanlarının doğru seçilmesi büyük önem taşır. Volkswagen Volt Klima Braketi, klima kompresörünün motor üzerine sağlam ve doğru şekilde sabitlenmesini sağlayarak sistemin performansını maksimum seviyeye çıkarır.
+
+Dayanıklı yapısı ve yüksek uyumluluğu sayesinde, hem sonradan klima kurulumu hem de mevcut sistemlerin güçlendirilmesi için ideal bir çözümdür.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-peugeot-boxer-citroen-jumper-yeni-model-klima-braketi',
+    brandId: 'yedek-parca',
+    name: 'Peugeot Boxer / Citroën Jumper Yeni Model Klima Braketi',
+    images: ['/yedek-parca/peugeot-boxer-citroen-jumper-yeni-model-klima-braketi.png'],
+    description: `Ticari araçlarda klima sisteminin verimli çalışabilmesi için doğru montaj ekipmanlarının kullanılması büyük önem taşır. Peugeot Boxer / Citroën Jumper Yeni Model Klima Braketi, klima kompresörünün motor üzerine sağlam ve doğru şekilde sabitlenmesini sağlayarak sistemin maksimum performansla çalışmasına yardımcı olur.
+
+Yeni kasa Boxer ve Jumper modeller için özel olarak tasarlanan bu klima braketi, yüksek dayanıklılığı ve birebir uyumu ile profesyonel klima kurulumlarının vazgeçilmez parçalarından biridir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-peugeot-boxer-citroen-jumper-kasnakl-2007-2017',
+    brandId: 'yedek-parca',
+    name: 'Peugeot Boxer / Citroën Jumper Kasnaklı (2007-2017)',
+    images: ['/yedek-parca/peugeot-boxer-citroen-jumper-yeni-model-klima-braketi.png'],
+    description: `Ticari araçlarda klima sisteminin verimli çalışabilmesi için montaj ekipmanlarının doğru seçilmesi büyük önem taşır. Peugeot Boxer / Citroën Jumper Kasnaklı (2007-2017), klima kompresörünün motor üzerine sağlam ve doğru şekilde sabitlenmesini sağlayarak sistemin maksimum performansla çalışmasına yardımcı olur.
+
+Kasnaklı yapısı sayesinde kayış sistemi ile tam uyum sağlayan bu braket, 2007-2017 model Boxer ve Jumper araçlar için özel olarak tasarlanmıştır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-otokar-sultan-klima-fan',
+    brandId: 'yedek-parca',
+    name: 'Otokar Sultan Klima Fanı',
+    images: ['/yedek-parca/otokar-sultan-klima-fani.png'],
+    description: `Ticari ve yolcu taşımacılığında kullanılan araçlarda klima sisteminin verimli çalışması, konfor açısından büyük önem taşır. Otokar Sultan Klima Fanı, kabin içi hava sirkülasyonunu artırarak klima sisteminin daha hızlı ve etkili soğutma sağlamasına yardımcı olur.
+
+Yüksek performanslı motor yapısı ve dayanıklı tasarımı sayesinde, yoğun kullanımda bile stabil ve güçlü hava akışı sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-isuzu-nova-klima-kondansoru',
+    brandId: 'yedek-parca',
+    name: 'Isuzu Nova Klima Kondansörü',
+    images: ['/yedek-parca/isuzu-nova-klima-kondansoru.jpeg'],
+    description: `Toplu taşıma ve ticari araçlarda klima sisteminin verimli çalışması, yolcu konforu açısından kritik öneme sahiptir. Isuzu Nova Klima Kondansörü (Peteği), klima gazının soğutulmasını sağlayarak sistemin daha güçlü ve stabil çalışmasına yardımcı olur.
+
+Yüksek ısı transfer kapasitesi ve dayanıklı yapısı sayesinde, yoğun kullanımda bile maksimum soğutma performansı sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-isuzu-nova-klima-kompresoru-tm21',
+    brandId: 'yedek-parca',
+    name: 'Isuzu Nova Klima Kompresörü TM21',
+    images: ['/yedek-parca/isuzu-nova-klima-kompresoru-tm21.jpg'],
+    description: `Toplu taşıma ve ticari araçlarda klima sisteminin en kritik parçası olan kompresör, sistemin verimli çalışmasını sağlar. Isuzu Nova Klima Kompresörü TM21, yüksek basınç üretme kapasitesi sayesinde klima gazını etkili şekilde dolaştırarak güçlü ve stabil bir soğutma performansı sunar.
+
+Yoğun kullanım koşullarına uygun olarak üretilen TM21 kompresör, dayanıklı yapısı ve yüksek performansı ile uzun ömürlü bir çözüm sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-safkar-s75-klima-kondansoru',
+    brandId: 'yedek-parca',
+    name: 'Safkar S75 Klima Kondansörü',
+    images: ['/yedek-parca/safkar-s75-klima-kondansoru.jpg'],
+    description: `Toplu taşıma ve ticari araçlarda klima sisteminin verimli çalışması, yolcu konforu açısından kritik öneme sahiptir. Safkar S75 Klima Kondansörü (Peteği), klima gazını etkili şekilde soğutarak sistemin güçlü ve stabil çalışmasını sağlar.
+
+Yüksek ısı transfer kapasitesi ve dayanıklı yapısı sayesinde, yoğun kullanımda bile maksimum performans sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-albatros-klima-kondansoru-petegi',
+    brandId: 'yedek-parca',
+    name: 'Albatros Klima Kondansörü (Peteği)',
+    images: ['/yedek-parca/albatros-klima-kondansoru-petegi.jpg'],
+    description: `Ticari araç klima sistemlerinde soğutma performansını belirleyen en önemli bileşenlerden biri kondansördür. Albatros Klima Kondansörü (Peteği), klima gazını hızlı ve etkili şekilde soğutarak sistemin yüksek verimle çalışmasını sağlar.
+
+Dayanıklı yapısı ve yüksek ısı transfer kapasitesi sayesinde, yoğun kullanım şartlarında bile maksimum performans sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-2-fanl-klima-kapag',
+    brandId: 'yedek-parca',
+    name: '2 Fanlı Klima Kapağı',
+    images: ['/yedek-parca/2-fanli-klima-kapagi.png'],
+    description: `Ticari araç klima sistemlerinde dış ünitenin korunması ve hava sirkülasyonunun doğru sağlanması, sistem performansı açısından kritik öneme sahiptir. 2 Fanlı Klima Kapağı, klima sistemini dış etkenlerden korurken aynı zamanda çift fan yapısı sayesinde daha güçlü hava akışı sağlayarak soğutma performansını artırır.
+
+Özellikle kabin üstü klima sistemlerinde tercih edilen bu ürün, hem koruma hem de performans odaklı bir çözümdür.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-3-fanl-klima-kapag',
+    brandId: 'yedek-parca',
+    name: '3 Fanlı Klima Kapağı',
+    images: ['/yedek-parca/3-fanli-klima-kapagi.webp'],
+    description: `Ticari araç klima sistemlerinde yüksek performans elde etmek için hava sirkülasyonu ve dış koruma büyük önem taşır. 3 Fanlı Klima Kapağı, üçlü fan sistemi sayesinde maksimum hava akışı sağlayarak klima performansını artırırken, dış üniteyi de çevresel etkenlere karşı korur.
+
+Yoğun kullanımda ve büyük hacimli araçlarda tercih edilen bu sistem, güçlü soğutma ve uzun ömürlü kullanım sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-webasto-klima-kapag',
+    brandId: 'yedek-parca',
+    name: 'Webasto Klima Kapağı',
+    images: ['/yedek-parca/webasto-klima-dugmesi.jpg'],
+    description: `Ticari araçlarda klima sistemlerinin dış etkenlere karşı korunması, sistem performansı ve uzun ömür açısından kritik öneme sahiptir. Webasto Klima Kapağı, klima ünitesini güneş, yağmur, toz ve darbelere karşı koruyarak güvenli ve verimli kullanım sağlar.
+
+Özellikle kabin üstü klima sistemlerinde tercih edilen bu kapak, hem koruyucu hem de estetik bir çözüm sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-webasto-klima-filtresi',
+    brandId: 'yedek-parca',
+    name: 'Webasto Klima Filtresi',
+    images: ['/yedek-parca/webasto-klima-filtresi.png'],
+    description: `Ticari araç klima sistemlerinde hava kalitesi ve sistem verimliliği açısından filtreler büyük önem taşır. Webasto Klima Filtresi, klima sistemine giren havayı toz, polen ve zararlı partiküllerden arındırarak hem sağlıklı hem de verimli bir kullanım sağlar.
+
+Düzenli filtre kullanımı, klima sisteminin performansını artırırken aynı zamanda diğer bileşenlerin ömrünü de uzatır.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-webasto-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Webasto Klima Kompresörü',
+    images: ['/yedek-parca/webasto-klima-kompresoru.webp'],
+    description: `Ticari araç klima sistemlerinin kalbi olan kompresör, sistemin verimli çalışmasını sağlayan en önemli bileşendir. Webasto Klima Kompresörü, yüksek basınç üretme kapasitesi sayesinde klima gazını etkili şekilde dolaştırarak güçlü ve stabil bir soğutma performansı sunar.
+
+Yoğun kullanım şartlarına uygun olarak tasarlanan bu kompresör, dayanıklı yapısı ve yüksek verimliliği ile uzun ömürlü bir çözüm sağlar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ylkar-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Yılkar Klima Kompresörü',
+    images: ['/yedek-parca/sprinter-klima-kompresoru-denso.jpg'],
+    description: `Ticari araç klima sistemlerinin en kritik bileşeni olan kompresör, sistemin verimli ve güçlü çalışmasını sağlar. Yılkar Klima Kompresörü, yüksek basınç üretme kapasitesi sayesinde klima gazını etkili şekilde dolaştırarak hızlı ve dengeli bir soğutma performansı sunar.
+
+Yoğun kullanım koşullarına uygun olarak tasarlanan bu kompresör, dayanıklı yapısı ve uzun ömürlü performansı ile ticari araçlar için ideal bir çözümdür.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-citroen-jumper-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Citroën Jumper Klima Kompresörü',
+    images: ['/yedek-parca/citroen-jumper-klima-kompresoru.png'],
+    description: `Ticari araç klima sistemlerinin en önemli bileşeni olan kompresör, sistemin verimli ve güçlü çalışmasını sağlar. Citroën Jumper Klima Kompresörü, klima gazını yüksek basınçla dolaştırarak kabin içi sıcaklığın hızlı ve dengeli şekilde düşmesini sağlar.
+
+Yoğun kullanım şartlarına uygun olarak üretilen bu kompresör, dayanıklı yapısı ve yüksek performansı ile uzun ömürlü bir çözüm sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-mercedes-yeni-kasa-sanden-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Mercedes Yeni Kasa Sanden Klima Kompresörü',
+    images: ['/yedek-parca/mercedes-yeni-kasa-sanden-klima-kompresoru.png'],
+    description: `Ticari araç klima sistemlerinde performansı belirleyen en önemli bileşen kompresördür. Mercedes Yeni Kasa Sanden Klima Kompresörü, yüksek basınç üretme kapasitesi sayesinde klima gazını güçlü şekilde dolaştırarak kabin içi sıcaklığı hızlı ve dengeli şekilde düşürür.
+
+Sanden markası, dünya genelinde OEM (orijinal ekipman) üreticilerine yüksek kaliteli kompresörler sunan güvenilir bir markadır ve birçok araçta tercih edilmektedir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-volkswagen-crafter-sanden-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Volkswagen Crafter Sanden Klima Kompresörü',
+    images: ['/yedek-parca/volkswagen-crafter-sanden-klima-kompresoru.jpg'],
+    description: `Ticari araç klima sistemlerinde performansın temelini kompresör oluşturur. Volkswagen Crafter Sanden Klima Kompresörü, yüksek basınç üretme kapasitesi sayesinde klima gazını etkili şekilde dolaştırarak kabin içi sıcaklığı hızlı ve dengeli şekilde düşürür.
+
+Sanden kompresörler, ağır hizmet tipi yapıları ve OEM kaliteleri ile özellikle Volkswagen Crafter gibi ticari araçlarda yaygın olarak tercih edilmektedir.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-ford-transit-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Ford Transit Klima Kompresörü',
+    images: ['/yedek-parca/ford-transit-klima-kompresoru.png'],
+    description: `Ticari araç klima sistemlerinde en önemli bileşenlerden biri olan kompresör, sistemin verimli çalışmasını sağlar. Ford Transit Klima Kompresörü, klima gazını yüksek basınçla dolaştırarak kabin içi sıcaklığın hızlı ve dengeli şekilde düşmesini sağlar.
+
+Ford Transit modellerine özel olarak üretilen kompresörler, farklı motor ve kasa seçeneklerine uyum sağlayarak uzun ömürlü ve yüksek performanslı kullanım sunar.`,
+    category: 'Yedek Parça'
+  },
+  {
+    id: 'yp-fiat-ducato-6pk-klima-kompresoru',
+    brandId: 'yedek-parca',
+    name: 'Fiat Ducato 6PK Klima Kompresörü',
+    images: ['/yedek-parca/fiat-ducato-6pk-klima-kompresoru.jpg'],
+    description: `Ticari araç klima sistemlerinde en kritik bileşenlerden biri olan kompresör, sistemin verimli çalışmasını sağlar. Fiat Ducato 6PK Klima Kompresörü, 6 kanallı kasnak yapısı sayesinde kayış sistemi ile uyumlu çalışarak klima gazını yüksek basınçla dolaştırır ve güçlü bir soğutma performansı sunar.
+
+Özellikle Ducato, Boxer ve Jumper gibi aynı platform araçlarda yaygın olarak kullanılan bu kompresör tipi, dayanıklılığı ve yüksek performansı ile öne çıkar.`,
+    category: 'Yedek Parça'
+  }
 ]
 ;
 export const services = [
