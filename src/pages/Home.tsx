@@ -7,12 +7,14 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const mainBrands = brands.filter(b => b.id !== 'yedek-parca');
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % brands.length);
+      setCurrentSlide((prev) => (prev + 1) % mainBrands.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [mainBrands.length]);
 
   return (
     <div className="bg-[#F8F9FA]">
@@ -37,7 +39,7 @@ export default function Home() {
         {/* Technical Grid Background */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         
-        {brands.map((brand, index) => (
+        {mainBrands.map((brand, index) => (
           <div 
             key={brand.id}
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
@@ -58,7 +60,7 @@ export default function Home() {
                         Yetkili servis
                       </span>
                       <span className="font-mono text-white/50 text-sm tracking-tight">
-                        [ {String(index + 1).padStart(2, '0')} / {String(brands.length).padStart(2, '0')} ]
+                        [ {String(index + 1).padStart(2, '0')} / {String(mainBrands.length).padStart(2, '0')} ]
                       </span>
                     </div>
                     <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter mb-6">
@@ -89,7 +91,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-full h-1 bg-white/10 z-30">
           <div 
             className="h-full bg-[#fa9700] transition-all duration-[6000ms] ease-linear"
-            style={{ width: `${((currentSlide + 1) / brands.length) * 100}%` }}
+            style={{ width: `${((currentSlide + 1) / mainBrands.length) * 100}%` }}
           ></div>
         </div>
 
@@ -183,7 +185,7 @@ export default function Home() {
         {/* Full width brutalist grid */}
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {brands.map((brand, idx) => (
+            {mainBrands.map((brand, idx) => (
               <Link 
                 key={brand.id} 
                 to={`/${brand.id}-yetkili-servisi`} 
