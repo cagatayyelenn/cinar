@@ -22,6 +22,8 @@ export default function Header() {
           <ul className="flex items-center space-x-0 h-full">
             {brands.map((brand, index) => {
               const isActive = location.pathname.includes(brand.id);
+              const isYedekParca = brand.id === 'yedek-parca';
+              
               return (
                 <li
                   key={brand.id}
@@ -30,13 +32,13 @@ export default function Header() {
                   onMouseLeave={() => setActiveBrand(null)}
                 >
                   <Link
-                    to={`/${brand.id}-yet-yetkili-servisi`.replace('-yet-yetkili', '-yetkili')}
+                    to={isYedekParca ? `/${brand.id}` : `/${brand.id}-yetkili-servisi`}
                     className={cn(
                       "px-6 py-3 transition-all duration-200 flex items-center h-16 mx-1 text-black relative group/link",
                       isActive && "text-[#000879]"
                     )}
                   >
-                    <span className="font-black text-sm capitalize tracking-wide relative">
+                    <span className="font-black text-sm capitalize tracking-wide relative whitespace-nowrap">
                       {brand.name}
                       {/* Underline Effect */}
                       <span className={cn(
@@ -44,10 +46,13 @@ export default function Header() {
                         isActive ? "w-full" : "w-0 group-hover/link:w-full"
                       )}></span>
                     </span>
-                    <ChevronDown size={14} className={cn("ml-2 transition-transform group-hover:rotate-180", isActive ? "text-[#000879]" : "text-gray-400")} />
+                    {!isYedekParca && (
+                      <ChevronDown size={14} className={cn("ml-2 transition-transform group-hover:rotate-180", isActive ? "text-[#000879]" : "text-gray-400")} />
+                    )}
                   </Link>
 
                   {/* Mega Menu - Sharp Edges */}
+                  {!isYedekParca && (
                   <div className={cn(
                     "absolute top-[calc(100%-8px)] left-[44%] -translate-x-1/2 w-[700px] bg-white rounded-3xl shadow-2xl border border-gray-100 transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex overflow-hidden z-50",
                     "origin-top scale-95 group-hover:scale-100"
@@ -106,6 +111,7 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
+                  )}
                 </li>
               );
             })}
@@ -133,20 +139,25 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-[calc(100%+12px)] left-4 right-4 bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden z-50">
           <div className="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
-            {brands.map((brand) => (
-              <div key={brand.id} className="border-b border-gray-100 last:border-0 pb-4">
-                <Link to={`/${brand.id}-yetkili-servisi`} className="font-black text-black flex items-center py-4 px-2 hover:bg-gray-50 tracking-tight">
-                  <img src={brand.logo} alt={brand.name} className="h-10 w-auto object-contain mr-6" />
-                  {brand.name}
-                </Link>
-                <div className="pl-10 space-y-2 mt-2">
-                  {/* @ts-ignore */}
-                  <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}/urunler` : `/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Ürünler</Link>
-                  {/* @ts-ignore */}
-                  <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}-ticari-arac-klimalari` : `/${brand.id}-ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Hizmetler</Link>
+            {brands.map((brand) => {
+              const isYedekParca = brand.id === 'yedek-parca';
+              return (
+                <div key={brand.id} className="border-b border-gray-100 last:border-0 pb-4">
+                  <Link to={isYedekParca ? `/${brand.id}` : `/${brand.id}-yetkili-servisi`} className="font-black text-black flex items-center py-4 px-2 hover:bg-gray-50 tracking-tight">
+                    {brand.logo && <img src={brand.logo} alt={brand.name} className="h-10 w-auto object-contain mr-6" />}
+                    {brand.name}
+                  </Link>
+                  {!isYedekParca && (
+                    <div className="pl-10 space-y-2 mt-2">
+                      {/* @ts-ignore */}
+                      <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}/urunler` : `/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Ürünler</Link>
+                      {/* @ts-ignore */}
+                      <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}-ticari-arac-klimalari` : `/${brand.id}-ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Hizmetler</Link>
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
             <div className="pt-6 flex flex-col space-y-4">
               <a href="tel:+905070485034" className="flex items-center justify-center space-x-3 bg-gray-50 text-black px-6 py-4 border border-gray-200 font-black tracking-tight text-xs">
                 <Phone size={16} />
