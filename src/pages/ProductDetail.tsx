@@ -3,6 +3,7 @@ import { brands, products } from '../data/mockData';
 import YilkarDetail from './details/YilkarDetail';
 import WebastoDetail from './details/WebastoDetail';
 import CoolmanDetail from './details/CoolmanDetail';
+import YedekParcaDetail from './details/YedekParcaDetail';
 import { Link } from 'react-router-dom';
 
 export default function ProductDetail({ brandId: propBrandId, itemId: propItemId }: { brandId?: string, itemId?: string }) {
@@ -41,6 +42,10 @@ export default function ProductDetail({ brandId: propBrandId, itemId: propItemId
 
   if (brand.id === 'coolman') {
     return <CoolmanDetail product={product} brand={brand} />;
+  }
+
+  if (brand.id === 'yedek-parca') {
+    return <YedekParcaDetail product={product} brand={brand} />;
   }
 
   // DEFAULT / FALLBACK (Climart or others)
