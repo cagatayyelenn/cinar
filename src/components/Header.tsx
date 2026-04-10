@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, MessageCircle, ChevronRight, ChevronDown, Menu, X } from 'lucide-react';
+import { Phone, MessageCircle, ChevronRight, ChevronDown, Menu, X, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
 import { brands } from '../data/mockData';
 import { cn } from '../lib/utils';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesExpanded, setIsServicesExpanded] = useState(false);
   const [activeBrand, setActiveBrand] = useState<string | null>(null);
   const location = useLocation();
 
@@ -135,42 +136,163 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu - Sharp Edges */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-[calc(100%+12px)] left-4 right-4 bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden z-50">
-          <div className="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
-            {brands.map((brand) => {
-              const isYedekParca = brand.id === 'yedek-parca';
-              return (
-                <div key={brand.id} className="border-b border-gray-100 last:border-0 pb-4">
-                  <Link to={isYedekParca ? `/${brand.id}` : `/${brand.id}-yetkili-servisi`} className="font-black text-black flex items-center py-4 px-2 hover:bg-gray-50 tracking-tight">
-                    {brand.logo && <img src={brand.logo} alt={brand.name} className="h-10 w-auto object-contain mr-6" />}
-                    {brand.name}
-                  </Link>
-                  {!isYedekParca && (
-                    <div className="pl-10 space-y-2 mt-2">
-                      {/* @ts-ignore */}
-                      <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}/urunler` : `/${brand.id}/urunler`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Ürünler</Link>
-                      {/* @ts-ignore */}
-                      <Link to={brand.rebrandedTo ? `/${brand.rebrandedTo}-ticari-arac-klimalari` : `/${brand.id}-ticari-arac-klimalari`} className="text-gray-500 block text-xs font-black py-2 px-2 hover:text-black tracking-tight">Hizmetler</Link>
-                    </div>
-                  )}
+      {/* Mobile Menu - Premium Slide-in */}
+      <div className={cn(
+        "lg:hidden fixed inset-0 z-50 transition-all duration-500",
+        isMobileMenuOpen ? "visible" : "invisible"
+      )}>
+        {/* Backdrop */}
+        <div 
+          className={cn(
+            "absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-500",
+            isMobileMenuOpen ? "opacity-100" : "opacity-0"
+          )}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+        
+        {/* Content Panel */}
+        <div className={cn(
+          "absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 transform flex flex-col",
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        )}>
+          {/* Header */}
+          <div className="p-6 border-b border-gray-100 flex items-center justify-between">
+            <span className="font-black text-xl tracking-tighter">MENÜ</span>
+            <button 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 rounded-full bg-gray-50 text-black hover:bg-gray-100 transition-colors"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
+          {/* Navigation Scrollable Area */}
+          <div className="flex-1 overflow-y-auto px-6 py-8">
+            <nav className="space-y-1">
+              <Link 
+                to="/" 
+                className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ANASAYFA <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              
+              <Link 
+                to="/hakkimizda" 
+                className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                HAKKIMIZDA <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
+              </Link>
+
+              {/* Accordion: Yetkili Servisler */}
+              <div className="border-b border-gray-50">
+                <button 
+                  onClick={() => setIsServicesExpanded(!isServicesExpanded)}
+                  className="w-full flex items-center justify-between py-4 text-base font-black text-black"
+                >
+                  YETKİLİ SERVİSLER 
+                  <ChevronDown size={18} className={cn("transition-transform duration-300", isServicesExpanded ? "rotate-180" : "rotate-0")} />
+                </button>
+                <div className={cn(
+                  "overflow-hidden transition-all duration-300",
+                  isServicesExpanded ? "max-h-[500px] pb-4" : "max-h-0"
+                )}>
+                  {brands.filter(b => b.id !== 'yedek-parca').map((brand) => (
+                    <Link
+                      key={brand.id}
+                      to={`/${brand.id}-yetkili-servisi`}
+                      className="flex items-center py-3 pl-4 text-sm font-bold text-gray-400 hover:text-black transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-3"></span>
+                      {brand.name} Yetkili Servisi
+                    </Link>
+                  ))}
                 </div>
-              );
-            })}
-            <div className="pt-6 flex flex-col space-y-4">
-              <a href="tel:+905070485034" className="flex items-center justify-center space-x-3 bg-gray-50 text-black px-6 py-4 border border-gray-200 font-black tracking-tight text-xs">
-                <Phone size={16} />
-                <span>0507 048 50 34</span>
-              </a>
-              <a href="https://wa.me/905070485034" className="flex items-center justify-center space-x-3 bg-black text-white px-6 py-4 font-black tracking-tight text-xs">
-                <MessageCircle size={16} />
-                <span>WhatsApp Destek</span>
-              </a>
+              </div>
+
+              <Link 
+                to="/yedek-parca" 
+                className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                YEDEK PARÇA <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
+              </Link>
+
+              <Link 
+                to="/hizmetlerimiz" 
+                className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                HİZMETLERİMİZ <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
+              </Link>
+
+              <Link 
+                to="/iletisim" 
+                className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                İLETİŞİM <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </nav>
+
+            {/* Contact & Info Section */}
+            <div className="mt-12 space-y-8">
+              {/* Action Buttons */}
+              <div className="grid grid-cols-1 gap-3">
+                <a 
+                  href="tel:+905070485034"
+                  className="flex items-center justify-center gap-3 bg-gray-50 text-black border border-gray-100 py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-100 transition-colors"
+                >
+                  <Phone size={18} /> 0507 048 50 34
+                </a>
+                <a 
+                  href="https://wa.me/905070485034"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center gap-3 bg-black text-white py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-900 transition-colors"
+                >
+                  <MessageCircle size={18} /> WhatsApp Destek
+                </a>
+              </div>
+
+              {/* Address */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-gray-400">
+                  <MapPin size={14} />
+                  <span className="text-[10px] font-black tracking-widest uppercase">ADRES</span>
+                </div>
+                <p className="text-sm font-bold text-black leading-snug tracking-tight">
+                  Ramazanoğlu, Sanayi Cd. No:44 B Blok No:65, 34906 Pendik/İstanbul
+                </p>
+              </div>
+
+              {/* Social Icons */}
+              <div className="space-y-4 pt-4 border-t border-gray-50">
+                 <div className="flex items-center gap-2 text-gray-400 mb-4">
+                  <span className="text-[10px] font-black tracking-widest uppercase">BİZİ TAKİP EDİN</span>
+                </div>
+                <div className="flex gap-4">
+                  {[
+                    { icon: Instagram, href: "#" },
+                    { icon: Facebook, href: "#" },
+                    { icon: Twitter, href: "#" }
+                  ].map((social, idx) => (
+                    <a 
+                      key={idx} 
+                      href={social.href} 
+                      className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
+                    >
+                      <social.icon size={18} />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
 
   );
