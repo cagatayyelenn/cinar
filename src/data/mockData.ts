@@ -164,19 +164,6 @@ export const brands = [
     menuProducts: [],
     menuServices: []
   }
-];cription: 'Orijinal Yedek Parça',
-    seo: {
-      title: 'Yedek Parça | Çınar Oto Klima',
-      description: 'Yedek parça listesi',
-      keywords: 'yedek parça',
-      ogTitle: 'Yedek Parçalar',
-      ogDescription: 'Tüm yedek parça ürünleri',
-      ogUrl: 'https://cinarotoklima.com/yedek-parca',
-      canonical: 'https://cinarotoklima.com/yedek-parca'
-    },
-    menuProducts: [],
-    menuServices: []
-  }
 ];
 
 export const products = [
