@@ -2611,14 +2611,6 @@ Dayanıklı motor yapısı ve yüksek performansı sayesinde uzun ömürlü kull
     category: 'Yedek Parça'
   },
   {
-    id: 'yp-ylkar-klima-dugmesi',
-    brandId: 'yedek-parca',
-    name: 'Yılkar Klima Düğmesi',
-    images: ['/yedek-parcalar/webasto-klima-dugmesi.jpg'],
-    description: `Yılkar klima düğmesi, araç klima sistemlerinde fan hızını ve klima çalışma ayarlarını kontrol etmek için kullanılan dayanıklı bir kontrol düğmesidir. Yılkar klima düğmesi, özellikle minibüs, midibüs ve otobüs klima sistemlerinde kullanıcıya kolay kontrol imkânı sunarak klima sisteminin verimli çalışmasına yardımcı olur. Sağlam yapısı ve uzun ömürlü kullanım özelliği sayesinde ticari araç klima sistemlerinde güvenilir bir yedek parça olarak tercih edilmektedir.`,
-    category: 'Yedek Parça'
-  },
-  {
     id: 'yp-webasto-klima-dugmesi',
     brandId: 'yedek-parca',
     name: 'Webasto Klima Düğmesi',
@@ -2900,14 +2892,6 @@ Ergonomik tasarımı ve dayanıklı yapısı sayesinde uzun ömürlü kullanım 
 Yüksek ısı transfer kapasitesi ve dayanıklı yapısı sayesinde, yoğun kullanımda bile maksimum performans sunar.`,
     category: 'Yedek Parça'
   },
-  {
-    id: 'yp-safkar-klima-fan',
-    brandId: 'yedek-parca',
-    name: 'Safkar Klima Fanı',
-    images: ['/yedek-parcalar/safkar-klima-dugmesi.jpg'],
-    description: `Ticari araç klima sistemlerinde hava sirkülasyonu, soğutma performansının en kritik unsurlarından biridir. Safkar Klima Fanı, klima sisteminin verimli çalışmasını sağlayarak kabin içi hava dağılımını optimize eder ve hızlı soğutma sağlar.
-
-Yüksek devir gücü ve dayanıklı motor yapısı sayesinde, yoğun kullanımda bile stabil ve güçlü performans sunar.`,
     category: 'Yedek Parça'
   },
   {
