@@ -152,7 +152,7 @@ export default function Header() {
         
         {/* Content Panel */}
         <div className={cn(
-          "absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 transform flex flex-col",
+          "absolute top-0 right-0 w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 transform flex flex-col",
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}>
           {/* Header */}
@@ -238,12 +238,12 @@ export default function Header() {
             </nav>
 
             {/* Contact & Info Section */}
-            <div className="mt-12 space-y-8">
+            <div className="mt-12 space-y-8 flex flex-col items-center">
               {/* Action Buttons */}
-              <div className="grid grid-cols-1 gap-3">
+              <div className="grid grid-cols-1 gap-3 w-full">
                 <a 
                   href="tel:+905070485034"
-                  className="flex items-center justify-center gap-3 bg-gray-50 text-black border border-gray-100 py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-100 transition-colors"
+                  className="flex items-center justify-center gap-3 bg-gray-50 text-black border border-gray-100 py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-100 transition-colors w-full"
                 >
                   <Phone size={18} /> 0507 048 50 34
                 </a>
@@ -251,14 +251,14 @@ export default function Header() {
                   href="https://wa.me/905070485034"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center justify-center gap-3 bg-black text-white py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-900 transition-colors"
+                  className="flex items-center justify-center gap-3 bg-black text-white py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-900 transition-colors w-full"
                 >
                   <MessageCircle size={18} /> WhatsApp Destek
                 </a>
               </div>
 
               {/* Address */}
-              <div className="space-y-3">
+              <div className="space-y-3 flex flex-col items-center text-center">
                 <div className="flex items-center gap-2 text-gray-400">
                   <MapPin size={14} />
                   <span className="text-[10px] font-black tracking-widest uppercase">ADRES</span>
@@ -269,11 +269,11 @@ export default function Header() {
               </div>
 
               {/* Social Icons */}
-              <div className="space-y-4 pt-4 border-t border-gray-50">
-                 <div className="flex items-center gap-2 text-gray-400 mb-4">
+              <div className="space-y-4 pt-8 border-t border-gray-50 w-full flex flex-col items-center">
+                 <div className="flex items-center gap-2 text-gray-400 mb-2">
                   <span className="text-[10px] font-black tracking-widest uppercase">BİZİ TAKİP EDİN</span>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 justify-center">
                   {[
                     { icon: Instagram, href: "#" },
                     { icon: Facebook, href: "#" },
