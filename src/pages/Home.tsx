@@ -267,7 +267,7 @@ export default function Home() {
             {services.map((service, idx) => (
               <Link 
                 key={service.id} 
-                to={`/${service.brandId}-ticari-arac-klimalari`}
+                to={`/${service.id}`}
                 className="group flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-slate-200 hover:bg-[#0f2851] rounded-md transition-all duration-500 px-8 -mx-8"
               >
                 <div className="flex items-center gap-6 md:gap-12 w-full md:w-1/2 mb-6 md:mb-0">
