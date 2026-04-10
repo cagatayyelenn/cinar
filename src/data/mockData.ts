@@ -2,30 +2,34 @@ const makeLogo = (text: string) => `data:image/svg+xml;charset=utf-8,${encodeURI
 
 export const brands = [
   { 
-    id: 'climart', 
-    name: 'Climart', 
-    logo: '/logolar/climart-logo1.png',
-    heroDescription: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
-    whyTitle: 'Ticari Araç Klimaları ve Özel Soğutma Çözümleri',
-    whyDescription: 'Çınar Oto Klima, Climart yetkili servisi olarak ticari araçlarınızın iklimlendirme ihtiyaçlarına profesyonel çözümler sunar. Minibüs, otobüs ve panelvan tipi ticari araç klimaları, frigofirik soğutucular ve projeye özel iklimlendirme uygulamaları ile işinizin sürekliliğini sağlıyoruz. Yüksek performanslı soğutma sistemleri ve orijinal yedek parça desteğiyle her zaman yanınızdayız.',
+    id: 'webasto', 
+    name: 'Webasto', 
+    logo: '/logolar/webasto-logo1.png',
+    heroDescription: 'Çınar Oto Klima; Webasto yetkili servisi olarak araç ısıtma, soğutma sistemleri ve elektrikli klima çözümlerinde dünya devi Webasto teknolojisini uzman kadrosuyla sunar.',
+    whyTitle: 'Webasto Isıtma ve Soğutma Çözümlerinde Küresel Standart',
+    whyDescription: 'Dünya lideri Webasto markasının yetkili servisi olarak, ticari araçlarınızın iklimlendirme konforunu en üst seviyeye taşıyoruz. Havalı ve sulu ısıtma sistemlerinden, frigorifik soğutma ünitelerine ve yeni nesil elektrikli klimalara kadar geniş bir ürün yelpazesiyle hizmet veriyoruz. Orijinal yedek parça ve profesyonel montaj desteğiyle Webasto kalitesini güvence altına alıyoruz.',
     seo: {
-      title: 'Climart Yetkili Servisi | Ticari Araç Klima ve Soğutma Çözümleri',
-      description: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
-      keywords: 'Climart yetkili servisi, ticari araç klimaları, ticari araç soğutucuları, özel soğutma uygulamaları, Climart servis, araç soğutma sistemleri',
-      ogTitle: 'Climart Yetkili Servisi - Çınar Oto Klima',
-      ogDescription: 'Ticari araçlar için Climart soğutma ve klima sistemlerinde yetkili servis desteği.',
-      ogUrl: 'https://cinarotoklima.com/climart-yetkili-servisi',
-      canonical: 'https://cinarotoklima.com/climart-yetkili-servisi'
+      title: 'Webasto Yetkili Servisi | Araç Isıtma ve Soğutma Sistemleri',
+      description: 'Webasto yetkili servisi Çınar Oto Klima; araç ısıtma sistemleri, soğutma çözümleri ve elektrikli klimalarda profesyonel destek sunar.',
+      keywords: 'Webasto yetkili servisi, Webasto ısıtıcı, araç soğutma sistemleri, elektrikli klima, Webasto servis, araç iklimlendirme',
+      ogTitle: 'Webasto Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Webasto ısıtma ve soğutma sistemlerinde yetkili servis güvencesi ve orijinal parça desteği.',
+      ogUrl: 'https://cinarotoklima.com/webasto-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/webasto-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Ticari Araç Klimaları', path: 'ticari-arac-klimalari' },
-      { label: 'Ticari Araç Soğutucuları', path: 'ticari-arac-sogutuculari' },
-      { label: 'Özel Uygulamalar', path: 'ozel-uygulamalar' }
+      { label: 'Araç Isıtma Sistemleri', path: 'arac-isitma-sistemleri' },
+      { label: 'Split Klimalar', path: 'split-klimalar' },
+      { label: 'İlave Split Klimalar', path: 'ilave-split-klimalar' },
+      { label: 'İlave Tavan Kliması', path: 'ilave-tavan-klimasi' },
+      { label: 'Kabin Kliması', path: 'kabin-klimasi' },
+      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' },
+      { label: 'Elektrikli Klima', path: 'elektrikli-klima' }
     ],
     menuServices: [
-      { label: 'Climart Klima Bakımı', path: 'bakim' },
-      { label: 'Climart Klima Onarımı ve Tamiri', path: 'onarim' },
-      { label: 'Climart Yedek Parça', path: 'yedek-parca' }
+      { label: 'Webasto Bakım', path: 'bakim' },
+      { label: 'Webasto Onarım', path: 'onarim' },
+      { label: 'Webasto Yedek Parça', path: 'yedek-parca' }
     ]
   },
   { 
@@ -62,60 +66,30 @@ export const brands = [
     ]
   },
   { 
-    id: 'webasto', 
-    name: 'Webasto', 
-    logo: '/logolar/webasto-logo1.png',
-    heroDescription: 'Çınar Oto Klima; Webasto yetkili servisi olarak araç ısıtma, soğutma sistemleri ve elektrikli klima çözümlerinde dünya devi Webasto teknolojisini uzman kadrosuyla sunar.',
-    whyTitle: 'Webasto Isıtma ve Soğutma Çözümlerinde Küresel Standart',
-    whyDescription: 'Dünya lideri Webasto markasının yetkili servisi olarak, ticari araçlarınızın iklimlendirme konforunu en üst seviyeye taşıyoruz. Havalı ve sulu ısıtma sistemlerinden, frigorifik soğutma ünitelerine ve yeni nesil elektrikli klimalara kadar geniş bir ürün yelpazesiyle hizmet veriyoruz. Orijinal yedek parça ve profesyonel montaj desteğiyle Webasto kalitesini güvence altına alıyoruz.',
+    id: 'climart', 
+    name: 'Climart', 
+    logo: '/logolar/climart-logo1.png',
+    heroDescription: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
+    whyTitle: 'Ticari Araç Klimaları ve Özel Soğutma Çözümleri',
+    whyDescription: 'Çınar Oto Klima, Climart yetkili servisi olarak ticari araçlarınızın iklimlendirme ihtiyaçlarına profesyonel çözümler sunar. Minibüs, otobüs ve panelvan tipi ticari araç klimaları, frigofirik soğutucular ve projeye özel iklimlendirme uygulamaları ile işinizin sürekliliğini sağlıyoruz. Yüksek performanslı soğutma sistemleri ve orijinal yedek parça desteğiyle her zaman yanınızdayız.',
     seo: {
-      title: 'Webasto Yetkili Servisi | Araç Isıtma ve Soğutma Sistemleri',
-      description: 'Webasto yetkili servisi Çınar Oto Klima; araç ısıtma sistemleri, soğutma çözümleri ve elektrikli klimalarda profesyonel destek sunar.',
-      keywords: 'Webasto yetkili servisi, Webasto ısıtıcı, araç soğutma sistemleri, elektrikli klima, Webasto servis, araç iklimlendirme',
-      ogTitle: 'Webasto Yetkili Servisi - Çınar Oto Klima',
-      ogDescription: 'Webasto ısıtma ve soğutma sistemlerinde yetkili servis güvencesi ve orijinal parça desteği.',
-      ogUrl: 'https://cinarotoklima.com/webasto-yetkili-servisi',
-      canonical: 'https://cinarotoklima.com/webasto-yetkili-servisi'
+      title: 'Climart Yetkili Servisi | Ticari Araç Klima ve Soğutma Çözümleri',
+      description: 'Çınar Oto Klima; Climart yetkili servisi olarak ticari araç klimaları, soğutucular ve özel çözümler sunar. Hemen inceleyin.',
+      keywords: 'Climart yetkili servisi, ticari araç klimaları, ticari araç soğutucuları, özel soğutma uygulamaları, Climart servis, araç soğutma sistemleri',
+      ogTitle: 'Climart Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Ticari araçlar için Climart soğutma ve klima sistemlerinde yetkili servis desteği.',
+      ogUrl: 'https://cinarotoklima.com/climart-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/climart-yetkili-servisi'
     },
     menuProducts: [
-      { label: 'Araç Isıtma Sistemleri', path: 'arac-isitma-sistemleri' },
-      { label: 'Split Klimalar', path: 'split-klimalar' },
-      { label: 'İlave Split Klimalar', path: 'ilave-split-klimalar' },
-      { label: 'İlave Tavan Kliması', path: 'ilave-tavan-klimasi' },
-      { label: 'Kabin Kliması', path: 'kabin-klimasi' },
-      { label: 'Frigorifik Soğutucu', path: 'frigorifik-sogutucu' },
-      { label: 'Elektrikli Klima', path: 'elektrikli-klima' }
+      { label: 'Ticari Araç Klimaları', path: 'ticari-arac-klimalari' },
+      { label: 'Ticari Araç Soğutucuları', path: 'ticari-arac-sogutuculari' },
+      { label: 'Özel Uygulamalar', path: 'ozel-uygulamalar' }
     ],
     menuServices: [
-      { label: 'Webasto Bakım', path: 'bakim' },
-      { label: 'Webasto Onarım', path: 'onarim' },
-      { label: 'Webasto Yedek Parça', path: 'yedek-parca' }
-    ]
-  },
-  { 
-    id: 'coolman', 
-    name: 'Coolman', 
-    logo: '/logolar/coolman-logo.png',
-    heroDescription: 'Çınar Oto Klima; Coolman yetkili servisi olarak tır, kamyon ve karavanlar için 12V/24V elektrikli park klima sistemlerinde profesyonel çözümler sunar.',
-    whyTitle: 'Elektrikli Park Klima Sistemlerinde Coolman Uzmanlığı',
-    whyDescription: 'Ağır vasıta sürücülerinin park halindeki konforu için Coolman teknolojisini aracınıza taşıyoruz. Motor çalıştırmadan soğutma sağlayan 12V ve 24V elektrikli klima sistemleri, yakıt tasarrufu ve sessiz çalışma avantajıyla sürüş kalitenizi artırır. Mercedes, Volvo, Scania, MAN gibi tüm çekici gruplarına uyumlu gizli ve tavan tipi soğutma çözümleriyle hizmetinizdeyiz.',
-    seo: {
-      title: 'Coolman Yetkili Servisi | Elektrikli Park Klima Sistemleri',
-      description: 'Coolman yetkili servisi Çınar Oto Klima; tır, kamyon ve karavanlar için 12V/24V elektrikli park klimaları ve gizli klima setleri sunar.',
-      keywords: 'Coolman yetkili servisi, elektrikli park kliması, tır kliması, kamyonet kliması, karavan kliması, 24V klima, 12V elektrikli klima, park kliması servis',
-      ogTitle: 'Coolman Yetkili Servisi - Çınar Oto Klima',
-      ogDescription: 'Park halinde motor çalıştırmadan soğutma sağlayan Coolman elektrikli klima sistemlerinde yetkili servis desteği.',
-      ogUrl: 'https://cinarotoklima.com/coolman-yetkili-servisi',
-      canonical: 'https://cinarotoklima.com/coolman-yetkili-servisi'
-    },
-    menuProducts: [
-      { label: 'Elektrikli Kabin Kliması', path: 'elektrikli-kabin-klimasi' },
-      { label: 'Dizel Isıtıcılar', path: 'dizel-isiticilar' }
-    ],
-    menuServices: [
-      { label: 'Coolman Bakım', path: 'bakim' },
-      { label: 'Coolman Onarım', path: 'onarim' },
-      { label: 'Coolman Yedek Parça', path: 'yedek-parca' }
+      { label: 'Climart Klima Bakımı', path: 'bakim' },
+      { label: 'Climart Klima Onarımı ve Tamiri', path: 'onarim' },
+      { label: 'Climart Yedek Parça', path: 'yedek-parca' }
     ]
   },
   { 
@@ -145,6 +119,32 @@ export const brands = [
       { label: 'Webasto Onarım', path: '/webasto/onarim' }
     ]
   },
+  { 
+    id: 'coolman', 
+    name: 'Coolman', 
+    logo: '/logolar/coolman-logo.png',
+    heroDescription: 'Çınar Oto Klima; Coolman yetkili servisi olarak tır, kamyon ve karavanlar için 12V/24V elektrikli park klima sistemlerinde profesyonel çözümler sunar.',
+    whyTitle: 'Elektrikli Park Klima Sistemlerinde Coolman Uzmanlığı',
+    whyDescription: 'Ağır vasıta sürücülerinin park halindeki konforu için Coolman teknolojisini aracınıza taşıyoruz. Motor çalıştırmadan soğutma sağlayan 12V ve 24V elektrikli klima sistemleri, yakıt tasarrufu ve sessiz çalışma avantajıyla sürüş kalitenizi artırır. Mercedes, Volvo, Scania, MAN gibi tüm çekici gruplarına uyumlu gizli ve tavan tipi soğutma çözümleriyle hizmetinizdeyiz.',
+    seo: {
+      title: 'Coolman Yetkili Servisi | Elektrikli Park Klima Sistemleri',
+      description: 'Coolman yetkili servisi Çınar Oto Klima; tır, kamyon ve karavanlar için 12V/24V elektrikli park klimaları ve gizli klima setleri sunar.',
+      keywords: 'Coolman yetkili servisi, elektrikli park kliması, tır kliması, kamyonet kliması, karavan kliması, 24V klima, 12V elektrikli klima, park kliması servis',
+      ogTitle: 'Coolman Yetkili Servisi - Çınar Oto Klima',
+      ogDescription: 'Park halinde motor çalıştırmadan soğutma sağlayan Coolman elektrikli klima sistemlerinde yetkili servis desteği.',
+      ogUrl: 'https://cinarotoklima.com/coolman-yetkili-servisi',
+      canonical: 'https://cinarotoklima.com/coolman-yetkili-servisi'
+    },
+    menuProducts: [
+      { label: 'Elektrikli Kabin Kliması', path: 'elektrikli-kabin-klimasi' },
+      { label: 'Dizel Isıtıcılar', path: 'dizel-isiticilar' }
+    ],
+    menuServices: [
+      { label: 'Coolman Bakım', path: 'bakim' },
+      { label: 'Coolman Onarım', path: 'onarim' },
+      { label: 'Coolman Yedek Parça', path: 'yedek-parca' }
+    ]
+  },
   {
     id: 'yedek-parca',
     name: 'Yedek Parça',
@@ -152,6 +152,19 @@ export const brands = [
     heroDescription: 'Orjinal yedek parça kataloğu.',
     whyTitle: 'Yedek Parça',
     whyDescription: 'Orijinal Yedek Parça',
+    seo: {
+      title: 'Yedek Parça | Çınar Oto Klima',
+      description: 'Yedek parça listesi',
+      keywords: 'yedek parça',
+      ogTitle: 'Yedek Parçalar',
+      ogDescription: 'Tüm yedek parça ürünleri',
+      ogUrl: 'https://cinarotoklima.com/yedek-parca',
+      canonical: 'https://cinarotoklima.com/yedek-parca'
+    },
+    menuProducts: [],
+    menuServices: []
+  }
+];cription: 'Orijinal Yedek Parça',
     seo: {
       title: 'Yedek Parça | Çınar Oto Klima',
       description: 'Yedek parça listesi',
