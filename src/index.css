@@ -36,6 +36,8 @@
   --radius-2xl: 10px;
   --radius-3xl: 10px;
   --radius-full: 10px;
+
+  --font-size-xs: 0.95rem;
 }
 
 @layer utilities {
