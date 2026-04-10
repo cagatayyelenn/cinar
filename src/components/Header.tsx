@@ -138,7 +138,7 @@ export default function Header() {
 
       {/* Mobile Menu - Premium Slide-in */}
       <div className={cn(
-        "lg:hidden fixed inset-0 z-[100] transition-all duration-500",
+        "lg:hidden fixed inset-0 z-[100] transition-all duration-500 overflow-hidden",
         isMobileMenuOpen ? "visible" : "invisible"
       )}>
         {/* Backdrop */}
