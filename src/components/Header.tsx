@@ -11,7 +11,7 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-[100] w-full transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <header className="sticky top-0 z-[999] w-full transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -138,7 +138,8 @@ export default function Header() {
 
       {/* Mobile Menu - Premium Slide-in */}
       <div className={cn(
-        "lg:hidden fixed inset-0 z-[100] transition-all duration-500 overflow-hidden",
+      <div className={cn(
+        "lg:hidden fixed inset-0 z-[1000] transition-all duration-500 overflow-hidden",
         isMobileMenuOpen ? "visible" : "invisible"
       )}>
         {/* Backdrop */}
