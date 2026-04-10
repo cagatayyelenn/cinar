@@ -119,12 +119,12 @@ export default function Header() {
         </nav>
 
         {/* Contact Buttons - Sharp */}
-        <div className="hidden lg:flex items-center space-x-3">
-          <a href="tel:+905070485034" className="flex items-center bg-gray-50 border border-gray-100 px-6 py-3 hover:bg-gray-100 transition-colors h-12 rounded-full shadow-sm">
+        <div className="hidden lg:flex items-center space-x-3 flex-shrink-0">
+          <a href="tel:+905070485034" className="flex items-center bg-gray-50 border border-gray-100 px-6 py-3 hover:bg-gray-100 transition-colors h-12 rounded-full shadow-sm whitespace-nowrap flex-shrink-0">
             <Phone size={14} className="text-black mr-3" />
             <span className="font-black text-black text-xs tracking-tighter">0507 048 50 34</span>
           </a>
-          <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="flex items-center bg-black text-white px-8 py-3 font-black text-xs tracking-[0.2em] hover:bg-gray-900 transition-colors h-12 rounded-full shadow-lg">
+          <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="flex items-center bg-black text-white px-8 py-3 font-black text-xs tracking-[0.2em] hover:bg-gray-900 transition-colors h-12 rounded-full shadow-lg whitespace-nowrap flex-shrink-0">
             WhatsApp <ChevronRight size={14} className="ml-2" />
           </a>
         </div>
