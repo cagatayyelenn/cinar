@@ -2892,8 +2892,6 @@ Ergonomik tasarımı ve dayanıklı yapısı sayesinde uzun ömürlü kullanım 
 Yüksek ısı transfer kapasitesi ve dayanıklı yapısı sayesinde, yoğun kullanımda bile maksimum performans sunar.`,
     category: 'Yedek Parça'
   },
-    category: 'Yedek Parça'
-  },
   {
     id: 'yp-safkar-klima-sogutucu-kapag',
     brandId: 'yedek-parca',
