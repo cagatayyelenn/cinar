@@ -16,7 +16,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/logolar/cinarotologo.png" alt="Çınar Oto Klima" className="h-20 md:h-24 w-auto object-contain py-1" />
+          <img src="/cinar-oto-klima-logo.png" alt="Çınar Oto Klima" className="h-16 md:h-20 w-auto object-contain py-1" />
         </Link>
 
         {/* Desktop Navigation */}

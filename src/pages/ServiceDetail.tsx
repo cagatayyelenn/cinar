@@ -35,7 +35,7 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
         <meta name="keywords" content={service ? `${service.name}, oto klima bakımı, ticari araç klima onarımı, ${brand?.name} servisi, çınar oto klima` : 'oto klima servisi, çınar oto klima'} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={service?.image || 'https://cinarotoklima.com/logolar/cinarotologo.png'} />
+        <meta property="og:image" content={service?.image || 'https://cinarotoklima.com/cinar-oto-klima-logo.png'} />
         <meta property="og:url" content={canonicalUrl} />
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>

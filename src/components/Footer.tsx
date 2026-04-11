@@ -19,13 +19,7 @@ export default function Footer() {
           {/* Col 1: Brand & About */}
           <div className="lg:pr-12">
             <Link to="/" className="flex items-center gap-4 mb-8 group">
-              <div className="w-12 h-12 bg-[#fa9700] rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
-                <span className="text-[#0f2851] font-black text-2xl">Ç</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-white font-black text-2xl leading-none">Çınar</span>
-                <span className="text-amber-500 font-bold text-[10px]">Oto Klima</span>
-              </div>
+              <img src="/cinar-oto-klima-logo-beyaz.png" alt="Çınar Oto Klima" className="h-16 w-auto object-contain" />
             </Link>
             <p className="text-sm text-slate-400 mb-10 leading-relaxed font-light">
               Ticari araç klimaları ve ısıtıcı sistemlerinde uzman kadromuzla, güvenli ve orijinal yedek parça garantili servis hizmeti sunuyoruz.
