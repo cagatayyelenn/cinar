@@ -16,7 +16,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/cinar-oto-klima-logo.svg" alt="Çınar Oto Klima" className="h-16 md:h-20 w-auto object-contain py-1" />
+          <img src="/cinar-oto-klima-logo.svg" alt="Çınar Oto Klima" className="h-16 md:h-14 w-auto object-contain py-1" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -144,14 +144,14 @@ export default function Header() {
           isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}>
           {/* Backdrop */}
-          <div 
+          <div
             className={cn(
               "absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-500",
               isMobileMenuOpen ? "opacity-100" : "opacity-0"
             )}
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          
+
           {/* Content Panel */}
           <div className={cn(
             "absolute top-0 right-0 w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 transform flex flex-col",
@@ -160,7 +160,7 @@ export default function Header() {
             {/* Header */}
             <div className="p-6 border-b border-gray-100 flex items-center justify-between">
               <span className="font-black text-xl tracking-tighter">MENÜ</span>
-              <button 
+              <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 rounded-full bg-gray-50 text-black hover:bg-gray-100 transition-colors"
               >
@@ -171,16 +171,16 @@ export default function Header() {
             {/* Navigation Scrollable Area */}
             <div className="flex-1 overflow-y-auto px-6 py-8">
               <nav className="space-y-1">
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   ANASAYFA <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                
-                <Link 
-                  to="/hakkimizda" 
+
+                <Link
+                  to="/hakkimizda"
                   className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -189,11 +189,11 @@ export default function Header() {
 
                 {/* Accordion: Yetkili Servisler */}
                 <div className="border-b border-gray-50">
-                  <button 
+                  <button
                     onClick={() => setIsServicesExpanded(!isServicesExpanded)}
                     className="w-full flex items-center justify-between py-4 text-base font-black text-black"
                   >
-                    YETKİLİ SERVİSLER 
+                    YETKİLİ SERVİSLER
                     <ChevronDown size={18} className={cn("transition-transform duration-300", isServicesExpanded ? "rotate-180" : "rotate-0")} />
                   </button>
                   <div className={cn(
@@ -214,24 +214,24 @@ export default function Header() {
                   </div>
                 </div>
 
-                <Link 
-                  to="/yedek-parca" 
+                <Link
+                  to="/yedek-parca"
                   className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   YEDEK PARÇA <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
                 </Link>
 
-                <Link 
-                  to="/hizmetlerimiz" 
+                <Link
+                  to="/hizmetlerimiz"
                   className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   HİZMETLERİMİZ <ChevronRight size={16} className="text-gray-300 group-hover:translate-x-1 transition-transform" />
                 </Link>
 
-                <Link 
-                  to="/iletisim" 
+                <Link
+                  to="/iletisim"
                   className="flex items-center justify-between py-4 text-base font-black text-black border-b border-gray-50 group"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -243,13 +243,13 @@ export default function Header() {
               <div className="mt-12 space-y-8 flex flex-col items-center">
                 {/* Action Buttons */}
                 <div className="grid grid-cols-1 gap-3 w-full">
-                  <a 
+                  <a
                     href="tel:+905070485034"
                     className="flex items-center justify-center gap-3 bg-gray-50 text-black border border-gray-100 py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-100 transition-colors w-full"
                   >
                     <Phone size={18} /> 0507 048 50 34
                   </a>
-                  <a 
+                  <a
                     href="https://wa.me/905070485034"
                     target="_blank"
                     rel="noreferrer"
@@ -272,7 +272,7 @@ export default function Header() {
 
                 {/* Social Icons */}
                 <div className="space-y-4 pt-8 border-t border-gray-50 w-full flex flex-col items-center">
-                   <div className="flex items-center gap-2 text-gray-400 mb-2">
+                  <div className="flex items-center gap-2 text-gray-400 mb-2">
                     <span className="text-[10px] font-black tracking-widest uppercase">BİZİ TAKİP EDİN</span>
                   </div>
                   <div className="flex gap-4 justify-center">
@@ -281,9 +281,9 @@ export default function Header() {
                       { icon: Facebook, href: "#" },
                       { icon: Twitter, href: "#" }
                     ].map((social, idx) => (
-                      <a 
-                        key={idx} 
-                        href={social.href} 
+                      <a
+                        key={idx}
+                        href={social.href}
                         className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
                       >
                         <social.icon size={18} />
