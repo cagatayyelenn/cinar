@@ -32,6 +32,54 @@ export default function Home() {
         <meta name="twitter:description" content="Oto klima ve kalorifer sistemlerinde yetkili servis güvencesi. Profesyonel tamir ve bakım." />
         <meta name="robots" content="index, follow" />
         <link rel="alternate" href="https://cinarotoklima.com/" hreflang="tr-tr" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+            "name": "Çınar Oto Klima",
+            "image": "https://cinarotoklima.com/cinar-oto-klima-logo.svg",
+            "@id": "https://cinarotoklima.com",
+            "url": "https://cinarotoklima.com",
+            "telephone": "+905070485034",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Ramazanoğlu, Sanayi Cd. No:44 B Blok No:65",
+              "addressLocality": "Pendik",
+              "addressRegion": "İstanbul",
+              "postalCode": "34906",
+              "addressCountry": "TR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.8768,
+              "longitude": 29.2132
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:30",
+                "closes": "19:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:30",
+                "closes": "17:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/cinarotoklima",
+              "https://www.instagram.com/cinarotoklima"
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* HERO SECTION - Editorial & Brutalist */}

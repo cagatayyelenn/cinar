@@ -15,6 +15,76 @@ export default function YedekParcaDetail({ product, brand }: { product: any, bra
     <div className="bg-white min-h-screen pt-32">
       <Helmet>
         <title>{product.name} | Yedek Parça - Çınar Oto Klima</title>
+        <meta name="description" content={`${product.name} araç klima ve ısıtma sistemleri için orijinal yedek parça. Çınar Oto Klima güvencesiyle yüksek kalite ve tam uyum.`} />
+        <meta name="keywords" content={`${product.name}, oto klima yedek parça, ${brand?.name || ''} parça, kalorifer yedek parça`} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.name} | Yedek Parça`} />
+        <meta property="og:description" content={`${product.name} orijinal yedek parça seçenekleri ve uzman montaj desteği.`} />
+        <meta property="og:image" content={product.images?.[0] || 'https://cinarotoklima.com/logo-veya-gorsel.jpg'} />
+        <meta property="og:url" content={`https://cinarotoklima.com/${product.id}`} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={product.name} />
+        <meta name="twitter:description" content={product.description} />
+        <meta name="twitter:image" content={product.images?.[0] || 'https://cinarotoklima.com/logo-veya-gorsel.jpg'} />
+
+        <link rel="canonical" href={`https://cinarotoklima.com/${product.id}`} />
+
+        {/* Product Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.name,
+            "image": product.images?.[0],
+            "description": product.description,
+            "brand": {
+              "@type": "Brand",
+              "name": brand?.name || "Çınar Oto Klima"
+            },
+            "category": "Yedek Parça",
+            "offers": {
+              "@type": "AggregateOffer",
+              "offerCount": "1",
+              "lowPrice": "0",
+              "highPrice": "0",
+              "priceCurrency": "TRY",
+              "availability": "https://schema.org/InStock",
+              "url": `https://cinarotoklima.com/${product.id}`
+            }
+          })}
+        </script>
+        
+        {/* Breadcrumb Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Anasayfa",
+                "item": "https://cinarotoklima.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Yedek Parça",
+                "item": "https://cinarotoklima.com/yedek-parca"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": product.name,
+                "item": `https://cinarotoklima.com/${product.id}`
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}

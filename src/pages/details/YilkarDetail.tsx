@@ -14,7 +14,77 @@ export default function YilkarDetail({ product, brand }: { product: any, brand: 
   return (
     <div className="bg-white min-h-screen pt-32">
       <Helmet>
-        <title>{product.name} | Yılkar Ürünleri - Çınar Oto Klima</title>
+        <title>{product.name} | {brand.name} Ürünleri - Çınar Oto Klima</title>
+        <meta name="description" content={`${product.name} teknik özellikleri, kullanım avantajları ve ${brand.name} yetkili servis garantisi ile Çınar Oto Klima'da. Hemen teklif alın.`} />
+        <meta name="keywords" content={`${product.name}, ${brand.name} servisi, ${product.category}, oto klima tamiri, yedek parça`} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.name} | ${brand.name} Yetkili Servisi`} />
+        <meta property="og:description" content={`${product.name} için profesyonel montaj ve servis desteği. Çınar Oto Klima güvencesiyle.`} />
+        <meta property="og:image" content={product.images?.[0] || 'https://cinarotoklima.com/logo-veya-gorsel.jpg'} />
+        <meta property="og:url" content={`https://cinarotoklima.com/${product.id}`} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={product.name} />
+        <meta name="twitter:description" content={product.description} />
+        <meta name="twitter:image" content={product.images?.[0] || 'https://cinarotoklima.com/logo-veya-gorsel.jpg'} />
+
+        <link rel="canonical" href={`https://cinarotoklima.com/${product.id}`} />
+
+        {/* Product Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.name,
+            "image": product.images?.[0],
+            "description": product.description,
+            "brand": {
+              "@type": "Brand",
+              "name": brand.name
+            },
+            "category": product.category,
+            "offers": {
+              "@type": "AggregateOffer",
+              "offerCount": "1",
+              "lowPrice": "0",
+              "highPrice": "0",
+              "priceCurrency": "TRY",
+              "availability": "https://schema.org/InStock",
+              "url": `https://cinarotoklima.com/${product.id}`
+            }
+          })}
+        </script>
+        
+        {/* Breadcrumb Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Anasayfa",
+                "item": "https://cinarotoklima.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": brand.name,
+                "item": `https://cinarotoklima.com/${brand.id}-yetkili-servisi`
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": product.name,
+                "item": `https://cinarotoklima.com/${product.id}`
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}

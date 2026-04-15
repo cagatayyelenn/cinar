@@ -38,6 +38,65 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
         <meta property="og:image" content={service?.image || 'https://cinarotoklima.com/cinar-oto-klima-logo.svg'} />
         <meta property="og:url" content={canonicalUrl} />
         <link rel="canonical" href={canonicalUrl} />
+
+        {/* Service Structured Data */}
+        {service && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": service.name,
+              "provider": {
+                "@type": "AutoRepair",
+                "name": "Çınar Oto Klima",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Ramazanoğlu, Sanayi Cd. No:44 B Blok No:65",
+                  "addressLocality": "Pendik",
+                  "addressRegion": "İstanbul",
+                  "postalCode": "34906",
+                  "addressCountry": "TR"
+                }
+              },
+              "areaServed": {
+                "@type": "City",
+                "name": "İstanbul"
+              },
+              "description": service.description,
+              "image": service.image
+            })}
+          </script>
+        )}
+
+        {/* Breadcrumb Structured Data */}
+        {service && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Anasayfa",
+                  "item": "https://cinarotoklima.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Hizmetlerimiz",
+                  "item": "https://cinarotoklima.com/hizmetlerimiz"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": service.name,
+                  "item": canonicalUrl
+                }
+              ]
+            })}
+          </script>
+        )}
       </Helmet>
 
       {!service ? (

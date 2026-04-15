@@ -14,7 +14,77 @@ export default function WebastoDetail({ product, brand }: { product: any, brand:
   return (
     <div className="bg-white min-h-screen pt-32">
       <Helmet>
-        <title>{product.name} | Webasto Teknik Detaylar - Çınar Oto Klima</title>
+        <title>{product.name} | {brand.name} Teknik Detaylar - Çınar Oto Klima</title>
+        <meta name="description" content={`${product.name} orijinal Webasto yedek parça ve servis desteği. Çınar Oto Klima ${brand.name} yetkili servisi güvencesiyle teknik özellikler ve montaj bilgileri.`} />
+        <meta name="keywords" content={`${product.name}, ${brand.name} servisi, dizel ısıtıcı, araç kliması, yetkili servis`} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.name} | Webasto Yetkili Servisi`} />
+        <meta property="og:description" content={`${product.name} için profesyonel montaj ve teknik servis desteği.`} />
+        <meta property="og:image" content={product.images?.[0] || 'https://cinarotoklima.com/logo-veya-gorsel.jpg'} />
+        <meta property="og:url" content={`https://cinarotoklima.com/${product.id}`} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={product.name} />
+        <meta name="twitter:description" content={product.description} />
+        <meta name="twitter:image" content={product.images?.[0] || 'https://cinarotoklima.com/logo-veya-gorsel.jpg'} />
+
+        <link rel="canonical" href={`https://cinarotoklima.com/${product.id}`} />
+
+        {/* Product Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.name,
+            "image": product.images?.[0],
+            "description": product.description,
+            "brand": {
+              "@type": "Brand",
+              "name": "Webasto"
+            },
+            "category": product.category,
+            "offers": {
+              "@type": "AggregateOffer",
+              "offerCount": "1",
+              "lowPrice": "0",
+              "highPrice": "0",
+              "priceCurrency": "TRY",
+              "availability": "https://schema.org/InStock",
+              "url": `https://cinarotoklima.com/${product.id}`
+            }
+          })}
+        </script>
+        
+        {/* Breadcrumb Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Anasayfa",
+                "item": "https://cinarotoklima.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": brand.name,
+                "item": `https://cinarotoklima.com/${brand.id}-yetkili-servisi`
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": product.name,
+                "item": `https://cinarotoklima.com/${product.id}`
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}
