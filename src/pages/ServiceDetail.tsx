@@ -136,7 +136,14 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
               <div className="lg:w-1/3">
                 <div className="lg:sticky lg:top-32 space-y-10">
                   <div className="relative group overflow-hidden bg-slate-50 rounded-md p-8 flex items-center justify-center">
-                    <img src={service.image} alt={service.name} className="w-full aspect-square object-contain transition-transform duration-700 group-hover:scale-110" />
+                    <img 
+                      src={service.image} 
+                      alt={service.name} 
+                      width="400"
+                      height="400"
+                      className="w-full aspect-square object-contain transition-transform duration-700 group-hover:scale-110" 
+                      loading="lazy"
+                    />
                     <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-all pointer-events-none"></div>
                   </div>
                   

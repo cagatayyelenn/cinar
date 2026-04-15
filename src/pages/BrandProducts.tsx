@@ -114,7 +114,9 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
               <img 
                 src={brand.logo} 
                 alt={brand.name} 
-                className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain`} 
+                width="200"
+                height="150"
+                className={`${brand.id === 'yilkar' ? 'h-[100px]' : 'h-[150px]'} w-auto object-contain transition-all duration-500 rounded-xl`} 
               />
             </div>
           </div>
@@ -246,7 +248,10 @@ export default function BrandProducts({ brandId: propBrandId }: { brandId?: stri
                     <img 
                       src={product.images?.[0] || 'https://picsum.photos/seed/klima1/400/300'} 
                       alt={product.name} 
-                      className="w-full h-full object-contain transition-transform duration-500" 
+                      width="400"
+                      height="300"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
+                      loading="lazy"
                     />
                   </div>
                   {/* Card Content Section */}

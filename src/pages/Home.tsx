@@ -48,7 +48,10 @@ export default function Home() {
             <img 
               src={`https://picsum.photos/seed/${brand.id}hero/1920/1080?grayscale`} 
               alt={brand.name} 
+              width="1920"
+              height="1080"
               className="w-full h-full object-cover grayscale opacity-60"
+              fetchPriority={index === 0 ? "high" : "low"}
             />
             
             <div className="absolute inset-0 z-20 flex flex-col justify-end pb-20">
@@ -63,9 +66,9 @@ export default function Home() {
                         [ {String(index + 1).padStart(2, '0')} / {String(mainBrands.length).padStart(2, '0')} ]
                       </span>
                     </div>
-                    <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter mb-6">
+                    <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter mb-6">
                       {brand.name}
-                    </h2>
+                    </h1>
                     <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light border-l-2 border-[#fa9700] pl-6">
                       Ticari araç klimaları ve ısıtıcı sistemlerinde %100 orijinal yedek parça ve mühendislik çözümleri.
                     </p>
@@ -197,7 +200,10 @@ export default function Home() {
                 <img 
                   src={brand.logo} 
                   alt={brand.name} 
+                  width="200"
+                  height="100"
                   className="max-h-20 md:max-h-24 lg:max-h-28 max-w-[85%] object-contain transition-all duration-500 mix-blend-multiply relative z-10" 
+                  loading="lazy"
                 />
                 <div className="absolute bottom-6 right-8 w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center group-hover:border-black transition-colors">
                   <ArrowUpRight className="text-gray-400 group-hover:text-black transition-all" size={18} />

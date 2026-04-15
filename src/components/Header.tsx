@@ -16,7 +16,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/cinar-oto-klima-logo.svg" alt="Çınar Oto Klima" className="h-16 md:h-14 w-auto object-contain py-1" />
+          <img src="/cinar-oto-klima-logo.svg" alt="Çınar Oto Klima" width="160" height="60" className="h-16 md:h-14 w-auto object-contain py-1" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -61,7 +61,7 @@ export default function Header() {
                     )}>
                       {/* Left side: Brand Info */}
                       <div className="w-1/3 bg-gray-50 p-8 border-r border-gray-100 flex flex-col items-center justify-center">
-                        <img src={brand.logo} alt={brand.name} className="w-40 h-auto mb-8 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-xl" />
+                        <img src={brand.logo} alt={brand.name} width="160" height="80" className="w-40 h-auto mb-8 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-xl" loading="lazy" />
                         <Link to={`/${brand.id}-yetkili-servisi`} className="text-[10px] text-white font-black bg-black px-6 py-3 rounded-full tracking-widest hover:bg-gray-800 transition-colors shadow-lg">Yetkili Servis &rarr;</Link>
                       </div>
 
@@ -132,7 +132,11 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="lg:hidden text-black p-3 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <button 
+          className="lg:hidden text-black p-3 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors" 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
+        >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -163,6 +167,7 @@ export default function Header() {
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 rounded-full bg-gray-50 text-black hover:bg-gray-100 transition-colors"
+                aria-label="Menüyü Kapat"
               >
                 <X size={24} />
               </button>
@@ -285,6 +290,7 @@ export default function Header() {
                         key={idx}
                         href={social.href}
                         className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
+                        aria-label={`${social.icon.name} sayfamızı takip edin`}
                       >
                         <social.icon size={18} />
                       </a>

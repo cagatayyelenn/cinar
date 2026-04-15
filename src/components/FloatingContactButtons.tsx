@@ -46,6 +46,7 @@ export default function FloatingContactButtons() {
           whileTap={{ scale: 0.9 }}
           className={`pointer-events-auto w-14 h-14 rounded-full ${btn.color} ${btn.textColor} flex items-center justify-center shadow-lg shadow-black/20 hover:shadow-xl transition-shadow relative group`}
           title={btn.label}
+          aria-label={btn.label}
         >
           {btn.icon}
           

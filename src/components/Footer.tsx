@@ -19,14 +19,19 @@ export default function Footer() {
           {/* Col 1: Brand & About */}
           <div className="lg:pr-12">
             <Link to="/" className="flex items-center gap-4 mb-8 group">
-              <img src="/cinar-oto-klima-logo-beyaz.svg" alt="Çınar Oto Klima" className="h-16 w-auto object-contain" />
+              <img src="/cinar-oto-klima-logo-beyaz.svg" alt="Çınar Oto Klima" width="160" height="64" className="h-16 w-auto object-contain" />
             </Link>
-            <p className="text-sm text-slate-400 mb-10 leading-relaxed font-light">
+            <p className="text-sm text-slate-300 mb-10 leading-relaxed font-light">
               Ticari araç klimaları ve ısıtıcı sistemlerinde uzman kadromuzla, güvenli ve orijinal yedek parça garantili servis hizmeti sunuyoruz.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#fa9700] hover:text-black hover:border-[#fa9700] transition-all">
+                <a 
+                  key={i} 
+                  href="#" 
+                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#fa9700] hover:text-black hover:border-[#fa9700] transition-all"
+                  aria-label={`${Icon.name} sayfamızı ziyaret edin`}
+                >
                   <Icon size={18} />
                 </a>
               ))}
@@ -102,7 +107,7 @@ export default function Footer() {
             </div>
             <div>
               <span className="text-white font-black text-lg block">Servis ve randevu talepleriniz için</span>
-              <span className="text-slate-400 text-sm font-light">7/24 Kesintisiz Teknik Destek ve Randevu Hattı</span>
+              <span className="text-slate-300 text-sm font-light">7/24 Kesintisiz Teknik Destek ve Randevu Hattı</span>
             </div>
           </div>
           <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-10 py-5 rounded-full font-black text-xl hover:bg-white transition-all shadow-xl shadow-orange-500/20">
