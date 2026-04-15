@@ -135,9 +135,9 @@ export default function ServiceDetail({ brandId: propBrandId, itemId: propItemId
               {/* Sidebar */}
               <div className="lg:w-1/3">
                 <div className="lg:sticky lg:top-32 space-y-10">
-                  <div className="relative group overflow-hidden">
-                    <img src={service.image} alt={service.name} className="w-full aspect-square object-cover shadow-2xl transition-transform duration-700 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
+                  <div className="relative group overflow-hidden bg-slate-50 rounded-md p-8 flex items-center justify-center">
+                    <img src={service.image} alt={service.name} className="w-full aspect-square object-contain transition-transform duration-700 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-all pointer-events-none"></div>
                   </div>
                   
                   <div className="bg-black p-12 text-white shadow-2xl relative overflow-hidden group">

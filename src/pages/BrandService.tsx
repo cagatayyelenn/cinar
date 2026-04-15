@@ -141,8 +141,8 @@ export default function BrandService({ brandId: propBrandId }: { brandId?: strin
               <div className="space-y-8">
                 {brandServices.length > 0 ? brandServices.map(service => (
                   <div key={service.id} className="flex flex-col md:flex-row gap-8 bg-white border border-slate-100 rounded-md p-4 group hover:shadow-2xl hover:border-slate-200 transition-all duration-500">
-                    <div className="md:w-2/5 overflow-hidden rounded-md">
-                      <img src={service.image} alt={service.name} className="w-full h-64 md:h-full object-cover transition-transform duration-700" />
+                    <div className="md:w-2/5 overflow-hidden rounded-md bg-slate-50 flex items-center justify-center p-4">
+                      <img src={service.image} alt={service.name} className="w-full h-64 md:h-48 object-contain transition-transform duration-700 group-hover:scale-110" />
                     </div>
                     <div className="md:w-3/5 p-8 flex flex-col justify-center">
                       <h3 className="text-2xl font-black text-black mb-4 tracking-tight leading-tight">{service.name}</h3>

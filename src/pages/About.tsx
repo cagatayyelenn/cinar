@@ -67,11 +67,11 @@ export default function About() {
             </div>
           </div>
           <div className="lg:w-1/2 relative">
-            <div className="aspect-[4/5] bg-gray-100 border border-gray-200 overflow-hidden">
+            <div className="aspect-[4/5] bg-slate-50 border border-slate-100 overflow-hidden flex items-center justify-center p-8">
               <img 
                 src="https://picsum.photos/seed/workshop/800/1000" 
                 alt="Workshop" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-1000"
                 referrerPolicy="no-referrer"
               />
             </div>

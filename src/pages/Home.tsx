@@ -403,11 +403,11 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row overflow-hidden rounded-2xl bg-aux-13 md:rounded-none">
           
           {/* Left: Image (First in DOM) */}
-          <div className="w-full lg:w-1/2 min-h-[300px] md:min-h-[400px] relative">
+          <div className="w-full lg:w-1/2 min-h-[300px] md:min-h-[400px] relative bg-white flex items-center justify-center p-12 overflow-hidden border-r border-slate-100">
             <img 
               src="/deneme.jpeg" 
               alt="Banner image" 
-              className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500 opacity-100" 
+              className="w-full h-full object-contain transition-opacity duration-500 opacity-100" 
             />
           </div>
           
