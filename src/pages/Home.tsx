@@ -94,11 +94,11 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-[#0f2851]/80 mix-blend-multiply z-10"></div>
             <img 
-              src={`https://picsum.photos/seed/${brand.id}hero/1920/1080?grayscale`} 
+              src={`/banner${index + 1}${index === 0 ? '' : ''}.png`.replace('banner1', 'banne1')}
               alt={brand.name} 
               width="1920"
               height="1080"
-              className="w-full h-full object-cover grayscale opacity-60"
+              className="w-full h-full object-cover opacity-60"
               fetchPriority={index === 0 ? "high" : "low"}
             />
             
