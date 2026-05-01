@@ -110,8 +110,8 @@ export default function Footer() {
               <span className="text-slate-300 text-sm font-light">7/24 Kesintisiz Teknik Destek ve Randevu Hattı</span>
             </div>
           </div>
-          <a href="tel:+905070485034" className="bg-[#fa9700] text-black px-10 py-5 rounded-full font-black text-xl hover:bg-white transition-all shadow-xl shadow-orange-500/20">
-            0507 048 50 34
+          <a href="tel:+905418705693" className="bg-[#fa9700] text-black px-10 py-5 rounded-full font-black text-xl hover:bg-white transition-all shadow-xl shadow-orange-500/20">
+            0541 870 56 93
           </a>
         </div>
  

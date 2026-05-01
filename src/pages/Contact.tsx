@@ -18,7 +18,7 @@ export default function Contact() {
         }}
       >
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="flex items-center text-[10px] text-gray-400 mb-12 font-black tracking-tight">
+          <div className="flex items-center text-xs mb-8 font-bold tracking-tight breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
             <span className="text-white">İletişim</span>
@@ -26,7 +26,7 @@ export default function Contact() {
           <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
             Bize <br/><span className="text-gray-500/50">ulaşın</span>
           </h1>
-          <p className="text-gray-200 text-xl max-w-2xl leading-relaxed font-light">
+          <p className="text-lg leading-relaxed max-w-xl drop-shadow-md">
             Sorularınız, servis talepleriniz veya yedek parça siparişleriniz için profesyonel ekibimizle doğrudan iletişime geçin.
           </p>
         </div>
@@ -48,8 +48,8 @@ export default function Contact() {
                     </div>
                     <h3 className="text-xs font-black tracking-tight text-gray-400">Telefon hattı</h3>
                   </div>
-                  <a href="tel:+905070485034" className="text-3xl font-black text-black hover:text-gray-600 transition-colors block mb-2">
-                    0507 048 50 34
+                  <a href="tel:+905418705693" className="text-3xl font-black text-black hover:text-gray-600 transition-colors block mb-2">
+                    0541 870 56 93
                   </a>
                   <p className="text-gray-400 text-sm">Hafta içi ve Cumartesi günleri ulaşabilirsiniz.</p>
                 </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                     </div>
                     <h3 className="text-xs font-black tracking-tight text-gray-400">WhatsApp destek</h3>
                   </div>
-                  <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="text-3xl font-black text-black hover:text-[#25D366] transition-colors block mb-2">
+                  <a href="https://wa.me/905418705693" target="_blank" rel="noreferrer" className="text-3xl font-black text-black hover:text-[#25D366] transition-colors block mb-2">
                     Mesaj gönderin
                   </a>
                   <p className="text-gray-400 text-sm">Hızlı teknik bilgi ve randevu için.</p>

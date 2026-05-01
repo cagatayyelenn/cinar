@@ -4,14 +4,14 @@ import { Phone, MessageCircle, MapPin } from 'lucide-react';
 const contactButtons = [
   {
     icon: <Phone size={24} />,
-    href: 'tel:+905070485034',
+    href: 'tel:+905418705693',
     label: 'Ara',
     color: 'bg-[#fa9700]',
     textColor: 'text-black',
   },
   {
     icon: <MessageCircle size={24} />,
-    href: 'https://wa.me/905070485034',
+    href: 'https://wa.me/905418705693',
     label: 'WhatsApp',
     color: 'bg-[#25D366]',
     textColor: 'text-white',

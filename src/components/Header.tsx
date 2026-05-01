@@ -122,11 +122,11 @@ export default function Header() {
 
         {/* Contact Buttons - Sharp */}
         <div className="hidden lg:flex items-center space-x-3 flex-shrink-0">
-          <a href="tel:+905070485034" className="flex items-center bg-gray-50 border border-gray-100 px-6 py-3 hover:bg-gray-100 transition-colors h-12 rounded-full shadow-sm whitespace-nowrap flex-shrink-0">
+          <a href="tel:+905418705693" className="flex items-center bg-gray-50 border border-gray-100 px-6 py-3 hover:bg-gray-100 transition-colors h-12 rounded-full shadow-sm whitespace-nowrap flex-shrink-0">
             <Phone size={14} className="text-black mr-3" />
-            <span className="font-black text-black text-xs tracking-tighter">0507 048 50 34</span>
+            <span className="font-black text-black text-xs tracking-tighter">0541 870 56 93</span>
           </a>
-          <a href="https://wa.me/905070485034" target="_blank" rel="noreferrer" className="flex items-center bg-black text-white px-8 py-3 font-black text-xs tracking-[0.2em] hover:bg-gray-900 transition-colors h-12 rounded-full shadow-lg whitespace-nowrap flex-shrink-0">
+          <a href="https://wa.me/905418705693" target="_blank" rel="noreferrer" className="flex items-center bg-black text-white px-8 py-3 font-black text-xs tracking-[0.2em] hover:bg-gray-900 transition-colors h-12 rounded-full shadow-lg whitespace-nowrap flex-shrink-0">
             WhatsApp <ChevronRight size={14} className="ml-2" />
           </a>
         </div>
@@ -249,13 +249,13 @@ export default function Header() {
                 {/* Action Buttons */}
                 <div className="grid grid-cols-1 gap-3 w-full">
                   <a
-                    href="tel:+905070485034"
+                    href="tel:+905418705693"
                     className="flex items-center justify-center gap-3 bg-gray-50 text-black border border-gray-100 py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-100 transition-colors w-full"
                   >
-                    <Phone size={18} /> 0507 048 50 34
+                    <Phone size={18} /> 0541 870 56 93
                   </a>
                   <a
-                    href="https://wa.me/905070485034"
+                    href="https://wa.me/905418705693"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-center gap-3 bg-black text-white py-4 rounded-2xl font-black text-sm tracking-tight hover:bg-gray-900 transition-colors w-full"

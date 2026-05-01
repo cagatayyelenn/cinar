@@ -128,7 +128,7 @@ export default function About() {
             <Link to="/iletisim" className="bg-white text-black px-12 py-5 font-black tracking-tight text-xs hover:bg-gray-200 transition-colors">
               Randevu al
             </Link>
-            <a href="tel:+905070485034" className="border border-gray-700 text-white px-12 py-5 font-black tracking-tight text-xs hover:border-white transition-colors">
+            <a href="tel:+905418705693" className="border border-gray-700 text-white px-12 py-5 font-black tracking-tight text-xs hover:border-white transition-colors">
               Hemen ara
             </a>
           </div>

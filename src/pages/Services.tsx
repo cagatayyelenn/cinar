@@ -72,7 +72,7 @@ export default function Services() {
         }}
       >
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="flex items-center text-[10px] mb-12 font-black tracking-tight text-gray-400 breadcrumb">
+          <div className="flex items-center text-xs mb-8 font-bold tracking-tight breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Anasayfa</Link>
             <ChevronRight size={12} className="mx-3" />
             <span className="text-white uppercase">Hizmetlerimiz</span>
@@ -80,7 +80,7 @@ export default function Services() {
           <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
             Uzmanı olduğumuz <br/><span className="text-gray-500/50 uppercase text-4xl md:text-6xl">hizmet alanları</span>
           </h1>
-          <p className="text-gray-200 text-xl max-w-2xl leading-relaxed font-light">
+          <p className="text-lg leading-relaxed max-w-xl drop-shadow-md">
             İstanbul'un en kapsamlı araç iklimlendirme kataloğu. 35'ten fazla uzmanlık alanıyla her türlü teknik ihtiyaca profesyonel yanıt.
           </p>
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 animate-bounce-slow">

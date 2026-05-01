@@ -40,7 +40,7 @@ export default function Home() {
             "image": "https://cinarotoklima.com/cinar-oto-klima-logo.svg",
             "@id": "https://cinarotoklima.com",
             "url": "https://cinarotoklima.com",
-            "telephone": "+905070485034",
+            "telephone": "+905418705693",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Ramazanoğlu, Sanayi Cd. No:44 B Blok No:65",
